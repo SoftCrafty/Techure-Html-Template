@@ -1,0 +1,18 @@
+@use "../../variables" as v;
+@use "../../mixin" as m;
+/*-======== section header  =======-*/
+.section-header {
+  &.style-one {
+    .section-meta {
+      font-size: 18px;
+      font-weight: v.$font-weight-bold;
+      letter-spacing: 4px;
+      color: v.$gray-900;
+    }
+    .section-title {
+      font-size: 72px;
+      font-weight: v.$font-weight-bold;
+      line-height: 72px;
+    }
+  }
+}

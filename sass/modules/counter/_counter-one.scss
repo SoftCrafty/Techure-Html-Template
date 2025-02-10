@@ -1,0 +1,21 @@
+@use "../../variables" as v;
+@use "../../mixin" as m;
+/*-======== counter box =======-*/
+
+.count-box-wrapper {
+  &.style-one {
+    .counter-item {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 30px 0;
+      &:nth-child(1) {
+        border-bottom: 1px solid v.$primary-color;
+      }
+      .coun-title {
+        font-size: 74px;
+        font-weight: v.$font-weight-bold;
+      }
+    }
+  }
+}

@@ -1,7 +1,46 @@
 /**
  * Stylesheet:  style.css
- * Theme:       Techure -  HTML5 Template 
+ * Theme:       Technova - IT Startup & Agency HTML5 Template
  * Version:     1.0
- * Author: SoftCrafty
+ * Author:     	BoomDevs
  * 
  */
+/* Table of contents
+=========================
+
+===========================*/
+
+/* Theme Default CSS */
+@use "variables";
+@use "mixin";
+@use "partials/default-spacing";
+@use "unittest";
+@use "keyframes";
+@use "common";
+
+// header
+@use "./partials/header";
+// mani-menu
+@use "./partials/main-menu";
+// sidebar
+@use "./partials/menu-sidebar";
+// home-page-one
+@use "./pages/home-one";
+// video-box
+@use "./modules/video-box/video-box";
+// client
+@use "./modules/client-box/client-box";
+// button
+@use "./modules/button/button";
+@use "./modules/button/button-two";
+// counter-box
+@use "./modules/counter/counter-one";
+// tech-services
+@use "./modules/tech-services/service-one";
+// section-header
+@use "./modules/section-header/section-header-one";
+// card
+@use "./modules/card/card-one";
+// modal
+
+@use "./modules/modal/modal-one";

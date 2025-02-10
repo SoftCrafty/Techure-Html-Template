@@ -1,0 +1,48 @@
+@use "../../variables" as v;
+@use "../../mixin" as m;
+/*-======== tech-service =======-*/
+
+.tech-service {
+  &.style-one {
+    background: v.$primary-color;
+    padding: 21px;
+
+    .text-animeson {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+      position: relative;
+      animation: move 20s infinite linear;
+      width: 100%;
+    }
+    .tech-item {
+      display: flex;
+      gap: 40px;
+      .tech-icons {
+        position: relative;
+        line-height: 85px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        &::after {
+          position: absolute;
+          top: 0;
+          left: 0;
+          content: "";
+          width: 80px;
+          height: 80px;
+          @include m.border-radius(50px);
+          background: v.$white;
+          opacity: 0.2;
+        }
+      }
+      .tech-title {
+        font-size: 74px;
+        font-weight: v.$font-weight-bold;
+        color: v.$white;
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+@use "../../variables" as v;
+@use "../../mixin" as m;
+/*-======== client-box =======-*/
+.user-client {
+  &.style-one {
+    position: relative;
+    display: flex;
+    align-items: center;
+    .client-img {
+      width: 48px;
+      height: 48px;
+      @include m.border-radius(50px);
+      border: 1px solid v.$border-color;
+
+      &:nth-child(2) {
+        margin-left: -23px;
+      }
+      &:nth-child(3) {
+        margin-left: -23px;
+      }
+    }
+    .client-box {
+      width: 48px;
+      height: 48px;
+      background: v.$primary-color;
+      border: 1px solid v.$border-color;
+      color: v.$white;
+      margin-left: -23px;
+      @include m.border-radius(50px);
+      .count {
+        line-height: 48px;
+        text-align: center;
+        color: v.$white;
+      }
+    }
+  }
+}

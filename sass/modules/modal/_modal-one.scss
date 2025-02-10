@@ -1,0 +1,59 @@
+@use "../../variables" as v;
+@use "../../mixin" as m;
+/*-======== modal-area =======-*/
+.modal {
+  &.style-one {
+    /* modal container */
+    .modal-container {
+      &.fade {
+        .modal-dialog {
+          @include m.transform(scale(0.8) translate(0, 0));
+          @include m.transition(0.2s);
+        }
+      }
+    }
+
+    .close {
+      float: right;
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: 1;
+      color: #000;
+      text-shadow: 0 1px 0 #fff;
+      opacity: 0.5;
+      background: none !important;
+
+      span {
+        @include m.transition(0.3s);
+      }
+      &:hover {
+        span {
+          @include m.transform(rotate(90deg));
+          color: v.$primary-color;
+        }
+      }
+    }
+
+    .modal-content {
+      @include m.border-radius(8px);
+      .modal-header {
+        color: v.$gray-900 !important;
+      }
+      .modal-dialog {
+        @include m.transform(scale(0.8) translate(0, 0));
+      }
+      &.show {
+        display: block;
+        .modal-dialog {
+          @include m.transform(scale(1) translate(0, 0));
+        }
+      }
+    }
+    .modal-title {
+      color: v.$gray-900 !important;
+    }
+  }
+}
+video {
+  width: 100%;
+}

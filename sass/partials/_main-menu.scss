@@ -1,0 +1,62 @@
+@use "./variables" as v;
+@use "./mixin" as m;
+
+/*-======== main-menu =======-*/
+
+.main-menu {
+  ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+    li {
+      position: relative;
+      a {
+        color: v.$color-1;
+        font-weight: v.$font-weight-bold;
+        font-size: 18px;
+        @include m.transition(0.4s);
+        .fa-angle-down {
+          font-size: 10px;
+          font-weight: 900;
+          line-height: 10px;
+        }
+        &:hover {
+          color: v.$color-1;
+        }
+      }
+
+      &:hover {
+        .dropdown-menu-item {
+          visibility: visible;
+          opacity: 1;
+          top: 50px;
+        }
+      }
+    }
+  }
+}
+/*-======== dropdown-menu-item =======-*/
+.dropdown-menu-item {
+  position: absolute;
+  left: 0;
+  top: 60px;
+  width: 220px;
+  background-color: v.$white;
+  padding: 15px 25px;
+  @include m.border-radius(8px);
+  @include m.transition(0.4s);
+  @include m.box-shadow(0 0 40px rgba(82, 85, 90, 0.1));
+  opacity: 0;
+  visibility: hidden;
+  display: block !important;
+  li {
+    display: block !important;
+    margin-top: 8px;
+    a {
+      color: v.$color-1;
+      font-weight: v.$font-weight-semi-bold;
+      font-size:15px;
+    }
+  }
+}

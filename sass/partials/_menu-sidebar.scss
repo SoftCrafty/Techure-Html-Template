@@ -1,0 +1,106 @@
+@use "./variables" as v;
+@use "./mixin" as m;
+/*====== off-canvas =======*/
+.off-canvas,
+.sidebar-filter {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 100vh;
+  background-color: v.$gray-100;
+  overflow-x: hidden;
+  z-index: 1035;
+  @include m.transition(0.4s cubic-bezier(0.7, 0, 0.2, 1));
+  @include m.box-shadow(0 1px 8px rgba(0, 0, 0, 0.1));
+  padding: 20px 0 20px 0px;
+  @include m.transform(translateX(-100%));
+  &.active {
+    @include m.transform(translateX(0));
+  }
+
+  .off-canvas-close {
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: v.$color-1;
+    &:hover {
+      color: v.$color-1;
+    }
+  }
+}
+.off-canvas-dropdown-toggle {
+  &.icon-element-xs {
+    border: 0;
+    width: 30px;
+    height: 30px;
+    line-height: 35px;
+    background: none;
+    @include m.transition(0.4s);
+  }
+  &.active {
+    color: v.$color-1;
+  }
+  &.active {
+    svg {
+      &:before {
+        content: "\f106";
+      }
+    }
+  }
+}
+.off-canvas-menu {
+  text-transform: capitalize;
+  padding-top: 60px;
+  font-weight: v.$font-weight-medium;
+  .list-item {
+    border-bottom: 1px solid v.$border-color;
+    &.active,
+    &:hover {
+      .item {
+        a {
+          color: v.$color-1;
+        }
+        .icon-element-xs {
+          color: v.$color-1;
+        }
+      }
+    }
+
+    > div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 20px;
+      > a {
+        color: v.$color-1;
+        text-decoration: none !important;
+      }
+    }
+    .off-canvas-dropdown {
+      display: none;
+      padding-left: 20px;
+      font-size: v.$color-1;
+      li {
+        margin-bottom: 8px;
+        a {
+          color: v.$color-1;
+        }
+      }
+    }
+  }
+  .active {
+    .off-canvas-dropdown {
+      display: block !important;
+    }
+    svg {
+      transform: rotate(180deg);
+      color: v.$primary-color;
+    }
+  }
+}
+.sidebar-filter-wrap {
+  padding-top: 60px;
+}

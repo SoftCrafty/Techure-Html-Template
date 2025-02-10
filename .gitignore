@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 node_modules
 .DS_Store
 package-lock.json
+=======
+node_modules
+.DS_Store
+package-lock.json
+>>>>>>> 85f74676340a176117715e312a3d856eae312f5d
 /.idea

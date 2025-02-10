@@ -1,0 +1,26 @@
+@use "../../variables" as v;
+@use "../../mixin" as m;
+/*-======== theme-btn two =======-*/
+.theme-btn {
+  &.style-two {
+    background: v.$primary-color;
+    color: v.$white;
+    font-size: 18px;
+    font-weight: v.$font-weight-bold;
+    border: initial;
+    line-height: 18px;
+    &:nth-child(1) {
+      padding: 21px 30px;
+      @include m.border-radius(50px);border: 1px solid rgba(7, 0, 14, 0.2)
+    }
+    &:nth-child(2) {
+      padding: 17px;
+      @include m.border-radius(50%);
+      margin-left: -5px;
+      img {
+        width: 26px;
+        height: 26px;
+      }
+    }
+  }
+}

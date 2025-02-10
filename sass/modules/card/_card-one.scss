@@ -1,0 +1,57 @@
+@use "../../variables" as v;
+@use "../../mixin" as m;
+/*-======== client-box =======-*/
+.card-wrapper {
+  &.style-one {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    .card-item {
+      padding: 40px 30px 40px 60px;
+      border: 1px solid v.$border-color-02;
+      @include m.border-radius(20px);
+      position: relative;
+      width: 380px;
+      .card-img {
+        width: 80px;
+        height: 80px;
+        @include m.border-radius(50px);
+        background: v.$white;
+        line-height: 80px;
+        text-align: center;
+        position: absolute;
+        left: -36px;
+        top: 50%;
+        @include m.transform(translateY(-50px));
+        img {
+        }
+      }
+      .card-content {
+        .card-title {
+          font-size: 24px;
+          font-weight: v.$font-weight-bold;
+          margin-bottom: 20px;
+        }
+        .card-decs {
+          font-weight: v.$font-weight-medium;
+        }
+        .more-btn {
+          font-size: 18px;
+          font-weight: v.$font-weight-bold;
+          display: flex;
+          color: v.$gray-900;
+          margin-top: 35px;
+          p {
+            color: v.$gray-900;
+          }
+          img {
+            width: 21px;
+            height: 21px;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}

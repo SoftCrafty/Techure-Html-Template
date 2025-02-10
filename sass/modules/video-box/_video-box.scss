@@ -1,0 +1,25 @@
+@use "../../variables" as v;
+@use "../../mixin" as m;
+/*-======== video-box =======-*/
+.video-box {
+  &.style-one {
+    position: relative;
+    width: 200px;
+    .play-btn {
+      width: 48px;
+      height: 48px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      @include m.border-radius(50px);
+      @include m.transform(translate(-50%, -50%));
+      text-align: center;
+      font-size: 16px;
+      line-height: 48px;
+      background: v.$primary-color;
+      color: v.$white;
+      border: 1px solid v.$border-color;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@use "../../variables" as v;
+@use "../../mixin" as m;
+/*-======== theme-btn one =======-*/
+.theme-btn {
+  &.style-one {
+    width: 150px;
+    height: 150px;
+    background: v.$gray-100;
+    border: 1px solid v.$primary-color;
+    color: v.$gray-900;
+    @include m.border-radius(50%);
+    font-size: 18px;
+    font-weight: v.$font-weight-bold;
+    a {
+      color: v.$gray-900;
+    }
+  }
+}
+

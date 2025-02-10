@@ -1,0 +1,11 @@
+@use "./variables" as v;
+@use "./mixin" as m;
+/*-========  contact number =======-*/
+.contact-number {
+  font-size: 18px;
+  font-weight: v.$font-weight-bold;
+}
+p {
+  color: v.$gray-800;
+  font-size: 18px;
+}
