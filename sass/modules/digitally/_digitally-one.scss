@@ -1,0 +1,48 @@
+@use "../../variables" as v;
+@use "../../mixin" as m;
+/*-======== digitally-wrapper =======-*/
+.digitally-wrapper {
+  &.style-one {
+    background: v.$white;
+    @include m.border-radius(20px);
+    padding: 0 80px 80px 80px;
+    .driver-wrap {
+      display: flex;
+      gap: 30px;
+      .driver-img {
+        margin-top: -113px;
+        height: 100%;
+      }
+      .driver-support {
+        display: flex;
+        gap: 20px;
+        background: v.$gray-100;
+        @include m.border-radius(20px);
+        padding: 20px 30px;
+        box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
+        margin-top: -65px;
+        .info-box {
+          .info-header {
+            display: flex;
+            gap: 6px;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 15px;
+            .info-title {
+              font-size: 18px;
+              font-weight: v.$font-weight-bold;
+              color: v.$gray-900;
+            }
+          }
+        }
+      }
+      ul {
+        li {
+          font-size: 18px;
+          font-weight: v.$font-weight-bold;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

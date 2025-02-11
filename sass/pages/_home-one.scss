@@ -87,3 +87,21 @@
     }
   }
 }
+/*-======== about-area=======-*/
+
+.about-area {
+  .section-header {
+    padding-bottom: 220px;
+  }
+}
+
+/*-======== lates-project-area =======-*/
+
+.lates-project-area {
+  .section-header {
+    border-top: 1px solid v.$border-color;
+    .section-meta {
+      padding-top: 20px;
+    }
+  }
+}

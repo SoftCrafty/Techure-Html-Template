@@ -3187,6 +3187,18 @@ p {
   font-size: 18px;
 }
 
+.section-content.style-two {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-content.style-two .section-header {
+  flex-basis: 53%;
+}
+.section-content.style-two .section-desc {
+  flex-basis: 47%;
+}
+
 /**
  * Stylesheet:  style.css
  * Theme:       Technova - IT Startup & Agency HTML5 Template
@@ -3290,7 +3302,7 @@ p {
   line-height: 10px;
 }
 .main-menu ul li a:hover {
-  color: #031f42;
+  color: #573db8;
 }
 .main-menu ul li:hover .dropdown-menu-item {
   visibility: visible;
@@ -3556,6 +3568,19 @@ p {
   width: 65%;
 }
 
+/*-======== about-area=======-*/
+.about-area .section-header {
+  padding-bottom: 220px;
+}
+
+/*-======== lates-project-area =======-*/
+.lates-project-area .section-header {
+  border-top: 1px solid #e3e3e3;
+}
+.lates-project-area .section-header .section-meta {
+  padding-top: 20px;
+}
+
 /**
  * Stylesheet:  style.css
  * Theme:       Technova - IT Startup & Agency HTML5 Template
@@ -3753,6 +3778,57 @@ p {
 
 ===========================*/
 /* Theme Default CSS */
+/*-======== counter box =======-*/
+.count-box-wrapper.style-two {
+  display: flex;
+  justify-content: space-between;
+}
+.count-box-wrapper.style-two .counter-item {
+  position: relative;
+}
+.count-box-wrapper.style-two .counter-item .coun-title {
+  font-size: 72px;
+  font-weight: 700;
+  position: relative;
+}
+.count-box-wrapper.style-two .counter-item .coun-decs {
+  font-size: 18px;
+  font-weight: 500;
+  color: #07000e;
+}
+.count-box-wrapper.style-two .counter-item::after {
+  content: "";
+  width: 80px;
+  height: 1px;
+  position: absolute;
+  right: -125px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: block;
+  background: #e3e3e3;
+}
+.count-box-wrapper.style-two .counter-item:nth-child(4)::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/**
+ * Stylesheet:  style.css
+ * Theme:       Technova - IT Startup & Agency HTML5 Template
+ * Version:     1.0
+ * Author:     	BoomDevs
+ * 
+ */
+/* Table of contents
+=========================
+
+===========================*/
+/* Theme Default CSS */
 /*-======== tech-service =======-*/
 .tech-service.style-one {
   background: #573db8;
@@ -3891,6 +3967,116 @@ p {
   width: 21px;
   height: 21px;
   margin-left: 10px;
+}
+
+/**
+ * Stylesheet:  style.css
+ * Theme:       Technova - IT Startup & Agency HTML5 Template
+ * Version:     1.0
+ * Author:     	BoomDevs
+ * 
+ */
+/* Table of contents
+=========================
+
+===========================*/
+/* Theme Default CSS */
+/*-======== client-box =======-*/
+.card-wrapper.style-two {
+  padding-top: 60px;
+}
+.card-wrapper.style-two .card-item {
+  margin-left: 40px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+.card-wrapper.style-two .card-item .card-img {
+  position: relative;
+}
+.card-wrapper.style-two .card-item .card-img img {
+  position: relative;
+  width: 100%;
+}
+.card-wrapper.style-two .card-item .card-img .card-meta {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 6px 20px;
+  background: #07000e;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.card-wrapper.style-two .card-item .card-img .card-meta:hover {
+  color: #573db8;
+}
+.card-wrapper.style-two .card-item .card-content .card-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.card-wrapper.style-two .card-item:hover {
+  border: 1 solid #573db8;
+}
+
+/**
+ * Stylesheet:  style.css
+ * Theme:       Technova - IT Startup & Agency HTML5 Template
+ * Version:     1.0
+ * Author:     	BoomDevs
+ * 
+ */
+/* Table of contents
+=========================
+
+===========================*/
+/* Theme Default CSS */
+/*-======== digitally-wrapper =======-*/
+.digitally-wrapper.style-one {
+  background: #ffffff;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  padding: 0 80px 80px 80px;
+}
+.digitally-wrapper.style-one .driver-wrap {
+  display: flex;
+  gap: 30px;
+}
+.digitally-wrapper.style-one .driver-wrap .driver-img {
+  margin-top: -113px;
+  height: 100%;
+}
+.digitally-wrapper.style-one .driver-wrap .driver-support {
+  display: flex;
+  gap: 20px;
+  background: #f7f1fc;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  padding: 20px 30px;
+  box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
+  margin-top: -65px;
+}
+.digitally-wrapper.style-one .driver-wrap .driver-support .info-box .info-header {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.digitally-wrapper.style-one .driver-wrap .driver-support .info-box .info-header .info-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #07000e;
+}
+.digitally-wrapper.style-one .driver-wrap ul li {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
 /**

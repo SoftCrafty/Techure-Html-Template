@@ -1,0 +1,42 @@
+@use "../../variables" as v;
+@use "../../mixin" as m;
+/*-======== counter box =======-*/
+
+.count-box-wrapper {
+  &.style-two {
+    display: flex;
+    justify-content: space-between;
+    .counter-item {
+      position: relative;
+      .coun-title {
+        font-size: 72px;
+        font-weight: v.$font-weight-bold;
+        position: relative;
+      }
+      .coun-decs {
+        font-size: 18px;
+        font-weight: v.$font-weight-medium;
+        color: v.$gray-900;
+      }
+      &::after {
+        content: "";
+        width: 80px;
+        height: 1px;
+        position: absolute;
+        right: -125px;
+        top: 50%;
+        @include m.transform(translateY(-50%));
+        display: block;
+
+        background: v.$border-color;
+      }
+      &:nth-child(4) {
+        &::after {
+          content: "";
+          position: absolute;
+          display: none;
+        }
+      }
+    }
+  }
+}

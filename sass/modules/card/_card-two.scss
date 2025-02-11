@@ -1,0 +1,42 @@
+@use "../../variables" as v;
+@use "../../mixin" as m;
+/*-======== client-box =======-*/
+.card-wrapper {
+  &.style-two {
+    padding-top: 60px;
+    .card-item {
+      margin-left: 40px;
+      @include m.border-radius(20px);
+      .card-img {
+        position: relative;
+        img {
+          position: relative;
+          width: 100%;
+        }
+        .card-meta {
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          padding: 6px 20px;
+          background: v.$gray-900;
+          @include m.border-radius(50px);
+          font-weight: v.$font-weight-medium;
+          color: v.$white;
+          &:hover {
+            color: v.$primary-color;
+          }
+        }
+      }
+      .card-content {
+        .card-title {
+          font-size: 24px;
+          font-weight: v.$font-weight-bold;
+          margin-top: 20px;
+        }
+      }
+      &:hover {
+        border: 1 solid v.$primary-color;
+      }
+    }
+  }
+}

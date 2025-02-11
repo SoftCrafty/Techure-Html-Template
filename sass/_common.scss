@@ -9,3 +9,17 @@ p {
   color: v.$gray-800;
   font-size: 18px;
 }
+// section-content
+.section-content {
+  &.style-two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .section-header {
+      flex-basis: 53%;
+    }
+    .section-desc {
+      flex-basis: 47%;
+    }
+  }
+}
