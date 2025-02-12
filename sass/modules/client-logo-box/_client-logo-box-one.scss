@@ -1,0 +1,15 @@
+@use "../../variables" as v;
+@use "../../mixin" as m;
+/*-======== client-logo-box =======-*/
+.client-logo-wrapper {
+  &.style-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid v.$border-color-03;
+    gap: 110px;
+    padding: 58px 60px;
+    @include m.border-radius(20px);
+    margin-top: 40px;
+  }
+}

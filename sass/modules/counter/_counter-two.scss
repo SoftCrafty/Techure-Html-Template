@@ -27,8 +27,7 @@
         top: 50%;
         @include m.transform(translateY(-50%));
         display: block;
-
-        background: v.$border-color;
+        background: v.$border-color-03;
       }
       &:nth-child(4) {
         &::after {

@@ -1,0 +1,104 @@
+@use "../../variables" as v;
+@use "../../mixin" as m;
+/*-======== slider  =======-*/
+.testimonial-wrapper {
+  &.style-one {
+    .testimonial-carousel {
+      .owl-stage-outer {
+        .owl-stage {
+          .owl-item {
+            .testimonial-item {
+              background: v.$white;
+              padding: 30px 60px;
+              @include m.border-radius(20px);
+
+              .client-heading {
+                .client-info {
+                  padding-bottom: 30px;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  border-bottom: 1px solid v.$border-color;
+                  img {
+                    width: auto;
+                  }
+                  .client-profile {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 30px;
+                    img {
+                      width: 80px;
+                      height: 80px;
+                      @include m.border-radius(50%);
+                    }
+                    .client-title {
+                      font-weight: v.$font-weight-bold;
+                      font-size: 24px;
+                    }
+                    .client-decs {
+                      font-weight: v.$font-weight-medium;
+                    }
+                  }
+                }
+              }
+              .reviwes-icons {
+                ul {
+                  li {
+                    display: inline-block;
+                    color: v.$color-3;
+                    margin-right: 10px;
+                    &:nth-child(5) {
+                      color: v.$gray-200;
+                    }
+                  }
+                }
+              }
+              .client-comment {
+                font-size: 28px;
+                font-weight: v.$font-weight-medium;
+                line-height: 44px;
+                color: v.$gray-800;
+              }
+            }
+            &.active {
+              @include m.border-radius(20px);
+              border: 1px solid v.$secondary;
+            }
+          }
+        }
+      }
+
+      .owl-dots {
+        margin-top: 60px !important;
+        .owl-dot {
+          @include m.transition(0.3s);
+          padding: 7px;
+          margin: 0 3px;
+          span {
+            margin: auto;
+            width: 15px !important;
+            height: 15px !important;
+            @include m.border-radius(50%);
+            @include m.transition(0.3s);
+          }
+          &:hover {
+            span {
+              background: v.$primary-color !important;
+            }
+          }
+          &.active {
+            border: 1px solid v.$primary-color;
+            @include m.border-radius(50%);
+
+            span {
+              width: 18px !important;
+              height: 18px !important;
+              background: v.$primary-color !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

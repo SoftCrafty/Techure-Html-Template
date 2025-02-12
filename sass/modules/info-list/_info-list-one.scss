@@ -1,0 +1,22 @@
+@use "../../variables" as v;
+@use "../../mixin" as m;
+/*-======== info-list  =======-*/
+.info-list-wrapper {
+  &.style-one {
+    height: 100%;
+    ul {
+      li {
+        font-size: 18px;
+        font-weight: v.$font-weight-medium;
+        margin-bottom: 20px;
+        padding: 16px 0px 16px 30px;
+        background: v.$gray-100;
+        @include m.border-radius(50px);
+        width: 100%;
+      }
+    }
+    img {
+      margin: 0 30px;
+    }
+  }
+}

@@ -49,6 +49,32 @@ modalClose.on('click', function(){
  mediaVideo.pause();
  
 });
+
+
+
+/*==== Testimonal carousel =====*/
+$(".testimonial-carousel").owlCarousel({
+    loop: true,
+    margin: 30,
+    nav: false,
+    dots: true,
+    autoplay:false,
+    autoplayTimeout:6000,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 1,
+      },
+      1000: {
+        items: 2,
+        loop: false,
+      },
+      
+    },
+  });
         });
   })(jQuery);
   

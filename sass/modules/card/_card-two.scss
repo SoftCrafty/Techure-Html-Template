@@ -5,6 +5,7 @@
   &.style-two {
     padding-top: 60px;
     .card-item {
+      @include m.transition(0.4s);
       margin-left: 40px;
       @include m.border-radius(20px);
       .card-img {
@@ -12,6 +13,9 @@
         img {
           position: relative;
           width: 100%;
+          @include m.transition(0.4s);
+          border: 1px solid transparent;
+          @include m.border-radius(20px);
         }
         .card-meta {
           position: absolute;
@@ -22,9 +26,6 @@
           @include m.border-radius(50px);
           font-weight: v.$font-weight-medium;
           color: v.$white;
-          &:hover {
-            color: v.$primary-color;
-          }
         }
       }
       .card-content {
@@ -34,8 +35,15 @@
           margin-top: 20px;
         }
       }
+
       &:hover {
-        border: 1 solid v.$primary-color;
+        img {
+          border-color: v.$primary-color;
+        }
+
+        .card-meta {
+          background: v.$primary-color;
+        }
       }
     }
   }

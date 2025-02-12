@@ -3575,10 +3575,28 @@ p {
 
 /*-======== lates-project-area =======-*/
 .lates-project-area .section-header {
-  border-top: 1px solid #e3e3e3;
+  border-top: 1px solid #ececec;
 }
 .lates-project-area .section-header .section-meta {
   padding-top: 20px;
+}
+
+/*-======== our-team-area =======-*/
+.our-team-area {
+  background: #f7f1fc;
+}
+
+/*-======== story-area =======-*/
+.story-area .section-header {
+  border-top: 1px solid #cdcccf;
+}
+
+/*-======== work-process-area =======-*/
+.work-process-area {
+  background: #f7f1fc;
+}
+.work-process-area .section-header {
+  border-top: 1px solid #cdcccf;
 }
 
 /**
@@ -3633,6 +3651,45 @@ p {
 
 ===========================*/
 /* Theme Default CSS */
+/*-======== video-box =======-*/
+.video-box.style-two {
+  position: relative;
+}
+.video-box.style-two .play-btn {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 36px;
+  line-height: 80px;
+  background: #573db8;
+  color: #ffffff;
+  border: 1px solid #e3e3e3;
+  cursor: pointer;
+}
+
+/**
+ * Stylesheet:  style.css
+ * Theme:       Technova - IT Startup & Agency HTML5 Template
+ * Version:     1.0
+ * Author:     	BoomDevs
+ * 
+ */
+/* Table of contents
+=========================
+
+===========================*/
+/* Theme Default CSS */
 /*-======== client-box =======-*/
 .user-client.style-one {
   position: relative;
@@ -3645,7 +3702,7 @@ p {
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   border-radius: 50px;
-  border: 1px solid #e3e3e3;
+  border: 1px solid #f7f1fc;
 }
 .user-client.style-one .client-img:nth-child(2) {
   margin-left: -23px;
@@ -3809,7 +3866,7 @@ p {
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
   display: block;
-  background: #e3e3e3;
+  background: #cdcccf;
 }
 .count-box-wrapper.style-two .counter-item:nth-child(4)::after {
   content: "";
@@ -3986,6 +4043,11 @@ p {
   padding-top: 60px;
 }
 .card-wrapper.style-two .card-item {
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
   margin-left: 40px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -3997,6 +4059,15 @@ p {
 .card-wrapper.style-two .card-item .card-img img {
   position: relative;
   width: 100%;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  border: 1px solid transparent;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
 }
 .card-wrapper.style-two .card-item .card-img .card-meta {
   position: absolute;
@@ -4010,16 +4081,187 @@ p {
   font-weight: 500;
   color: #ffffff;
 }
-.card-wrapper.style-two .card-item .card-img .card-meta:hover {
-  color: #573db8;
-}
 .card-wrapper.style-two .card-item .card-content .card-title {
   font-size: 24px;
   font-weight: 700;
   margin-top: 20px;
 }
-.card-wrapper.style-two .card-item:hover {
-  border: 1 solid #573db8;
+.card-wrapper.style-two .card-item:hover img {
+  border-color: #573db8;
+}
+.card-wrapper.style-two .card-item:hover .card-meta {
+  background: #573db8;
+}
+
+/**
+ * Stylesheet:  style.css
+ * Theme:       Technova - IT Startup & Agency HTML5 Template
+ * Version:     1.0
+ * Author:     	BoomDevs
+ * 
+ */
+/* Table of contents
+=========================
+
+===========================*/
+/* Theme Default CSS */
+/*-======== client-box =======-*/
+.card-wrapper.style-three {
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.card-wrapper.style-three .card-item {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  width: 400px;
+  height: 400px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid #cdcccf;
+  background: #f8f2fc;
+  overflow: hidden;
+  margin-top: 30px;
+}
+.card-wrapper.style-three .card-item .card-img {
+  position: relative;
+}
+.card-wrapper.style-three .card-item .card-img img {
+  position: relative;
+  width: 319px;
+  height: 400px;
+}
+.card-wrapper.style-three .card-item .card-img .card-wrap {
+  position: absolute;
+  bottom: -92px;
+  left: 0;
+  width: 400px;
+  height: 200px;
+  background: #573db8;
+  border-top-left-radius: 200px;
+  border-top-right-radius: 200px;
+}
+.card-wrapper.style-three .card-item .card-img .card-wrap .media-wrapper .media-wrap {
+  position: absolute;
+  left: 50%;
+  top: -22px;
+  background: #ffffff;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  cursor: pointer;
+  font-size: 16px;
+}
+.card-wrapper.style-three .card-item .card-img .card-wrap .media-wrapper .media-wrap:hover {
+  background: #8fd45f;
+}
+.card-wrapper.style-three .card-item .card-img .card-wrap .media-wrapper .shear-media {
+  position: absolute;
+  top: -45%;
+  left: 50%;
+  background: #ffffff;
+  padding: 20px 12px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  opacity: 0;
+  font-size: 16px;
+  overflow: hidden;
+  display: none;
+}
+.card-wrapper.style-three .card-item .card-img .card-wrap .media-wrapper:hover .shear-media {
+  opacity: 1;
+  overflow: visible;
+  display: block;
+}
+.card-wrapper.style-three .card-item .card-img .card-wrap .card-content .card-title {
+  font-size: 24px;
+  font-weight: 700;
+  padding-top: 40px;
+  color: #ffffff;
+}
+
+/**
+ * Stylesheet:  style.css
+ * Theme:       Technova - IT Startup & Agency HTML5 Template
+ * Version:     1.0
+ * Author:     	BoomDevs
+ * 
+ */
+/* Table of contents
+=========================
+
+===========================*/
+/* Theme Default CSS */
+/*-======== client-box =======-*/
+.card-wrapper.style-four {
+  display: grid;
+}
+.card-wrapper.style-four .grid-item {
+  width: 100%;
+  display: grid;
+  grid-column-gap: 0;
+}
+.card-wrapper.style-four .grid-item.grid-one {
+  grid-template-columns: 34% 66%;
+  border-bottom: 1px solid rgba(7, 0, 14, 0.2);
+}
+.card-wrapper.style-four .grid-item.grid-one .card-item:nth-child(1) {
+  border-right: 1px solid rgba(7, 0, 14, 0.2);
+}
+.card-wrapper.style-four .grid-item.grid-two {
+  grid-template-columns: 25% 37% 37%;
+}
+.card-wrapper.style-four .grid-item.grid-two .card-item {
+  padding: 40px;
+}
+.card-wrapper.style-four .grid-item.grid-two .card-item:nth-child(1) {
+  width: 350px;
+}
+.card-wrapper.style-four .grid-item.grid-two .card-item:nth-child(2) {
+  border-right: 1px solid rgba(7, 0, 14, 0.2);
+  border-left: 1px solid rgba(7, 0, 14, 0.2);
+}
+.card-wrapper.style-four .grid-item .card-item {
+  padding: 40px;
+}
+.card-wrapper.style-four .grid-item .card-item .card-content {
+  width: 410px;
+}
+.card-wrapper.style-four .grid-item .card-item .card-content .card-heading .card-title {
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.card-wrapper.style-four .grid-item .card-item .card-content .card-heading .card-title .text-number {
+  color: #ffffff;
+  -webkit-text-stroke: 1px #716f73;
 }
 
 /**
@@ -4072,6 +4314,11 @@ p {
   font-size: 18px;
   font-weight: 700;
   color: #07000e;
+}
+.digitally-wrapper.style-one .driver-wrap .driver-support .info-box .info-desc {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
 }
 .digitally-wrapper.style-one .driver-wrap ul li {
   font-size: 18px;
@@ -4163,4 +4410,171 @@ p {
 
 video {
   width: 100%;
+}
+
+/**
+ * Stylesheet:  style.css
+ * Theme:       Technova - IT Startup & Agency HTML5 Template
+ * Version:     1.0
+ * Author:     	BoomDevs
+ * 
+ */
+/* Table of contents
+=========================
+
+===========================*/
+/* Theme Default CSS */
+/*-======== client-logo-box =======-*/
+.client-logo-wrapper.style-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #cdcccf;
+  gap: 110px;
+  padding: 58px 60px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+
+/**
+ * Stylesheet:  style.css
+ * Theme:       Technova - IT Startup & Agency HTML5 Template
+ * Version:     1.0
+ * Author:     	BoomDevs
+ * 
+ */
+/* Table of contents
+=========================
+
+===========================*/
+/* Theme Default CSS */
+/*-======== info-list  =======-*/
+.info-list-wrapper.style-one {
+  height: 100%;
+}
+.info-list-wrapper.style-one ul li {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  padding: 16px 0px 16px 30px;
+  background: #f7f1fc;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  width: 100%;
+}
+.info-list-wrapper.style-one img {
+  margin: 0 30px;
+}
+
+/**
+ * Stylesheet:  style.css
+ * Theme:       Technova - IT Startup & Agency HTML5 Template
+ * Version:     1.0
+ * Author:     	BoomDevs
+ * 
+ */
+/* Table of contents
+=========================
+
+===========================*/
+/* Theme Default CSS */
+/*-======== slider  =======-*/
+.testimonial-wrapper.style-one .testimonial-carousel .owl-stage-outer .owl-stage .owl-item .testimonial-item {
+  background: #ffffff;
+  padding: 30px 60px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+.testimonial-wrapper.style-one .testimonial-carousel .owl-stage-outer .owl-stage .owl-item .testimonial-item .client-heading .client-info {
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e3e3e3;
+}
+.testimonial-wrapper.style-one .testimonial-carousel .owl-stage-outer .owl-stage .owl-item .testimonial-item .client-heading .client-info img {
+  width: auto;
+}
+.testimonial-wrapper.style-one .testimonial-carousel .owl-stage-outer .owl-stage .owl-item .testimonial-item .client-heading .client-info .client-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.testimonial-wrapper.style-one .testimonial-carousel .owl-stage-outer .owl-stage .owl-item .testimonial-item .client-heading .client-info .client-profile img {
+  width: 80px;
+  height: 80px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.testimonial-wrapper.style-one .testimonial-carousel .owl-stage-outer .owl-stage .owl-item .testimonial-item .client-heading .client-info .client-profile .client-title {
+  font-weight: 700;
+  font-size: 24px;
+}
+.testimonial-wrapper.style-one .testimonial-carousel .owl-stage-outer .owl-stage .owl-item .testimonial-item .client-heading .client-info .client-profile .client-decs {
+  font-weight: 500;
+}
+.testimonial-wrapper.style-one .testimonial-carousel .owl-stage-outer .owl-stage .owl-item .testimonial-item .reviwes-icons ul li {
+  display: inline-block;
+  color: #ffb34e;
+  margin-right: 10px;
+}
+.testimonial-wrapper.style-one .testimonial-carousel .owl-stage-outer .owl-stage .owl-item .testimonial-item .reviwes-icons ul li:nth-child(5) {
+  color: #ececec;
+}
+.testimonial-wrapper.style-one .testimonial-carousel .owl-stage-outer .owl-stage .owl-item .testimonial-item .client-comment {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 44px;
+  color: #716f73;
+}
+.testimonial-wrapper.style-one .testimonial-carousel .owl-stage-outer .owl-stage .owl-item.active {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  border: 1px solid #8fd45f;
+}
+.testimonial-wrapper.style-one .testimonial-carousel .owl-dots {
+  margin-top: 60px !important;
+}
+.testimonial-wrapper.style-one .testimonial-carousel .owl-dots .owl-dot {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  padding: 7px;
+  margin: 0 3px;
+}
+.testimonial-wrapper.style-one .testimonial-carousel .owl-dots .owl-dot span {
+  margin: auto;
+  width: 15px !important;
+  height: 15px !important;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.testimonial-wrapper.style-one .testimonial-carousel .owl-dots .owl-dot:hover span {
+  background: #573db8 !important;
+}
+.testimonial-wrapper.style-one .testimonial-carousel .owl-dots .owl-dot.active {
+  border: 1px solid #573db8;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.testimonial-wrapper.style-one .testimonial-carousel .owl-dots .owl-dot.active span {
+  width: 18px !important;
+  height: 18px !important;
+  background: #573db8 !important;
 }

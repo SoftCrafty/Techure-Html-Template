@@ -99,9 +99,31 @@
 
 .lates-project-area {
   .section-header {
-    border-top: 1px solid v.$border-color;
+    border-top: 1px solid v.$gray-200;
     .section-meta {
       padding-top: 20px;
     }
+  }
+}
+
+/*-======== our-team-area =======-*/
+.our-team-area {
+  background: v.$gray-100;
+}
+
+/*-======== story-area =======-*/
+
+.story-area {
+  .section-header {
+    border-top: 1px solid v.$border-color-03;
+  }
+}
+
+/*-======== work-process-area =======-*/
+
+.work-process-area {
+  background: v.$gray-100;
+  .section-header {
+    border-top: 1px solid v.$border-color-03;
   }
 }

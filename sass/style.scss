@@ -28,6 +28,7 @@
 @use "./pages/home-one";
 // video-box
 @use "./modules/video-box/video-box";
+@use "./modules/video-box/video-box-two";
 // client
 @use "./modules/client-box/client-box";
 // button
@@ -43,8 +44,18 @@
 // card
 @use "./modules/card/card-one";
 @use "./modules/card/card-two";
+@use "./modules/card/card-three";
+@use "./modules/card/card-four";
 
 // digitally
 @use "./modules/digitally/digitally-one";
 // modal
 @use "./modules/modal/modal-one";
+// client-logo-box
+@use "./modules/client-logo-box/client-logo-box-one";
+
+// info-list
+@use "./modules/info-list/info-list-one";
+
+// info-list
+@use "./modules/slider/slider-one";

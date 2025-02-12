@@ -1,0 +1,55 @@
+@use "../../variables" as v;
+@use "../../mixin" as m;
+/*-======== client-box =======-*/
+.card-wrapper {
+  &.style-four {
+    display: grid;
+
+    .grid-item {
+      width: 100%;
+      display: grid;
+      grid-column-gap: 0;
+      &.grid-one {
+        grid-template-columns: 34% 66%;
+        border-bottom: 1px solid v.$border-color-02;
+        .card-item {
+          &:nth-child(1) {
+            border-right: 1px solid v.$border-color-02;
+          }
+        }
+      }
+
+      &.grid-two {
+        grid-template-columns: 25% 37% 37%;
+        .card-item {
+          padding: 40px;
+          &:nth-child(1) {
+            width: 350px;
+          }
+
+          &:nth-child(2) {
+            border-right: 1px solid v.$border-color-02;
+            border-left: 1px solid v.$border-color-02;
+          }
+        }
+      }
+      .card-item {
+        padding: 40px;
+        .card-content {
+          width: 410px;
+          .card-heading {
+            .card-title {
+              font-size: 24px;
+              font-weight: v.$font-weight-bold;
+              padding-bottom: 20px;
+              .text-number {
+                color: v.$white;
+                -webkit-text-stroke: 1px v.$gray-800;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
