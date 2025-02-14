@@ -6,42 +6,46 @@
   &.style-one {
     background: v.$primary-color;
     padding: 21px;
-
-    .text-animeson {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 40px;
-      position: relative;
-      animation: move 20s infinite linear;
-      width: 100%;
-    }
     .tech-item {
       display: flex;
       gap: 40px;
+      @include m.md {
+        justify-content: center;
+        text-align: center;
+      }
+      @include m.sm {
+        justify-content: center;
+        text-align: center;
+        @include m.device-320px {
+          gap: 11px;
+        }
+      }
       .tech-icons {
         position: relative;
-        line-height: 85px;
+        line-height: 80px;
         display: flex;
         justify-content: center;
         align-items: center;
         width: 80px;
-        &::after {
-          position: absolute;
-          top: 0;
-          left: 0;
-          content: "";
-          width: 80px;
-          height: 80px;
-          @include m.border-radius(50px);
-          background: v.$white;
-          opacity: 0.2;
-        }
+        height: 80px;
+        background: v.$color-05;
+        border-radius: 50%;
+        flex-shrink: 0;
       }
       .tech-title {
         font-size: 74px;
         font-weight: v.$font-weight-bold;
         color: v.$white;
+        @include m.lg {
+          font-size: 65px;
+        }
+        @include m.xs {
+          font-size: 42px;
+          line-height: 80px;
+        }
+        @include m.device-320px {
+          font-size: 28px;
+        }
       }
     }
   }

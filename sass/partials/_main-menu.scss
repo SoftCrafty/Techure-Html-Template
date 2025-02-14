@@ -2,7 +2,11 @@
 @use "./mixin" as m;
 
 /*-======== main-menu =======-*/
-
+.menu-wrapper {
+  @include m.laptop_m_two {
+    float: right;
+  }
+}
 .main-menu {
   ul {
     display: flex;
@@ -34,6 +38,9 @@
         }
       }
     }
+  }
+  @include m.laptop_m_two {
+    display: none;
   }
 }
 /*-======== dropdown-menu-item =======-*/

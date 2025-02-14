@@ -9,10 +9,52 @@
       letter-spacing: 4px;
       color: v.$gray-900;
     }
-    .section-title {
-      font-size: 72px;
-      font-weight: v.$font-weight-bold;
-      line-height: 72px;
+    .section-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include m.md {
+        flex-wrap: wrap;
+      }
+      @include m.sm {
+        flex-wrap: wrap;
+      }
+      .section-title {
+        font-size: 72px;
+        font-weight: v.$font-weight-bold;
+        line-height: 72px;
+        flex-basis: 50%;
+        @include m.md {
+          margin-bottom: 30px;
+          flex-basis: 100%;
+        }
+        @include m.sm {
+          margin-bottom: 30px;
+          flex-basis: 100%;
+        }
+        @include m.device-768px {
+          font-size: 60px;
+          line-height: 60px;
+        }
+        @include m.device-425px {
+          font-size: 52px;
+          line-height: 58px;
+        }
+        @include m.device-320px {
+          font-size: 42px;
+          line-height: 48px;
+        }
+      }
+
+      .section-desc {
+        flex-basis: 50%;
+        @include m.md {
+          flex-basis: 100%;
+        }
+        @include m.sm {
+          flex-basis: 100%;
+        }
+      }
     }
   }
 }

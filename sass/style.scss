@@ -41,11 +41,13 @@
 @use "./modules/tech-services/service-one";
 // section-header
 @use "./modules/section-header/section-header-one";
+@use "./modules/section-header/section-header-two";
 // card
 @use "./modules/card/card-one";
 @use "./modules/card/card-two";
 @use "./modules/card/card-three";
 @use "./modules/card/card-four";
+@use "./modules/card/card-five";
 
 // digitally
 @use "./modules/digitally/digitally-one";
@@ -59,3 +61,8 @@
 
 // info-list
 @use "./modules/slider/slider-one";
+
+// accordion
+@use "./modules/accordion/accordion-one";
+//footer
+@use "./partials/footer-one";

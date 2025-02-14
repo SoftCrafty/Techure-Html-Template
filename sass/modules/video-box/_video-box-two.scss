@@ -4,21 +4,65 @@
 .video-box {
   &.style-two {
     position: relative;
+    img {
+      width: 100%;
+    }
     .play-btn {
-      width: 80px;
-      height: 80px;
       position: absolute;
       top: 50%;
       left: 50%;
-      @include m.border-radius(50px);
       @include m.transform(translate(-50%, -50%));
       text-align: center;
       font-size: 36px;
-      line-height: 80px;
-      background: v.$primary-color;
       color: v.$white;
-      border: 1px solid v.$border-color;
       cursor: pointer;
+
+      .play-icon {
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        @include m.border-radius(50px);
+        @include m.transform(translate(-50%, -50%));
+        text-align: center;
+        font-size: 36px;
+        line-height: 80px;
+        background: v.$primary-color;
+        color: v.$white;
+        opacity: 1;
+        @include m.device-375px {
+          width: 50px;
+          height: 50px;
+          line-height: 50px;
+          font-size: 28px;
+        }
+      }
+      .btn-outer-circle {
+        background: v.$gray-900;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        @include m.transform(translate(-50%, -50%));
+        height: 90px;
+        width: 90px;
+        opacity: 0.5;
+        &:nth-child(1) {
+          background: v.$white;
+          height: 100px;
+          width: 100px;
+          opacity: 0.4;
+          @include m.device-375px {
+            width: 70px;
+            height: 70px;
+          }
+        }
+        @include m.device-375px {
+          width: 60px;
+          height: 60px;
+        }
+      }
     }
   }
 }

@@ -13,6 +13,19 @@
       @include m.border-radius(20px);
       position: relative;
       width: 380px;
+
+      @include m.xl {
+        width: 325px;
+      }
+      @include m.laptop_m_four {
+        width: 42%;
+      }
+      @include m.sm {
+        width: 100% !important;
+      }
+      @include m.md {
+        width: 100% !important;
+      }
       .card-img {
         width: 80px;
         height: 80px;
@@ -24,7 +37,10 @@
         left: -36px;
         top: 50%;
         @include m.transform(translateY(-50px));
-        img {
+        svg {
+          path {
+            fill: v.$primary-color;
+          }
         }
       }
       .card-content {
@@ -45,10 +61,13 @@
           p {
             color: v.$gray-900;
           }
-          img {
+          svg {
             width: 21px;
             height: 21px;
             margin-left: 10px;
+            path {
+              fill: v.$gray-900;
+            }
           }
         }
       }

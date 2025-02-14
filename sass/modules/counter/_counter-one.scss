@@ -4,6 +4,11 @@
 
 .count-box-wrapper {
   &.style-one {
+
+    @include m.md {
+      padding-right: 0;
+      padding-top: 0;
+    }
     .counter-item {
       display: flex;
       align-items: center;
@@ -12,9 +17,17 @@
       &:nth-child(1) {
         border-bottom: 1px solid v.$primary-color;
       }
+      @include m.device-768px {
+        flex-wrap: wrap;
+        margin-top: 0;
+      }
       .coun-title {
         font-size: 74px;
         font-weight: v.$font-weight-bold;
+        @include m.device-768px {
+          font-size: 60px;
+          line-height: 60px;
+        }
       }
     }
   }

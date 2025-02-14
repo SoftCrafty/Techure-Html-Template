@@ -11,7 +11,9 @@
               background: v.$white;
               padding: 30px 60px;
               @include m.border-radius(20px);
-
+              @include m.device-480px {
+                padding: 30px;
+              }
               .client-heading {
                 .client-info {
                   padding-bottom: 30px;
@@ -40,6 +42,14 @@
                       font-weight: v.$font-weight-medium;
                     }
                   }
+                  .quoto-right {
+                    @include m.device-425px {
+                      width: 50px;
+                    }
+                    @include m.device-375px {
+                      width: 40px;
+                    }
+                  }
                 }
               }
               .reviwes-icons {
@@ -59,6 +69,10 @@
                 font-weight: v.$font-weight-medium;
                 line-height: 44px;
                 color: v.$gray-800;
+                @include m.device-480px {
+                  font-size: 22px;
+                  line-height: 32px;
+                }
               }
             }
             &.active {
