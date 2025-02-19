@@ -14,6 +14,7 @@
     border-color: v.$border-color-03 !important;
     @include m.border-radius(50px !important);
     background: v.$white !important;
+    box-shadow: none !important;
     span {
       color: v.$gray-800;
     }
@@ -25,6 +26,7 @@
         background-size: 16px 16px !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
+
       }
     }
   }
@@ -67,4 +69,9 @@
       }
     }
   }
+}
+@include m.laptop_l {
+b{
+  background-size: 16px 16px !important;
+}
 }

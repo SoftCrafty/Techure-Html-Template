@@ -24,6 +24,12 @@
             height: 10px !important;
             @include m.border-radius(50px);
             @include m.transition(0.3s);
+            @include m.device-525px {
+              width: 26px !important;
+              }
+              @include m.device-425px {
+                width: 12px !important;
+                }
           }
           &:hover {
             span {
@@ -37,6 +43,13 @@
               width: 120px !important;
               height: 10px !important;
               background: v.$primary-color !important;
+              @include m.device-525px {
+              width: 50px !important;
+
+              }
+              @include m.device-525px {
+                width: 12px !important;
+                }
             }
           }
         }

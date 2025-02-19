@@ -146,7 +146,7 @@ if (cardCarousel.length) {
         nav: false,
         dots: true,
         smartSpeed: 700,
-        margin: 0,
+        margin: 30,
         responsive : {
             // breakpoint from 0 up
             0 : {

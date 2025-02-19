@@ -13,7 +13,17 @@
         @include m.border-radius(20px);
         width: 410px;
         height: 413px;
-        img {
+        @include m.xl {
+          width: 100%;
+        }
+        @include m.laptop_m_three {
+          width: 100%;
+        }
+        @include m.sm {
+          height: 300px;
+        }
+        @include m.xs {
+          height: 300px;
         }
         .media-wrapper {
           position: absolute;
@@ -72,6 +82,16 @@
               }
               padding-top: 20px;
             }
+          }
+        }
+        img {
+          @include m.device-525px {
+            width: 70%;
+            margin: 0 auto;
+          }
+          @include m.xs {
+            width: 70%;
+            margin: 0 auto;
           }
         }
       }

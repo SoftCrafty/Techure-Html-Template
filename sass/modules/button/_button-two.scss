@@ -14,13 +14,16 @@
       @include m.border-radius(50px);
       border: 1px solid rgba(7, 0, 14, 0.2);
       @include m.device-320px {
-        padding: 2px 20px;
+        padding: 10px 10px;
       }
     }
     &:nth-child(2) {
       padding: 17px;
       @include m.border-radius(50%);
       margin-left: -5px;
+      @include m.device-320px {
+        padding: 10px;
+      }
       svg {
         width: 26px;
         height: 26px;

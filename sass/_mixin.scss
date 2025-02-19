@@ -246,12 +246,22 @@
 }
 
 // devices
+// devices
+@mixin device-1200px {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
 @mixin device-768px {
   @media (max-width: 768px) {
     @content;
   }
 }
-
+@mixin device-525px {
+  @media (max-width: 525px) {
+    @content;
+  }
+}
 @mixin device-480px {
   @media (max-width: 480px) {
     @content;

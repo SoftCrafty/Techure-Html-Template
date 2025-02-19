@@ -15,7 +15,7 @@
       @include m.border-radius(50px);
       border: 1px solid rgba(7, 0, 14, 0.2);
       @include m.device-320px {
-        padding: 2px 20px;
+        padding: 10px 20px;
       }
     }
 

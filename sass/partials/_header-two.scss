@@ -33,6 +33,14 @@
         }
       }
     }
+    .contact-number {
+      font-size: 18px;
+      font-weight: v.$font-weight-bold;
+      color: v.$white;
+      @include m.device-425px {
+        display: none;
+      }
+    }
   }
   .bar-btn {
     width: 50px;

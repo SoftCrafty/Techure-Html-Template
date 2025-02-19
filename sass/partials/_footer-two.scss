@@ -12,6 +12,31 @@
         .section-meta {
           font-size: 24px;
           font-weight: v.$font-weight-bold;
+          @include m.device-375px{
+            font-size: 18px;
+          }
+          @include m.device-320px{
+            font-size: 16px;
+          }
+        }
+        .section-content {
+          .section-title {
+            @include m.nesthub {
+              font-size: 62px;
+            }
+            @include m.sm {
+              font-size: 48px;
+            }
+            @include m.sm {
+              font-size: 36px;
+            }
+            @include m.device-375px{
+              font-size: 28px;
+            }
+            @include m.device-320px{
+              font-size: 24px;
+            }
+          }
         }
       }
     }
@@ -22,6 +47,7 @@
       width: 340px;
       height: 340px;
       @include m.border-radius(50%);
+      overflow: hidden;
 
       img {
         object-fit: cover;
@@ -34,11 +60,23 @@
     .footer-wrap {
       display: flex;
       justify-content: space-between;
+      align-items: center;
+      @include m.device-525px {
+        flex-wrap: wrap;
+      }
+      @include m.device-425px {
+        flex-direction: column;
+        align-items: start;
+      }
       .menu-list {
         ul {
           display: flex;
           align-items: center;
           gap: 20px;
+          @include m.device-425px {
+            flex-direction: column;
+            align-items: start;
+          }
           li {
             a {
               color: v.$gray-800;
@@ -49,6 +87,9 @@
         }
       }
       .shear-media {
+        @include m.device-525px {
+          margin-top: 40px;
+        }
         ul {
           display: flex;
           align-items: center;
@@ -65,9 +106,22 @@
       }
     }
     .footer-copy-list {
-      display: flex;
-      gap: 20;
       float: right;
+      @include m.md {
+        margin-top: 30px;
+        float: inherit;
+        text-align: center;
+      }
+      @include m.sm {
+        margin-top: 30px;
+        float: inherit;
+        text-align: center;
+      }
+      @include m.xs {
+        margin-top: 30px;
+        float: inherit;
+        text-align: center;
+      }
       li {
         font-size: 18px;
         font-weight: v.$font-weight-bold;
@@ -78,10 +132,42 @@
     }
 
     .copyright-area {
+      .copyright-desc {
+        @include m.device-525px {
+          text-align: center;
+        }
+      }
       .footer-copy-list {
         display: flex;
         gap: 20px;
+        @include m.md {
+          display: block;
+          text-align: center;
+        }
+        @include m.sm {
+          display: block;
+          text-align: center;
+        }
+
+        @include m.xs {
+          display: block;
+          text-align: center;
+        }
         li {
+          @include m.md {
+            display: inline-block;
+            margin-left: 20px;
+          }
+          @include m.sm {
+            display: block;
+            display: inline-block;
+            margin-left: 20px;
+          }
+          @include m.xs {
+            display: block;
+            display: inline-block;
+            margin-left: 20px;
+          }
           a {
             color: v.$gray-800;
           }

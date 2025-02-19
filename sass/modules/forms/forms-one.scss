@@ -6,7 +6,15 @@
     padding: 60px 40px;
     background: v.$white;
     @include m.border-radius(20px);
-
+    @include m.md {
+      margin-top: 40px;
+    }
+    @include m.sm {
+      margin-top: 40px;
+    }
+    @include m.xs {
+      margin-top: 40px;
+    }
     .form-content {
       label {
         font-size: 18px;
@@ -27,6 +35,14 @@
         display: flex;
         gap: 30px;
         justify-content: space-between;
+        @include m.device-425px{
+          flex-wrap: wrap;
+        }
+        div{
+          @include m.device-425px{
+            width: 100%;
+          } 
+        }
       }
     }
   }

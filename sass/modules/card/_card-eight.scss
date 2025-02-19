@@ -1,0 +1,61 @@
+@use "../../variables" as v;
+@use "../../mixin" as m;
+
+/*-======== card =======-*/
+.card-wrapper {
+  &.style-eight {
+    .card-item {
+      background: v.$white;
+      padding: 30px;
+      @include m.border-radius(20px);
+      @include m.md {
+        margin-bottom: 30px;
+      }
+      @include m.sm {
+        margin-bottom: 30px;
+      }
+      @include m.xs {
+        margin-bottom: 30px;
+      }
+      .card-content {
+        .section-header {
+          display: flex;
+          justify-content: space-between;
+          align-content: center;
+          gap: 18px;
+          .section-title {
+            font-size: 24px;
+            font-weight: v.$font-weight-bold;
+            flex-basis: 80%;
+            margin-bottom: 20px;
+          }
+          .card-img {
+            flex-basis: 20%;
+            svg {
+              path {
+                fill: v.$primary-color;
+              }
+            }
+          }
+        }
+        .more-btn {
+          display: flex;
+          margin-top: 35px;
+          p {
+            color: v.$gray-900;
+            font-size: 18px;
+            font-weight: v.$font-weight-bold;
+          }
+          svg {
+            width: 21px;
+            height: 21px;
+            margin-left: 10px;
+            path {
+              fill: v.$gray-900;
+            }
+          }
+        }
+      }
+    }
+  }
+}

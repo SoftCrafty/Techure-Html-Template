@@ -66,6 +66,9 @@
                 font-weight: v.$font-weight-medium;
                 line-height: 44px;
                 color: v.$gray-800;
+                @include m.nesthub {
+                  line-height: 40px;
+                }
                 @include m.device-480px {
                   font-size: 22px;
                   line-height: 32px;
