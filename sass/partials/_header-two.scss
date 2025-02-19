@@ -1,0 +1,69 @@
+@use "./variables" as v;
+@use "./mixin" as m;
+
+/*-======== header area =======-*/
+.header-area {
+  &.style-two {
+    border-bottom: 1px solid v.$color-06;
+    padding: 27px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1023;
+    padding: 20px 0;
+    &.header-fixed {
+      background: v.$gray-900;
+    }
+    .menu-wrapper {
+      .main-menu {
+        ul {
+          li {
+            a {
+              color: v.$white;
+            }
+            .dropdown-menu-item {
+              li {
+                a {
+                  color: v.$gray-900;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .bar-btn {
+    width: 50px;
+    height: 50px;
+    background: v.$primary-color;
+    position: relative;
+    @include m.border-radius(50px);
+    cursor: pointer;
+
+    &.style-one {
+      .menu-line {
+        position: absolute;
+        left: 50%;
+        top: 38%;
+        transform: translate(-50%);
+        .bar-line {
+          width: 2px;
+          height: 2px;
+          background: rgb(228, 219, 219);
+          display: block;
+          align-items: center;
+          &.bar-line:nth-child(1) {
+            width: 10px;
+            float: right;
+          }
+          &.bar-line:nth-child(2) {
+            margin-top: 8px;
+            width: 20px;
+          }
+        }
+      }
+    }
+  }
+}

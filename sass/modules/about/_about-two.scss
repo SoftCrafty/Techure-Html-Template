@@ -1,0 +1,61 @@
+@use "../../variables" as v;
+@use "../../mixin" as m;
+/*-======== about-wrapper =======-*/
+.about-wrapper {
+  &.style-two {
+    .about-wrap {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      .about-content {
+        .section-heading {
+          .section-title {
+            font-size: 62px;
+            font-weight: v.$font-weight-bold;
+            line-height: 72px;
+            letter-spacing: -2px;
+          }
+        }
+        .tech-count {
+          display: flex;
+          gap: 20px;
+          align-items: center;
+          padding: 30px 0 40px 0;
+          .coun-title {
+            font-size: 72px;
+            font-weight: v.$font-weight-bold;
+            line-height: 72px;
+            letter-spacing: 8px;
+            -webkit-text-stroke: 1px v.$gray-900;
+            color: v.$white;
+          }
+          .count-sup {
+            font-size: 18px;
+            font-weight: v.$font-weight-medium;
+            color: v.$gray-900;
+          }
+        }
+        .tech-list {
+          ul {
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 10px;
+            li {
+              font-size: 18px;
+              font-weight: v.$font-weight-medium;
+              flex-basis: 50%;
+              margin-top: 20px;
+              color: v.$gray-800;
+              svg {
+                path {
+                  color: v.$primary-color;
+                }
+                margin-right: 6px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+@use "../../variables" as v;
+@use "../../mixin" as m;
+/*-======== slider  =======-*/
+.slider-wrapper {
+  &.style-two {
+    .our-teams-carousel {
+      padding-top: 95px;
+      .owl-stage-outer {
+        .owl-stage {
+          .owl-item {
+          }
+        }
+      }
+
+      .owl-dots {
+        margin-top: 60px !important;
+        .owl-dot {
+          @include m.transition(0.3s);
+          padding: 7px;
+          margin: 0 3px;
+          span {
+            margin: auto;
+            width: 60px !important;
+            height: 10px !important;
+            @include m.border-radius(50px);
+            @include m.transition(0.3s);
+          }
+          &:hover {
+            span {
+              background: v.$primary-color !important;
+            }
+          }
+          &.active {
+            span {
+          
+
+              width: 120px !important;
+              height: 10px !important;
+              background: v.$primary-color !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

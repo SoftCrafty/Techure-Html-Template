@@ -1,0 +1,28 @@
+@use "../../variables" as v;
+@use "../../mixin" as m;
+/*-======== card-seven =======-*/
+.card-wrapper {
+  &.style-seven {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .card-img {
+      position: relative;
+      z-index: 1;
+      img {
+        @include m.border-radius(20px);
+      }
+    }
+    .card-content {
+      position: relative;
+      background: v.$gray-100;
+      padding: 40px;
+      @include m.border-radius(20px);
+      margin-left: -167px;
+      z-index: 2;
+      .section-desc {
+        margin: 30px 0;
+      }
+    }
+  }
+}

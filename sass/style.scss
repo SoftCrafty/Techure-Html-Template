@@ -20,12 +20,14 @@
 
 // header
 @use "./partials/header";
+@use "./partials/header-two";
 // mani-menu
 @use "./partials/main-menu";
 // sidebar
 @use "./partials/menu-sidebar";
 // home-page-one
 @use "./pages/home-one";
+@use "./pages/home-two";
 // video-box
 @use "./modules/video-box/video-box";
 @use "./modules/video-box/video-box-two";
@@ -34,6 +36,7 @@
 // button
 @use "./modules/button/button";
 @use "./modules/button/button-two";
+@use "./modules/button/button-three";
 // counter-box
 @use "./modules/counter/counter-one";
 @use "./modules/counter/counter-two";
@@ -48,21 +51,33 @@
 @use "./modules/card/card-three";
 @use "./modules/card/card-four";
 @use "./modules/card/card-five";
+@use "./modules/card/card-seven";
+@use "./modules/card/card-nine";
+@use "./modules/card/card-ten";
+@use "./modules/card/card-eleven";
 
-// digitally
-@use "./modules/digitally/digitally-one";
+// about
+@use "./modules/about/about-one";
+@use "./modules/about/about-two";
 // modal
 @use "./modules/modal/modal-one";
 // client-logo-box
 @use "./modules/client-logo-box/client-logo-box-one";
+@use "./modules/client-logo-box/client-logo-box-two";
 
 // info-list
 @use "./modules/info-list/info-list-one";
 
-// info-list
+// slider
 @use "./modules/slider/slider-one";
-
+@use "./modules/slider/slider-two";
+@use "./modules/slider/slider-three";
+// form
+@use "./modules/forms/forms-one.scss";
+@use "./modules/chosen/chosen-one";
 // accordion
 @use "./modules/accordion/accordion-one";
+@use "./modules/accordion/accordion-two";
 //footer
 @use "./partials/footer-one";
+@use "./partials/footer-two";

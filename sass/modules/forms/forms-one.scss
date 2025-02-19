@@ -1,0 +1,33 @@
+@use "../../variables" as v;
+@use "../../mixin" as m;
+/*-======== forms =======-*/
+.form-wrapper {
+  &.style-one {
+    padding: 60px 40px;
+    background: v.$white;
+    @include m.border-radius(20px);
+
+    .form-content {
+      label {
+        font-size: 18px;
+        font-weight: v.$font-weight-bold;
+      }
+      .form-control {
+        padding: 16px 30px;
+        border: 1px solid v.$border-color-03;
+        font-size: 18px;
+        font-weight: v.$font-weight-medium;
+        @include m.border-radius(50px);
+        color: v.$gray-800;
+      }
+      .comment {
+        @include m.border-radius(20px !important);
+      }
+      .form-slide {
+        display: flex;
+        gap: 30px;
+        justify-content: space-between;
+      }
+    }
+  }
+}

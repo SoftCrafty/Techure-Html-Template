@@ -3182,6 +3182,8 @@ body {
 p {
   color: #716f73;
   font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
 }
 
 .form-control:focus {
@@ -3221,6 +3223,70 @@ p {
 .header-area.style-one .logo .logo-name {
   font-size: 30px;
   font-weight: 700;
+}
+.header-area .bar-btn {
+  width: 50px;
+  height: 50px;
+  background: #573db8;
+  position: relative;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.header-area .bar-btn.style-one .menu-line {
+  position: absolute;
+  left: 50%;
+  top: 38%;
+  transform: translate(-50%);
+}
+.header-area .bar-btn.style-one .menu-line .bar-line {
+  width: 2px;
+  height: 2px;
+  background: rgb(228, 219, 219);
+  display: block;
+  align-items: center;
+}
+.header-area .bar-btn.style-one .menu-line .bar-line.bar-line:nth-child(1) {
+  width: 10px;
+  float: right;
+}
+.header-area .bar-btn.style-one .menu-line .bar-line.bar-line:nth-child(2) {
+  margin-top: 8px;
+  width: 20px;
+}
+
+/**
+ * Stylesheet:  style.css
+ * Theme:       Technova - IT Startup & Agency HTML5 Template
+ * Version:     1.0
+ * Author:     	BoomDevs
+ * 
+ */
+/* Table of contents
+=========================
+
+===========================*/
+/* Theme Default CSS */
+/*-======== header area =======-*/
+.header-area.style-two {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 27px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1023;
+  padding: 20px 0;
+}
+.header-area.style-two.header-fixed {
+  background: #07000e;
+}
+.header-area.style-two .menu-wrapper .main-menu ul li a {
+  color: #ffffff;
+}
+.header-area.style-two .menu-wrapper .main-menu ul li .dropdown-menu-item li a {
+  color: #07000e;
 }
 .header-area .bar-btn {
   width: 50px;
@@ -3853,6 +3919,274 @@ p {
 
 ===========================*/
 /* Theme Default CSS */
+/*-======== hero area style-two =======-*/
+.hero-area.style-two {
+  background: #07000e;
+}
+.hero-area.style-two .hero-content .hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding-top: 38px;
+}
+.hero-area.style-two .hero-content .hero-section .section-title {
+  font-size: 124px;
+  font-weight: 700;
+  line-height: 127px;
+  color: #ffffff;
+}
+.hero-area.style-two .hero-content .hero-section .hero-img {
+  -webkit-border-radius: 149px;
+  -moz-border-radius: 149px;
+  border-radius: 149px;
+}
+.hero-area.style-two .hero-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-area.style-two .hero-wrap .left {
+  flex-basis: 52%;
+  padding-top: 56px;
+}
+.hero-area.style-two .hero-wrap .hero-desc {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+}
+.hero-area.style-two .hero-wrap .global-client-review {
+  display: flex;
+  gap: 40px;
+  padding-top: 38px;
+}
+.hero-area.style-two .hero-wrap .global-client-review .review-content h4 {
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
+}
+.hero-area.style-two .hero-wrap .global-client-review .review-content h4 .fa-star {
+  color: #8fd45f;
+}
+.hero-area.style-two .hero-wrap .global-client-review .review-content h4 svg {
+  margin-right: 4px;
+}
+.hero-area.style-two .hero-wrap .global-client-review .review-content .review-box {
+  display: flex;
+  gap: 25px;
+}
+.hero-area.style-two .hero-wrap .global-client-review .review-content .review-box .reviwes-icons ul li {
+  display: inline-block;
+  color: #ffb34e;
+  margin-right: 10px;
+}
+.hero-area.style-two .hero-wrap .global-client-review .review-content .review-box .reviwes-icons ul li:nth-child(5) {
+  color: #ececec;
+}
+.hero-area.style-two .hero-wrap .global-client-review .review-content .review-box .reviwes-icons .text-sub {
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+/*-======== lastar-area style-two =======-*/
+.lates-service-area.style-two .count-box-wrapper.style-two {
+  position: relative;
+}
+.lates-service-area.style-two .count-box-wrapper.style-two::after {
+  position: absolute;
+  content: "";
+  top: 67%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: rgb(236, 236, 236);
+  transform: translateY(-50%);
+}
+.lates-service-area.style-two .count-box-wrapper.style-two .counter-item {
+  text-align: center;
+}
+.lates-service-area.style-two .count-box-wrapper.style-two .counter-item::after {
+  display: none;
+}
+.lates-service-area.style-two .count-box-wrapper.style-two .counter-item h2 {
+  padding-bottom: 27px;
+}
+.lates-service-area .card-wrapper.style-eight .card-item {
+  background: #ffffff;
+  padding: 30px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+.lates-service-area .card-wrapper.style-eight .card-item .card-content .section-header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  gap: 18px;
+}
+.lates-service-area .card-wrapper.style-eight .card-item .card-content .section-header .section-title {
+  font-size: 24px;
+  font-weight: 700;
+  flex-basis: 80%;
+  margin-bottom: 20px;
+}
+.lates-service-area .card-wrapper.style-eight .card-item .card-content .section-header .card-img {
+  flex-basis: 20%;
+}
+.lates-service-area .card-wrapper.style-eight .card-item .card-content .section-header .card-img svg path {
+  fill: #573db8;
+}
+.lates-service-area .card-wrapper.style-eight .card-item .card-content .more-btn {
+  display: flex;
+  margin-top: 35px;
+}
+.lates-service-area .card-wrapper.style-eight .card-item .card-content .more-btn p {
+  color: #07000e;
+  font-size: 18px;
+  font-weight: 700;
+}
+.lates-service-area .card-wrapper.style-eight .card-item .card-content .more-btn svg {
+  width: 21px;
+  height: 21px;
+  margin-left: 10px;
+}
+.lates-service-area .card-wrapper.style-eight .card-item .card-content .more-btn svg path {
+  fill: #07000e;
+}
+
+/*-======== wrok-process-area =======-*/
+.work-process-area {
+  background: #f7f1fc;
+}
+.work-process-area .section-header.style-two {
+  border-top: 1px solid #cdcccf;
+  padding-top: 20px;
+}
+.work-process-area .section-header.style-two .section-content .section-title {
+  flex-basis: 63%;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .work-process-area .section-header.style-two .section-content .section-title {
+    flex-basis: 100%;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .work-process-area .section-header.style-two .section-content .section-title {
+    flex-basis: 100%;
+  }
+}
+.work-process-area .section-header.style-two .section-content .theme-btn {
+  flex-basis: 37%;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .work-process-area .section-header.style-two .section-content .theme-btn {
+    flex-basis: 100%;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .work-process-area .section-header.style-two .section-content .theme-btn {
+    flex-basis: 100%;
+  }
+}
+
+/*-======== clients-rivews-area =======-*/
+.clients-rivews-area .slider-wrapper .slider-carousel .slider-img {
+  padding-top: 24px;
+}
+.clients-rivews-area .slider-wrapper .slider-carousel .slider-img img {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+
+/*-======== faq-area  style-two=======-*/
+.faq-area.style-two .accordion-wrapper {
+  padding-right: 30px;
+}
+.faq-area.style-two .faq-img {
+  padding-left: 30px;
+}
+.faq-area.style-two .faq-img img {
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+
+/*-======== client-logo-area  style-two=======-*/
+.client-area.style-two {
+  position: relative;
+  background-image: url("../images/bg-img-01.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-size: cover;
+  background-position: center;
+}
+.client-area.style-two::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #07000e;
+  opacity: 0.7;
+}
+.client-area.style-two .client-logo-wrapper {
+  position: relative;
+  z-index: 1;
+}
+.client-area.style-two .client-content-wrapper {
+  padding-top: 245px;
+  position: relative;
+  z-index: 1;
+}
+.client-area.style-two .client-content-wrapper .client-content .section-header .section-title {
+  color: #ffffff;
+}
+.client-area.style-two .client-content-wrapper .client-content .section-header .section-desc {
+  color: #ffffff;
+}
+.client-area.style-two .client-content-wrapper .client-content-wrap {
+  width: 680px;
+  margin-left: auto;
+}
+.client-area.style-two .client-content-wrapper .client-content-wrap .section-header .section-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 41px;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+.client-area.style-two .client-content-wrapper .client-content-wrap .section-header .section-desc {
+  color: #ffffff;
+  line-height: 29px;
+}
+
+/*-======== new-blogs-area  style-two=======-*/
+.new-blog-area.style-two {
+  background: #f7f1fc;
+}
+
+/**
+ * Stylesheet:  style.css
+ * Theme:       Technova - IT Startup & Agency HTML5 Template
+ * Version:     1.0
+ * Author:     	BoomDevs
+ * 
+ */
+/* Table of contents
+=========================
+
+===========================*/
+/* Theme Default CSS */
 /*-======== video-box =======-*/
 .video-box.style-one {
   position: relative;
@@ -4154,6 +4488,48 @@ p {
 
 ===========================*/
 /* Theme Default CSS */
+/*-======== theme-btn two =======-*/
+.theme-btn.style-three {
+  width: 100%;
+  background: #8fd45f;
+  color: #07000e;
+  font-size: 18px;
+  font-weight: 700;
+  border: initial;
+  line-height: 18px;
+}
+.theme-btn.style-three:nth-child(1) {
+  padding: 21px 30px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  border: 1px solid rgba(7, 0, 14, 0.2);
+}
+@media (max-width: 320px) {
+  .theme-btn.style-three:nth-child(1) {
+    padding: 2px 20px;
+  }
+}
+.theme-btn.style-three svg {
+  width: 26px;
+  height: 26px;
+}
+.theme-btn.style-three svg path {
+  fill: #07000e;
+}
+
+/**
+ * Stylesheet:  style.css
+ * Theme:       Technova - IT Startup & Agency HTML5 Template
+ * Version:     1.0
+ * Author:     	BoomDevs
+ * 
+ */
+/* Table of contents
+=========================
+
+===========================*/
+/* Theme Default CSS */
 /*-======== counter box =======-*/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .count-box-wrapper.style-one {
@@ -4203,6 +4579,7 @@ p {
 .count-box-wrapper.style-two {
   display: flex;
   justify-content: space-between;
+  gap: 180px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .count-box-wrapper.style-two {
@@ -4222,8 +4599,6 @@ p {
 .count-box-wrapper.style-two .counter-item {
   width: 300px;
   position: relative;
-  align-items: end;
-  text-align: end;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .count-box-wrapper.style-two .counter-item {
@@ -4585,13 +4960,12 @@ p {
   font-weight: 500;
 }
 .card-wrapper.style-one .card-item .card-content .more-btn {
-  font-size: 18px;
-  font-weight: 700;
   display: flex;
-  color: #07000e;
   margin-top: 35px;
 }
 .card-wrapper.style-one .card-item .card-content .more-btn p {
+  font-size: 18px;
+  font-weight: 700;
   color: #07000e;
 }
 .card-wrapper.style-one .card-item .card-content .more-btn svg {
@@ -5127,8 +5501,294 @@ p {
 
 ===========================*/
 /* Theme Default CSS */
-/*-======== digitally-wrapper =======-*/
-.digitally-wrapper.style-one {
+/*-======== card-seven =======-*/
+.card-wrapper.style-seven {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-wrapper.style-seven .card-img {
+  position: relative;
+  z-index: 1;
+}
+.card-wrapper.style-seven .card-img img {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+.card-wrapper.style-seven .card-content {
+  position: relative;
+  background: #f7f1fc;
+  padding: 40px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  margin-left: -167px;
+  z-index: 2;
+}
+.card-wrapper.style-seven .card-content .section-desc {
+  margin: 30px 0;
+}
+
+/**
+ * Stylesheet:  style.css
+ * Theme:       Technova - IT Startup & Agency HTML5 Template
+ * Version:     1.0
+ * Author:     	BoomDevs
+ * 
+ */
+/* Table of contents
+=========================
+
+===========================*/
+/* Theme Default CSS */
+/*-======== card =======-*/
+.card-wrapper.style-nine .card-item {
+  position: relative;
+}
+.card-wrapper.style-nine .card-item .card-img {
+  background: #ffffff;
+  padding: 42px 42px 0px 42px;
+  position: relative;
+  display: flex;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  width: 410px;
+  height: 413px;
+}
+.card-wrapper.style-nine .card-item .card-img .media-wrapper {
+  position: absolute;
+  right: 20px;
+  bottom: -4px;
+}
+.card-wrapper.style-nine .card-item .card-img .media-wrapper .media-wrap {
+  position: relative;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  cursor: pointer;
+  font-size: 16px;
+  background: #f7f1fc;
+  border: 1px solid #ffffff;
+  text-align: center;
+  margin-bottom: -20px;
+  margin-top: 10px;
+}
+.card-wrapper.style-nine .card-item .card-img .media-wrapper .media-wrap-overflow {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: -42px;
+}
+.card-wrapper.style-nine .card-item .card-img .media-wrapper .media-wrap-overflow .shear-media {
+  padding: 10px 0;
+  width: 40px;
+  background: #573db8;
+  text-align: center;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  font-size: 16px;
+  opacity: 0;
+  transform: translateY(100%);
+  height: 0px;
+  margin-bottom: 42px;
+}
+.card-wrapper.style-nine .card-item .card-img .media-wrapper:hover .shear-media {
+  transform: translateY(0%);
+  opacity: 1;
+  height: 100%;
+}
+.card-wrapper.style-nine .card-item .card-img .media-wrapper:hover .shear-media ul {
+  height: 100%;
+}
+.card-wrapper.style-nine .card-item .card-img .media-wrapper ul li {
+  padding-top: 20px;
+}
+.card-wrapper.style-nine .card-item .card-img .media-wrapper ul li a {
+  color: #ffffff;
+}
+.card-wrapper.style-nine .card-content .section-heading .section-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #07000e;
+  padding: 20px 0 10px 0;
+}
+.card-wrapper.style-nine .card-content .section-heading .section-desc {
+  font-size: 18px;
+  font-weight: 500;
+  color: #716f73;
+}
+
+/**
+ * Stylesheet:  style.css
+ * Theme:       Technova - IT Startup & Agency HTML5 Template
+ * Version:     1.0
+ * Author:     	BoomDevs
+ * 
+ */
+/* Table of contents
+=========================
+
+===========================*/
+/* Theme Default CSS */
+/*-======== card =======-*/
+.card-wrapper.style-ten .card-item {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+.card-wrapper.style-ten .card-item .card-img {
+  flex-basis: 50%;
+}
+.card-wrapper.style-ten .card-item .card-img img {
+  width: 100%;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+.card-wrapper.style-ten .card-item .card-content {
+  margin-left: auto;
+}
+.card-wrapper.style-ten .card-item .card-content .card-date-btn {
+  display: flex;
+  gap: 40px;
+}
+.card-wrapper.style-ten .card-item .card-content .card-date-btn a {
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.card-wrapper.style-ten .card-item .card-content .card-date-btn a .theme-btn {
+  background: #ffffff;
+  color: #716f73;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 16px 30px;
+  border: 0;
+}
+.card-wrapper.style-ten .card-item .card-content .card-date-btn a .theme-btn:hover {
+  color: #07000e;
+}
+.card-wrapper.style-ten .card-item .card-content .card-title {
+  font-size: 24px;
+  font-weight: 700;
+  padding-top: 20px;
+}
+
+/**
+ * Stylesheet:  style.css
+ * Theme:       Technova - IT Startup & Agency HTML5 Template
+ * Version:     1.0
+ * Author:     	BoomDevs
+ * 
+ */
+/* Table of contents
+=========================
+
+===========================*/
+/* Theme Default CSS */
+/*-======== client-box =======-*/
+.card-wrapper.style-eleven .card-item {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+.card-wrapper.style-eleven .card-item .card-img {
+  position: relative;
+  padding: 10px 10px 0px 10px;
+}
+.card-wrapper.style-eleven .card-item .card-img img {
+  width: 100%;
+  position: relative;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+.card-wrapper.style-eleven .card-item .card-content {
+  position: relative;
+  z-index: 1;
+  background: #ffffff;
+  margin-top: -105px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 20px 30px 30px 30px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+.card-wrapper.style-eleven .card-item .card-content .card-sub ul li {
+  display: inline-block;
+  margin-right: 8px;
+}
+.card-wrapper.style-eleven .card-item .card-content .card-sub ul li svg {
+  width: 18px;
+  height: 18px;
+}
+.card-wrapper.style-eleven .card-item .card-content .card-sub ul li svg path {
+  fill: #573db8;
+}
+.card-wrapper.style-eleven .card-item .card-content .card-sub ul li span {
+  font-size: 12px;
+  font-weight: 400;
+  margin-left: 5px;
+  color: #716f73;
+}
+.card-wrapper.style-eleven .card-item .card-content .card-heading {
+  padding-top: 20px;
+}
+.card-wrapper.style-eleven .card-item .card-content .card-heading .card-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 34px;
+}
+.card-wrapper.style-eleven .card-item .card-content .more-btn {
+  color: #07000e;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.card-wrapper.style-eleven .card-item .card-content .more-btn p {
+  color: #07000e;
+  font-size: 18px;
+  font-weight: 700;
+}
+.card-wrapper.style-eleven .card-item .card-content .more-btn svg path {
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+/**
+ * Stylesheet:  style.css
+ * Theme:       Technova - IT Startup & Agency HTML5 Template
+ * Version:     1.0
+ * Author:     	BoomDevs
+ * 
+ */
+/* Table of contents
+=========================
+
+===========================*/
+/* Theme Default CSS */
+/*-======== about-wrapper =======-*/
+.about-wrapper.style-one {
   background: #ffffff;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -5136,59 +5796,59 @@ p {
   padding: 0 80px 80px 80px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
-  .digitally-wrapper.style-one {
+  .about-wrapper.style-one {
     padding: 0 30px 30px 30px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 576px) {
-  .digitally-wrapper.style-one {
+  .about-wrapper.style-one {
     padding: 0 30px 30px 30px;
   }
 }
-.digitally-wrapper.style-one .driver-wrap {
+.about-wrapper.style-one .about-wrap {
   display: flex;
   gap: 30px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .digitally-wrapper.style-one .driver-wrap {
+  .about-wrapper.style-one .about-wrap {
     flex-wrap: wrap;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .digitally-wrapper.style-one .driver-wrap {
+  .about-wrapper.style-one .about-wrap {
     flex-wrap: wrap;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .digitally-wrapper.style-one .driver-wrap {
+  .about-wrapper.style-one .about-wrap {
     flex-wrap: wrap;
   }
 }
-.digitally-wrapper.style-one .driver-wrap .driver-img {
+.about-wrapper.style-one .about-wrap .about-img {
   margin-top: -113px;
   height: 100%;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .digitally-wrapper.style-one .driver-wrap .driver-img {
+  .about-wrapper.style-one .about-wrap .about-img {
     width: 100%;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .digitally-wrapper.style-one .driver-wrap .driver-img img {
+  .about-wrapper.style-one .about-wrap .about-img img {
     width: 100%;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .digitally-wrapper.style-one .driver-wrap .driver-img img {
+  .about-wrapper.style-one .about-wrap .about-img img {
     width: 100%;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .digitally-wrapper.style-one .driver-wrap .driver-img img {
+  .about-wrapper.style-one .about-wrap .about-img img {
     width: 100%;
   }
 }
-.digitally-wrapper.style-one .driver-wrap .driver-support {
+.about-wrapper.style-one .about-wrap .about-support {
   display: flex;
   gap: 20px;
   background: #f7f1fc;
@@ -5200,49 +5860,111 @@ p {
   margin-top: -65px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .digitally-wrapper.style-one .driver-wrap .driver-support {
+  .about-wrapper.style-one .about-wrap .about-support {
     width: 75%;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .digitally-wrapper.style-one .driver-wrap .driver-support {
+  .about-wrapper.style-one .about-wrap .about-support {
     width: 90%;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .digitally-wrapper.style-one .driver-wrap .driver-support {
+  .about-wrapper.style-one .about-wrap .about-support {
     width: 100%;
   }
 }
 @media (max-width: 425px) {
-  .digitally-wrapper.style-one .driver-wrap .driver-support {
+  .about-wrapper.style-one .about-wrap .about-support {
     flex-wrap: wrap;
   }
 }
-.digitally-wrapper.style-one .driver-wrap .driver-support .info-box .info-header {
+.about-wrapper.style-one .about-wrap .about-support .info-box .info-header {
   display: flex;
   gap: 6px;
   align-items: center;
   text-align: center;
   margin-bottom: 15px;
 }
-.digitally-wrapper.style-one .driver-wrap .driver-support .info-box .info-header .info-title {
+.about-wrapper.style-one .about-wrap .about-support .info-box .info-header .info-title {
   font-size: 18px;
   font-weight: 700;
   color: #07000e;
 }
-.digitally-wrapper.style-one .driver-wrap .driver-support .info-box .info-header svg path {
+.about-wrapper.style-one .about-wrap .about-support .info-box .info-header svg path {
   fill: #573db8;
 }
-.digitally-wrapper.style-one .driver-wrap .driver-support .info-box .info-desc {
+.about-wrapper.style-one .about-wrap .about-support .info-box .info-desc {
   font-size: 14px;
   font-weight: 500;
   line-height: 22px;
 }
-.digitally-wrapper.style-one .driver-wrap ul li {
+.about-wrapper.style-one .about-wrap ul li {
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 20px;
+}
+
+/**
+ * Stylesheet:  style.css
+ * Theme:       Technova - IT Startup & Agency HTML5 Template
+ * Version:     1.0
+ * Author:     	BoomDevs
+ * 
+ */
+/* Table of contents
+=========================
+
+===========================*/
+/* Theme Default CSS */
+/*-======== about-wrapper =======-*/
+.about-wrapper.style-two .about-wrap {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.about-wrapper.style-two .about-wrap .about-content .section-heading .section-title {
+  font-size: 62px;
+  font-weight: 700;
+  line-height: 72px;
+  letter-spacing: -2px;
+}
+.about-wrapper.style-two .about-wrap .about-content .tech-count {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 30px 0 40px 0;
+}
+.about-wrapper.style-two .about-wrap .about-content .tech-count .coun-title {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 72px;
+  letter-spacing: 8px;
+  -webkit-text-stroke: 1px #07000e;
+  color: #ffffff;
+}
+.about-wrapper.style-two .about-wrap .about-content .tech-count .count-sup {
+  font-size: 18px;
+  font-weight: 500;
+  color: #07000e;
+}
+.about-wrapper.style-two .about-wrap .about-content .tech-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 10px;
+}
+.about-wrapper.style-two .about-wrap .about-content .tech-list ul li {
+  font-size: 18px;
+  font-weight: 500;
+  flex-basis: 50%;
+  margin-top: 20px;
+  color: #716f73;
+}
+.about-wrapper.style-two .about-wrap .about-content .tech-list ul li svg {
+  margin-right: 6px;
+}
+.about-wrapper.style-two .about-wrap .about-content .tech-list ul li svg path {
+  color: #573db8;
 }
 
 /**
@@ -5382,6 +6104,63 @@ video {
 
 ===========================*/
 /* Theme Default CSS */
+/*-======== client-logo-box =======-*/
+.client-logo-wrapper.style-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 110px;
+  padding: 58px 60px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .client-logo-wrapper.style-two {
+    gap: 58px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .client-logo-wrapper.style-two {
+    gap: 40px;
+    justify-content: center;
+    padding: 40px;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .client-logo-wrapper.style-two {
+    gap: 40px;
+    justify-content: center;
+    padding: 40px;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .client-logo-wrapper.style-two {
+    gap: 40px;
+    justify-content: center;
+    padding: 40px;
+    flex-wrap: wrap;
+  }
+}
+.client-logo-wrapper.style-two svg path {
+  fill: #ffffff;
+}
+
+/**
+ * Stylesheet:  style.css
+ * Theme:       Technova - IT Startup & Agency HTML5 Template
+ * Version:     1.0
+ * Author:     	BoomDevs
+ * 
+ */
+/* Table of contents
+=========================
+
+===========================*/
+/* Theme Default CSS */
 /*-======== info-list  =======-*/
 .info-list-wrapper.style-one {
   height: 100%;
@@ -5494,6 +6273,7 @@ video {
 }
 .testimonial-wrapper.style-one .testimonial-carousel .owl-dots {
   margin-top: 60px !important;
+  height: 50px;
 }
 .testimonial-wrapper.style-one .testimonial-carousel .owl-dots .owl-dot {
   -webkit-transition: all 0.3s;
@@ -5530,6 +6310,297 @@ video {
   width: 18px !important;
   height: 18px !important;
   background: #573db8 !important;
+}
+
+/**
+ * Stylesheet:  style.css
+ * Theme:       Technova - IT Startup & Agency HTML5 Template
+ * Version:     1.0
+ * Author:     	BoomDevs
+ * 
+ */
+/* Table of contents
+=========================
+
+===========================*/
+/* Theme Default CSS */
+/*-======== slider  =======-*/
+.slider-wrapper.style-two .our-teams-carousel {
+  padding-top: 95px;
+}
+.slider-wrapper.style-two .our-teams-carousel .owl-dots {
+  margin-top: 60px !important;
+}
+.slider-wrapper.style-two .our-teams-carousel .owl-dots .owl-dot {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  padding: 7px;
+  margin: 0 3px;
+}
+.slider-wrapper.style-two .our-teams-carousel .owl-dots .owl-dot span {
+  margin: auto;
+  width: 60px !important;
+  height: 10px !important;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.slider-wrapper.style-two .our-teams-carousel .owl-dots .owl-dot:hover span {
+  background: #573db8 !important;
+}
+.slider-wrapper.style-two .our-teams-carousel .owl-dots .owl-dot.active span {
+  width: 120px !important;
+  height: 10px !important;
+  background: #573db8 !important;
+}
+
+/**
+ * Stylesheet:  style.css
+ * Theme:       Technova - IT Startup & Agency HTML5 Template
+ * Version:     1.0
+ * Author:     	BoomDevs
+ * 
+ */
+/* Table of contents
+=========================
+
+===========================*/
+/* Theme Default CSS */
+/*-======== slider  =======-*/
+.slider-wrapper.style-three .slider-carousel .owl-stage-outer .owl-stage .owl-item .slider-item {
+  background: #ffffff;
+  padding: 40px 60px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+@media (max-width: 480px) {
+  .slider-wrapper.style-three .slider-carousel .owl-stage-outer .owl-stage .owl-item .slider-item {
+    padding: 30px;
+  }
+}
+.slider-wrapper.style-three .slider-carousel .owl-stage-outer .owl-stage .owl-item .slider-item .client-heading .client-info .client-profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.slider-wrapper.style-three .slider-carousel .owl-stage-outer .owl-stage .owl-item .slider-item .client-heading .client-info .client-profile .client-title {
+  font-weight: 700;
+  font-size: 24px;
+}
+.slider-wrapper.style-three .slider-carousel .owl-stage-outer .owl-stage .owl-item .slider-item .client-heading .client-info .client-profile .client-decs {
+  font-weight: 500;
+}
+@media (max-width: 425px) {
+  .slider-wrapper.style-three .slider-carousel .owl-stage-outer .owl-stage .owl-item .slider-item .client-heading .client-info .quoto-right {
+    width: 50px;
+  }
+}
+@media (max-width: 375px) {
+  .slider-wrapper.style-three .slider-carousel .owl-stage-outer .owl-stage .owl-item .slider-item .client-heading .client-info .quoto-right {
+    width: 40px;
+  }
+}
+.slider-wrapper.style-three .slider-carousel .owl-stage-outer .owl-stage .owl-item .slider-item .reviwes-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.slider-wrapper.style-three .slider-carousel .owl-stage-outer .owl-stage .owl-item .slider-item .reviwes-icons ul li {
+  display: inline-block;
+  color: #ffb34e;
+  margin-right: 10px;
+}
+.slider-wrapper.style-three .slider-carousel .owl-stage-outer .owl-stage .owl-item .slider-item .reviwes-icons ul li:nth-child(5) {
+  color: #ececec;
+}
+.slider-wrapper.style-three .slider-carousel .owl-stage-outer .owl-stage .owl-item .slider-item .reviwes-icons .quote-right-img {
+  width: 60px;
+  height: 60px;
+}
+.slider-wrapper.style-three .slider-carousel .owl-stage-outer .owl-stage .owl-item .slider-item .reviwes-icons .quote-right-img path {
+  stroke: #8fd45f;
+}
+.slider-wrapper.style-three .slider-carousel .owl-stage-outer .owl-stage .owl-item .slider-item .client-comment {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 44px;
+  color: #716f73;
+}
+@media (max-width: 480px) {
+  .slider-wrapper.style-three .slider-carousel .owl-stage-outer .owl-stage .owl-item .slider-item .client-comment {
+    font-size: 22px;
+    line-height: 32px;
+  }
+}
+.slider-wrapper.style-three .slider-carousel .owl-stage-outer .owl-stage .owl-item.active .slider-item {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  border: 1px solid #8fd45f;
+}
+.slider-wrapper.style-three .slider-carousel .owl-dots {
+  margin-top: 60px !important;
+  height: 50px;
+}
+.slider-wrapper.style-three .slider-carousel .owl-dots .owl-dot {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  padding: 7px;
+  margin: 0 3px;
+}
+.slider-wrapper.style-three .slider-carousel .owl-dots .owl-dot span {
+  margin: auto;
+  width: 15px !important;
+  height: 15px !important;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.slider-wrapper.style-three .slider-carousel .owl-dots .owl-dot:hover span {
+  background: #573db8 !important;
+}
+.slider-wrapper.style-three .slider-carousel .owl-dots .owl-dot.active {
+  border: 1px solid #573db8;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.slider-wrapper.style-three .slider-carousel .owl-dots .owl-dot.active span {
+  width: 18px !important;
+  height: 18px !important;
+  background: #573db8 !important;
+}
+
+/**
+ * Stylesheet:  style.css
+ * Theme:       Technova - IT Startup & Agency HTML5 Template
+ * Version:     1.0
+ * Author:     	BoomDevs
+ * 
+ */
+/* Table of contents
+=========================
+
+===========================*/
+/* Theme Default CSS */
+/*-======== forms =======-*/
+.form-wrapper.style-one {
+  padding: 60px 40px;
+  background: #ffffff;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+.form-wrapper.style-one .form-content label {
+  font-size: 18px;
+  font-weight: 700;
+}
+.form-wrapper.style-one .form-content .form-control {
+  padding: 16px 30px;
+  border: 1px solid #cdcccf;
+  font-size: 18px;
+  font-weight: 500;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  color: #716f73;
+}
+.form-wrapper.style-one .form-content .comment {
+  -webkit-border-radius: 20px !important;
+  -moz-border-radius: 20px !important;
+  border-radius: 20px !important;
+}
+.form-wrapper.style-one .form-content .form-slide {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+/**
+ * Stylesheet:  style.css
+ * Theme:       Technova - IT Startup & Agency HTML5 Template
+ * Version:     1.0
+ * Author:     	BoomDevs
+ * 
+ */
+/* Table of contents
+=========================
+
+===========================*/
+/* Theme Default CSS */
+/*================= Chosen select ====================*/
+.chosen-container {
+  width: 100% !important;
+}
+.chosen-container .chosen-single {
+  height: 60px !important;
+  line-height: 60px !important;
+  font-size: 18px !important;
+  font-weight: 500;
+  padding-left: 11px !important;
+  border-color: #cdcccf !important;
+  -webkit-border-radius: 50px !important;
+  -moz-border-radius: 50px !important;
+  border-radius: 50px !important;
+  background: #ffffff !important;
+}
+.chosen-container .chosen-single span {
+  color: #716f73;
+}
+.chosen-container .chosen-single div b {
+  display: block;
+  width: 16px !important;
+  height: 100% !important;
+  background-size: 16px 16px !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+.chosen-container.chosen-container-single .chosen-search input[type=text] {
+  padding: 10px 30px !important;
+  -webkit-border-radius: 5px !important;
+  -moz-border-radius: 5px !important;
+  border-radius: 5px !important;
+}
+.chosen-container.chosen-container-active.chosen-with-drop .chosen-single {
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  border-top-left-radius: 5px !important;
+  border-top-right-radius: 5px !important;
+  background: #ffffff !important;
+}
+.chosen-container.chosen-container-active.chosen-with-drop .chosen-single div b {
+  display: block !important;
+  width: 16px !important;
+  height: 100% !important;
+  background: url("../images/chose-sprite-dwon.png");
+  background-size: 11px 11px !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+.chosen-container .chosen-results li {
+  padding: 11px 10px !important;
+}
+.chosen-container .chosen-results li.active-result {
+  font-size: 18px;
+  font-weight: 500;
 }
 
 /**
@@ -5660,6 +6731,74 @@ video {
 .accordion-wrapper.style-one .faq-img img {
   width: 100%;
   height: 100%;
+}
+
+/**
+ * Stylesheet:  style.css
+ * Theme:       Technova - IT Startup & Agency HTML5 Template
+ * Version:     1.0
+ * Author:     	BoomDevs
+ * 
+ */
+/* Table of contents
+=========================
+
+===========================*/
+/* Theme Default CSS */
+/*-======== accordion =======-*/
+.accordion-wrapper.style-two {
+  position: relative;
+}
+.accordion-wrapper.style-two .faq-wrap {
+  color: #07000e !important;
+}
+@media (max-width: 425px) {
+  .accordion-wrapper.style-two .faq-wrap {
+    padding: 30px;
+  }
+}
+.accordion-wrapper.style-two .faq-wrap .section-header .section-title {
+  color: #07000e !important;
+}
+.accordion-wrapper.style-two .faq-wrap .accordion .faq-item.card {
+  background: none;
+  border-radius: 0;
+  border: 0;
+  border-bottom: 1px solid #cdcccf;
+}
+.accordion-wrapper.style-two .faq-wrap .accordion .faq-item .faq-header button {
+  background: initial;
+  border: none;
+  color: #07000e;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  padding-bottom: 15px;
+}
+.accordion-wrapper.style-two .faq-wrap .accordion .faq-item .faq-header button.them-btn[aria-expanded=true] .faq-icon i::before {
+  content: "\f068";
+}
+.accordion-wrapper.style-two .faq-wrap .accordion .faq-item .faq-header button .faq-icon {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background: #ffffff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.accordion-wrapper.style-two .faq-wrap .accordion .faq-item .accordion-collapse .faq-body {
+  padding-bottom: 15px;
+}
+.accordion-wrapper.style-two .faq-wrap .accordion .faq-item .accordion-collapse .faq-body .faq-desc {
+  color: #07000e;
 }
 
 /**
@@ -5852,4 +6991,94 @@ video {
   font-weight: 500;
   display: inline-block;
   margin-right: 20px;
+}
+
+/**
+ * Stylesheet:  style.css
+ * Theme:       Technova - IT Startup & Agency HTML5 Template
+ * Version:     1.0
+ * Author:     	BoomDevs
+ * 
+ */
+/* Table of contents
+=========================
+
+===========================*/
+/* Theme Default CSS */
+/*-======== footer-area  style-two=======-*/
+.footer-area.style-two {
+  position: relative;
+  z-index: 1;
+}
+.footer-area.style-two .section-header.style-two {
+  border-bottom: 1px solid #cdcccf;
+}
+.footer-area.style-two .section-header.style-two .section-meta {
+  font-size: 24px;
+  font-weight: 700;
+}
+.footer-area.style-two .overlay {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 340px;
+  height: 340px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.footer-area.style-two .overlay img {
+  object-fit: cover;
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+.footer-area.style-two .footer-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-area.style-two .footer-wrap .menu-list ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footer-area.style-two .footer-wrap .menu-list ul li a {
+  color: #716f73;
+  font-weight: 400;
+  font-size: 18px;
+}
+.footer-area.style-two .footer-wrap .shear-media ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footer-area.style-two .footer-wrap .shear-media ul li {
+  width: 38px;
+  height: 38px;
+  background: #ffffff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  line-height: 38px;
+  text-align: center;
+}
+.footer-area.style-two .footer-copy-list {
+  display: flex;
+  gap: 20;
+  float: right;
+}
+.footer-area.style-two .footer-copy-list li {
+  font-size: 18px;
+  font-weight: 700;
+}
+.footer-area.style-two .footer-copy-list li a {
+  color: #716f73;
+}
+.footer-area.style-two .copyright-area .footer-copy-list {
+  display: flex;
+  gap: 20px;
+}
+.footer-area.style-two .copyright-area .footer-copy-list li a {
+  color: #716f73;
 }

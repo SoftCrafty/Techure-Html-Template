@@ -1,0 +1,294 @@
+@use "./variables" as v;
+@use "./mixin" as m;
+/*-======== hero area style-two =======-*/
+.hero-area {
+  &.style-two {
+    background: v.$gray-900;
+    .hero-content {
+      .hero-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+        padding-top: 38px;
+
+        .section-title {
+          font-size: 124px;
+          font-weight: v.$font-weight-bold;
+          line-height: 127px;
+          color: v.$white;
+        }
+        .hero-img {
+          @include m.border-radius(149px);
+        }
+      }
+    }
+    .hero-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .left {
+        flex-basis: 52%;
+        padding-top: 56px;
+      }
+      .hero-desc {
+        font-weight: v.$font-weight-medium;
+        font-size: 18px;
+        line-height: 28px;
+        color: v.$white;
+      }
+      .global-client-review {
+        display: flex;
+        gap: 40px;
+        padding-top: 38px;
+        .review-content {
+          h4 {
+            font-weight: v.$font-weight-bold;
+            font-size: 18px;
+            color: v.$white;
+            .fa-star {
+              color: v.$secondary;
+            }
+            svg {
+              margin-right: 4px;
+            }
+          }
+          .review-box {
+            display: flex;
+            gap: 25px;
+            .user-client {
+            }
+            .reviwes-icons {
+              ul {
+                li {
+                  display: inline-block;
+                  color: v.$color-3;
+                  margin-right: 10px;
+                  &:nth-child(5) {
+                    color: v.$gray-200;
+                  }
+                }
+              }
+              .text-sub {
+                font-size: 14px;
+                font-weight: v.$font-weight-regular;
+                color: v.$white;
+                margin-top: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*-======== lastar-area style-two =======-*/
+.lates-service-area {
+  &.style-two {
+    .count-box-wrapper {
+      &.style-two {
+        position: relative;
+        &::after {
+          position: absolute;
+          content: "";
+          top: 67%;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background: v.$color-07;
+          @include m.transform(translateY(-50%));
+        }
+        .counter-item {
+          text-align: center;
+          &::after {
+            display: none;
+          }
+          h2 {
+            padding-bottom: 27px;
+          }
+        }
+      }
+    }
+  }
+  // card-eigth
+  .card-wrapper {
+    &.style-eight {
+      .card-item {
+        background: v.$white;
+        padding: 30px;
+        @include m.border-radius(20px);
+
+        .card-content {
+          .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            gap: 18px;
+            .section-title {
+              font-size: 24px;
+              font-weight: v.$font-weight-bold;
+              flex-basis: 80%;
+              margin-bottom: 20px;
+            }
+            .card-img {
+              flex-basis: 20%;
+              svg {
+                path {
+                  fill: v.$primary-color;
+                }
+              }
+            }
+          }
+          .more-btn {
+            display: flex;
+            margin-top: 35px;
+            p {
+              color: v.$gray-900;
+              font-size: 18px;
+              font-weight: v.$font-weight-bold;
+            }
+            svg {
+              width: 21px;
+              height: 21px;
+              margin-left: 10px;
+              path {
+                fill: v.$gray-900;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*-======== wrok-process-area =======-*/
+
+.work-process-area {
+  background: v.$gray-100;
+  .section-header {
+    &.style-two {
+      border-top: 1px solid v.$border-color-03;
+      padding-top: 20px;
+      .section-content {
+        .section-title {
+          flex-basis: 63%;
+          @include m.md {
+            flex-basis: 100%;
+          }
+          @include m.sm {
+            flex-basis: 100%;
+          }
+        }
+        .theme-btn {
+          flex-basis: 37%;
+          @include m.md {
+            flex-basis: 100%;
+          }
+          @include m.sm {
+            flex-basis: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+/*-======== clients-rivews-area =======-*/
+
+.clients-rivews-area {
+  .slider-wrapper {
+    .slider-carousel {
+      .slider-img {
+        padding-top: 24px;
+        img {
+          @include m.border-radius(20px);
+        }
+      }
+    }
+  }
+}
+
+/*-======== faq-area  style-two=======-*/
+.faq-area {
+  &.style-two {
+    .accordion-wrapper {
+      padding-right: 30px;
+    }
+    .faq-img {
+      padding-left: 30px;
+      img {
+        width: 100%;
+        height: 100%;
+        @include m.border-radius(20px);
+      }
+    }
+  }
+}
+/*-======== client-logo-area  style-two=======-*/
+.client-area {
+  &.style-two {
+    position: relative;
+    background-image: url("../images/bg-img-01.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-size: cover;
+    background-position: center;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: v.$gray-900;
+      opacity: 0.7;
+    }
+    .client-logo-wrapper {
+      position: relative;
+      z-index: 1;
+    }
+    .client-content-wrapper {
+      padding-top: 245px;
+      position: relative;
+      z-index: 1;
+      .client-content {
+        .section-header {
+          .section-title {
+            color: v.$white;
+          }
+          .section-desc {
+            color: v.$white;
+          }
+        }
+      }
+      .client-content-wrap {
+        width: 680px;
+        margin-left: auto;
+        .section-header {
+          .section-title {
+            font-weight: v.$font-weight-bold;
+            font-size: 32px;
+            line-height: 41px;
+            color: v.$white;
+            letter-spacing: 2px;
+          }
+          .section-desc {
+            color: v.$white;
+            line-height: 29px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*-======== new-blogs-area  style-two=======-*/
+.new-blog-area {
+  &.style-two {
+    background: v.$gray-100;
+  }
+}

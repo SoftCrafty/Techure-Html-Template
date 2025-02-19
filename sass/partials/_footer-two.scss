@@ -1,0 +1,92 @@
+@use "./variables" as v;
+@use "./mixin" as m;
+/*-======== footer-area  style-two=======-*/
+.footer-area {
+  &.style-two {
+    position: relative;
+    z-index: 1;
+    .section-header {
+      &.style-two {
+        border-bottom: 1px solid v.$border-color-03;
+
+        .section-meta {
+          font-size: 24px;
+          font-weight: v.$font-weight-bold;
+        }
+      }
+    }
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 340px;
+      height: 340px;
+      @include m.border-radius(50%);
+
+      img {
+        object-fit: cover;
+        position: relative;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .footer-wrap {
+      display: flex;
+      justify-content: space-between;
+      .menu-list {
+        ul {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          li {
+            a {
+              color: v.$gray-800;
+              font-weight: v.$font-weight-regular;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+      .shear-media {
+        ul {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          li {
+            width: 38px;
+            height: 38px;
+            background: v.$white;
+            @include m.border-radius(50%);
+            line-height: 38px;
+            text-align: center;
+          }
+        }
+      }
+    }
+    .footer-copy-list {
+      display: flex;
+      gap: 20;
+      float: right;
+      li {
+        font-size: 18px;
+        font-weight: v.$font-weight-bold;
+        a {
+          color: v.$gray-800;
+        }
+      }
+    }
+
+    .copyright-area {
+      .footer-copy-list {
+        display: flex;
+        gap: 20px;
+        li {
+          a {
+            color: v.$gray-800;
+          }
+        }
+      }
+    }
+  }
+}

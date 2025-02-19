@@ -1,39 +1,26 @@
 @use "../../variables" as v;
 @use "../../mixin" as m;
 /*-======== slider  =======-*/
-.testimonial-wrapper {
-  &.style-one {
-    .testimonial-carousel {
+.slider-wrapper {
+  &.style-three {
+    .slider-carousel {
       .owl-stage-outer {
         .owl-stage {
           .owl-item {
-            .testimonial-item {
+            .slider-item {
               background: v.$white;
-              padding: 30px 60px;
+              padding: 40px 60px;
               @include m.border-radius(20px);
               @include m.device-480px {
                 padding: 30px;
               }
               .client-heading {
                 .client-info {
-                  padding-bottom: 30px;
-                  display: flex;
-                  justify-content: space-between;
-                  align-items: center;
-                  border-bottom: 1px solid v.$border-color;
-                  img {
-                    width: auto;
-                  }
                   .client-profile {
                     display: flex;
-                    justify-content: center;
+                    justify-content: space-between;
                     align-items: center;
                     gap: 30px;
-                    img {
-                      width: 80px;
-                      height: 80px;
-                      @include m.border-radius(50%);
-                    }
                     .client-title {
                       font-weight: v.$font-weight-bold;
                       font-size: 24px;
@@ -53,6 +40,9 @@
                 }
               }
               .reviwes-icons {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
                 ul {
                   li {
                     display: inline-block;
@@ -61,6 +51,13 @@
                     &:nth-child(5) {
                       color: v.$gray-200;
                     }
+                  }
+                }
+                .quote-right-img {
+                  width: 60px;
+                  height: 60px;
+                  path {
+                    stroke: v.$secondary;
                   }
                 }
               }
@@ -76,8 +73,10 @@
               }
             }
             &.active {
-              @include m.border-radius(20px);
-              border: 1px solid v.$secondary;
+              .slider-item{
+                @include m.border-radius(20px);
+                border: 1px solid v.$secondary;
+              }
             }
           }
         }
