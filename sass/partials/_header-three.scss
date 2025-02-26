@@ -1,0 +1,131 @@
+@use "./variables" as v;
+@use "./mixin" as m;
+
+/*-======== header area =======-*/
+.header-area {
+  &.style-three {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1023;
+    padding-top: 20px;
+    &.header-fixed-three {
+      background: v.$gray-100;
+      .header-wrapper {
+        border: 0;
+      }
+    }
+    .header-wrapper {
+      border-bottom: 1px solid v.$gray-900;
+      padding-bottom: 24px;
+    }
+    .menu-wrapper {
+      .main-menu {
+        ul {
+          li {
+            a {
+              color: v.$gray-900;
+            }
+            .dropdown-menu-item {
+              li {
+                a {
+                  color: v.$gray-900;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .contact-number {
+      font-size: 18px;
+      font-weight: v.$font-weight-bold;
+      color: v.$white;
+      @include m.device-425px {
+        display: none;
+      }
+    }
+  }
+  .bar-btn {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    @include m.border-radius(50px);
+    cursor: pointer;
+    &.style-one {
+      .menu-line {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        .bar-line {
+          width: 2px;
+          height: 2px;
+          background: v.$gray-900;
+          display: block;
+          align-items: center;
+          &.bar-line:nth-child(1) {
+            width: 10px;
+            float: right;
+          }
+          &.bar-line:nth-child(2) {
+            margin-top: 8px;
+            width: 20px;
+          }
+          &.bar-line:nth-child(3) {
+            width: 16px;
+            float: right;
+            margin-top: 7px;
+          }
+        }
+      }
+    }
+  }
+
+  /*===== search-dropdown======*/
+  .search-box {
+    position: relative;
+    display: none;
+
+    .search-icon {
+      cursor: pointer;
+    }
+  }
+  .search-dropdown {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    margin: 0px;
+    transform: translate(-12px, 27px);
+    width: 350px;
+    display: block;
+    padding: 15px;
+    border: 0;
+    @include m.transition(0.4s);
+    @include m.box-shadow(0 1px 10px rgba(0, 0, 0, 0.1));
+    @include m.border-radius(8px);
+    background: v.$primary-color;
+
+    .form-control {
+      border: 1px solid v.$gray-800 !important;
+      @include m.border-radius(8px);
+      color: v.$gray-100 !important;
+      margin: 0 !important;
+    }
+    .btn {
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+  }
+  .input-group-append {
+    &.btn {
+      @include m.transform(rotate(90deg));
+      svg {
+        path {
+          fill: v.$white;
+        }
+      }
+    }
+  }
+}

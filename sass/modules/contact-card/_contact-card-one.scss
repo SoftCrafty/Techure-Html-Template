@@ -1,0 +1,38 @@
+@use "../../variables" as v;
+@use "../../mixin" as m;
+/*-======== counter box =======-*/
+.contact-card {
+  &.style-one {
+    .contact-content {
+      background: v.$primary-color;
+      padding: 40px;
+      @include m.border-radius(20px);
+      @include m.laptop_m_four {
+        padding: 30px;
+      }
+      .section-heading {
+        .section-desc {
+          color: v.$white;
+        }
+        .section-title {
+          color: v.$white;
+          font-size: 32px;
+          font-weight: v.$font-weight-bold;
+          padding: 20px 0 0 0;
+          @include m.laptop_m_four {
+            font-size: 24px;
+          }
+        }
+      }
+      .theme-btn {
+        background: v.$white;
+        color: v.$gray-900;
+        svg {
+          path {
+            fill: v.$gray-900;
+          }
+        }
+      }
+    }
+  }
+}

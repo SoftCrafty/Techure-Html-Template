@@ -1,0 +1,12 @@
+@use "./variables" as v;
+@use "./mixin" as m;
+/*-======== services-details-area  =======-*/
+.service-area {
+  &.style-one {
+    .card-wrapper {
+      @include m.device-768px {
+        padding-left: 35px;
+      }
+    }
+  }
+}

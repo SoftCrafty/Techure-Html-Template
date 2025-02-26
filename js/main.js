@@ -8,9 +8,8 @@
      barBtn.on('click', function() {
       $('.off-canvas').toggleClass('active')
      });
-          /*=====  Navbar Fixed ======*/
-    var $window = $(window);
-
+  /*=====  Navbar Fixed ======*/
+        var $window = $(window);
           $window.on('scroll', function() {
             //header fixed animation and control
             if($window.scrollTop() > 0) {
@@ -20,6 +19,18 @@
             }
 
         });
+  /*=====  Navbar three Fixed ======*/
+
+        var $window = $(window);
+        $window.on('scroll', function() {
+          //header fixed animation and control
+          if($window.scrollTop() > 0) {
+              $(".header-three").addClass('header-fixed-three');
+          }else{
+              $(".header-three").removeClass('header-fixed-three');
+          }
+
+      });
   /*========= menuCloseBtn ==========*/ 
   var barBtn = $('.off-canvas-close, .body-overlay');
   barBtn.on('click', function() {
@@ -90,8 +101,6 @@ if (numberCounter.length) {
     600: {
       items: 1,
     },
-    
-
     1199:{
       items: 2,
 
@@ -193,8 +202,125 @@ $(".slider-carousel-three").owlCarousel({
   },
 });
 
+/*==== slider-carouser-four carousel =====*/
+
+$(".slider-carousel-four").owlCarousel({
+  loop: true,
+  margin: 30,
+  nav: true,
+  dots: false,
+  autoplay:true,
+  autoplayTimeout:5000,
+  responsiveClass: true,
+  navText: [
+    ` Prev`,
+  `Next `,
+],
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 1,
+    },
+    1000: {
+      items: 1,
+      loop: true,
+    },
+    
+  },
+});
+/*==== slider-carouser-five carousel =====*/
+
+$(".slider-carousel-five").owlCarousel({
+  loop: true,
+  margin: 30,
+  nav: false,
+  dots: true,
+  autoplay:true,
+  autoplayTimeout:6000,
+  responsiveClass: true,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 1,
+    },
+    1000: {
+      items: 1,
+      loop: true,
+    },
+    
+  },
+});
+
+/*==== slider-carouser-six carousel =====*/
+
+$(".slider-carousel-six").owlCarousel({
+  loop: true,
+  margin: 30,
+  nav: true,
+  dots: false,
+  autoplay:true,
+  autoplayTimeout:6000,
+  responsiveClass: true,
+  navText: [
+    `<i class="fa-solid fa-arrow-left"></i>`,
+  `<i class="fa-solid fa-arrow-right"></i>`,
+],
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 1,
+    },
+    1000: {
+      items: 1,
+      loop: true,
+    },
+    
+  },
+});
+/*==== slider-carouser-seven carousel =====*/
+
+$(".slider-carousel-seven").owlCarousel({
+  loop: true,
+  margin: 30,
+  nav: true,
+  dots: false,
+  autoplay:false,
+  autoplayTimeout:6000,
+  responsiveClass: true,
+  navText: [
+    `<i class="fa-solid fa-arrow-left"></i> <p>Previous</p>`,
+  `<p>Next</p> <i class="fa-solid fa-arrow-right"></i> `,
+],
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 1,
+    },
+    1000: {
+      items: 1,
+      loop: true,
+    },
+    
+  },
+});
+// drop
 $("#Country").chosen({no_results_text: "Oops, nothing found!"}); 
 
+/*==== Hover Active =====*/
+
+
+$(".service-card").hover(function() {
+  $('.service-card').removeClass('item-active');
+  $(this).addClass('item-active');
+});
         });
   })(jQuery);
   

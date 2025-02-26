@@ -1,0 +1,54 @@
+@use "../../variables" as v;
+@use "../../mixin" as m;
+/*-======== slider  =======-*/
+.slider-wrapper {
+  &.style-six {
+    .slider-carousel {
+      .owl-stage-outer {
+        position: relative;
+        .owl-stage {
+          .owl-item {
+            .slider-item {
+              .section-header {
+                width: 720px;
+                .section-title {
+                  color: v.$white;
+                }
+              }
+            }
+          }
+        }
+      }
+      .owl-nav {
+        position: absolute;
+        right: 0;
+        bottom: 50%;
+        @include m.transform(translateY(-50%));
+        .owl-prev,
+        .owl-next {
+          width: 60px;
+          height: 60px;
+          @include m.border-radius(50%);
+          line-height: 60px;
+          @include m.transition(0.5s);
+          background: inherit;
+          &:hover {
+            background: v.$primary-color;
+            svg {
+              path {
+                fill: v.$white;
+              }
+            }
+          }
+          svg {
+            width: 18px;
+            height: 18px;
+            path {
+              fill: v.$primary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,107 @@
+@use "./variables" as v;
+@use "./mixin" as m;
+/*-======== services-details-area  =======-*/
+.project-details-area {
+  .project-details-wrapper {
+    .section-title {
+      font-size: 32px;
+      font-weight: v.$font-weight-bold;
+      line-height: 41px;
+    }
+    .project-post-details {
+      img {
+        @include m.border-radius(20px);
+      }
+      .project-post-info {
+        display: flex;
+        justify-content: space-between;
+        gap: 56px;
+        @include m.xl {
+          flex-wrap: wrap;
+          row-gap: 30px;
+        }
+        @include m.lg {
+          flex-wrap: wrap;
+          row-gap: 30px;
+        }
+        @include m.md {
+          flex-direction: column;
+          gap: 30px;
+        }
+        @include m.sm {
+          flex-direction: column;
+          gap: 30px;
+        }
+        @include m.xs {
+          flex-direction: column;
+          gap: 30px;
+        }
+        .info-item {
+          display: flex;
+          gap: 15px;
+          h3 {
+            font-size: 24px;
+            font-weight: 700;
+          }
+          p {
+            font-size: 18px;
+            font-weight: v.$font-weight-medium;
+            color: v.$gray-800;
+          }
+          .shear-media {
+            @include m.device-525px {
+              margin-top: 40px;
+            }
+            ul {
+              display: flex;
+              align-items: center;
+              gap: 20px;
+              li {
+                width: 38px;
+                height: 38px;
+                background: v.$gray-100;
+                @include m.border-radius(50%);
+                line-height: 38px;
+                text-align: center;
+                svg {
+                  path {
+                    fill: v.$primary-color;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .project-details-wrap {
+      border-bottom: 1px solid v.$color-07;
+      padding-bottom: 30px;
+      img {
+        @include m.border-radius(20px);
+      }
+    }
+
+    .project-wrap {
+      .section-small-title {
+        font-size: 24px;
+        font-weight: v.$font-weight-bold;
+      }
+      ul {
+        margin-top: 10px;
+        li {
+          margin-top: 20px;
+          color: v.$gray-800;
+          font-size: 18px;
+          font-weight: v.$font-weight-medium;
+          margin-left: 8px;
+        }
+      }
+    }
+    .slider-carousel-seven {
+      .owl-stage-outer {
+        padding-bottom: 60px !important;
+      }
+    }
+  }
+}

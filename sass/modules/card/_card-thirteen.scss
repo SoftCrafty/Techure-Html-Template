@@ -1,0 +1,142 @@
+@use "../../variables" as v;
+@use "../../mixin" as m;
+
+/*-======== card =======-*/
+.card-wrapper {
+  &.style-thirteen {
+    .card-item {
+      border: 1px solid v.$border-color-02;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include m.transition(2s);
+      @include m.border-radius(20px);
+      padding-left: 60px;
+      padding-right: 60px;
+      margin-top: 40px;
+      @include m.xs {
+        padding: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .section-heading {
+        display: flex;
+        gap: 63px;
+        align-items: center;
+
+        .section-title {
+          font-size: 32px;
+          font-weight: v.$font-weight-bold;
+          color: v.$gray-900;
+          width: 142px;
+          @include m.transition(2s);
+        }
+        .section-desc {
+          font-size: 18px;
+          font-weight: v.$font-weight-medium;
+          color: v.$gray-900;
+          @include m.transition(2s);
+        }
+      }
+      .card-team-img {
+        width: 124px;
+        height: 157px;
+        img {
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          @include m.transition(2s);
+        }
+      }
+      .media-wrapper {
+        display: flex;
+        align-items: center;
+        width: 320px;
+        justify-content: end;
+        .shear-media {
+          opacity: 0;
+          @include m.transition(2s);
+          cursor: pointer;
+
+          ul {
+            li {
+              display: inline-block;
+              margin-left: 18px;
+              background: v.$color-4;
+              @include m.border-radius(50%);
+              width: 37px;
+              height: 37px;
+              line-height: 37px;
+              text-align: center;
+              margin-right: -45px;
+              @include m.transition(2s);
+
+              a {
+                svg {
+                  path {
+                    color: v.$white;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .media-wrap {
+          margin-left: 20px;
+          width: 60px;
+          height: 60px;
+          line-height: 60px;
+          text-align: center;
+          background: v.$gray-100;
+          border: 1px solid v.$white;
+          @include m.border-radius(50%);
+          cursor: pointer;
+          @include m.transition(2s);
+          @include m.box-shadow(0px 0px 60px 0px rgba(0, 0, 0, 0.05));
+          svg {
+            path {
+              color: v.$gray-900;
+              border: 0px;
+              border-color: none;
+            }
+          }
+        }
+        &:has(.media-wrap:hover) {
+          .shear-media {
+            opacity: 1;
+            ul {
+              li {
+                margin-right: 0px;
+              }
+            }
+          }
+        }
+      }
+      &:hover {
+        background: v.$primary-color;
+        .section-heading {
+          .section-title {
+            color: v.$white;
+          }
+          .section-desc {
+            color: v.$white;
+          }
+        }
+        .card-team-img {
+          img {
+            opacity: 1;
+          }
+        }
+        .media-wrap {
+          background: v.$color-4;
+          border: 0px;
+          svg {
+            path {
+              color: v.$white;
+            }
+          }
+        }
+      }
+    }
+  }
+}

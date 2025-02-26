@@ -9,6 +9,10 @@
     .tech-item {
       display: flex;
       gap: 40px;
+      @include m.laptop_m_four {
+        justify-content: center;
+        text-align: center;
+      }
       @include m.md {
         justify-content: center;
         text-align: center;

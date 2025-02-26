@@ -1,0 +1,155 @@
+@use "../../variables" as v;
+@use "../../mixin" as m;
+/*-======== slider  =======-*/
+.slider-wrapper {
+  &.style-five {
+    .slider-carousel {
+      .owl-stage-outer {
+        .owl-stage {
+          .owl-item {
+            .slider-item {
+              background: v.$white;
+              padding: 40px 40px;
+              @include m.border-radius(20px);
+              @include m.device-480px {
+                padding: 30px;
+              }
+              .client-heading {
+                position: relative;
+                z-index: 1;
+                .client-info {
+                  padding-bottom: 30px;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  img {
+                    width: auto;
+                  }
+                  .client-profile {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 30px;
+                    img {
+                      width: 80px;
+                      height: 80px;
+                      @include m.border-radius(50%);
+                    }
+                    .client-title {
+                      font-weight: v.$font-weight-bold;
+                      font-size: 24px;
+                    }
+                    .client-decs {
+                      font-weight: v.$font-weight-medium;
+                    }
+                  }
+                  .quoto-right {
+                    @include m.device-425px {
+                      width: 50px;
+                    }
+                    @include m.device-375px {
+                      width: 40px;
+                    }
+                  }
+                }
+
+                .reviwes-icons {
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  ul {
+                    li {
+                      display: inline-block;
+                      color: v.$color-3;
+                      margin-right: 10px;
+                      &:nth-child(5) {
+                        color: v.$gray-200;
+                      }
+                    }
+                  }
+                  .quote-right-img {
+                    width: 60px;
+                    height: 60px;
+                    path {
+                      stroke: v.$secondary;
+                    }
+                  }
+                }
+                .client-comment {
+                  font-size: 28px;
+                  font-weight: v.$font-weight-medium;
+                  line-height: 44px;
+                  color: v.$gray-800;
+                  @include m.nesthub {
+                    line-height: 40px;
+                  }
+                  @include m.device-480px {
+                    font-size: 22px;
+                    line-height: 32px;
+                  }
+                }
+              }
+              .svg-img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                @include m.transform(translate(-50%, -50%));
+                svg {
+                  width: 160px;
+                  height: 160px;
+                }
+              }
+            }
+            &.active {
+              .slider-item {
+                @include m.border-radius(20px);
+                border: 1px solid v.$secondary;
+              }
+            }
+          }
+        }
+      }
+
+      .owl-dots {
+        margin-top: -60px !important;
+        position: relative;
+        .owl-dot {
+          @include m.transition(0.3s);
+          padding: 7px;
+          margin: 0 3px;
+          span {
+            margin: auto;
+            width: 42px !important;
+            height: 10px !important;
+            @include m.border-radius(50px);
+            @include m.transition(0.3s);
+            @include m.device-525px {
+              width: 26px !important;
+            }
+            @include m.device-425px {
+              width: 12px !important;
+            }
+          }
+          &:hover {
+            span {
+              background: v.$primary-color !important;
+            }
+          }
+          &.active {
+            span {
+              width: 83px !important;
+              height: 10px !important;
+              background: v.$primary-color !important;
+              @include m.device-525px {
+                width: 50px !important;
+              }
+              @include m.device-525px {
+                width: 12px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

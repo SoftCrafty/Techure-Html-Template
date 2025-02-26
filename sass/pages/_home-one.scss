@@ -284,28 +284,31 @@
 /*-======== work-process-area =======-*/
 
 .work-process-area {
-  background: v.$gray-100;
-  .section-header {
-    &.style-two {
-      border-top: 1px solid v.$border-color-03;
-      padding-top: 20px;
-      .section-content {
-        .section-title {
-          flex-basis: 63%;
-          @include m.md {
-            flex-basis: 100%;
+  &.style-one {
+    background: v.$gray-100;
+
+    .section-header {
+      &.style-two {
+        border-top: 1px solid v.$border-color-03;
+        padding-top: 20px;
+        .section-content {
+          .section-title {
+            flex-basis: 63%;
+            @include m.md {
+              flex-basis: 100%;
+            }
+            @include m.sm {
+              flex-basis: 100%;
+            }
           }
-          @include m.sm {
-            flex-basis: 100%;
-          }
-        }
-        .theme-btn {
-          flex-basis: 37%;
-          @include m.md {
-            flex-basis: 100%;
-          }
-          @include m.sm {
-            flex-basis: 100%;
+          .theme-btn {
+            flex-basis: 37%;
+            @include m.md {
+              flex-basis: 100%;
+            }
+            @include m.sm {
+              flex-basis: 100%;
+            }
           }
         }
       }

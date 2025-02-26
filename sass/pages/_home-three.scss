@@ -1,0 +1,381 @@
+@use "./variables" as v;
+@use "./mixin" as m;
+/*-======== hero area style-three =======-*/
+.hero-area {
+  &.style-three {
+    background: v.$white;
+    .hero-wrapper {
+      padding-left: 70px;
+      @include m.md {
+        padding-left: 0;
+        padding-top: 30px;
+      }
+      @include m.sm {
+        padding-left: 0;
+        padding-top: 30px;
+      }
+    }
+    .section-header {
+      .section-title {
+        font-size: 92px;
+        font-weight: v.$font-weight-bold;
+        line-height: 100px;
+        letter-spacing: -2px;
+        @include m.laptop_m {
+          font-size: 80px;
+        }
+        @include m.laptop_m_three {
+          font-size: 65px;
+          line-height: 85px;
+        }
+        .text-color {
+          color: v.$primary-color;
+        }
+      }
+    }
+    .hore-content {
+      .section-title {
+        font-size: 32px;
+        font-weight: v.$font-weight-bold;
+        padding: 3px 0;
+      }
+    }
+    .watch-now {
+      button {
+        border: 0;
+        background: initial;
+        cursor: pointer;
+      }
+      .play-btn {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        .play-icon {
+          width: 50px;
+          height: 50px;
+          background: v.$gray-100;
+          @include m.border-radius(50%);
+          line-height: 50px;
+          text-align: center;
+        }
+        h4 {
+          font-size: 18px;
+          font-weight: v.$font-weight-bold;
+        }
+      }
+    }
+  }
+}
+
+/*-======== about area style-three =======-*/
+.about-area {
+  &.style-three {
+    .about-wrap {
+      display: flex;
+      gap: 30px;
+      padding-right: 60px;
+      @include m.laptop_m {
+        padding-right: 40px;
+        height: 100%;
+        @include m.md {
+          padding-bottom: 40px;
+          padding-right: 0px;
+        }
+        @include m.sm {
+          padding-bottom: 40px;
+          padding-right: 0px;
+        }
+        @include m.xs {
+          padding-bottom: 30px;
+          padding-right: 0px;
+        }
+      }
+      .about-img {
+        width: 100%;
+
+        img {
+          @include m.border-radius(20px);
+          width: 100%;
+          @include m.laptop_m {
+            height: 100%;
+          }
+        }
+      }
+    }
+    .about-wrapper {
+      .section-desc {
+        padding-top: 30px;
+        padding-bottom: 40px;
+      }
+      .count-box-wrapper {
+        &.style-three {
+          gap: 70px;
+          @include m.laptop_m_four {
+            flex-wrap: wrap;
+            gap: 40px;
+          }
+          .counter-item {
+            &:nth-child(1) {
+              width: 183px;
+            }
+            &:nth-child(2) {
+              width: 151px;
+            }
+            &:nth-child(3) {
+              width: 125px;
+            }
+            .coun-title {
+              letter-spacing: -2px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*-======== tech-serices-area area style-three 
+=======-*/
+.tech-serices-area {
+  &.style-three {
+    .tech-service {
+      &.style-one {
+        background: v.$secondary;
+        padding: 21px 0;
+        .tech-item {
+          .tech-title {
+            color: v.$gray-900;
+          }
+          .tech-icons {
+            background: v.$border-color-04;
+            svg {
+              path {
+                fill: v.$gray-900;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/*-======== lates-project-area style-three =======-*/
+.lates-project-area {
+  &.style-three {
+    background: v.$gray-100;
+    .theme--btn {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+/*-======== contact-area style-two style-three =======-*/
+.contact-area {
+  &.style-two {
+    .form-wrapper {
+      &.style-one {
+        background: v.$gray-100;
+        @include m.md {
+          margin-bottom: 30px;
+        }
+        @include m.sm {
+          margin-bottom: 30px;
+        }
+        @include m.xs {
+          margin-bottom: 30px;
+        }
+        .form-content {
+          form {
+            .theme-btn {
+              background: v.$primary-color;
+              color: v.$white;
+              svg {
+                path {
+                  fill: v.$white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .contact-wrap {
+      display: flex;
+      gap: 30px;
+
+      .contact--box {
+        padding: 20px;
+        padding-bottom: 0;
+        @include m.box-shadow(0px 0px 60px 0px rgba(0, 0, 0, 0.05));
+        flex-basis: 50%;
+        @include m.border-radius(20px);
+        background: v.$white;
+        width: 300px;
+        height: 200px;
+        position: relative;
+        overflow: hidden;
+        @include m.laptop_m_three {
+          height: 250px;
+        }
+        &.bg-2 {
+          background: v.$color-09;
+        }
+        .section-title {
+          font-size: 18px;
+          font-weight: v.$font-weight-bold;
+          width: 190px;
+          line-height: 28px;
+          @include m.laptop_m_three {
+            padding-bottom: 30px !important;
+          }
+        }
+        a {
+          color: v.$gray-900;
+          font-size: 18px;
+          font-weight: v.$font-weight-bold;
+          svg {
+            path {
+              fill: v.$gray-900;
+            }
+          }
+        }
+        .shape-img-one {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          width: initial !important;
+        }
+        img {
+          width: 100%;
+          @include m.laptop_m_three {
+            height: 100px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*-======== faq-area  style-three=======-*/
+.faq-area {
+  &.style-three {
+    background: v.$gray-100;
+    .faq-img {
+      padding-right: 84px;
+      position: relative;
+      float: right;
+      @include m.laptop_m_three {
+        padding-right: 45px;
+        height: 100%;
+      }
+      @include m.xs {
+        padding-right: 0;
+        padding: 40px;
+      }
+
+      .counter-box {
+        position: absolute;
+        left: -65px;
+        bottom: 80px;
+        width: 200px;
+        height: 200px;
+        @include m.border-radius(50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: v.$white;
+        @include m.laptop_m_four {
+          left: -32px;
+        }
+        @include m.md {
+          left: -65px;
+        }
+        @include m.xs {
+          left: 0px;
+        }
+        .count-content {
+          text-align: center;
+          line-height: 200px;
+          .coun-title {
+            font-size: 72px;
+            font-weight: v.$font-weight-bold;
+          }
+        }
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .accordion-wrapper {
+      &.style-three {
+        @include m.md {
+          margin-bottom: 30px;
+          padding-right: 0px;
+        }
+        @include m.sm {
+          margin-bottom: 30px;
+          padding-right: 0px;
+        }
+        @include m.xs {
+          margin-bottom: 30px;
+          padding-right: 0px;
+        }
+      }
+    }
+  }
+}
+/*-======== work-proccess-area  style-three=======-*/
+.work-proccess-area {
+  &.style-three {
+    background: v.$gray-900;
+
+    .work-wrapper {
+      display: flex;
+      @include m.md {
+        flex-wrap: wrap;
+        gap: 25px;
+      }
+      @include m.sm {
+        flex-wrap: wrap;
+        gap: 25px;
+      }
+      @include m.xs {
+        flex-wrap: wrap;
+        gap: 25px;
+      }
+      .card-item {
+        display: flex;
+        width: 432px;
+        border-left: 1px solid v.$gray-800;
+        padding-right: 30px;
+
+        .list-num {
+          margin-right: 20px;
+          padding-left: 20px;
+          .text-num {
+            font-size: 72px;
+            font-weight: v.$font-weight-bold;
+            letter-spacing: -2px;
+            -webkit-text-stroke: 1px v.$white;
+            color: v.$gray-900;
+            @include m.transform(rotate(-90deg));
+          }
+        }
+        .section-content {
+          .section-title {
+            font-size: 24px;
+            font-weight: v.$font-weight-bold;
+            color: v.$white;
+          }
+          .section-desc {
+            margin-top: 20px;
+            color: v.$white;
+          }
+        }
+      }
+    }
+  }
+}

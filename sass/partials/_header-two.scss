@@ -41,34 +41,40 @@
         display: none;
       }
     }
-  }
-  .bar-btn {
-    width: 50px;
-    height: 50px;
-    background: v.$primary-color;
-    position: relative;
-    @include m.border-radius(50px);
-    cursor: pointer;
 
-    &.style-one {
-      .menu-line {
-        position: absolute;
-        left: 50%;
-        top: 38%;
-        transform: translate(-50%);
-        .bar-line {
-          width: 2px;
-          height: 2px;
-          background: rgb(228, 219, 219);
-          display: block;
-          align-items: center;
-          &.bar-line:nth-child(1) {
-            width: 10px;
-            float: right;
-          }
-          &.bar-line:nth-child(2) {
-            margin-top: 8px;
-            width: 20px;
+    .bar-btn {
+      width: 50px;
+      height: 50px;
+      background: v.$primary-color;
+      position: relative;
+      @include m.border-radius(50px);
+      cursor: pointer;
+
+      &.style-one {
+        .menu-line {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          .bar-line {
+            width: 2px;
+            height: 2px;
+            background: rgb(228, 219, 219);
+            display: block;
+            align-items: center;
+            &.bar-line:nth-child(1) {
+              width: 10px;
+              float: right;
+            }
+            &.bar-line:nth-child(2) {
+              margin-top: 8px;
+              width: 20px;
+            }
+            &.bar-line:nth-child(3) {
+              width: 16px;
+              float: right;
+              margin-top: 7px;
+            }
           }
         }
       }

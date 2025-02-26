@@ -21,6 +21,7 @@
 // header
 @use "./partials/header";
 @use "./partials/header-two";
+@use "./partials/header-three";
 // mani-menu
 @use "./partials/main-menu";
 // sidebar
@@ -28,6 +29,11 @@
 // home-page-one
 @use "./pages/home-one";
 @use "./pages/home-two";
+@use "./pages/home-three";
+@use "./pages/about";
+@use "./pages/services";
+@use "./pages/services-details";
+@use "./pages/project-details";
 // video-box
 @use "./modules/video-box/video-box";
 @use "./modules/video-box/video-box-two";
@@ -40,6 +46,7 @@
 // counter-box
 @use "./modules/counter/counter-one";
 @use "./modules/counter/counter-two";
+@use "./modules/counter/counter-three";
 // tech-services
 @use "./modules/tech-services/service-one";
 // section-header
@@ -51,20 +58,27 @@
 @use "./modules/card/card-three";
 @use "./modules/card/card-four";
 @use "./modules/card/card-five";
+@use "./modules/card/card-six";
 @use "./modules/card/card-seven";
 @use "./modules/card/card-eight";
 @use "./modules/card/card-nine";
 @use "./modules/card/card-ten";
 @use "./modules/card/card-eleven";
+@use "./modules/card/card-twelve";
+@use "./modules/card/card-thirteen";
+@use "./modules/card/card-fourteen";
+@use "./modules/card/card-fifteen";
 
 // about
 @use "./modules/about/about-one";
 @use "./modules/about/about-two";
 // modal
 @use "./modules/modal/modal-one";
+
 // client-logo-box
 @use "./modules/client-logo-box/client-logo-box-one";
 @use "./modules/client-logo-box/client-logo-box-two";
+@use "./modules/client-logo-box/client-logo-box-three";
 
 // info-list
 @use "./modules/info-list/info-list-one";
@@ -73,12 +87,21 @@
 @use "./modules/slider/slider-one";
 @use "./modules/slider/slider-two";
 @use "./modules/slider/slider-three";
+@use "./modules/slider/slider-four";
+@use "./modules/slider/slider-five";
+@use "./modules/slider/slider-six";
+@use "./modules/slider/slider-seven";
 // form
 @use "./modules/forms/forms-one.scss";
 @use "./modules/chosen/chosen-one";
 // accordion
 @use "./modules/accordion/accordion-one";
 @use "./modules/accordion/accordion-two";
+@use "./modules/accordion/accordion-three";
+// contact-card
+@use "./modules/contact-card/contact-card-one";
+
 //footer
 @use "./partials/footer-one";
 @use "./partials/footer-two";
+@use "./partials/footer-three";

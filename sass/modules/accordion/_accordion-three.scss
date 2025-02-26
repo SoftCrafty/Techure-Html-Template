@@ -1,0 +1,94 @@
+@use "../../variables" as v;
+@use "../../mixin" as m;
+/*-======== accordion =======-*/
+.accordion-wrapper {
+  &.style-three {
+    position: relative;
+    height: 100%;
+    .faq-wrap {
+      color: v.$gray-900 !important;
+      @include m.device-425px {
+        padding: 30px;
+      }
+      .section-header {
+        .section-title {
+          color: v.$gray-900 !important;
+        }
+      }
+      .accordion {
+        .faq-item {
+          &.card {
+            background: none;
+            border-radius: 0;
+            border: 0;
+          }
+          .faq-header {
+            padding: 26px 26px 0 26px;
+            button {
+              background: initial;
+              border: none;
+              color: v.$gray-900;
+              width: 100%;
+              text-align: left;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              font-size: 18px;
+              font-weight: v.$font-weight-bold;
+              line-height: 27px;
+              padding-bottom: 15px;
+              .section-title {
+                font-size: 18px;
+                font-weight: v.$font-weight-bold;
+                line-height: 27px;
+                span {
+                  font-size: 18px;
+                  font-weight: 700;
+                  line-height: 27px;
+                  -webkit-text-stroke: 1px v.$gray-800;
+                  color: v.$white;
+                }
+              }
+              &.them-btn[aria-expanded="true"] {
+                .faq-icon {
+                  i {
+                    &::before {
+                      content: "\f068";
+                    }
+                  }
+                }
+              }
+
+              .faq-icon {
+                width: 40px;
+                height: 40px;
+                text-align: center;
+                line-height: 40px;
+                background: v.$white;
+                @include m.border-radius(50%);
+                flex-shrink: 0;
+              }
+            }
+          }
+          &:has(.them-btn[aria-expanded="true"]) {
+            .faq-header {
+              border-top: 1px solid v.$primary-color;
+              border-top-left-radius: 20px;
+              border-top-right-radius: 20px;
+            }
+          }
+          .accordion-collapse {
+            .faq-body {
+              padding-bottom: 15px;
+              padding: 0px 26px 0 26px;
+
+              .faq-desc {
+                color: v.$gray-900;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

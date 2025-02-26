@@ -1,6 +1,6 @@
 @use "./variables" as v;
 @use "./mixin" as m;
-/*-========  contact number =======-*/
+/*-========  common =======-*/
 .contact-number {
   font-size: 18px;
   font-weight: v.$font-weight-bold;
@@ -20,4 +20,7 @@ p {
     border: initial;
     box-shadow: initial;
   }
+}
+.bg-none {
+  background: none !important;
 }

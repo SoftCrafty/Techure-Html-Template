@@ -1,0 +1,125 @@
+@use "../../variables" as v;
+@use "../../mixin" as m;
+/*-======== slider  =======-*/
+.slider-wrapper {
+  &.style-four {
+    .slider-carousel {
+      position: relative;
+      .owl-stage-outer {
+        .owl-stage {
+          .owl-item {
+            .slider-item {
+              position: relative;
+              @include m.md {
+                height: 320px;
+              }
+
+              @include m.sm {
+                height: 320px;
+              }
+              .slider-img {
+                position: relative;
+                width: 100%;
+                @include m.md {
+                  height: 100%;
+                }
+                @include m.sm {
+                  height: 100%;
+                }
+                @include m.xs {
+                  height: 100%;
+                }
+                img {
+                  position: relative;
+                  width: 100%;
+                  border-top-left-radius: 20px;
+                  border-top-right-radius: 20px;
+
+                  @include m.md {
+                    height: 100%;
+                  }
+                  @include m.sm {
+                    height: 100%;
+                  }
+                  @include m.xs {
+                    height: 100%;
+                  }
+                }
+                .slider-content {
+                  position: absolute;
+                  right: 25px;
+                  top: 50%;
+                  @include m.transform(translateY(-50%));
+                }
+              }
+            }
+          }
+        }
+      }
+      .owl-nav {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        margin-top: 0px !important;
+        @include m.transform(translateY(-50%));
+        @include m.laptop_m_four {
+          position: relative;
+          margin: 0 auto;
+          height: initial;
+        }
+        .owl-prev,
+        .owl-next {
+          position: absolute;
+          top: 50%;
+          background: none !important;
+          width: 80px;
+          height: 80px;
+          @include m.border-radius(50%);
+          font-size: 18px;
+          font-weight: v.$font-weight-bold;
+          color: v.$gray-900;
+          border: 1px solid v.$color-07;
+          text-align: center;
+          line-height: 72px;
+          @include m.laptop_m_four {
+            height: auto;
+            width: fit-content;
+
+            @include m.border-radius(20px);
+            line-height: 18px;
+            padding: 9px 16px;
+            border-color: v.$gray-900;
+          }
+          &:hover {
+            border-color: v.$primary-color;
+          }
+        }
+        .owl-prev {
+          left: -125px;
+          @include m.laptop_m_four {
+            left: 40%;
+          }
+          @include m.md {
+            left: 36%;
+          }
+          @include m.xs {
+            left: 0%;
+          }
+        }
+        .owl-next {
+          right: -125px;
+          @include m.laptop_m_four {
+            left: 50%;
+            right: 0px;
+          }
+          @include m.xs {
+            left: initial;
+            right: 0%;
+          }
+        }
+      }
+    }
+  }
+}

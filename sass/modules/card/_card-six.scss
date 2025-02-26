@@ -1,0 +1,82 @@
+@use "../../variables" as v;
+@use "../../mixin" as m;
+/*-======== card =======-*/
+
+.card-wrapper {
+  &.style-six {
+    .card-item {
+      border: 1px solid v.$border-color-03;
+      @include m.border-radius(20px);
+      @include m.transition(2s);
+      @include m.md {
+        margin-bottom: 30px;
+      }
+      @include m.sm {
+        margin-bottom: 30px;
+      }
+      @include m.xs {
+        margin-bottom: 30px;
+      }
+
+      &.service-card {
+        .card-content {
+          padding: 30px;
+
+          .card-svg {
+            svg {
+              path {
+                fill: v.$primary-color;
+              }
+            }
+          }
+          .section-header {
+            .section-title {
+              padding: 20px 0;
+              font-size: 24px;
+              font-weight: v.$font-weight-bold;
+            }
+          }
+        }
+        .card-img {
+          width: 100%;
+          opacity: 0;
+          visibility: hidden;
+          @include m.transition(2s);
+          img {
+            width: 100%;
+          }
+        }
+        .more-btn {
+          color: v.$gray-900;
+          display: flex;
+          gap: 8px;
+          padding: 30px;
+
+          p {
+            color: v.$gray-900;
+            font-weight: v.$font-weight-bold;
+          }
+          svg {
+            path {
+              fill: v.$gray-900;
+            }
+          }
+        }
+      }
+      &:hover {
+        border-color: v.$primary-color;
+      }
+    }
+  }
+}
+.solutions-items-active {
+  color: red;
+  font-size: 20px;
+  font-weight: 700; /* just for the demo */
+}
+.item-active {
+  .card-img {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+}

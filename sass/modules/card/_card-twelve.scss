@@ -1,0 +1,91 @@
+@use "../../variables" as v;
+@use "../../mixin" as m;
+/*-======== card =======-*/
+.card-wrapper {
+  &.style-twelve {
+    .card-grid {
+      display: grid;
+      gap: 30px;
+      width: 100%;
+      margin: 30px 0;
+      @include m.md {
+        display: block;
+      }
+      @include m.sm {
+        display: block;
+      }
+      @include m.xs {
+        display: block;
+      }
+      .card-item {
+        width: 100%;
+        position: relative;
+        @include m.md {
+          margin-bottom: 30px;
+        }
+        @include m.sm {
+          margin-bottom: 30px;
+        }
+        @include m.xs {
+          margin-bottom: 30px;
+        }
+        .card-img {
+          width: 100%;
+          position: relative;
+
+          &:hover {
+            .card-content {
+              opacity: 1;
+              visibility: visible;
+            }
+          }
+          img {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            @include m.border-radius(20px);
+          }
+          .card-content {
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+            opacity: 0;
+            visibility: hidden;
+            @include m.transition(0.8s);
+            .section-desc {
+              background: v.$secondary;
+              padding: 6px 20px;
+              color: v.$gray-900;
+              width: fit-content;
+              border-top-left-radius: 20px;
+              border-top-right-radius: 20px;
+            }
+            .section-title {
+              background: v.$white;
+              padding: 13px 20px;
+              font-size: 24px;
+              font-weight: v.$font-weight-bold;
+              color: v.$gray-900;
+              width: fit-content;
+              border-bottom-left-radius: 20px;
+              border-bottom-right-radius: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    .row-1 {
+      grid-template-columns: repeat(1, 2fr) 3fr;
+      .card-img {
+        height: 400px;
+      }
+    }
+    .row-2 {
+      grid-template-columns: repeat(3, 1fr);
+      .card-img {
+        height: 450px;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@use "../../variables" as v;
+@use "../../mixin" as m;
+/*-======== client-logo-box =======-*/
+.client-logo-wrapper {
+  &.style-three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 110px;
+    padding: 58px 60px;
+    margin-top: -130px;
+    @include m.border-radius(20px);
+    background: v.$white;
+    @include m.xl {
+      gap: 58px;
+    }
+
+    @include m.lg {
+      gap: 40px;
+      justify-content: center;
+      padding: 40px;
+      flex-wrap: wrap;
+    }
+    @include m.md {
+      gap: 40px;
+      justify-content: center;
+      padding: 40px;
+      flex-wrap: wrap;
+    }
+    @include m.sm {
+      gap: 40px;
+      justify-content: center;
+      padding: 40px;
+      flex-wrap: wrap;
+    }
+    svg {
+      path {
+        fill: v.$gray-900;
+      }
+    }
+  }
+}

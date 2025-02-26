@@ -1,0 +1,197 @@
+@use "./variables" as v;
+@use "./mixin" as m;
+/*-======== footer-area  style-two=======-*/
+.footer-area {
+  &.style-three {
+    position: relative;
+    z-index: 1;
+
+    .footer-wrapper {
+      background: v.$white;
+      padding: 80px 135px 30px 135px;
+      @include m.border-radius(20px);
+      @include m.sm {
+        padding: 40px;
+      }
+      .section-header {
+        &.style-two {
+          .section-content {
+            .section-title {
+              text-align: center;
+              flex-basis: 100%;
+              @include m.nesthub {
+                font-size: 62px;
+              }
+              @include m.sm {
+                font-size: 48px;
+              }
+              @include m.sm {
+                font-size: 36px;
+              }
+              @include m.device-375px {
+                font-size: 28px;
+              }
+              @include m.device-320px {
+                font-size: 24px;
+              }
+            }
+          }
+        }
+      }
+      .input-group {
+        position: relative;
+        width: 450px;
+        margin: auto;
+        display: flex;
+        @include m.sm {
+          width: 100% !important;
+        }
+        input {
+          position: relative;
+          border: 1px solid v.$border-color-03;
+          border-right: none !important;
+          background: v.$white;
+          color: v.$white;
+          @include m.border-radius(50px !important);
+          padding-left: 25px;
+
+          &::placeholder {
+            color: v.$gray-800;
+          }
+          &:focus {
+            border-color: v.$primary-color !important;
+          }
+        }
+        .group-btn {
+          background: v.$primary-color;
+          border: 0;
+          color: v.$white;
+          height: 50px;
+          width: 50px;
+          font-size: 16px;
+          text-align: center;
+          border-top-right-radius: 50px !important;
+          border-bottom-right-radius: 50px !important;
+          font-size: 18px;
+        }
+      }
+      .theme-btn {
+        padding: 12px;
+      }
+      .footer-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid v.$border-color-03;
+        padding-bottom: 30px;
+        @include m.laptop_m_three {
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 40px;
+        }
+        @include m.device-525px {
+          flex-wrap: wrap;
+        }
+        @include m.device-425px {
+          flex-direction: column;
+          align-items: start;
+        }
+        .menu-list {
+          ul {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            @include m.device-425px {
+              flex-direction: column;
+              align-items: start;
+            }
+            li {
+              a {
+                color: v.$gray-900;
+                font-weight: v.$font-weight-bold;
+                font-size: 18px;
+                @include m.transition(1s);
+              }
+              &:hover {
+                a {
+                  color: v.$primary-color;
+                }
+              }
+            }
+          }
+        }
+        .shear-media {
+          @include m.device-525px {
+            margin-top: 40px;
+          }
+          ul {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            li {
+              width: 38px;
+              height: 38px;
+              background: v.$gray-100;
+              @include m.border-radius(50%);
+              line-height: 38px;
+              text-align: center;
+              svg {
+                path {
+                  fill: v.$primary-color;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .copyright-area {
+        .copyright-desc {
+          @include m.device-525px {
+            text-align: center;
+          }
+        }
+        .footer-copy-list {
+          display: flex;
+          gap: 20px;
+          @include m.laptop_m_three {
+            flex-wrap: wrap;
+            row-gap: 8px;
+          }
+          @include m.md {
+            display: block;
+            text-align: center;
+          }
+          @include m.sm {
+            display: block;
+            text-align: center;
+          }
+
+          @include m.xs {
+            display: block;
+            text-align: center;
+          }
+          li {
+            @include m.md {
+              display: inline-block;
+              margin-left: 20px;
+            }
+            @include m.sm {
+              display: block;
+              display: inline-block;
+              margin-left: 20px;
+            }
+            @include m.xs {
+              display: block;
+              display: inline-block;
+              margin-left: 20px;
+            }
+            a {
+              color: v.$gray-800;
+            }
+          }
+        }
+      }
+    }
+  }
+}
