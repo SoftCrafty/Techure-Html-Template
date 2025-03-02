@@ -3,12 +3,15 @@
 
 /*-======== main-menu =======-*/
 .menu-wrapper {
-  @include m.laptop_m_two {
+  @include m.laptop_m_three {
     float: right;
   }
   .contact-number {
     font-size: 18px;
     font-weight: v.$font-weight-bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
     @include m.device-425px {
       display: none;
     }
@@ -46,12 +49,13 @@
         .dropdown-menu-item {
           visibility: visible;
           opacity: 1;
-          top: 50px;
+          // top: 50px;
+          transform: scaleY(1);
         }
       }
     }
   }
-  @include m.laptop_m_two {
+  @include m.laptop_m_three {
     display: none;
   }
 }
@@ -59,16 +63,19 @@
 .dropdown-menu-item {
   position: absolute;
   left: 0;
-  top: 60px;
+  // top: 60px;
+  top: 50px;
   width: 220px;
   background-color: v.$white;
   padding: 15px 25px;
   @include m.border-radius(8px);
   @include m.transition(0.4s);
   @include m.box-shadow(0 0 40px rgba(82, 85, 90, 0.1));
+  transform-origin: top;
   opacity: 0;
   visibility: hidden;
   display: block !important;
+  transform: scaleY(0);
   li {
     display: block !important;
     margin-top: 8px;

@@ -53,6 +53,9 @@
     position: relative;
     @include m.border-radius(50px);
     cursor: pointer;
+    @include m.laptop_m_three {
+      display: none;
+    }
     &.style-one {
       .menu-line {
         position: absolute;
@@ -82,14 +85,72 @@
       }
     }
   }
+  .main-menu-bar-btn {
+    display: none;
+    width: 50px;
+    height: 50px;
+    background: v.$primary-color;
+    position: relative;
+    @include m.border-radius(50px);
+    cursor: pointer;
+    text-align: center;
+    @include m.laptop_m_three {
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+    }
+    svg {
+      width: 20px;
+      height: 20px;
+      path {
+        fill: v.$white;
+      }
+    }
+  }
 
   /*===== search-dropdown======*/
   .search-box {
     position: relative;
-    display: none;
-
-    .search-icon {
+    display: block;
+    &.active {
+      .search-dropdown {
+        opacity: 1;
+        visibility: visible;
+      }
+      .search-icon {
+        display: none !important;
+      }
+      .close-icon {
+        display: block !important;
+      }
+    }
+    .input-group-append {
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0px;
+      background: v.$primary-color;
+      padding: 6px 12px;
+      line-height: 38px;
+      text-align: center;
+      svg {
+        path {
+          fill: v.$white;
+        }
+      }
+    }
+    .search-icon-box {
       cursor: pointer;
+      svg {
+        width: 18px;
+        height: 18px;
+      }
+      .search-icon {
+        display: block;
+      }
+      .close-icon {
+        display: none;
+      }
     }
   }
   .search-dropdown {
@@ -99,14 +160,24 @@
     margin: 0px;
     transform: translate(-12px, 27px);
     width: 350px;
-    display: block;
+    opacity: 0;
+    visibility: hidden;
     padding: 15px;
     border: 0;
     @include m.transition(0.4s);
     @include m.box-shadow(0 1px 10px rgba(0, 0, 0, 0.1));
     @include m.border-radius(8px);
-    background: v.$primary-color;
+    background: v.$white;
 
+    @include m.xs {
+      width: 300px;
+    }
+    @include m.device-375px {
+      width: 250px;
+    }
+    @include m.device-320px {
+      right: -47px;
+    }
     .form-control {
       border: 1px solid v.$gray-800 !important;
       @include m.border-radius(8px);

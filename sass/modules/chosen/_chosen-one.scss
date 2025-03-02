@@ -3,10 +3,10 @@
 
 /*================= Chosen select ====================*/
 
-.user-chosen-select-container{
+.user-chosen-select-container {
   .chosen-container {
     width: 100% !important;
-  
+
     .chosen-single {
       height: 60px !important;
       line-height: 60px !important;
@@ -28,15 +28,15 @@
           background-size: 16px 16px !important;
           background-position: center !important;
           background-repeat: no-repeat !important;
-  
         }
       }
     }
     &.chosen-container-single {
       .chosen-search {
         input[type="text"] {
-          padding: 10px 30px !important;
+          padding: 10px 20px !important;
           @include m.border-radius(5px !important);
+          background: none !important;
         }
       }
     }
@@ -73,8 +73,8 @@
     }
   }
   @include m.laptop_l {
-  b{
-    background-size: 16px 16px !important;
-  }
+    b {
+      background-size: 16px 16px !important;
+    }
   }
 }

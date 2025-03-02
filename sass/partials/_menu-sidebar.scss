@@ -1,34 +1,40 @@
 @use "./variables" as v;
 @use "./mixin" as m;
 /*====== off-canvas =======*/
+
 .off-canvas,
 .sidebar-filter {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 320px;
+  right: 0;
+  width: 400px;
   height: 100vh;
-  background-color: v.$gray-100;
+  background-color: v.$white;
   overflow-x: hidden;
   z-index: 1035;
-  @include m.transition(0.4s cubic-bezier(0.7, 0, 0.2, 1));
+  @include m.transition(0.6s);
   @include m.box-shadow(0 1px 8px rgba(0, 0, 0, 0.1));
   padding: 20px 0 20px 0px;
-  @include m.transform(translateX(-100%));
-  &.active {
-    @include m.transform(translateX(0));
+  @include m.transform(translateX(100%));
+  padding-left: 20px;
+  padding-right: 20px;
+  @include m.xs {
+    width: 320px;
   }
-
   .off-canvas-close {
     cursor: pointer;
     font-size: 20px;
     position: absolute;
-    right: 20px;
+    left: 20px;
     top: 20px;
     color: v.$color-1;
+    z-index: 9999;
     &:hover {
       color: v.$color-1;
     }
+  }
+  &.active {
+    @include m.transform(translateX(0));
   }
 }
 .off-canvas-dropdown-toggle {
@@ -73,7 +79,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 12px 20px;
+      padding: 12px 0px;
       > a {
         color: v.$color-1;
         text-decoration: none !important;

@@ -24,3 +24,25 @@ p {
 .bg-none {
   background: none !important;
 }
+// gap-5
+.gap-5 {
+  @include m.laptop_m {
+    gap: 16px !important;
+  }
+}
+
+// close btn
+
+.close--btn {
+  width: 26px;
+  height: 26px;
+  @include m.transition(0.4s);
+  cursor: pointer;
+
+  &:hover {
+    @include m.transform(rotate(180deg));
+    path {
+      fill: v.$primary-color;
+    }
+  }
+}

@@ -1,0 +1,124 @@
+@use "../../variables" as v;
+@use "../../mixin" as m;
+/*-======== sidebar style-two  =======-*/
+.sidebar {
+  &.style-two {
+    padding: 40px;
+    border: 1px solid v.$color-07;
+    @include m.border-radius(20px);
+    @include m.laptop_m_four {
+      padding: 20px;
+    }
+    @include m.md {
+      margin-top: 40px;
+      padding: 40px;
+    }
+    @include m.sm {
+      margin-top: 40px;
+      padding: 40px;
+    }
+    @include m.xs {
+      margin-top: 40px;
+      padding: 20px;
+    }
+    .side-section-heading {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 10px;
+      border-bottom: 1px solid v.$color-07;
+      .section-title {
+        font-size: 24px;
+        font-weight: v.$font-weight-bold;
+      }
+    }
+    .search-bar {
+      position: relative;
+      .form-control {
+        position: relative;
+        border: 0;
+        background: v.$gray-100;
+        padding-left: 30px;
+        padding-right: 40px;
+        @include m.border-radius(50px);
+        &::placeholder {
+          color: v.$gray-800;
+        }
+      }
+      .search-icon {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        @include m.transform(translateY(-50%));
+      }
+    }
+    .popular-post {
+      .post-item {
+        border-bottom: 1px solid v.$color-07;
+        padding-bottom: 10px;
+        margin-top: 30px;
+        &:last-child {
+          border: 0;
+        }
+        .post-meta {
+          margin-bottom: 10px;
+          .meta-sub {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            svg {
+              path {
+                fill: v.$primary-color;
+              }
+            }
+            .badge-text {
+              font-size: 14px;
+              font-weight: v.$font-weight-medium;
+            }
+          }
+        }
+        .post-title {
+          font-size: 18px;
+          font-weight: 700;
+        }
+      }
+    }
+    .card-wrapper {
+      &.style-fifteen {
+        .card-item {
+          background: initial;
+          padding: 0px;
+          .catagory-item {
+            background: v.$gray-100;
+          }
+        }
+      }
+    }
+    .popular-tags {
+      .tags-cloud {
+        padding-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+        a {
+          padding: 4px 10px;
+          border: 1px solid v.$border-color-04;
+          @include m.border-radius(50px);
+          color: v.$gray-800;
+          font-size: 14px;
+          font-weight: v.$font-weight-regular;
+        }
+      }
+    }
+    .contact-card {
+      .contact-content {
+        .section-title {
+          font-size: 26px;
+        }
+        .theme-btn {
+          padding: 16px;
+        }
+      }
+    }
+  }
+}

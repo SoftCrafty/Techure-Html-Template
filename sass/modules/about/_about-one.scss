@@ -32,6 +32,7 @@
           width: 100%;
         }
         img {
+          @include m.border-radius(20px);
           @include m.lg {
             width: 100%;
           }

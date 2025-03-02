@@ -24,6 +24,7 @@
         img {
           width: 100%;
           position: relative;
+          @include m.border-radius(20px);
         }
         .card-badge {
           display: flex;

@@ -5,6 +5,9 @@
   &.style-one {
     position: relative;
     width: 200px;
+    img {
+      @include m.border-radius(20px);
+    }
     @include m.lg {
       margin-top: 0;
     }

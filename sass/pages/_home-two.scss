@@ -36,12 +36,18 @@
           @include m.sm {
             font-size: 48px;
           }
+
           @include m.device-525px {
             font-size: 62px;
           }
-
+          @include m.device-425px {
+            font-size: 52px;
+          }
           @include m.device-375px {
             font-size: 46px;
+          }
+          @include m.device-320px {
+            font-size: 40px;
           }
         }
         .hero-img {

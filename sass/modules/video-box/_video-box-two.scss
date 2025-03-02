@@ -6,6 +6,7 @@
     position: relative;
     img {
       width: 100%;
+      @include m.border-radius(20px);
     }
     .play-btn {
       position: absolute;

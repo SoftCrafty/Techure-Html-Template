@@ -26,6 +26,7 @@
 @use "./partials/main-menu";
 // sidebar
 @use "./partials/menu-sidebar";
+@use "./partials/contact-sidebar";
 // home-page-one
 @use "./pages/home-one";
 @use "./pages/home-two";
@@ -34,6 +35,10 @@
 @use "./pages/services";
 @use "./pages/services-details";
 @use "./pages/project-details";
+@use "./pages/blog";
+@use "./pages/blog-details";
+@use "./pages/contact";
+
 // video-box
 @use "./modules/video-box/video-box";
 @use "./modules/video-box/video-box-two";
@@ -68,6 +73,7 @@
 @use "./modules/card/card-thirteen";
 @use "./modules/card/card-fourteen";
 @use "./modules/card/card-fifteen";
+@use "./modules/card/card-sixteen";
 
 // about
 @use "./modules/about/about-one";
@@ -100,6 +106,10 @@
 @use "./modules/accordion/accordion-three";
 // contact-card
 @use "./modules/contact-card/contact-card-one";
+// side bar
+@use "./modules/sidebar/slidebar-two";
+// pagination
+@use "./modules/pagination/pagination-one";
 
 //footer
 @use "./partials/footer-one";

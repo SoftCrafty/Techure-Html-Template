@@ -10,6 +10,13 @@
       @include m.laptop_m_four {
         padding: 30px;
       }
+      .logo {
+        margin-bottom: 30px;
+        img {
+          width: 153px;
+          height: 39px;
+        }
+      }
       .section-heading {
         .section-desc {
           color: v.$white;

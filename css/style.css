@@ -3195,6 +3195,29 @@ p {
   background: none !important;
 }
 
+@media (max-width: 1399px) {
+  .gap-5 {
+    gap: 16px !important;
+  }
+}
+
+.close--btn {
+  width: 26px;
+  height: 26px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.close--btn:hover {
+  transform: rotate(180deg);
+}
+.close--btn:hover path {
+  fill: #573db8;
+}
+
 /**
  * Stylesheet:  style.css
  * Theme:       Technova - IT Startup & Agency HTML5 Template
@@ -3238,6 +3261,11 @@ p {
   border-radius: 50px;
   cursor: pointer;
 }
+@media (max-width: 1199px) {
+  .header-area.style-one .bar-btn {
+    display: none;
+  }
+}
 .header-area.style-one .bar-btn.style-one .menu-line {
   position: absolute;
   left: 50%;
@@ -3258,6 +3286,32 @@ p {
 .header-area.style-one .bar-btn.style-one .menu-line .bar-line.bar-line:nth-child(2) {
   margin-top: 8px;
   width: 20px;
+}
+.header-area.style-one .main-menu-bar-btn {
+  display: none;
+  width: 50px;
+  height: 50px;
+  background: #573db8;
+  position: relative;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  cursor: pointer;
+  text-align: center;
+}
+@media (max-width: 1199px) {
+  .header-area.style-one .main-menu-bar-btn {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.header-area.style-one .main-menu-bar-btn svg {
+  width: 20px;
+  height: 20px;
+}
+.header-area.style-one .main-menu-bar-btn svg path {
+  fill: #ffffff;
 }
 
 /**
@@ -3312,6 +3366,11 @@ p {
   border-radius: 50px;
   cursor: pointer;
 }
+@media (max-width: 1199px) {
+  .header-area.style-two .bar-btn {
+    display: none;
+  }
+}
 .header-area.style-two .bar-btn.style-one .menu-line {
   position: absolute;
   left: 50%;
@@ -3337,6 +3396,32 @@ p {
   width: 16px;
   float: right;
   margin-top: 7px;
+}
+.header-area.style-two .main-menu-bar-btn {
+  display: none;
+  width: 50px;
+  height: 50px;
+  background: #573db8;
+  position: relative;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  cursor: pointer;
+  text-align: center;
+}
+@media (max-width: 1199px) {
+  .header-area.style-two .main-menu-bar-btn {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.header-area.style-two .main-menu-bar-btn svg {
+  width: 20px;
+  height: 20px;
+}
+.header-area.style-two .main-menu-bar-btn svg path {
+  fill: #ffffff;
 }
 
 /**
@@ -3398,6 +3483,11 @@ p {
   border-radius: 50px;
   cursor: pointer;
 }
+@media (max-width: 1199px) {
+  .header-area .bar-btn {
+    display: none;
+  }
+}
 .header-area .bar-btn.style-one .menu-line {
   position: absolute;
   left: 50%;
@@ -3424,12 +3514,71 @@ p {
   float: right;
   margin-top: 7px;
 }
+.header-area .main-menu-bar-btn {
+  display: none;
+  width: 50px;
+  height: 50px;
+  background: #573db8;
+  position: relative;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  cursor: pointer;
+  text-align: center;
+}
+@media (max-width: 1199px) {
+  .header-area .main-menu-bar-btn {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.header-area .main-menu-bar-btn svg {
+  width: 20px;
+  height: 20px;
+}
+.header-area .main-menu-bar-btn svg path {
+  fill: #ffffff;
+}
 .header-area .search-box {
   position: relative;
-  display: none;
+  display: block;
 }
-.header-area .search-box .search-icon {
+.header-area .search-box.active .search-dropdown {
+  opacity: 1;
+  visibility: visible;
+}
+.header-area .search-box.active .search-icon {
+  display: none !important;
+}
+.header-area .search-box.active .close-icon {
+  display: block !important;
+}
+.header-area .search-box .input-group-append {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0px;
+  background: #573db8;
+  padding: 6px 12px;
+  line-height: 38px;
+  text-align: center;
+}
+.header-area .search-box .input-group-append svg path {
+  fill: #ffffff;
+}
+.header-area .search-box .search-icon-box {
   cursor: pointer;
+}
+.header-area .search-box .search-icon-box svg {
+  width: 18px;
+  height: 18px;
+}
+.header-area .search-box .search-icon-box .search-icon {
+  display: block;
+}
+.header-area .search-box .search-icon-box .close-icon {
+  display: none;
 }
 .header-area .search-dropdown {
   position: absolute;
@@ -3438,7 +3587,8 @@ p {
   margin: 0px;
   transform: translate(-12px, 27px);
   width: 350px;
-  display: block;
+  opacity: 0;
+  visibility: hidden;
   padding: 15px;
   border: 0;
   -webkit-transition: all 0.4s;
@@ -3452,7 +3602,22 @@ p {
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
-  background: #573db8;
+  background: #ffffff;
+}
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .header-area .search-dropdown {
+    width: 300px;
+  }
+}
+@media (max-width: 375px) {
+  .header-area .search-dropdown {
+    width: 250px;
+  }
+}
+@media (max-width: 320px) {
+  .header-area .search-dropdown {
+    right: -47px;
+  }
 }
 .header-area .search-dropdown .form-control {
   border: 1px solid #716f73 !important;
@@ -3486,7 +3651,7 @@ p {
 ===========================*/
 /* Theme Default CSS */
 /*-======== main-menu =======-*/
-@media (max-width: 1280px) {
+@media (max-width: 1199px) {
   .menu-wrapper {
     float: right;
   }
@@ -3494,6 +3659,9 @@ p {
 .menu-wrapper .contact-number {
   font-size: 18px;
   font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 @media (max-width: 425px) {
   .menu-wrapper .contact-number {
@@ -3534,9 +3702,9 @@ p {
 .main-menu ul li:hover .dropdown-menu-item {
   visibility: visible;
   opacity: 1;
-  top: 50px;
+  transform: scaleY(1);
 }
-@media (max-width: 1280px) {
+@media (max-width: 1199px) {
   .main-menu {
     display: none;
   }
@@ -3546,7 +3714,7 @@ p {
 .dropdown-menu-item {
   position: absolute;
   left: 0;
-  top: 60px;
+  top: 50px;
   width: 220px;
   background-color: #ffffff;
   padding: 15px 25px;
@@ -3561,9 +3729,11 @@ p {
   -webkit-box-shadow: 0 0 40px rgba(82, 85, 90, 0.1);
   -moz-box-shadow: 0 0 40px rgba(82, 85, 90, 0.1);
   box-shadow: 0 0 40px rgba(82, 85, 90, 0.1);
+  transform-origin: top;
   opacity: 0;
   visibility: hidden;
   display: block !important;
+  transform: scaleY(0);
 }
 .dropdown-menu-item li {
   display: block !important;
@@ -3592,39 +3762,48 @@ p {
 .sidebar-filter {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 320px;
+  right: 0;
+  width: 400px;
   height: 100vh;
-  background-color: #f7f1fc;
+  background-color: #ffffff;
   overflow-x: hidden;
   z-index: 1035;
-  -webkit-transition: all 0.4s cubic-bezier(0.7, 0, 0.2, 1);
-  -moz-transition: all 0.4s cubic-bezier(0.7, 0, 0.2, 1);
-  -ms-transition: all 0.4s cubic-bezier(0.7, 0, 0.2, 1);
-  -o-transition: all 0.4s cubic-bezier(0.7, 0, 0.2, 1);
-  transition: all 0.4s cubic-bezier(0.7, 0, 0.2, 1);
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -ms-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  transition: all 0.6s;
   -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
   padding: 20px 0 20px 0px;
-  transform: translateX(-100%);
+  transform: translateX(100%);
+  padding-left: 20px;
+  padding-right: 20px;
 }
-.off-canvas.active,
-.sidebar-filter.active {
-  transform: translateX(0);
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .off-canvas,
+  .sidebar-filter {
+    width: 320px;
+  }
 }
 .off-canvas .off-canvas-close,
 .sidebar-filter .off-canvas-close {
   cursor: pointer;
   font-size: 20px;
   position: absolute;
-  right: 20px;
+  left: 20px;
   top: 20px;
   color: #031f42;
+  z-index: 9999;
 }
 .off-canvas .off-canvas-close:hover,
 .sidebar-filter .off-canvas-close:hover {
   color: #031f42;
+}
+.off-canvas.active,
+.sidebar-filter.active {
+  transform: translateX(0);
 }
 
 .off-canvas-dropdown-toggle.icon-element-xs {
@@ -3664,7 +3843,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 20px;
+  padding: 12px 0px;
 }
 .off-canvas-menu .list-item > div > a {
   color: #031f42;
@@ -3691,6 +3870,120 @@ p {
 
 .sidebar-filter-wrap {
   padding-top: 60px;
+}
+
+/**
+ * Stylesheet:  style.css
+ * Theme:       Technova - IT Startup & Agency HTML5 Template
+ * Version:     1.0
+ * Author:     	BoomDevs
+ * 
+ */
+/* Table of contents
+=========================
+
+===========================*/
+/* Theme Default CSS */
+/*====== off-canvas =======*/
+.off-canvas-sidebar-contact .off-canvas-contact,
+.off-canvas-sidebar-contact .contact-sidebar-filter {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: 100vh;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  z-index: 1035;
+  padding: 40px;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -ms-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  transition: all 0.6s;
+  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  transform: translateX(100%);
+}
+.off-canvas-sidebar-contact .off-canvas-contact.active,
+.off-canvas-sidebar-contact .contact-sidebar-filter.active {
+  transform: translateX(0%);
+}
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .off-canvas-sidebar-contact .off-canvas-contact,
+  .off-canvas-sidebar-contact .contact-sidebar-filter {
+    width: 320px;
+  }
+}
+
+.off-convas-wrapper .section-heading .section-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #07000e;
+}
+.off-convas-wrapper .off-canvas-close {
+  cursor: pointer;
+  width: fit-content;
+}
+.off-convas-wrapper .off-canvas-content .off-canvas-item {
+  display: flex;
+  gap: 10px;
+}
+.off-convas-wrapper .off-canvas-content .off-canvas-item .section-title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #716f73;
+}
+.off-convas-wrapper .off-canvas-content .off-canvas-item svg {
+  padding-top: 2px;
+}
+.off-convas-wrapper .off-canvas-content .off-canvas-item svg path {
+  fill: #573db8;
+}
+.off-convas-wrapper .off-canvas-content .shear-media .section-heading .section-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #07000e;
+}
+@media (max-width: 525px) {
+  .off-convas-wrapper .off-canvas-content .shear-media {
+    margin-top: 40px;
+  }
+}
+.off-convas-wrapper .off-canvas-content .shear-media .shear-media-wrap {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.off-convas-wrapper .off-canvas-content .shear-media .shear-media-wrap .media-icon {
+  width: 50px;
+  height: 50px;
+  background: #f7f1fc;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.off-convas-wrapper .off-canvas-content .shear-media .shear-media-wrap .media-icon svg {
+  padding-top: 0;
+}
+.off-convas-wrapper .off-canvas-content .shear-media .shear-media-wrap .media-icon svg path {
+  fill: #573db8;
+}
+.off-convas-wrapper .off-canvas-content .shear-media .shear-media-wrap .media-icon:hover {
+  background: #573db8;
+}
+.off-convas-wrapper .off-canvas-content .shear-media .shear-media-wrap .media-icon:hover svg path {
+  fill: #ffffff;
 }
 
 /**
@@ -4137,9 +4430,19 @@ p {
     font-size: 62px;
   }
 }
+@media (max-width: 425px) {
+  .hero-area.style-two .hero-content .hero-section .section-title {
+    font-size: 52px;
+  }
+}
 @media (max-width: 375px) {
   .hero-area.style-two .hero-content .hero-section .section-title {
     font-size: 46px;
+  }
+}
+@media (max-width: 320px) {
+  .hero-area.style-two .hero-content .hero-section .section-title {
+    font-size: 40px;
   }
 }
 .hero-area.style-two .hero-content .hero-section .hero-img {
@@ -5059,7 +5362,7 @@ p {
   color: #716f73;
   font-size: 18px;
   font-weight: 500;
-  margin-left: 8px;
+  margin-right: 8px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .services-details-area .service-wrapper {
@@ -5226,10 +5529,287 @@ p {
 
 ===========================*/
 /* Theme Default CSS */
+/**
+ * Stylesheet:  style.css
+ * Theme:       Technova - IT Startup & Agency HTML5 Template
+ * Version:     1.0
+ * Author:     	BoomDevs
+ * 
+ */
+/* Table of contents
+=========================
+
+===========================*/
+/* Theme Default CSS */
+/*==================BLOG DETAILS ARE===================*/
+.blog-details-area .blog-post-details .blog-post-details-item img {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+.blog-details-area .blog-post-details .blog-post-details-item .badge-wrap {
+  display: flex;
+  gap: 25px;
+}
+.blog-details-area .blog-post-details .blog-post-details-item .badge-wrap .card-badge {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.blog-details-area .blog-post-details .blog-post-details-item .badge-wrap .card-badge svg path {
+  fill: #573db8;
+}
+.blog-details-area .blog-post-details .blog-post-details-item .badge-wrap .card-badge .badge-text {
+  font-weight: 400;
+  font-size: 14px;
+}
+.blog-details-area .blog-post-details .blog-post-details-item .blog-content ul {
+  margin-top: 10px;
+}
+.blog-details-area .blog-post-details .blog-post-details-item .blog-content ul li {
+  margin-top: 20px;
+  color: #716f73;
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 8px;
+}
+.blog-details-area .blog-post-details .blog-post-details-item .blog-content .section--title {
+  font-size: 32px;
+  font-weight: 700;
+}
+.blog-details-area .blog-post-details .blog-post-details-item .client-review {
+  padding: 40px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background: #8fd45f;
+}
+.blog-details-area .blog-post-details .blog-post-details-item .client-review p {
+  color: #07000e;
+}
+.blog-details-area .blog-post-details .blog-post-details-item .post-img {
+  display: flex;
+  gap: 30px;
+}
+.blog-details-area .blog-post-details .blog-post-details-item .post-info-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .blog-details-area .blog-post-details .blog-post-details-item .post-info-wrap {
+    flex-wrap: wrap;
+  }
+}
+.blog-details-area .blog-post-details .blog-post-details-item .post-info-wrap .post-tags {
+  display: flex;
+  gap: 10px;
+}
+.blog-details-area .blog-post-details .blog-post-details-item .post-info-wrap .post-tags .section-title {
+  font-size: 32px;
+  font-weight: 700;
+}
+.blog-details-area .blog-post-details .blog-post-details-item .post-info-wrap .post-tags .tags-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.blog-details-area .blog-post-details .blog-post-details-item .post-info-wrap .post-tags .tags-wrap a {
+  padding: 4px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  color: #716f73;
+  font-size: 14px;
+  font-weight: 400;
+}
+@media (max-width: 525px) {
+  .blog-details-area .blog-post-details .blog-post-details-item .post-info-wrap .shear-media {
+    margin-top: 40px;
+  }
+}
+.blog-details-area .blog-post-details .blog-post-details-item .post-info-wrap .shear-media ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.blog-details-area .blog-post-details .blog-post-details-item .post-info-wrap .shear-media ul li {
+  width: 38px;
+  height: 38px;
+  background: #f7f1fc;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  line-height: 38px;
+  text-align: center;
+}
+.blog-details-area .blog-post-details .blog-post-details-item .post-info-wrap .shear-media ul li svg path {
+  fill: #573db8;
+}
+.blog-details-area .blog-post-details .comment-wrapper .comment-info .section-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+.blog-details-area .blog-post-details .comment-wrapper .comment-info .user-comment {
+  background: #f7f1fc;
+  padding: 30px 40px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+.blog-details-area .blog-post-details .comment-wrapper .comment-info .user-comment .user-info {
+  display: flex;
+  justify-content: space-between;
+}
+.blog-details-area .blog-post-details .comment-wrapper .comment-info .user-comment .user-info .user-name {
+  font-size: 24px;
+  font-weight: 700;
+}
+.blog-details-area .blog-post-details .comment-wrapper .comment-info .user-comment .replay-btn {
+  font-size: 18px;
+  font-weight: 700;
+  color: #07000e;
+  padding: 10px 20px;
+  border: 1px solid #573db8;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+}
+.blog-details-area .blog-post-details .comment-wrapper .comment-form .section-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+.blog-details-area .blog-post-details .comment-wrapper .comment-form .form-box .form-content form input,
+.blog-details-area .blog-post-details .comment-wrapper .comment-form .form-box .form-content form textarea {
+  border-color: #ececec;
+}
+.blog-details-area .blog-post-details .comment-wrapper .comment-form .form-box .form-content form .user-chosen-select-container .chosen-container .chosen-single {
+  border-color: #ececec !important;
+}
+.blog-details-area .blog-post-details .comment-wrapper .comment-form .form-box .form-content form .form-slide div {
+  width: 100%;
+}
+
+/**
+ * Stylesheet:  style.css
+ * Theme:       Technova - IT Startup & Agency HTML5 Template
+ * Version:     1.0
+ * Author:     	BoomDevs
+ * 
+ */
+/* Table of contents
+=========================
+
+===========================*/
+/* Theme Default CSS */
+/*-======== contact area =======-*/
+.contact-us-area.style-one .contact-info-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contact-us-area.style-one .contact-info-wrapper .contact-item {
+  flex-basis: 46%;
+  padding-bottom: 30px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .contact-us-area.style-one .contact-info-wrapper .contact-item {
+    flex-basis: 100%;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .contact-us-area.style-one .contact-info-wrapper .contact-item {
+    flex-basis: 100%;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .contact-us-area.style-one .contact-info-wrapper .contact-item {
+    flex-basis: 100%;
+  }
+}
+.contact-us-area.style-one .contact-info-wrapper .contact-item .icon {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.contact-us-area.style-one .contact-info-wrapper .contact-item .section-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+.contact-us-area.style-one .contact-info-wrapper .shear-media {
+  margin-left: 20px;
+}
+@media (max-width: 525px) {
+  .contact-us-area.style-one .contact-info-wrapper .shear-media {
+    margin-top: 0px;
+  }
+}
+.contact-us-area.style-one .contact-info-wrapper .shear-media ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.contact-us-area.style-one .contact-info-wrapper .shear-media ul li {
+  width: 38px;
+  height: 38px;
+  background: #f7f1fc;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  line-height: 38px;
+  text-align: center;
+}
+.contact-us-area.style-one .contact-info-wrapper .shear-media ul li svg path {
+  fill: #573db8;
+}
+.contact-us-area.style-one .form-box {
+  background: #f7f1fc;
+  margin-left: 30px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .contact-us-area.style-one .form-box {
+    margin-left: 0px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .contact-us-area.style-one .form-box {
+    margin-left: 0px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .contact-us-area.style-one .form-box {
+    margin-left: 0px;
+  }
+}
+.contact-us-area.style-one .form-box .form-content .form-control {
+  border: 0px;
+}
+.contact-us-area.style-one .form-box .form-content .user-chosen-select-container .chosen-container-single .chosen-single {
+  border: 0px;
+}
+
+/**
+ * Stylesheet:  style.css
+ * Theme:       Technova - IT Startup & Agency HTML5 Template
+ * Version:     1.0
+ * Author:     	BoomDevs
+ * 
+ */
+/* Table of contents
+=========================
+
+===========================*/
+/* Theme Default CSS */
 /*-======== video-box =======-*/
 .video-box.style-one {
   position: relative;
   width: 200px;
+}
+.video-box.style-one img {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .video-box.style-one {
@@ -5310,6 +5890,9 @@ p {
 }
 .video-box.style-two img {
   width: 100%;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
 }
 .video-box.style-two .play-btn {
   position: absolute;
@@ -6163,6 +6746,9 @@ p {
   font-weight: 500;
   color: #ffffff;
 }
+.card-wrapper.style-two .card-item .card-content a {
+  color: #07000e;
+}
 .card-wrapper.style-two .card-item .card-content .card-title {
   font-size: 24px;
   font-weight: 700;
@@ -6541,6 +7127,9 @@ p {
 .card-wrapper.style-five .card-item .card-img img {
   width: 100%;
   position: relative;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
 }
 .card-wrapper.style-five .card-item .card-img .card-badge {
   display: flex;
@@ -7103,6 +7692,9 @@ p {
 .card-wrapper.style-ten .card-item .card-content .card-date-btn a .theme-btn:hover {
   color: #07000e;
 }
+.card-wrapper.style-ten .card-item .card-content a {
+  color: #07000e;
+}
 .card-wrapper.style-ten .card-item .card-content .card-title {
   font-size: 24px;
   font-weight: 700;
@@ -7631,6 +8223,72 @@ p {
 
 ===========================*/
 /* Theme Default CSS */
+/*-======== card =======-*/
+.card-wrapper.style-sixteen .card-item .card-img img {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  width: 100%;
+}
+.card-wrapper.style-sixteen .card-item .card-content {
+  background: #f7f1fc;
+  padding: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.card-wrapper.style-sixteen .card-item .card-content .badge-wrap {
+  display: flex;
+  gap: 25px;
+}
+.card-wrapper.style-sixteen .card-item .card-content .badge-wrap .card-badge {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.card-wrapper.style-sixteen .card-item .card-content .badge-wrap .card-badge svg path {
+  fill: #573db8;
+}
+.card-wrapper.style-sixteen .card-item .card-content .badge-wrap .card-badge .badge-text {
+  font-weight: 400;
+}
+.card-wrapper.style-sixteen .card-item .card-content .card-heading .card-title {
+  font-size: 32px;
+  font-weight: 700;
+  padding-right: 90px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .card-wrapper.style-sixteen .card-item .card-content .card-heading .card-title {
+    padding-right: 0;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .card-wrapper.style-sixteen .card-item .card-content .card-heading .card-title {
+    padding-right: 0;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .card-wrapper.style-sixteen .card-item .card-content .card-heading .card-title {
+    padding-right: 0;
+    font-size: 24px;
+  }
+}
+.card-wrapper.style-sixteen .card-item .card-content .theme-btn:nth-child(1) {
+  background: #ffffff;
+  color: #07000e;
+  border: 0;
+}
+
+/**
+ * Stylesheet:  style.css
+ * Theme:       Technova - IT Startup & Agency HTML5 Template
+ * Version:     1.0
+ * Author:     	BoomDevs
+ * 
+ */
+/* Table of contents
+=========================
+
+===========================*/
+/* Theme Default CSS */
 /*-======== about-wrapper =======-*/
 .about-wrapper.style-one {
   background: #ffffff;
@@ -7676,6 +8334,11 @@ p {
   .about-wrapper.style-one .about-wrap .about-img {
     width: 100%;
   }
+}
+.about-wrapper.style-one .about-wrap .about-img img {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .about-wrapper.style-one .about-wrap .about-img img {
@@ -8849,7 +9512,7 @@ video {
 }
 .slider-wrapper.style-seven .slider-carousel .owl-nav {
   position: relative;
-  padding: 20px 30px;
+  padding: 10px 25px;
   border: 1px solid rgb(236, 236, 236);
   display: flex;
   justify-content: space-between;
@@ -8963,6 +9626,7 @@ video {
 .form-wrapper.style-one .form-content label {
   font-size: 18px;
   font-weight: 700;
+  margin-bottom: 10px;
 }
 .form-wrapper.style-one .form-content .form-control {
   padding: 16px 30px;
@@ -9036,10 +9700,11 @@ video {
   background-repeat: no-repeat !important;
 }
 .user-chosen-select-container .chosen-container.chosen-container-single .chosen-search input[type=text] {
-  padding: 10px 30px !important;
+  padding: 10px 20px !important;
   -webkit-border-radius: 5px !important;
   -moz-border-radius: 5px !important;
   border-radius: 5px !important;
+  background: none !important;
 }
 .user-chosen-select-container .chosen-container.chosen-container-active.chosen-with-drop .chosen-single {
   border-bottom-left-radius: 0 !important;
@@ -9198,6 +9863,9 @@ video {
 .accordion-wrapper.style-one .faq-img img {
   width: 100%;
   height: 100%;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
 }
 
 /**
@@ -9382,6 +10050,13 @@ video {
     padding: 30px;
   }
 }
+.contact-card.style-one .contact-content .logo {
+  margin-bottom: 30px;
+}
+.contact-card.style-one .contact-content .logo img {
+  width: 153px;
+  height: 39px;
+}
 .contact-card.style-one .contact-content .section-heading .section-desc {
   color: #ffffff;
 }
@@ -9402,6 +10077,197 @@ video {
 }
 .contact-card.style-one .contact-content .theme-btn svg path {
   fill: #07000e;
+}
+
+/**
+ * Stylesheet:  style.css
+ * Theme:       Technova - IT Startup & Agency HTML5 Template
+ * Version:     1.0
+ * Author:     	BoomDevs
+ * 
+ */
+/* Table of contents
+=========================
+
+===========================*/
+/* Theme Default CSS */
+/*-======== sidebar style-two  =======-*/
+.sidebar.style-two {
+  padding: 40px;
+  border: 1px solid rgb(236, 236, 236);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+@media (max-width: 1024px) {
+  .sidebar.style-two {
+    padding: 20px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .sidebar.style-two {
+    margin-top: 40px;
+    padding: 40px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .sidebar.style-two {
+    margin-top: 40px;
+    padding: 40px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .sidebar.style-two {
+    margin-top: 40px;
+    padding: 20px;
+  }
+}
+.sidebar.style-two .side-section-heading {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(236, 236, 236);
+}
+.sidebar.style-two .side-section-heading .section-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+.sidebar.style-two .search-bar {
+  position: relative;
+}
+.sidebar.style-two .search-bar .form-control {
+  position: relative;
+  border: 0;
+  background: #f7f1fc;
+  padding-left: 30px;
+  padding-right: 40px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+}
+.sidebar.style-two .search-bar .form-control::placeholder {
+  color: #716f73;
+}
+.sidebar.style-two .search-bar .search-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+.sidebar.style-two .popular-post .post-item {
+  border-bottom: 1px solid rgb(236, 236, 236);
+  padding-bottom: 10px;
+  margin-top: 30px;
+}
+.sidebar.style-two .popular-post .post-item:last-child {
+  border: 0;
+}
+.sidebar.style-two .popular-post .post-item .post-meta {
+  margin-bottom: 10px;
+}
+.sidebar.style-two .popular-post .post-item .post-meta .meta-sub {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.sidebar.style-two .popular-post .post-item .post-meta .meta-sub svg path {
+  fill: #573db8;
+}
+.sidebar.style-two .popular-post .post-item .post-meta .meta-sub .badge-text {
+  font-size: 14px;
+  font-weight: 500;
+}
+.sidebar.style-two .popular-post .post-item .post-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+.sidebar.style-two .card-wrapper.style-fifteen .card-item {
+  background: initial;
+  padding: 0px;
+}
+.sidebar.style-two .card-wrapper.style-fifteen .card-item .catagory-item {
+  background: #f7f1fc;
+}
+.sidebar.style-two .popular-tags .tags-cloud {
+  padding-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+.sidebar.style-two .popular-tags .tags-cloud a {
+  padding: 4px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  color: #716f73;
+  font-size: 14px;
+  font-weight: 400;
+}
+.sidebar.style-two .contact-card .contact-content .section-title {
+  font-size: 26px;
+}
+.sidebar.style-two .contact-card .contact-content .theme-btn {
+  padding: 16px;
+}
+
+/**
+ * Stylesheet:  style.css
+ * Theme:       Technova - IT Startup & Agency HTML5 Template
+ * Version:     1.0
+ * Author:     	BoomDevs
+ * 
+ */
+/* Table of contents
+=========================
+
+===========================*/
+/* Theme Default CSS */
+/*-======== sidebar style-one  =======-*/
+.pagination.style-one .page-item {
+  margin-left: 20px;
+}
+.pagination.style-one .page-item.active .page-link {
+  color: #ffffff;
+  background: #573db8;
+}
+.pagination.style-one .page-item .page-link {
+  border-color: rgb(236, 236, 236);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #07000e;
+  padding: 0;
+  text-align: center;
+  line-height: 50px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.pagination.style-one .page-item .page-link svg {
+  width: 14px;
+}
+.pagination.style-one .page-item .page-link svg path {
+  color: #573db8;
+}
+.pagination.style-one .page-item .page-link:focus {
+  color: 0 !important;
+  background-color: initial;
+  box-shadow: none !important;
+}
+.pagination.style-one .page-item .page-link:hover {
+  color: #ffffff;
+  background: #573db8;
+}
+.pagination.style-one .page-item .page-link:hover svg path {
+  color: #ffffff;
 }
 
 /**

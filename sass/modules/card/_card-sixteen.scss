@@ -1,0 +1,64 @@
+@use "../../variables" as v;
+@use "../../mixin" as m;
+
+/*-======== card =======-*/
+.card-wrapper {
+  &.style-sixteen {
+    .card-item {
+      .card-img {
+        img {
+          border-top-right-radius: 20px;
+          border-top-left-radius: 20px;
+          width: 100%;
+        }
+      }
+      .card-content {
+        background: v.$gray-100;
+        padding: 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        .badge-wrap {
+          display: flex;
+          gap: 25px;
+          .card-badge {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            svg {
+              path {
+                fill: v.$primary-color;
+              }
+            }
+            .badge-text {
+              font-weight: v.$font-weight-regular;
+            }
+          }
+        }
+        .card-heading {
+          .card-title {
+            font-size: 32px;
+            font-weight: v.$font-weight-bold;
+            padding-right: 90px;
+            @include m.md {
+              padding-right: 0;
+            }
+            @include m.sm {
+              padding-right: 0;
+            }
+            @include m.xs {
+              padding-right: 0;
+              font-size: 24px;
+            }
+          }
+        }
+        .theme-btn {
+          &:nth-child(1) {
+            background: v.$white;
+            color: v.$gray-900;
+            border: 0;
+          }
+        }
+      }
+    }
+  }
+}

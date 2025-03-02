@@ -19,6 +19,7 @@
       label {
         font-size: 18px;
         font-weight: v.$font-weight-bold;
+        margin-bottom: 10px;
       }
       .form-control {
         padding: 16px 30px;
@@ -35,13 +36,13 @@
         display: flex;
         gap: 30px;
         justify-content: space-between;
-        @include m.device-425px{
+        @include m.device-425px {
           flex-wrap: wrap;
         }
-        div{
-          @include m.device-425px{
+        div {
+          @include m.device-425px {
             width: 100%;
-          } 
+          }
         }
       }
     }

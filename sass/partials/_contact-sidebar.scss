@@ -1,0 +1,99 @@
+@use "./variables" as v;
+@use "./mixin" as m;
+/*====== off-canvas =======*/
+
+.off-canvas-sidebar-contact {
+  .off-canvas-contact,
+  .contact-sidebar-filter {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 100vh;
+    background-color: v.$white;
+    overflow-x: hidden;
+    z-index: 1035;
+    padding: 40px;
+    @include m.transition(0.6s);
+    @include m.box-shadow(0 1px 8px rgba(0, 0, 0, 0.1));
+    @include m.transform(translateX(100%));
+    &.active {
+      @include m.transform(translateX(0%));
+    }
+    @include m.xs {
+      width: 320px;
+    }
+  }
+}
+.off-convas-wrapper {
+  .section-heading {
+    .section-title {
+      font-size: 28px;
+      font-weight: v.$font-weight-bold;
+      color: v.$gray-900;
+    }
+  }
+  .off-canvas-close {
+    cursor: pointer;
+    width: fit-content;
+  }
+  .off-canvas-content {
+    .off-canvas-item {
+      display: flex;
+      gap: 10px;
+      .section-title {
+        font-size: 20px;
+        font-weight: v.$font-weight-medium;
+        line-height: 22px;
+        color: v.$gray-800;
+      }
+      svg {
+        padding-top: 2px;
+        path {
+          fill: v.$primary-color;
+        }
+      }
+    }
+    .shear-media {
+      .section-heading {
+        .section-title {
+          font-size: 28px;
+          font-weight: v.$font-weight-bold;
+          color: v.$gray-900;
+        }
+      }
+      @include m.device-525px {
+        margin-top: 40px;
+      }
+      .shear-media-wrap {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        .media-icon {
+          width: 50px;
+          height: 50px;
+          background: v.$gray-100;
+          @include m.border-radius(50%);
+          line-height: 50px;
+          text-align: center;
+          @include m.transition(0.3s);
+          svg {
+            padding-top: 0;
+            path {
+              fill: v.$primary-color;
+            }
+          }
+          &:hover {
+            background: v.$primary-color;
+            svg {
+              path {
+                fill: v.$white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

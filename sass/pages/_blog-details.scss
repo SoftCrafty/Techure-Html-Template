@@ -1,0 +1,169 @@
+@use "./variables" as v;
+@use "./mixin" as m;
+/*==================BLOG DETAILS ARE===================*/
+.blog-details-area {
+  .blog-post-details {
+    .blog-post-details-item {
+      img {
+        @include m.border-radius(20px);
+      }
+      .badge-wrap {
+        display: flex;
+        gap: 25px;
+        .card-badge {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          svg {
+            path {
+              fill: v.$primary-color;
+            }
+          }
+          .badge-text {
+            font-weight: v.$font-weight-regular;
+            font-size: 14px;
+          }
+        }
+      }
+      .blog-content {
+        ul {
+          margin-top: 10px;
+          li {
+            margin-top: 20px;
+            color: v.$gray-800;
+            font-size: 18px;
+            font-weight: v.$font-weight-medium;
+            margin-right: 8px;
+          }
+        }
+        .section--title {
+          font-size: 32px;
+          font-weight: v.$font-weight-bold;
+        }
+      }
+      .client-review {
+        padding: 40px;
+        @include m.border-radius(20px);
+        background: v.$secondary;
+        p {
+          color: v.$gray-900;
+        }
+      }
+      .post-img {
+        display: flex;
+        gap: 30px;
+      }
+      .post-info-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include m.xs {
+          flex-wrap: wrap;
+        }
+        .post-tags {
+          display: flex;
+          gap: 10px;
+          .section-title {
+            font-size: 32px;
+            font-weight: v.$font-weight-bold;
+          }
+          .tags-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            a {
+              padding: 4px 10px;
+              border: 1px solid v.$border-color-04;
+              @include m.border-radius(50px);
+              color: v.$gray-800;
+              font-size: 14px;
+              font-weight: v.$font-weight-regular;
+            }
+          }
+        }
+        .shear-media {
+          @include m.device-525px {
+            margin-top: 40px;
+          }
+          ul {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            li {
+              width: 38px;
+              height: 38px;
+              background: v.$gray-100;
+              @include m.border-radius(50%);
+              line-height: 38px;
+              text-align: center;
+              svg {
+                path {
+                  fill: v.$primary-color;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .comment-wrapper {
+      .comment-info {
+        .section-title {
+          font-size: 24px;
+          font-weight: v.$font-weight-bold;
+        }
+        .user-comment {
+          background: v.$gray-100;
+          padding: 30px 40px;
+          @include m.border-radius(20px);
+          .user-info {
+            display: flex;
+            justify-content: space-between;
+            .user-name {
+              font-size: 24px;
+              font-weight: v.$font-weight-bold;
+            }
+          }
+          .section-desc {
+          }
+          .replay-btn {
+            font-size: 18px;
+            font-weight: v.$font-weight-bold;
+            color: v.$gray-900;
+            padding: 10px 20px;
+            border: 1px solid v.$primary-color;
+            @include m.border-radius(50px);
+          }
+        }
+      }
+      .comment-form {
+        .section-title {
+          font-size: 24px;
+          font-weight: v.$font-weight-bold;
+        }
+        .form-box {
+          .form-content {
+            form {
+              input,
+              textarea {
+                border-color: v.$gray-200;
+              }
+              .user-chosen-select-container {
+                .chosen-container {
+                  .chosen-single {
+                    border-color: v.$gray-200 !important;
+                  }
+                }
+              }
+              .form-slide {
+                div {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

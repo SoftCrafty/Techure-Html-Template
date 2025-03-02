@@ -1,0 +1,83 @@
+@use "./variables" as v;
+@use "./mixin" as m;
+/*-======== contact area =======-*/
+.contact-us-area {
+  &.style-one {
+    .contact-info-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .contact-item {
+        flex-basis: 46%;
+        padding-bottom: 30px;
+        @include m.md {
+          flex-basis: 100%;
+        }
+        @include m.sm {
+          flex-basis: 100%;
+        }
+        @include m.xs {
+          flex-basis: 100%;
+        }
+        .icon {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+        }
+        .section-title {
+          font-size: 18px;
+          font-weight: v.$font-weight-bold;
+        }
+      }
+      .shear-media {
+        margin-left: 20px;
+        @include m.device-525px {
+          margin-top: 0px;
+        }
+        ul {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          li {
+            width: 38px;
+            height: 38px;
+            background: v.$gray-100;
+            @include m.border-radius(50%);
+            line-height: 38px;
+            text-align: center;
+            svg {
+              path {
+                fill: v.$primary-color;
+              }
+            }
+          }
+        }
+      }
+    }
+    .form-box {
+      background: v.$gray-100;
+      margin-left: 30px;
+      @include m.md {
+        margin-left: 0px;
+      }
+      @include m.sm {
+        margin-left: 0px;
+      }
+      @include m.xs {
+        margin-left: 0px;
+      }
+      .form-content {
+        .form-control {
+          border: 0px;
+        }
+        .user-chosen-select-container {
+          .chosen-container-single {
+            .chosen-single {
+              border: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

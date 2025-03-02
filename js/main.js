@@ -3,11 +3,31 @@
     $(document).ready(function () {
 
   /*==== SlideBar =====*/
-  /*=========barBtn==========*/ 
+  /*=========Btn==========*/ 
     var barBtn = $('.bar-btn');
      barBtn.on('click', function() {
-      $('.off-canvas').toggleClass('active')
+      $('.off-canvas-contact').toggleClass('active')
      });
+  /*========= menu-bar-Btn ==========*/ 
+  var menuBarBtn = $('.main-menu-bar-btn');
+  menuBarBtn.on('click', function() {
+   $('.off-canvas').toggleClass('active')
+  });
+  /*========= CloseBtn ==========*/ 
+  var barBtn = $('.off-canvas-close, .body-overlay');
+  barBtn.on('click', function() {
+   $('.off-canvas-contact').removeClass('active')
+  }); 
+
+  var menubarCloseBtn = $('.off-canvas-close, .body-overlay');
+  menubarCloseBtn.on('click', function() {
+   $('.off-canvas').removeClass('active')
+  }); 
+  /*=====  Search bar ======*/
+  var searchBar =$(".search-icon-box");
+  searchBar.on("click", function () {
+    $('.search-box').toggleClass('active');
+  })
   /*=====  Navbar Fixed ======*/
         var $window = $(window);
           $window.on('scroll', function() {
@@ -31,11 +51,7 @@
           }
 
       });
-  /*========= menuCloseBtn ==========*/ 
-  var barBtn = $('.off-canvas-close, .body-overlay');
-  barBtn.on('click', function() {
-   $('.off-canvas').removeClass('active')
-  });
+
   
   /*=========== Sub menu ============*/
       var dropdowmMenu = $('.off-canvas-menu .off-canvas-dropdown');
