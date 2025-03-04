@@ -234,8 +234,6 @@
 
 .lates-project-area {
   .section-header {
-    border-top: 1px solid v.$gray-200;
-    padding-top: 20px;
     .card-wrapper {
       &.style-three {
         .card-item {
@@ -278,14 +276,6 @@
     }
   }
 }
-/*-======== story-area =======-*/
-
-.story-area {
-  .section-header {
-    border-top: 1px solid v.$border-color-03;
-    padding-top: 20px;
-  }
-}
 
 /*-======== work-process-area =======-*/
 
@@ -295,8 +285,6 @@
 
     .section-header {
       &.style-two {
-        border-top: 1px solid v.$border-color-03;
-        padding-top: 20px;
         .section-content {
           .section-title {
             flex-basis: 63%;

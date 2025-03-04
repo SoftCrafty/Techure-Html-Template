@@ -15,6 +15,22 @@
     &.header-fixed {
       background: v.$gray-900;
     }
+    .logo {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      margin-top: 3px;
+      .standard-logo {
+        display: block;
+      }
+      .sticky-logo {
+        display: none;
+      }
+      .logo-name {
+        font-size: 30px;
+        font-weight: v.$font-weight-bold;
+      }
+    }
     .menu-wrapper {
       .main-menu {
         ul {
@@ -34,9 +50,12 @@
       }
     }
     .contact-number {
-      font-size: 18px;
-      font-weight: v.$font-weight-bold;
-      color: v.$white;
+      a {
+        font-size: 18px;
+        font-weight: v.$font-weight-bold;
+        color: v.$white !important;
+      }
+
       @include m.device-425px {
         display: none;
       }

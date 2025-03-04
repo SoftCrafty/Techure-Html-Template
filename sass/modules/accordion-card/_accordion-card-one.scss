@@ -43,14 +43,14 @@
         }
       }
       .accordion {
-        .faq-item {
+        .accordion-list-item  {
           &.card {
             background: none;
             border-radius: 0;
             border: 0;
             border-bottom: 1px solid v.$border-color-06;
           }
-          .faq-header {
+          .accordion-title {
             button {
               background: initial;
               border: none;
@@ -86,7 +86,7 @@
             }
           }
           .accordion-collapse {
-            .faq-body {
+            .accordion-item-body {
               padding-bottom: 15px;
               .faq-desc {
                 color: v.$white;

@@ -3358,16 +3358,32 @@ p {
 .header-area.style-two.header-fixed {
   background: #07000e;
 }
+.header-area.style-two .logo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 3px;
+}
+.header-area.style-two .logo .standard-logo {
+  display: block;
+}
+.header-area.style-two .logo .sticky-logo {
+  display: none;
+}
+.header-area.style-two .logo .logo-name {
+  font-size: 30px;
+  font-weight: 700;
+}
 .header-area.style-two .menu-wrapper .main-menu ul li a {
   color: #ffffff;
 }
 .header-area.style-two .menu-wrapper .main-menu ul li .dropdown-menu-item li a {
   color: #07000e;
 }
-.header-area.style-two .contact-number {
+.header-area.style-two .contact-number a {
   font-size: 18px;
   font-weight: 700;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 @media (max-width: 425px) {
   .header-area.style-two .contact-number {
@@ -3475,6 +3491,22 @@ p {
 .header-area.style-three .header-wrapper {
   border-bottom: 1px solid #07000e;
   padding-bottom: 24px;
+}
+.header-area.style-three .logo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 3px;
+}
+.header-area.style-three .logo .standard-logo {
+  display: block;
+}
+.header-area.style-three .logo .sticky-logo {
+  display: none;
+}
+.header-area.style-three .logo .logo-name {
+  font-size: 30px;
+  font-weight: 700;
 }
 .header-area.style-three .menu-wrapper .main-menu ul li a {
   color: #07000e;
@@ -4312,10 +4344,6 @@ p {
 }
 
 /*-======== lates-project-area =======-*/
-.lates-project-area .section-header {
-  border-top: 1px solid #ececec;
-  padding-top: 20px;
-}
 .lates-project-area .section-header .card-wrapper.style-three .card-item .card-img img {
   width: initial;
   height: initial;
@@ -4356,19 +4384,9 @@ p {
   }
 }
 
-/*-======== story-area =======-*/
-.story-area .section-header {
-  border-top: 1px solid #cdcccf;
-  padding-top: 20px;
-}
-
 /*-======== work-process-area =======-*/
 .work-process-area.style-one {
   background: #f7f1fc;
-}
-.work-process-area.style-one .section-header.style-two {
-  border-top: 1px solid #cdcccf;
-  padding-top: 20px;
 }
 .work-process-area.style-one .section-header.style-two .section-content .section-title {
   flex-basis: 63%;
@@ -6481,6 +6499,7 @@ p {
   font-weight: 700;
   letter-spacing: 4px;
   color: #07000e;
+  line-height: 18px;
 }
 .section-header.style-one .section-title {
   font-size: 72px;
@@ -6918,120 +6937,6 @@ p {
 .card-wrapper.style-four .grid-item .card-item .card-content .card-heading .card-title .text-number {
   color: #ffffff;
   -webkit-text-stroke: 1px #716f73;
-}
-
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- * 
- */
-/* Table of contents
-=========================
-
-===========================*/
-/* Theme Default CSS */
-/*-======== client-box =======-*/
-.card-wrapper.style-five .card-item {
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
-  border: 1px solid #cdcccf;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
-}
-.card-wrapper.style-five .card-item:hover {
-  border-color: #573db8;
-}
-.card-wrapper.style-five .card-item:hover .more-btn svg path {
-  fill: #573db8;
-}
-.card-wrapper.style-five .card-item .card-img {
-  position: relative;
-  padding: 10px 10px 0px 10px;
-}
-.card-wrapper.style-five .card-item .card-img img {
-  width: 100%;
-  position: relative;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
-}
-.card-wrapper.style-five .card-item .card-img .card-badge {
-  display: flex;
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
-  color: #07000e;
-  gap: 5px;
-}
-.card-wrapper.style-five .card-item .card-img .card-badge .badge-icon {
-  font-size: 15px;
-  width: 30px;
-  height: 30px;
-  background: #8fd45f;
-  text-align: center;
-  line-height: 30px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-}
-.card-wrapper.style-five .card-item .card-img .card-badge .badge-date {
-  font-size: 12px;
-  font-weight: 400;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  border-radius: 50px;
-  background: #8fd45f;
-  line-height: 18px;
-  padding: 5px 10px;
-  color: #07000e;
-}
-.card-wrapper.style-five .card-item .card-content {
-  padding: 20px 30px 30px 30px;
-}
-.card-wrapper.style-five .card-item .card-content .card-sub ul li {
-  display: inline-block;
-  margin-right: 8px;
-}
-.card-wrapper.style-five .card-item .card-content .card-sub ul li svg {
-  width: 18px;
-  height: 18px;
-}
-.card-wrapper.style-five .card-item .card-content .card-sub ul li span {
-  font-size: 12px;
-  font-weight: 400;
-  margin-left: 5px;
-}
-.card-wrapper.style-five .card-item .card-content .card-heading {
-  padding-top: 20px;
-}
-.card-wrapper.style-five .card-item .card-content .card-heading .card-title {
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 34px;
-}
-.card-wrapper.style-five .card-item .card-content .more-btn {
-  color: #07000e;
-  display: flex;
-  gap: 5px;
-  align-items: center;
-}
-.card-wrapper.style-five .card-item .card-content .more-btn p {
-  color: #07000e;
-  font-size: 18px;
-  font-weight: 700;
-}
-.card-wrapper.style-five .card-item .card-content .more-btn svg path {
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
 }
 
 /**
@@ -8270,6 +8175,120 @@ p {
 }
 .project-card.style-1:hover .meta {
   background: #573db8;
+}
+
+/**
+ * Stylesheet:  style.css
+ * Theme:       Technova - IT Startup & Agency HTML5 Template
+ * Version:     1.0
+ * Author:     	BoomDevs
+ * 
+ */
+/* Table of contents
+=========================
+
+===========================*/
+/* Theme Default CSS */
+/*-======== client-box =======-*/
+.post-card.style-1 {
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  border: 1px solid #cdcccf;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+.post-card.style-1:hover {
+  border-color: #573db8;
+}
+.post-card.style-1:hover .more-btn svg path {
+  fill: #573db8;
+}
+.post-card.style-1 .image {
+  position: relative;
+  padding: 10px 10px 0px 10px;
+}
+.post-card.style-1 .image img {
+  width: 100%;
+  position: relative;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+.post-card.style-1 .image .post-meta {
+  display: flex;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  color: #07000e;
+  gap: 5px;
+}
+.post-card.style-1 .image .post-meta .icon {
+  font-size: 15px;
+  width: 30px;
+  height: 30px;
+  background: #8fd45f;
+  text-align: center;
+  line-height: 30px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.post-card.style-1 .image .post-meta .single-post-meta {
+  font-size: 12px;
+  font-weight: 400;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  background: #8fd45f;
+  line-height: 18px;
+  padding: 5px 10px;
+  color: #07000e;
+}
+.post-card.style-1 .post-content {
+  padding: 20px 30px 30px 30px;
+}
+.post-card.style-1 .post-content .post-meta ul li {
+  display: inline-block;
+  margin-right: 8px;
+}
+.post-card.style-1 .post-content .post-meta ul li svg {
+  width: 18px;
+  height: 18px;
+}
+.post-card.style-1 .post-content .post-meta ul li span {
+  font-size: 12px;
+  font-weight: 400;
+  margin-left: 5px;
+}
+.post-card.style-1 .post-content .card-heading {
+  padding-top: 20px;
+}
+.post-card.style-1 .post-content .card-heading .title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 34px;
+}
+.post-card.style-1 .post-content .more-btn {
+  color: #07000e;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.post-card.style-1 .post-content .more-btn p {
+  color: #07000e;
+  font-size: 18px;
+  font-weight: 700;
+}
+.post-card.style-1 .post-content .more-btn svg path {
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 /**
@@ -9795,13 +9814,13 @@ video {
 .accordion-wrapper.style-one .faq-wrap .section-header .section-title {
   color: #ffffff !important;
 }
-.accordion-wrapper.style-one .faq-wrap .accordion .faq-item.card {
+.accordion-wrapper.style-one .faq-wrap .accordion .accordion-list-item.card {
   background: none;
   border-radius: 0;
   border: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-.accordion-wrapper.style-one .faq-wrap .accordion .faq-item .faq-header button {
+.accordion-wrapper.style-one .faq-wrap .accordion .accordion-list-item .accordion-title button {
   background: initial;
   border: none;
   color: #ffffff;
@@ -9815,10 +9834,10 @@ video {
   line-height: 27px;
   padding-bottom: 15px;
 }
-.accordion-wrapper.style-one .faq-wrap .accordion .faq-item .faq-header button.them-btn[aria-expanded=true] .faq-icon i::before {
+.accordion-wrapper.style-one .faq-wrap .accordion .accordion-list-item .accordion-title button.them-btn[aria-expanded=true] .faq-icon i::before {
   content: "\f068";
 }
-.accordion-wrapper.style-one .faq-wrap .accordion .faq-item .faq-header button .faq-icon {
+.accordion-wrapper.style-one .faq-wrap .accordion .accordion-list-item .accordion-title button .faq-icon {
   width: 40px;
   height: 40px;
   text-align: center;
@@ -9829,10 +9848,10 @@ video {
   border-radius: 50%;
   flex-shrink: 0;
 }
-.accordion-wrapper.style-one .faq-wrap .accordion .faq-item .accordion-collapse .faq-body {
+.accordion-wrapper.style-one .faq-wrap .accordion .accordion-list-item .accordion-collapse .accordion-item-body {
   padding-bottom: 15px;
 }
-.accordion-wrapper.style-one .faq-wrap .accordion .faq-item .accordion-collapse .faq-body .faq-desc {
+.accordion-wrapper.style-one .faq-wrap .accordion .accordion-list-item .accordion-collapse .accordion-item-body .faq-desc {
   color: #ffffff;
 }
 .accordion-wrapper.style-one .faq-img {

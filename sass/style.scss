@@ -60,7 +60,6 @@
 // card
 @use "./modules/card/card-three";
 @use "./modules/card/card-four";
-@use "./modules/card/card-five";
 @use "./modules/card/card-six";
 @use "./modules/card/card-seven";
 @use "./modules/card/card-eight";
@@ -77,6 +76,9 @@
 
 // project-card
 @use "./modules/project-card/project-card-one";
+//blogs card
+
+@use "./modules/blogs-card/blogs-card-one";
 
 // about
 @use "./modules/about/about-one";
