@@ -4,6 +4,11 @@
 .service-area {
   &.style-one {
     .card-wrapper {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      flex-wrap: wrap;
+
       @include m.device-768px {
         padding-left: 35px;
       }

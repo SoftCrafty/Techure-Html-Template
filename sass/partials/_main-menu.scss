@@ -3,21 +3,35 @@
 
 /*-======== main-menu =======-*/
 .menu-wrapper {
+  display: flex;
+  align-items: center;
+
+  float: right;
   @include m.laptop_m_three {
     float: right;
   }
-  .contact-number {
-    font-size: 18px;
-    font-weight: v.$font-weight-bold;
+  .number-with-btn {
     display: flex;
     align-items: center;
-    gap: 8px;
-    @include m.device-425px {
-      display: none;
-    }
-    svg {
-      path {
-        fill: v.$primary-color;
+    float: right;
+    gap: 30px;
+    margin-left: 80px;
+    .contact-number {
+      a {
+        color: v.$gray-900;
+      }
+      font-size: 18px;
+      font-weight: v.$font-weight-bold;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      @include m.device-425px {
+        display: none;
+      }
+      svg {
+        path {
+          fill: v.$primary-color;
+        }
       }
     }
   }

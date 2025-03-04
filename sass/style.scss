@@ -43,7 +43,7 @@
 @use "./modules/video-box/video-box";
 @use "./modules/video-box/video-box-two";
 // client
-@use "./modules/client-box/client-box";
+@use "./modules/client-card/client-box";
 // button
 @use "./modules/button/button";
 @use "./modules/button/button-two";
@@ -58,8 +58,6 @@
 @use "./modules/section-header/section-header-one";
 @use "./modules/section-header/section-header-two";
 // card
-@use "./modules/card/card-one";
-@use "./modules/card/card-two";
 @use "./modules/card/card-three";
 @use "./modules/card/card-four";
 @use "./modules/card/card-five";
@@ -74,6 +72,11 @@
 @use "./modules/card/card-fourteen";
 @use "./modules/card/card-fifteen";
 @use "./modules/card/card-sixteen";
+//info-card
+@use "./modules/info-card/info-card-one";
+
+// project-card
+@use "./modules/project-card/project-card-one";
 
 // about
 @use "./modules/about/about-one";
@@ -82,9 +85,9 @@
 @use "./modules/modal/modal-one";
 
 // client-logo-box
-@use "./modules/client-logo-box/client-logo-box-one";
-@use "./modules/client-logo-box/client-logo-box-two";
-@use "./modules/client-logo-box/client-logo-box-three";
+@use "./modules/client-logo-card/client-logo-card-one";
+@use "./modules/client-logo-card/client-logo-card-two";
+@use "./modules/client-logo-card/client-logo-card-three";
 
 // info-list
 @use "./modules/info-list/info-list-one";
@@ -101,9 +104,9 @@
 @use "./modules/forms/forms-one.scss";
 @use "./modules/chosen/chosen-one";
 // accordion
-@use "./modules/accordion/accordion-one";
-@use "./modules/accordion/accordion-two";
-@use "./modules/accordion/accordion-three";
+@use "./modules/accordion-card/accordion-card-one";
+@use "./modules/accordion-card/accordion-card-two";
+@use "./modules/accordion-card/accordion-card-three";
 // contact-card
 @use "./modules/contact-card/contact-card-one";
 // side bar

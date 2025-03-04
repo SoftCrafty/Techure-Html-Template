@@ -17,11 +17,18 @@
       justify-content: start;
       align-items: center;
       margin-top: 3px;
+      .standard-logo {
+        display: block;
+      }
+      .sticky-logo {
+        display: none;
+      }
       .logo-name {
         font-size: 30px;
         font-weight: v.$font-weight-bold;
       }
     }
+    
     .bar-btn {
       width: 50px;
       height: 50px;
