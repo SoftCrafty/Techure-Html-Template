@@ -2,8 +2,8 @@
 @use "../../mixin" as m;
 
 /*-======== card =======-*/
-.card-wrapper {
-  &.style-thirteen {
+.team-card-wrapper {
+  &.style-three {
     .card-item {
       border: 1px solid v.$border-color-02;
       display: flex;

@@ -33,23 +33,24 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-3">
-            <a href="index.html" class="logo">
-              <img
-                src="./images/logo-img-01.png"
-                alt="Techure Logo"
-                class="me-2"
-              />
-            </a>
+            <div class="logo">
+              <a href="index.html" class="standard-logo">
+                <img src="./images/logo-img-01.png" alt="Techure Logo" />
+              </a>
+              <a href="index.html" class="sticky-logo">
+                <img src="./images/logo-img-02.png" alt="Techure Logo" />
+              </a>
+            </div>
           </div>
           <!-- end col-lg-3 -->
           <div class="col-lg-9 col-9">
-            <div
-              class="menu-wrapper d-flex align-items-center justify-content-between"
-            >
+            <div class="menu-wrapper">
               <nav class="main-menu">
                 <ul>
                   <li>
-                    <a href="#">Home <i class="fa-solid fa-angle-down"></i></a>
+                    <a href="index.html"
+                      >Home <i class="fa-solid fa-angle-down"></i
+                    ></a>
                     <ul class="dropdown-menu-item">
                       <li><a href="index.html">Home 01</a></li>
                       <li><a href="index-two.html">Home 02</a></li>
@@ -61,7 +62,7 @@
                   </li>
 
                   <li>
-                    <a href="#"
+                    <a href="services.html"
                       >Services <i class="fa-solid fa-angle-down"></i
                     ></a>
                     <ul class="dropdown-menu-item">
@@ -72,7 +73,7 @@
                     </ul>
                   </li>
                   <li>
-                    <a href="#"
+                    <a href="project.html"
                       >Projects <i class="fa-solid fa-angle-down"></i
                     ></a>
                     <ul class="dropdown-menu-item">
@@ -83,7 +84,9 @@
                     </ul>
                   </li>
                   <li>
-                    <a href="#">Blog <i class="fa-solid fa-angle-down"></i></a>
+                    <a href="blog.html"
+                      >Blog <i class="fa-solid fa-angle-down"></i
+                    ></a>
                     <ul class="dropdown-menu-item">
                       <li><a href="blog.html">Blog</a></li>
                       <li><a href="blog-details.html">Blog Details</a></li>
@@ -95,29 +98,28 @@
                 </ul>
               </nav>
               <!-- end nav and end main-menu -->
-              <div>
-                <div
-                  class="d-flex justify-content-between align-items-center gap-5"
-                >
-                  <div class="contact-number">
+
+              <div class="number-with-btn">
+                <div class="contact-number">
+                  <a href="tel:(629) 555-0129">
                     <i class="fa-solid fa-phone"></i>
                     <span class="phone-number ms-1">(629)555-0129</span>
+                  </a>
+                </div>
+                <!-- end contact number -->
+                <div class="menu-bar-box">
+                  <div class="bar-btn style-one">
+                    <div class="menu-line">
+                      <div class="bar-line"></div>
+                      <div class="bar-line"></div>
+                    </div>
                   </div>
-                  <!-- end contact number -->
-                  <div>
-                    <div class="bar-btn style-one">
-                      <div class="menu-line">
-                        <div class="bar-line"></div>
-                        <div class="bar-line"></div>
-                      </div>
-                    </div>
-                    <div class="main-menu-bar-btn">
-                      <i class="fa-solid fa-bars-staggered"></i>
-                    </div>
+                  <div class="main-menu-bar-btn">
+                    <i class="fa-solid fa-bars-staggered"></i>
                   </div>
                 </div>
-                <!-- end bar-btn -->
               </div>
+              <!-- end bar-btn -->
             </div>
             <!-- end menu-wrapper -->
           </div>
@@ -412,9 +414,9 @@
     <!--============  START SERVIEC AREA ============-->
     <section class="service-area style-one pt-150 pb-150">
       <div class="container">
-        <div class="card-wrapper">
-          <div class="info-card style-1">
-            <div class="icon-wrapper">
+        <div class="info-card-wrapper style-one">
+          <div class="card-item">
+            <div class="card-svg">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="34"
@@ -483,48 +485,48 @@
                 ></path>
               </svg>
             </div>
-            <!-- end icon-wrapper -->
-            <div class="content">
-              <h4 class="title">Data Safe Pro</h4>
-              <p class="desc">
-                Information Technology rapidly field that encompasses
-              </p>
-              <a href="services-details.html" class="read-more">
-                <p>Read More</p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="26"
-                  height="26"
-                  viewBox="0 0 26 26"
-                  fill="none"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M20.838 6.40246L6.4015 20.839L5.16406 19.6016L19.6006 5.16502L20.838 6.40246Z"
-                    fill="white"
-                  ></path>
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M18.9755 5.77843C16.0654 8.68847 16.2466 13.6255 18.9755 16.3544L19.5942 16.9731L20.8316 15.7357L20.2129 15.1169C18.141 13.0451 18.0124 9.21636 20.2129 7.01586L20.8313 6.39747L19.5939 5.16004L18.9755 5.77843Z"
-                    fill="white"
-                  ></path>
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M20.2182 7.0172C17.3081 9.92724 12.371 9.74604 9.64216 7.01716L9.02344 6.39844L10.2609 5.161L10.8796 5.77972C12.9515 7.85167 16.7802 7.98025 18.9807 5.77976L19.5991 5.16137L20.8365 6.39881L20.2182 7.0172Z"
-                    fill="white"
-                  ></path>
-                </svg>
-              </a>
+            <div class="card-content">
+              <div class="card-heading">
+                <h4 class="card-title">Data Safe Pro</h4>
+                <p class="card-desc">
+                  Information Technology rapidly field that encompasses
+                </p>
+                <a href="services-details.html" class="more-btn">
+                  <p>Read More</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20.838 6.40246L6.4015 20.839L5.16406 19.6016L19.6006 5.16502L20.838 6.40246Z"
+                      fill="white"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M18.9755 5.77843C16.0654 8.68847 16.2466 13.6255 18.9755 16.3544L19.5942 16.9731L20.8316 15.7357L20.2129 15.1169C18.141 13.0451 18.0124 9.21636 20.2129 7.01586L20.8313 6.39747L19.5939 5.16004L18.9755 5.77843Z"
+                      fill="white"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20.2182 7.0172C17.3081 9.92724 12.371 9.74604 9.64216 7.01716L9.02344 6.39844L10.2609 5.161L10.8796 5.77972C12.9515 7.85167 16.7802 7.98025 18.9807 5.77976L19.5991 5.16137L20.8365 6.39881L20.2182 7.0172Z"
+                      fill="white"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
             </div>
-            <!-- end content -->
           </div>
-          <!-- end info-card style-1 -->
+          <!-- end card item -->
 
-          <div class="info-card style-1">
-            <div class="icon-wrapper">
+          <div class="card-item">
+            <div class="card-svg">
               <svg
                 width="38"
                 height="36"
@@ -638,48 +640,48 @@
                 />
               </svg>
             </div>
-            <!-- end icon-wrapper -->
-            <div class="content">
-              <h4 class="title">Cloud Sync Solutions</h4>
-              <p class="desc">
-                Information Technology rapidly field that encompasses
-              </p>
-              <a href="services-details.html" class="read-more">
-                <p>Read More</p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="26"
-                  height="26"
-                  viewBox="0 0 26 26"
-                  fill="none"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M20.838 6.40246L6.4015 20.839L5.16406 19.6016L19.6006 5.16502L20.838 6.40246Z"
-                    fill="white"
-                  ></path>
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M18.9755 5.77843C16.0654 8.68847 16.2466 13.6255 18.9755 16.3544L19.5942 16.9731L20.8316 15.7357L20.2129 15.1169C18.141 13.0451 18.0124 9.21636 20.2129 7.01586L20.8313 6.39747L19.5939 5.16004L18.9755 5.77843Z"
-                    fill="white"
-                  ></path>
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M20.2182 7.0172C17.3081 9.92724 12.371 9.74604 9.64216 7.01716L9.02344 6.39844L10.2609 5.161L10.8796 5.77972C12.9515 7.85167 16.7802 7.98025 18.9807 5.77976L19.5991 5.16137L20.8365 6.39881L20.2182 7.0172Z"
-                    fill="white"
-                  ></path>
-                </svg>
-              </a>
+            <div class="card-content">
+              <div class="card-heading">
+                <h4 class="card-title">Cloud Sync Solutions</h4>
+                <p class="card-desc">
+                  Information Technology rapidly field that encompasses
+                </p>
+                <a href="services-details.html" class="more-btn">
+                  <p>Read More</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20.838 6.40246L6.4015 20.839L5.16406 19.6016L19.6006 5.16502L20.838 6.40246Z"
+                      fill="white"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M18.9755 5.77843C16.0654 8.68847 16.2466 13.6255 18.9755 16.3544L19.5942 16.9731L20.8316 15.7357L20.2129 15.1169C18.141 13.0451 18.0124 9.21636 20.2129 7.01586L20.8313 6.39747L19.5939 5.16004L18.9755 5.77843Z"
+                      fill="white"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20.2182 7.0172C17.3081 9.92724 12.371 9.74604 9.64216 7.01716L9.02344 6.39844L10.2609 5.161L10.8796 5.77972C12.9515 7.85167 16.7802 7.98025 18.9807 5.77976L19.5991 5.16137L20.8365 6.39881L20.2182 7.0172Z"
+                      fill="white"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
             </div>
-            <!-- end content -->
           </div>
-          <!-- end info-card style-1 -->
+          <!-- end card item -->
 
-          <div class="info-card style-1">
-            <div class="icon-wrapper">
+          <div class="card-item">
+            <div class="card-svg">
               <svg
                 width="38"
                 height="36"
@@ -749,48 +751,48 @@
                 />
               </svg>
             </div>
-            <!-- end icon-wrapper -->
-            <div class="content">
-              <h4 class="title">Cloud Sync Solutions</h4>
-              <p class="desc">
-                Information Technology rapidly field that encompasses
-              </p>
-              <a href="services-details.html" class="read-more">
-                <p>Read More</p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="26"
-                  height="26"
-                  viewBox="0 0 26 26"
-                  fill="none"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M20.838 6.40246L6.4015 20.839L5.16406 19.6016L19.6006 5.16502L20.838 6.40246Z"
-                    fill="white"
-                  ></path>
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M18.9755 5.77843C16.0654 8.68847 16.2466 13.6255 18.9755 16.3544L19.5942 16.9731L20.8316 15.7357L20.2129 15.1169C18.141 13.0451 18.0124 9.21636 20.2129 7.01586L20.8313 6.39747L19.5939 5.16004L18.9755 5.77843Z"
-                    fill="white"
-                  ></path>
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M20.2182 7.0172C17.3081 9.92724 12.371 9.74604 9.64216 7.01716L9.02344 6.39844L10.2609 5.161L10.8796 5.77972C12.9515 7.85167 16.7802 7.98025 18.9807 5.77976L19.5991 5.16137L20.8365 6.39881L20.2182 7.0172Z"
-                    fill="white"
-                  ></path>
-                </svg>
-              </a>
+            <div class="card-content">
+              <div class="card-heading">
+                <h4 class="card-title">Cloud Sync Solutions</h4>
+                <p class="card-desc">
+                  Information Technology rapidly field that encompasses
+                </p>
+                <a href="services-details.html" class="more-btn">
+                  <p>Read More</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20.838 6.40246L6.4015 20.839L5.16406 19.6016L19.6006 5.16502L20.838 6.40246Z"
+                      fill="white"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M18.9755 5.77843C16.0654 8.68847 16.2466 13.6255 18.9755 16.3544L19.5942 16.9731L20.8316 15.7357L20.2129 15.1169C18.141 13.0451 18.0124 9.21636 20.2129 7.01586L20.8313 6.39747L19.5939 5.16004L18.9755 5.77843Z"
+                      fill="white"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20.2182 7.0172C17.3081 9.92724 12.371 9.74604 9.64216 7.01716L9.02344 6.39844L10.2609 5.161L10.8796 5.77972C12.9515 7.85167 16.7802 7.98025 18.9807 5.77976L19.5991 5.16137L20.8365 6.39881L20.2182 7.0172Z"
+                      fill="white"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
             </div>
-            <!-- end content -->
           </div>
-          <!-- end info-card style-1 -->
+          <!-- end card item -->
 
-          <div class="info-card style-1">
-            <div class="icon-wrapper">
+          <div class="card-item">
+            <div class="card-svg">
               <svg
                 width="34"
                 height="34"
@@ -832,48 +834,48 @@
                 />
               </svg>
             </div>
-            <!-- end icon-wrapper -->
-            <div class="content">
-              <h4 class="title">Tech Fortress Solutions</h4>
-              <p class="desc">
-                Information Technology rapidly field that encompasses
-              </p>
-              <a href="services-details.html" class="read-more">
-                <p>Read More</p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="26"
-                  height="26"
-                  viewBox="0 0 26 26"
-                  fill="none"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M20.838 6.40246L6.4015 20.839L5.16406 19.6016L19.6006 5.16502L20.838 6.40246Z"
-                    fill="white"
-                  ></path>
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M18.9755 5.77843C16.0654 8.68847 16.2466 13.6255 18.9755 16.3544L19.5942 16.9731L20.8316 15.7357L20.2129 15.1169C18.141 13.0451 18.0124 9.21636 20.2129 7.01586L20.8313 6.39747L19.5939 5.16004L18.9755 5.77843Z"
-                    fill="white"
-                  ></path>
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M20.2182 7.0172C17.3081 9.92724 12.371 9.74604 9.64216 7.01716L9.02344 6.39844L10.2609 5.161L10.8796 5.77972C12.9515 7.85167 16.7802 7.98025 18.9807 5.77976L19.5991 5.16137L20.8365 6.39881L20.2182 7.0172Z"
-                    fill="white"
-                  ></path>
-                </svg>
-              </a>
+            <div class="card-content">
+              <div class="card-heading">
+                <h4 class="card-title">Tech Fortress Solutions</h4>
+                <p class="card-desc">
+                  Information Technology rapidly field that encompasses
+                </p>
+                <a href="services-details.html" class="more-btn">
+                  <p>Read More</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20.838 6.40246L6.4015 20.839L5.16406 19.6016L19.6006 5.16502L20.838 6.40246Z"
+                      fill="white"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M18.9755 5.77843C16.0654 8.68847 16.2466 13.6255 18.9755 16.3544L19.5942 16.9731L20.8316 15.7357L20.2129 15.1169C18.141 13.0451 18.0124 9.21636 20.2129 7.01586L20.8313 6.39747L19.5939 5.16004L18.9755 5.77843Z"
+                      fill="white"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20.2182 7.0172C17.3081 9.92724 12.371 9.74604 9.64216 7.01716L9.02344 6.39844L10.2609 5.161L10.8796 5.77972C12.9515 7.85167 16.7802 7.98025 18.9807 5.77976L19.5991 5.16137L20.8365 6.39881L20.2182 7.0172Z"
+                      fill="white"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
             </div>
-            <!-- end content -->
           </div>
-          <!-- end info-card style-1 -->
+          <!-- end card item -->
 
-          <div class="info-card style-1">
-            <div class="icon-wrapper">
+          <div class="card-item">
+            <div class="card-svg">
               <svg
                 width="36"
                 height="38"
@@ -963,48 +965,48 @@
                 />
               </svg>
             </div>
-            <!-- end icon-wrapper -->
-            <div class="content">
-              <h4 class="title">Byte Guard Protection</h4>
-              <p class="desc">
-                Information Technology rapidly field that encompasses
-              </p>
-              <a href="services-details.html" class="read-more">
-                <p>Read More</p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="26"
-                  height="26"
-                  viewBox="0 0 26 26"
-                  fill="none"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M20.838 6.40246L6.4015 20.839L5.16406 19.6016L19.6006 5.16502L20.838 6.40246Z"
-                    fill="white"
-                  ></path>
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M18.9755 5.77843C16.0654 8.68847 16.2466 13.6255 18.9755 16.3544L19.5942 16.9731L20.8316 15.7357L20.2129 15.1169C18.141 13.0451 18.0124 9.21636 20.2129 7.01586L20.8313 6.39747L19.5939 5.16004L18.9755 5.77843Z"
-                    fill="white"
-                  ></path>
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M20.2182 7.0172C17.3081 9.92724 12.371 9.74604 9.64216 7.01716L9.02344 6.39844L10.2609 5.161L10.8796 5.77972C12.9515 7.85167 16.7802 7.98025 18.9807 5.77976L19.5991 5.16137L20.8365 6.39881L20.2182 7.0172Z"
-                    fill="white"
-                  ></path>
-                </svg>
-              </a>
+            <div class="card-content">
+              <div class="card-heading">
+                <h4 class="card-title">Byte Guard Protection</h4>
+                <p class="card-desc">
+                  Information Technology rapidly field that encompasses
+                </p>
+                <a href="services-details.html" class="more-btn">
+                  <p>Read More</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20.838 6.40246L6.4015 20.839L5.16406 19.6016L19.6006 5.16502L20.838 6.40246Z"
+                      fill="white"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M18.9755 5.77843C16.0654 8.68847 16.2466 13.6255 18.9755 16.3544L19.5942 16.9731L20.8316 15.7357L20.2129 15.1169C18.141 13.0451 18.0124 9.21636 20.2129 7.01586L20.8313 6.39747L19.5939 5.16004L18.9755 5.77843Z"
+                      fill="white"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20.2182 7.0172C17.3081 9.92724 12.371 9.74604 9.64216 7.01716L9.02344 6.39844L10.2609 5.161L10.8796 5.77972C12.9515 7.85167 16.7802 7.98025 18.9807 5.77976L19.5991 5.16137L20.8365 6.39881L20.2182 7.0172Z"
+                      fill="white"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
             </div>
-            <!-- end content -->
           </div>
-          <!-- end info-card style-1 -->
+          <!-- end card item -->
 
-          <div class="info-card style-1">
-            <div class="icon-wrapper">
+          <div class="card-item">
+            <div class="card-svg">
               <svg
                 width="38"
                 height="36"
@@ -1090,48 +1092,48 @@
                 />
               </svg>
             </div>
-            <!-- end icon-wrapper -->
-            <div class="content">
-              <h4 class="title">Byte Guard Protection</h4>
-              <p class="desc">
-                Information Technology rapidly field that encompasses
-              </p>
-              <a href="services-details.html" class="read-more">
-                <p>Read More</p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="26"
-                  height="26"
-                  viewBox="0 0 26 26"
-                  fill="none"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M20.838 6.40246L6.4015 20.839L5.16406 19.6016L19.6006 5.16502L20.838 6.40246Z"
-                    fill="white"
-                  ></path>
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M18.9755 5.77843C16.0654 8.68847 16.2466 13.6255 18.9755 16.3544L19.5942 16.9731L20.8316 15.7357L20.2129 15.1169C18.141 13.0451 18.0124 9.21636 20.2129 7.01586L20.8313 6.39747L19.5939 5.16004L18.9755 5.77843Z"
-                    fill="white"
-                  ></path>
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M20.2182 7.0172C17.3081 9.92724 12.371 9.74604 9.64216 7.01716L9.02344 6.39844L10.2609 5.161L10.8796 5.77972C12.9515 7.85167 16.7802 7.98025 18.9807 5.77976L19.5991 5.16137L20.8365 6.39881L20.2182 7.0172Z"
-                    fill="white"
-                  ></path>
-                </svg>
-              </a>
+            <div class="card-content">
+              <div class="card-heading">
+                <h4 class="card-title">Byte Guard Protection</h4>
+                <p class="card-desc">
+                  Information Technology rapidly field that encompasses
+                </p>
+                <a href="services-details.html" class="more-btn">
+                  <p>Read More</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20.838 6.40246L6.4015 20.839L5.16406 19.6016L19.6006 5.16502L20.838 6.40246Z"
+                      fill="white"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M18.9755 5.77843C16.0654 8.68847 16.2466 13.6255 18.9755 16.3544L19.5942 16.9731L20.8316 15.7357L20.2129 15.1169C18.141 13.0451 18.0124 9.21636 20.2129 7.01586L20.8313 6.39747L19.5939 5.16004L18.9755 5.77843Z"
+                      fill="white"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20.2182 7.0172C17.3081 9.92724 12.371 9.74604 9.64216 7.01716L9.02344 6.39844L10.2609 5.161L10.8796 5.77972C12.9515 7.85167 16.7802 7.98025 18.9807 5.77976L19.5991 5.16137L20.8365 6.39881L20.2182 7.0172Z"
+                      fill="white"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
             </div>
-            <!-- end content -->
           </div>
-          <!-- end info-card style-1 -->
+          <!-- end card item -->
 
-          <div class="info-card style-1">
-            <div class="icon-wrapper">
+          <div class="card-item">
+            <div class="card-svg">
               <svg
                 width="38"
                 height="34"
@@ -1249,48 +1251,48 @@
                 />
               </svg>
             </div>
-            <!-- end icon-wrapper -->
-            <div class="content">
-              <h4 class="title">Tech Fortress Solutions</h4>
-              <p class="desc">
-                Information Technology rapidly field that encompasses
-              </p>
-              <a href="services-details.html" class="read-more">
-                <p>Read More</p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="26"
-                  height="26"
-                  viewBox="0 0 26 26"
-                  fill="none"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M20.838 6.40246L6.4015 20.839L5.16406 19.6016L19.6006 5.16502L20.838 6.40246Z"
-                    fill="white"
-                  ></path>
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M18.9755 5.77843C16.0654 8.68847 16.2466 13.6255 18.9755 16.3544L19.5942 16.9731L20.8316 15.7357L20.2129 15.1169C18.141 13.0451 18.0124 9.21636 20.2129 7.01586L20.8313 6.39747L19.5939 5.16004L18.9755 5.77843Z"
-                    fill="white"
-                  ></path>
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M20.2182 7.0172C17.3081 9.92724 12.371 9.74604 9.64216 7.01716L9.02344 6.39844L10.2609 5.161L10.8796 5.77972C12.9515 7.85167 16.7802 7.98025 18.9807 5.77976L19.5991 5.16137L20.8365 6.39881L20.2182 7.0172Z"
-                    fill="white"
-                  ></path>
-                </svg>
-              </a>
+            <div class="card-content">
+              <div class="card-heading">
+                <h4 class="card-title">Tech Fortress Solutions</h4>
+                <p class="card-desc">
+                  Information Technology rapidly field that encompasses
+                </p>
+                <a href="services-details.html" class="more-btn">
+                  <p>Read More</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20.838 6.40246L6.4015 20.839L5.16406 19.6016L19.6006 5.16502L20.838 6.40246Z"
+                      fill="white"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M18.9755 5.77843C16.0654 8.68847 16.2466 13.6255 18.9755 16.3544L19.5942 16.9731L20.8316 15.7357L20.2129 15.1169C18.141 13.0451 18.0124 9.21636 20.2129 7.01586L20.8313 6.39747L19.5939 5.16004L18.9755 5.77843Z"
+                      fill="white"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20.2182 7.0172C17.3081 9.92724 12.371 9.74604 9.64216 7.01716L9.02344 6.39844L10.2609 5.161L10.8796 5.77972C12.9515 7.85167 16.7802 7.98025 18.9807 5.77976L19.5991 5.16137L20.8365 6.39881L20.2182 7.0172Z"
+                      fill="white"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
             </div>
-            <!-- end content -->
           </div>
-          <!-- end info-card style-1 -->
+          <!-- end card item -->
 
-          <div class="info-card style-1">
-            <div class="icon-wrapper">
+          <div class="card-item">
+            <div class="card-svg">
               <svg
                 width="38"
                 height="38"
@@ -1380,48 +1382,48 @@
                 />
               </svg>
             </div>
-            <!-- end icon-wrapper -->
-            <div class="content">
-              <h4 class="title">Byte Guard Protection</h4>
-              <p class="desc">
-                Information Technology rapidly field that encompasses
-              </p>
-              <a href="services-details.html" class="read-more">
-                <p>Read More</p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="26"
-                  height="26"
-                  viewBox="0 0 26 26"
-                  fill="none"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M20.838 6.40246L6.4015 20.839L5.16406 19.6016L19.6006 5.16502L20.838 6.40246Z"
-                    fill="white"
-                  ></path>
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M18.9755 5.77843C16.0654 8.68847 16.2466 13.6255 18.9755 16.3544L19.5942 16.9731L20.8316 15.7357L20.2129 15.1169C18.141 13.0451 18.0124 9.21636 20.2129 7.01586L20.8313 6.39747L19.5939 5.16004L18.9755 5.77843Z"
-                    fill="white"
-                  ></path>
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M20.2182 7.0172C17.3081 9.92724 12.371 9.74604 9.64216 7.01716L9.02344 6.39844L10.2609 5.161L10.8796 5.77972C12.9515 7.85167 16.7802 7.98025 18.9807 5.77976L19.5991 5.16137L20.8365 6.39881L20.2182 7.0172Z"
-                    fill="white"
-                  ></path>
-                </svg>
-              </a>
+            <div class="card-content">
+              <div class="card-heading">
+                <h4 class="card-title">Byte Guard Protection</h4>
+                <p class="card-desc">
+                  Information Technology rapidly field that encompasses
+                </p>
+                <a href="services-details.html" class="more-btn">
+                  <p>Read More</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20.838 6.40246L6.4015 20.839L5.16406 19.6016L19.6006 5.16502L20.838 6.40246Z"
+                      fill="white"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M18.9755 5.77843C16.0654 8.68847 16.2466 13.6255 18.9755 16.3544L19.5942 16.9731L20.8316 15.7357L20.2129 15.1169C18.141 13.0451 18.0124 9.21636 20.2129 7.01586L20.8313 6.39747L19.5939 5.16004L18.9755 5.77843Z"
+                      fill="white"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20.2182 7.0172C17.3081 9.92724 12.371 9.74604 9.64216 7.01716L9.02344 6.39844L10.2609 5.161L10.8796 5.77972C12.9515 7.85167 16.7802 7.98025 18.9807 5.77976L19.5991 5.16137L20.8365 6.39881L20.2182 7.0172Z"
+                      fill="white"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
             </div>
-            <!-- end content -->
           </div>
-          <!-- end info-card style-1 -->
+          <!-- end card item -->
 
-          <div class="info-card style-1">
-            <div class="icon-wrapper">
+          <div class="card-item">
+            <div class="card-svg">
               <svg
                 width="38"
                 height="36"
@@ -1491,45 +1493,45 @@
                 />
               </svg>
             </div>
-            <!-- end icon-wrapper -->
-            <div class="content">
-              <h4 class="title">Byte Guard Protection</h4>
-              <p class="desc">
-                Information Technology rapidly field that encompasses
-              </p>
-              <a href="services-details.html" class="read-more">
-                <p>Read More</p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="26"
-                  height="26"
-                  viewBox="0 0 26 26"
-                  fill="none"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M20.838 6.40246L6.4015 20.839L5.16406 19.6016L19.6006 5.16502L20.838 6.40246Z"
-                    fill="white"
-                  ></path>
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M18.9755 5.77843C16.0654 8.68847 16.2466 13.6255 18.9755 16.3544L19.5942 16.9731L20.8316 15.7357L20.2129 15.1169C18.141 13.0451 18.0124 9.21636 20.2129 7.01586L20.8313 6.39747L19.5939 5.16004L18.9755 5.77843Z"
-                    fill="white"
-                  ></path>
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M20.2182 7.0172C17.3081 9.92724 12.371 9.74604 9.64216 7.01716L9.02344 6.39844L10.2609 5.161L10.8796 5.77972C12.9515 7.85167 16.7802 7.98025 18.9807 5.77976L19.5991 5.16137L20.8365 6.39881L20.2182 7.0172Z"
-                    fill="white"
-                  ></path>
-                </svg>
-              </a>
+            <div class="card-content">
+              <div class="card-heading">
+                <h4 class="card-title">Byte Guard Protection</h4>
+                <p class="card-desc">
+                  Information Technology rapidly field that encompasses
+                </p>
+                <a href="services-details.html" class="more-btn">
+                  <p>Read More</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20.838 6.40246L6.4015 20.839L5.16406 19.6016L19.6006 5.16502L20.838 6.40246Z"
+                      fill="white"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M18.9755 5.77843C16.0654 8.68847 16.2466 13.6255 18.9755 16.3544L19.5942 16.9731L20.8316 15.7357L20.2129 15.1169C18.141 13.0451 18.0124 9.21636 20.2129 7.01586L20.8313 6.39747L19.5939 5.16004L18.9755 5.77843Z"
+                      fill="white"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20.2182 7.0172C17.3081 9.92724 12.371 9.74604 9.64216 7.01716L9.02344 6.39844L10.2609 5.161L10.8796 5.77972C12.9515 7.85167 16.7802 7.98025 18.9807 5.77976L19.5991 5.16137L20.8365 6.39881L20.2182 7.0172Z"
+                      fill="white"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
             </div>
-            <!-- end content -->
           </div>
-          <!-- end info-card -->
+          <!-- end card item -->
         </div>
       </div>
     </section>

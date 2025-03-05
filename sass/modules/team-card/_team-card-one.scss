@@ -1,8 +1,8 @@
 @use "../../variables" as v;
 @use "../../mixin" as m;
 /*-======== client-box =======-*/
-.card-wrapper {
-  &.style-three {
+.team-card-wrapper {
+  &.style-one {
     padding-top: 60px;
     display: flex;
     justify-content: center;

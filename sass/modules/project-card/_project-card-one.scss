@@ -1,60 +1,62 @@
 @use "../../variables" as v;
 @use "../../mixin" as m;
-/*-======== project-card style-1  =======-*/
-.project-card {
-  &.style-1 {
-    padding-top: 60px;
-    @include m.transition(0.4s);
-    margin-left: 40px;
-    @include m.border-radius(20px);
-    @include m.sm {
-      margin-left: 0;
-    }
-    .image {
-      position: relative;
-
-      img {
+/*-======== client-box =======-*/
+.porject-card-wrapper {
+  &.style-one {
+    .card-item {
+      padding-top: 60px;
+      @include m.transition(0.4s);
+      margin-left: 40px;
+      @include m.border-radius(20px);
+      @include m.sm {
+        margin-left: 0;
+      }
+      .card-img {
         position: relative;
-        width: 100%;
-        @include m.transition(0.4s);
-        border: 1px solid transparent;
-        @include m.border-radius(20px);
-        &.left-img {
-          height: 485px;
-        }
-        &.right-img {
-          height: 560px;
-        }
-      }
-      .meta {
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        padding: 6px 20px;
-        background: v.$gray-900;
-        @include m.border-radius(50px);
-        font-weight: v.$font-weight-medium;
-        color: v.$white;
-      }
-    }
-    .main-content {
-      a {
-        color: v.$gray-900;
-      }
-      .title {
-        font-size: 24px;
-        font-weight: v.$font-weight-bold;
-        margin-top: 20px;
-      }
-    }
 
-    &:hover {
-      img {
-        border-color: v.$primary-color;
+        img {
+          position: relative;
+          width: 100%;
+          @include m.transition(0.4s);
+          border: 1px solid transparent;
+          @include m.border-radius(20px);
+          &.left-img {
+            height: 485px;
+          }
+          &.right-img {
+            height: 560px;
+          }
+        }
+        .card-meta {
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          padding: 6px 20px;
+          background: v.$gray-900;
+          @include m.border-radius(50px);
+          font-weight: v.$font-weight-medium;
+          color: v.$white;
+        }
+      }
+      .card-content {
+        a {
+          color: v.$gray-900;
+        }
+        .card-title {
+          font-size: 24px;
+          font-weight: v.$font-weight-bold;
+          margin-top: 20px;
+        }
       }
 
-      .meta {
-        background: v.$primary-color;
+      &:hover {
+        img {
+          border-color: v.$primary-color;
+        }
+
+        .card-meta {
+          background: v.$primary-color;
+        }
       }
     }
   }

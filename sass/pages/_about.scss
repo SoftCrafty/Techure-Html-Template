@@ -39,6 +39,9 @@
 /*-======== about area =======-*/
 .about-area {
   &.style-three {
+    .section-header {
+      padding-bottom: 150px;
+    }
     .about-wrapper {
       &.style-one {
         padding: 0px;

@@ -48,6 +48,7 @@
 @use "./modules/button/button";
 @use "./modules/button/button-two";
 @use "./modules/button/button-three";
+
 // counter-box
 @use "./modules/counter/counter-one";
 @use "./modules/counter/counter-two";
@@ -58,31 +59,35 @@
 @use "./modules/section-header/section-header-one";
 @use "./modules/section-header/section-header-two";
 // card
-@use "./modules/card/card-three";
-@use "./modules/card/card-four";
-@use "./modules/card/card-six";
-@use "./modules/card/card-seven";
-@use "./modules/card/card-eight";
-@use "./modules/card/card-nine";
-@use "./modules/card/card-ten";
-@use "./modules/card/card-eleven";
-@use "./modules/card/card-twelve";
-@use "./modules/card/card-thirteen";
-@use "./modules/card/card-fourteen";
-@use "./modules/card/card-fifteen";
-@use "./modules/card/card-sixteen";
+
+@use "./modules/card/card-one";
+
+@use "./modules/card/card-two"; ///right
+
 //info-card
 @use "./modules/info-card/info-card-one";
+@use "./modules/info-card/info-card-two";
+@use "./modules/info-card/info-card-three";
 
 // project-card
 @use "./modules/project-card/project-card-one";
+@use "./modules/project-card/project-card-two";
+@use "./modules/project-card/project-card-three";
 //blogs card
 
 @use "./modules/blogs-card/blogs-card-one";
+@use "./modules/blogs-card/blogs-card-two";
+@use "./modules/blogs-card/blogs-card-three";
+@use "./modules/blogs-card/blogs-card-four";
 
 // about
 @use "./modules/about/about-one";
 @use "./modules/about/about-two";
+// team
+@use "./modules/team-card/team-card-one";
+@use "./modules/team-card/team-card-two";
+@use "./modules/team-card/team-card-three";
+
 // modal
 @use "./modules/modal/modal-one";
 
@@ -112,6 +117,7 @@
 // contact-card
 @use "./modules/contact-card/contact-card-one";
 // side bar
+@use "./modules/sidebar/sidebar-one";
 @use "./modules/sidebar/slidebar-two";
 // pagination
 @use "./modules/pagination/pagination-one";

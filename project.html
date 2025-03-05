@@ -33,23 +33,24 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-3">
-            <a href="index.html" class="logo">
-              <img
-                src="./images/logo-img-01.png"
-                alt="Techure Logo"
-                class="me-2"
-              />
-            </a>
+            <div class="logo">
+              <a href="index.html" class="standard-logo">
+                <img src="./images/logo-img-01.png" alt="Techure Logo" />
+              </a>
+              <a href="index.html" class="sticky-logo">
+                <img src="./images/logo-img-02.png" alt="Techure Logo" />
+              </a>
+            </div>
           </div>
           <!-- end col-lg-3 -->
           <div class="col-lg-9 col-9">
-            <div
-              class="menu-wrapper d-flex align-items-center justify-content-between"
-            >
+            <div class="menu-wrapper">
               <nav class="main-menu">
                 <ul>
                   <li>
-                    <a href="#">Home <i class="fa-solid fa-angle-down"></i></a>
+                    <a href="index.html"
+                      >Home <i class="fa-solid fa-angle-down"></i
+                    ></a>
                     <ul class="dropdown-menu-item">
                       <li><a href="index.html">Home 01</a></li>
                       <li><a href="index-two.html">Home 02</a></li>
@@ -61,7 +62,7 @@
                   </li>
 
                   <li>
-                    <a href="#"
+                    <a href="services.html"
                       >Services <i class="fa-solid fa-angle-down"></i
                     ></a>
                     <ul class="dropdown-menu-item">
@@ -72,7 +73,7 @@
                     </ul>
                   </li>
                   <li>
-                    <a href="#"
+                    <a href="project.html"
                       >Projects <i class="fa-solid fa-angle-down"></i
                     ></a>
                     <ul class="dropdown-menu-item">
@@ -83,7 +84,9 @@
                     </ul>
                   </li>
                   <li>
-                    <a href="#">Blog <i class="fa-solid fa-angle-down"></i></a>
+                    <a href="blog.html"
+                      >Blog <i class="fa-solid fa-angle-down"></i
+                    ></a>
                     <ul class="dropdown-menu-item">
                       <li><a href="blog.html">Blog</a></li>
                       <li><a href="blog-details.html">Blog Details</a></li>
@@ -95,29 +98,28 @@
                 </ul>
               </nav>
               <!-- end nav and end main-menu -->
-              <div>
-                <div
-                  class="d-flex justify-content-between align-items-center gap-5"
-                >
-                  <div class="contact-number">
+
+              <div class="number-with-btn">
+                <div class="contact-number">
+                  <a href="tel:(629) 555-0129">
                     <i class="fa-solid fa-phone"></i>
                     <span class="phone-number ms-1">(629)555-0129</span>
+                  </a>
+                </div>
+                <!-- end contact number -->
+                <div class="menu-bar-box">
+                  <div class="bar-btn style-one">
+                    <div class="menu-line">
+                      <div class="bar-line"></div>
+                      <div class="bar-line"></div>
+                    </div>
                   </div>
-                  <!-- end contact number -->
-                  <div>
-                    <div class="bar-btn style-one">
-                      <div class="menu-line">
-                        <div class="bar-line"></div>
-                        <div class="bar-line"></div>
-                      </div>
-                    </div>
-                    <div class="main-menu-bar-btn">
-                      <i class="fa-solid fa-bars-staggered"></i>
-                    </div>
+                  <div class="main-menu-bar-btn">
+                    <i class="fa-solid fa-bars-staggered"></i>
                   </div>
                 </div>
-                <!-- end bar-btn -->
               </div>
+              <!-- end bar-btn -->
             </div>
             <!-- end menu-wrapper -->
           </div>
@@ -415,60 +417,54 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 col-md-6">
-            <div class="img-gallery-card style-1">
-              <div class="project-card style-1 ms-0">
-                <div class="image">
+            <div class="porject-card-wrapper style-one">
+              <div class="card-item ms-0">
+                <div class="card-img">
                   <img
                     src="./images/project-img-01.png"
                     class="left-img"
                     alt="techure latest project"
                   />
-                  <a href="#" class="meta">Cloud Sync Solutions</a>
+                  <a href="#" class="card-meta">Cloud Sync Solutions</a>
                 </div>
-                <div class="main-content">
-                  <div class="content-inner">
-                    <a href="project-details.html">
-                      <h4 class="title">Shaping the Digital Landscape</h4>
-                    </a>
-                  </div>
+                <div class="card-content">
+                  <a href="project-details.html">
+                    <h4 class="card-title">Shaping the Digital Landscape</h4>
+                  </a>
                 </div>
               </div>
               <!-- end card item -->
 
-              <div class="project-card style-1 ms-0">
-                <div class="image">
+              <div class="card-item ms-0">
+                <div class="card-img">
                   <img
                     src="./images/project-img-02.png"
                     class="left-img"
                     alt="techure latest project"
                   />
-                  <a href="#" class="meta">Cloud Sync Solutions</a>
+                  <a href="#" class="card-meta">Cloud Sync Solutions</a>
                 </div>
-                <div class="main-content">
-                  <div class="content-inner">
-                    <a href="project-details.html">
-                      <h4 class="title">Shaping the Digital Landscape</h4>
-                    </a>
-                  </div>
+                <div class="card-content">
+                  <a href="project-details.html">
+                    <h4 class="card-title">Shaping the Digital Landscape</h4>
+                  </a>
                 </div>
               </div>
               <!-- end card item -->
 
-              <div class="project-card style-1 ms-0">
-                <div class="image">
+              <div class="card-item ms-0">
+                <div class="card-img">
                   <img
                     src="./images/tech-img.png"
                     class="left-img"
                     alt="techure latest project"
                   />
-                  <a href="#" class="meta">Cloud Sync Solutions</a>
+                  <a href="#" class="card-meta">Cloud Sync Solutions</a>
                 </div>
-                <div class="main-content">
-                  <div class="content-inner">
-                    <a href="project-details.html">
-                      <h4 class="title">Shaping the Digital Landscape</h4>
-                    </a>
-                  </div>
+                <div class="card-content">
+                  <a href="project-details.html">
+                    <h4 class="card-title">Shaping the Digital Landscape</h4>
+                  </a>
                 </div>
               </div>
               <!-- end card item -->
@@ -476,60 +472,55 @@
             <!-- end btn -->
           </div>
           <!-- end col-lg-6 -->
+
           <div class="col-lg-6 col-md-6">
-            <div class="img-gallery-card style-1">
-              <div class="project-card style-1">
-                <div class="image">
+            <div class="porject-card-wrapper style-one">
+              <div class="card-item">
+                <div class="card-img">
                   <img
                     src="./images/project-img-03.png"
                     class="right-img"
                     alt="techure latest project"
                   />
-                  <a href="#" class="meta">Cloud Sync Solutions</a>
+                  <a href="#" class="card-meta">Cloud Sync Solutions</a>
                 </div>
-                <div class="main-content">
-                  <div class="content-inner">
-                    <a href="project-details.html">
-                      <h4 class="title">Shaping the Digital Landscape</h4>
-                    </a>
-                  </div>
+                <div class="card-content">
+                  <a href="project-details.html">
+                    <h4 class="card-title">Shaping the Digital Landscape</h4>
+                  </a>
                 </div>
               </div>
               <!-- end card item -->
-              <div class="project-card style-1">
-                <div class="image">
+              <div class="card-item">
+                <div class="card-img">
                   <img
                     src="./images/project-img-04.png"
                     class="right-img"
                     alt="techure latest project"
                   />
-                  <a href="#" class="meta">Cloud Sync Solutions</a>
+                  <a href="#" class="card-meta">Cloud Sync Solutions</a>
                 </div>
-                <div class="main-content">
-                  <div class="content-inner">
-                    <a href="project-details.html">
-                      <h4 class="title">Shaping the Digital Landscape</h4>
-                    </a>
-                  </div>
+                <div class="card-content">
+                  <a href="project-details.html">
+                    <h4 class="card-title">Shaping the Digital Landscape</h4>
+                  </a>
                 </div>
               </div>
               <!-- end card item -->
 
-              <div class="project-card style-1">
-                <div class="image">
+              <div class="card-item">
+                <div class="card-img">
                   <img
                     src="./images/project-img-05.png"
                     class="right-img"
                     alt="techure latest project"
                   />
-                  <a href="#" class="meta">Cloud Sync Solutions</a>
+                  <a href="#" class="card-meta">Cloud Sync Solutions</a>
                 </div>
-                <div class="main-content">
-                  <div class="content-inner">
-                    <a href="project-details.html">
-                      <h4 class="title">Shaping the Digital Landscape</h4>
-                    </a>
-                  </div>
+                <div class="card-content">
+                  <a href="project-details.html">
+                    <h4 class="card-title">Shaping the Digital Landscape</h4>
+                  </a>
                 </div>
               </div>
               <!-- end card item -->

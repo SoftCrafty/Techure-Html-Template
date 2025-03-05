@@ -2,8 +2,8 @@
 @use "../../mixin" as m;
 
 /*-======== card =======-*/
-.card-wrapper {
-  &.style-eight {
+.info-card-wrapper {
+  &.style-two {
     .card-item {
       background: v.$white;
       padding: 30px;

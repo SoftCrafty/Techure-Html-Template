@@ -103,7 +103,7 @@ if (numberCounter.length) {
   /*==== tech-service-carousel =====*/
 
   $('.tech-service-carousel').owlCarousel({
-       
+    
     loop: true,
    autoplay:true,
    dots:false,	
@@ -228,6 +228,7 @@ $(".slider-carousel-four").owlCarousel({
   autoplay:true,
   autoplayTimeout:5000,
   responsiveClass: true,
+  
   navText: [
     ` Prev`,
   `Next `,

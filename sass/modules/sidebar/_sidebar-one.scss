@@ -2,12 +2,22 @@
 @use "../../mixin" as m;
 
 /*-======== card =======-*/
-.card-wrapper {
-  &.style-fifteen {
+.sidebar {
+  &.style-one {
     .card-item {
       background: v.$gray-100;
       @include m.border-radius(20px);
       padding: 40px;
+      .side-section-heading {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        border-bottom: 1px solid v.$color-07;
+        .section-title {
+          font-size: 24px;
+          font-weight: v.$font-weight-bold;
+        }
+      }
       .section-heading {
         display: flex;
         justify-content: space-between;
@@ -21,7 +31,6 @@
         }
       }
       .catagory-wrap {
-
         .catagory-item {
           background: v.$white;
           padding: 10px 30px;
@@ -29,6 +38,12 @@
           display: flex;
           justify-content: space-between;
           margin-top: 30px;
+          font-size: 18px;
+          font-weight: v.$font-weight-medium;
+          color: v.$gray-800;
+          &:hover {
+            color: v.$primary-color !important;
+          }
         }
       }
     }

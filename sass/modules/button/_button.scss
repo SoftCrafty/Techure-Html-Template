@@ -11,13 +11,14 @@
     @include m.border-radius(50%);
     font-size: 18px;
     font-weight: v.$font-weight-bold;
+
     a {
       color: v.$gray-900;
     }
     svg {
       width: 28px;
       height: 28px;
-      @include m.device-320px{
+      @include m.device-320px {
         width: 45px;
         height: 32px;
       }
@@ -27,3 +28,4 @@
     }
   }
 }
+

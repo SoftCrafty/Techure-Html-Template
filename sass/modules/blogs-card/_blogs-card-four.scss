@@ -2,52 +2,65 @@
 @use "../../mixin" as m;
 
 /*-======== card =======-*/
-.card-wrapper {
-  &.style-sixteen {
-    .card-item {
-      .card-img {
+.blog-card-wrapper {
+  &.style-four {
+    .single-post-item {
+      .post-thumbnail {
         img {
           border-top-right-radius: 20px;
           border-top-left-radius: 20px;
           width: 100%;
         }
       }
-      .card-content {
+      .post-content-wrapper {
         background: v.$gray-100;
         padding: 20px;
         border-bottom-right-radius: 20px;
         border-bottom-left-radius: 20px;
-        .badge-wrap {
+        .post-meta {
           display: flex;
           gap: 25px;
-          .card-badge {
+          a {
+            color: v.$gray-900;
+          }
+          span {
             display: flex;
             gap: 10px;
             align-items: center;
+            color: v.$gray-800;
+
             svg {
               path {
                 fill: v.$primary-color;
               }
             }
-            .badge-text {
+            .meta-text {
               font-weight: v.$font-weight-regular;
             }
           }
         }
-        .card-heading {
-          .card-title {
-            font-size: 32px;
-            font-weight: v.$font-weight-bold;
-            padding-right: 90px;
-            @include m.md {
-              padding-right: 0;
+        .post-heading {
+          a {
+            color: v.$gray-900;
+            &:hover {
+              .post-title {
+                color: v.$primary-color;
+              }
             }
-            @include m.sm {
-              padding-right: 0;
-            }
-            @include m.xs {
-              padding-right: 0;
-              font-size: 24px;
+            .post-title {
+              font-size: 32px;
+              font-weight: v.$font-weight-bold;
+              padding-right: 90px;
+              @include m.md {
+                padding-right: 0;
+              }
+              @include m.sm {
+                padding-right: 0;
+              }
+              @include m.xs {
+                padding-right: 0;
+                font-size: 24px;
+              }
             }
           }
         }

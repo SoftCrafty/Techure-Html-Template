@@ -6,6 +6,7 @@
     background: v.$white;
     @include m.border-radius(20px);
     padding: 0 80px 80px 80px;
+    box-shadow: 0 0px 15px 0px rgb(66 66 66 / 5%);
     @include m.xl {
       padding: 0 30px 30px 30px;
     }

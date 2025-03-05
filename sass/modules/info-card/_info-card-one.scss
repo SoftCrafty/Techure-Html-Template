@@ -1,10 +1,13 @@
 @use "../../variables" as v;
 @use "../../mixin" as m;
 /*-======== info card =======-*/
-
-
-.info-card {
-  &.style-1{
+.info-card-wrapper {
+  &.style-one {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    .card-item {
       padding: 40px 30px 40px 60px;
       border: 1px solid v.$border-color-02;
       @include m.border-radius(20px);
@@ -23,7 +26,7 @@
       @include m.md {
         width: 100% !important;
       }
-      .icon-wrapper {
+      .card-svg {
         width: 80px;
         height: 80px;
         @include m.border-radius(50px);
@@ -41,16 +44,16 @@
           }
         }
       }
-      .content {
-        .title {
+      .card-content {
+        .card-title {
           font-size: 24px;
           font-weight: v.$font-weight-bold;
           margin-bottom: 20px;
         }
-        .desc {
+        .card-decs {
           font-weight: v.$font-weight-medium;
         }
-        .read-more {
+        .more-btn {
           display: flex;
           margin-top: 35px;
           p {
@@ -68,6 +71,6 @@
           }
         }
       }
-    
+    }
   }
 }

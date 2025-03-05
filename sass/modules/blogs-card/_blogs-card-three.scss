@@ -1,8 +1,8 @@
 @use "../../variables" as v;
 @use "../../mixin" as m;
 /*-======== client-box =======-*/
-.card-wrapper {
-  &.style-fourteen {
+.blog-card-wrapper {
+  &.style-three {
     .card-item {
       .card-img {
         position: relative;
@@ -51,6 +51,13 @@
 
         .card-heading {
           padding-top: 20px;
+          a {
+            color: v.$gray-900;
+            @include m.transition(0.3s);
+            &:hover {
+              color: v.$primary-color;
+            }
+          }
           .card-title {
             font-size: 24px;
             font-weight: v.$font-weight-bold;

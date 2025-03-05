@@ -33,23 +33,24 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-3">
-            <a href="index.html" class="logo">
-              <img
-                src="./images/logo-img-01.png"
-                alt="Techure Logo"
-                class="me-2"
-              />
-            </a>
+            <div class="logo">
+              <a href="index.html" class="standard-logo">
+                <img src="./images/logo-img-01.png" alt="Techure Logo" />
+              </a>
+              <a href="index.html" class="sticky-logo">
+                <img src="./images/logo-img-02.png" alt="Techure Logo" />
+              </a>
+            </div>
           </div>
           <!-- end col-lg-3 -->
           <div class="col-lg-9 col-9">
-            <div
-              class="menu-wrapper d-flex align-items-center justify-content-between"
-            >
+            <div class="menu-wrapper">
               <nav class="main-menu">
                 <ul>
                   <li>
-                    <a href="#">Home <i class="fa-solid fa-angle-down"></i></a>
+                    <a href="index.html"
+                      >Home <i class="fa-solid fa-angle-down"></i
+                    ></a>
                     <ul class="dropdown-menu-item">
                       <li><a href="index.html">Home 01</a></li>
                       <li><a href="index-two.html">Home 02</a></li>
@@ -61,7 +62,7 @@
                   </li>
 
                   <li>
-                    <a href="#"
+                    <a href="services.html"
                       >Services <i class="fa-solid fa-angle-down"></i
                     ></a>
                     <ul class="dropdown-menu-item">
@@ -72,7 +73,7 @@
                     </ul>
                   </li>
                   <li>
-                    <a href="#"
+                    <a href="project.html"
                       >Projects <i class="fa-solid fa-angle-down"></i
                     ></a>
                     <ul class="dropdown-menu-item">
@@ -83,7 +84,9 @@
                     </ul>
                   </li>
                   <li>
-                    <a href="#">Blog <i class="fa-solid fa-angle-down"></i></a>
+                    <a href="blog.html"
+                      >Blog <i class="fa-solid fa-angle-down"></i
+                    ></a>
                     <ul class="dropdown-menu-item">
                       <li><a href="blog.html">Blog</a></li>
                       <li><a href="blog-details.html">Blog Details</a></li>
@@ -95,29 +98,28 @@
                 </ul>
               </nav>
               <!-- end nav and end main-menu -->
-              <div>
-                <div
-                  class="d-flex justify-content-between align-items-center gap-5"
-                >
-                  <div class="contact-number">
+
+              <div class="number-with-btn">
+                <div class="contact-number">
+                  <a href="tel:(629) 555-0129">
                     <i class="fa-solid fa-phone"></i>
                     <span class="phone-number ms-1">(629)555-0129</span>
+                  </a>
+                </div>
+                <!-- end contact number -->
+                <div class="menu-bar-box">
+                  <div class="bar-btn style-one">
+                    <div class="menu-line">
+                      <div class="bar-line"></div>
+                      <div class="bar-line"></div>
+                    </div>
                   </div>
-                  <!-- end contact number -->
-                  <div>
-                    <div class="bar-btn style-one">
-                      <div class="menu-line">
-                        <div class="bar-line"></div>
-                        <div class="bar-line"></div>
-                      </div>
-                    </div>
-                    <div class="main-menu-bar-btn">
-                      <i class="fa-solid fa-bars-staggered"></i>
-                    </div>
+                  <div class="main-menu-bar-btn">
+                    <i class="fa-solid fa-bars-staggered"></i>
                   </div>
                 </div>
-                <!-- end bar-btn -->
               </div>
+              <!-- end bar-btn -->
             </div>
             <!-- end menu-wrapper -->
           </div>
@@ -244,34 +246,33 @@
             </div>
 
             <div class="mt-30">
-              <a href="contact.html">
+              <a href="contact.html" class="theme--btn">
                 <button class="theme-btn style-two">Contact Us</button>
                 <button class="theme-btn style-two">
                   <svg
+                    width="22"
+                    height="16"
+                    viewBox="0 0 22 16"
                     xmlns="http://www.w3.org/2000/svg"
-                    width="26"
-                    height="26"
-                    viewBox="0 0 26 26"
-                    fill="none"
                   >
                     <path
                       fill-rule="evenodd"
                       clip-rule="evenodd"
-                      d="M20.838 6.40246L6.4015 20.839L5.16406 19.6016L19.6006 5.16502L20.838 6.40246Z"
-                      fill="white"
-                    />
+                      d="M21.2054 8.875H0.789062V7.125H21.2054V8.875Z"
+                      fill="#07000E"
+                    ></path>
                     <path
                       fill-rule="evenodd"
                       clip-rule="evenodd"
-                      d="M18.9755 5.77843C16.0654 8.68847 16.2466 13.6255 18.9755 16.3544L19.5942 16.9731L20.8316 15.7357L20.2129 15.1169C18.141 13.0451 18.0124 9.21636 20.2129 7.01586L20.8313 6.39747L19.5939 5.16004L18.9755 5.77843Z"
-                      fill="white"
-                    />
+                      d="M20.3299 7.125C16.2145 7.125 12.8516 10.7441 12.8516 14.6033V15.4783H14.6016V14.6033C14.6016 11.6733 17.2179 8.875 20.3299 8.875H21.2044V7.125H20.3299Z"
+                      fill="#07000E"
+                    ></path>
                     <path
                       fill-rule="evenodd"
                       clip-rule="evenodd"
-                      d="M20.2182 7.0172C17.3081 9.92724 12.371 9.74604 9.64216 7.01716L9.02344 6.39844L10.2609 5.161L10.8796 5.77972C12.9515 7.85167 16.7802 7.98025 18.9807 5.77976L19.5991 5.16137L20.8365 6.39881L20.2182 7.0172Z"
-                      fill="white"
-                    />
+                      d="M20.3299 8.87683C16.2145 8.87683 12.8516 5.25767 12.8516 1.39844V0.523438H14.6016V1.39844C14.6016 4.32861 17.2179 7.12683 20.3299 7.12683H21.2044V8.87683H20.3299Z"
+                      fill="#07000E"
+                    ></path>
                   </svg>
                 </button>
               </a>
@@ -348,34 +349,33 @@
               </div>
 
               <div class="mt-30">
-                <a href="contact.html">
+                <a href="contact.html" class="theme--btn">
                   <button class="theme-btn style-two">Contact Us</button>
                   <button class="theme-btn style-two">
                     <svg
+                      width="22"
+                      height="16"
+                      viewBox="0 0 22 16"
                       xmlns="http://www.w3.org/2000/svg"
-                      width="26"
-                      height="26"
-                      viewBox="0 0 26 26"
-                      fill="none"
                     >
                       <path
                         fill-rule="evenodd"
                         clip-rule="evenodd"
-                        d="M20.838 6.40246L6.4015 20.839L5.16406 19.6016L19.6006 5.16502L20.838 6.40246Z"
-                        fill="white"
-                      />
+                        d="M21.2054 8.875H0.789062V7.125H21.2054V8.875Z"
+                        fill="#07000E"
+                      ></path>
                       <path
                         fill-rule="evenodd"
                         clip-rule="evenodd"
-                        d="M18.9755 5.77843C16.0654 8.68847 16.2466 13.6255 18.9755 16.3544L19.5942 16.9731L20.8316 15.7357L20.2129 15.1169C18.141 13.0451 18.0124 9.21636 20.2129 7.01586L20.8313 6.39747L19.5939 5.16004L18.9755 5.77843Z"
-                        fill="white"
-                      />
+                        d="M20.3299 7.125C16.2145 7.125 12.8516 10.7441 12.8516 14.6033V15.4783H14.6016V14.6033C14.6016 11.6733 17.2179 8.875 20.3299 8.875H21.2044V7.125H20.3299Z"
+                        fill="#07000E"
+                      ></path>
                       <path
                         fill-rule="evenodd"
                         clip-rule="evenodd"
-                        d="M20.2182 7.0172C17.3081 9.92724 12.371 9.74604 9.64216 7.01716L9.02344 6.39844L10.2609 5.161L10.8796 5.77972C12.9515 7.85167 16.7802 7.98025 18.9807 5.77976L19.5991 5.16137L20.8365 6.39881L20.2182 7.0172Z"
-                        fill="white"
-                      />
+                        d="M20.3299 8.87683C16.2145 8.87683 12.8516 5.25767 12.8516 1.39844V0.523438H14.6016V1.39844C14.6016 4.32861 17.2179 7.12683 20.3299 7.12683H21.2044V8.87683H20.3299Z"
+                        fill="#07000E"
+                      ></path>
                     </svg>
                   </button>
                 </a>
@@ -414,203 +414,227 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8">
-            <div class="card-wrapper style-sixteen">
-              <div class="card-item mb-80">
-                <div class="card-img">
-                  <img src="./images/blog-img-02.png" alt="techure img" />
+            <div class="blog-card-wrapper style-four">
+              <article class="single-post-item mb-80">
+                <div class="post-thumbnail">
+                  <a href="blog-details.html">
+                    <img src="./images/blog-img-02.png" alt="techure img" />
+                  </a>
                 </div>
-                <div class="card-content">
-                  <div class="badge-wrap">
-                    <div class="card-badge">
-                      <i class="fa-solid fa-user"></i>
-
-                      <p class="badge-text">By Admin</p>
-                    </div>
-                    <div class="card-badge">
+                <!-- end post-thumbnail -->
+                <div class="post-content-wrapper">
+                  <div class="post-meta">
+                    <span>
+                      <a href="#">
+                        <span class="admin-img">
+                          <i class="fa-solid fa-user"></i>
+          
+                          <span class="meta-text">By Admin</span>
+                        </span>
+                      </a>
+                    </span>
+          
+                    <span>
                       <i class="fa-solid fa-calendar-days"></i>
-
-                      <p class="badge-text">October 19, 2024</p>
+          
+                      <span class="meta-text">October 19, 2024</span>
                     </div>
+              
+                  
+                  <div class="post-heading pt-20">
+                    <a href="blog-details.html">
+                      <h4 class="post-title">
+                        Driving Success Through the Technological Expertise Tech for
+                        Tomorrow
+                      </h4>
+                    </a>
                   </div>
-                  <!-- end badge-wrap -->
-                  <div class="card-heading pt-20">
-                    <h4 class="card-title">
-                      Driving Success Through the Technological Expertise Tech
-                      for Tomorrow
-                    </h4>
-                  </div>
-                  <!-- end card-heading -->
+                  <!-- end post-heading -->
                   <div class="mt-30">
-                    <a href="blog-details.html" class="card--btn">
+                    <a href="blog-details.html" class="card--btn theme--btn">
                       <button class="theme-btn style-two">Read More</button>
                       <button class="theme-btn style-two">
                         <svg
+                          width="22"
+                          height="16"
+                          viewBox="0 0 22 16"
                           xmlns="http://www.w3.org/2000/svg"
-                          width="26"
-                          height="26"
-                          viewBox="0 0 26 26"
-                          fill="none"
                         >
                           <path
                             fill-rule="evenodd"
                             clip-rule="evenodd"
-                            d="M20.838 6.40246L6.4015 20.839L5.16406 19.6016L19.6006 5.16502L20.838 6.40246Z"
-                            fill="white"
-                          />
+                            d="M21.2054 8.875H0.789062V7.125H21.2054V8.875Z"
+                            fill="#07000E"
+                          ></path>
                           <path
                             fill-rule="evenodd"
                             clip-rule="evenodd"
-                            d="M18.9755 5.77843C16.0654 8.68847 16.2466 13.6255 18.9755 16.3544L19.5942 16.9731L20.8316 15.7357L20.2129 15.1169C18.141 13.0451 18.0124 9.21636 20.2129 7.01586L20.8313 6.39747L19.5939 5.16004L18.9755 5.77843Z"
-                            fill="white"
-                          />
+                            d="M20.3299 7.125C16.2145 7.125 12.8516 10.7441 12.8516 14.6033V15.4783H14.6016V14.6033C14.6016 11.6733 17.2179 8.875 20.3299 8.875H21.2044V7.125H20.3299Z"
+                            fill="#07000E"
+                          ></path>
                           <path
                             fill-rule="evenodd"
                             clip-rule="evenodd"
-                            d="M20.2182 7.0172C17.3081 9.92724 12.371 9.74604 9.64216 7.01716L9.02344 6.39844L10.2609 5.161L10.8796 5.77972C12.9515 7.85167 16.7802 7.98025 18.9807 5.77976L19.5991 5.16137L20.8365 6.39881L20.2182 7.0172Z"
-                            fill="white"
-                          />
+                            d="M20.3299 8.87683C16.2145 8.87683 12.8516 5.25767 12.8516 1.39844V0.523438H14.6016V1.39844C14.6016 4.32861 17.2179 7.12683 20.3299 7.12683H21.2044V8.87683H20.3299Z"
+                            fill="#07000E"
+                          ></path>
                         </svg>
                       </button>
                     </a>
                   </div>
                   <!-- end theme-btn -->
+          
                 </div>
-                <!-- end card-img -->
-              </div>
-              <!-- end card-item -->
+              </article>
+              <!-- end article -->
 
-              <div class="card-item mb-80">
-                <div class="card-img">
-                  <img src="./images/blog-img-02.png" alt="techure img" />
+              <article class="single-post-item mb-80">
+                <div class="post-thumbnail">
+                  <a href="blog-details.html">
+                    <img src="./images/blog-img-02.png" alt="techure img" />
+                  </a>
                 </div>
-                <div class="card-content">
-                  <div class="badge-wrap">
-                    <div class="card-badge">
-                      <i class="fa-solid fa-user"></i>
-
-                      <p class="badge-text">By Admin</p>
-                    </div>
-                    <div class="card-badge">
+                <!-- end post-thumbnail -->
+                <div class="post-content-wrapper">
+                  <div class="post-meta">
+                    <span>
+                      <a href="#">
+                        <span class="admin-img">
+                          <i class="fa-solid fa-user"></i>
+          
+                          <span class="meta-text">By Admin</span>
+                        </span>
+                      </a>
+                    </span>
+          
+                    <span>
                       <i class="fa-solid fa-calendar-days"></i>
-
-                      <p class="badge-text">October 19, 2024</p>
+          
+                      <span class="meta-text">October 19, 2024</span>
                     </div>
+              
+                  
+                  <div class="post-heading pt-20">
+                    <a href="blog-details.html">
+                      <h4 class="post-title">
+                        Powering Progress Through the best Seamless Solutions Tech for
+                        Tomorrow
+                      </h4>
+                    </a>
                   </div>
-                  <!-- end badge-wrap -->
-                  <div class="card-heading pt-20">
-                    <h4 class="card-title">
-                      Driving Success Through the Technological Expertise Tech
-                      for Tomorrow
-                    </h4>
-                  </div>
-                  <!-- end card-heading -->
+                  <!-- end post-heading -->
                   <div class="mt-30">
-                    <a href="blog-details.html" class="card--btn">
+                    <a href="blog-details.html" class="card--btn theme--btn">
                       <button class="theme-btn style-two">Read More</button>
                       <button class="theme-btn style-two">
                         <svg
+                          width="22"
+                          height="16"
+                          viewBox="0 0 22 16"
                           xmlns="http://www.w3.org/2000/svg"
-                          width="26"
-                          height="26"
-                          viewBox="0 0 26 26"
-                          fill="none"
                         >
                           <path
                             fill-rule="evenodd"
                             clip-rule="evenodd"
-                            d="M20.838 6.40246L6.4015 20.839L5.16406 19.6016L19.6006 5.16502L20.838 6.40246Z"
-                            fill="white"
-                          />
+                            d="M21.2054 8.875H0.789062V7.125H21.2054V8.875Z"
+                            fill="#07000E"
+                          ></path>
                           <path
                             fill-rule="evenodd"
                             clip-rule="evenodd"
-                            d="M18.9755 5.77843C16.0654 8.68847 16.2466 13.6255 18.9755 16.3544L19.5942 16.9731L20.8316 15.7357L20.2129 15.1169C18.141 13.0451 18.0124 9.21636 20.2129 7.01586L20.8313 6.39747L19.5939 5.16004L18.9755 5.77843Z"
-                            fill="white"
-                          />
+                            d="M20.3299 7.125C16.2145 7.125 12.8516 10.7441 12.8516 14.6033V15.4783H14.6016V14.6033C14.6016 11.6733 17.2179 8.875 20.3299 8.875H21.2044V7.125H20.3299Z"
+                            fill="#07000E"
+                          ></path>
                           <path
                             fill-rule="evenodd"
                             clip-rule="evenodd"
-                            d="M20.2182 7.0172C17.3081 9.92724 12.371 9.74604 9.64216 7.01716L9.02344 6.39844L10.2609 5.161L10.8796 5.77972C12.9515 7.85167 16.7802 7.98025 18.9807 5.77976L19.5991 5.16137L20.8365 6.39881L20.2182 7.0172Z"
-                            fill="white"
-                          />
+                            d="M20.3299 8.87683C16.2145 8.87683 12.8516 5.25767 12.8516 1.39844V0.523438H14.6016V1.39844C14.6016 4.32861 17.2179 7.12683 20.3299 7.12683H21.2044V8.87683H20.3299Z"
+                            fill="#07000E"
+                          ></path>
                         </svg>
                       </button>
                     </a>
                   </div>
                   <!-- end theme-btn -->
+          
                 </div>
-                <!-- end card-img -->
-              </div>
-              <!-- end card-item -->
-
-              <div class="card-item mb-80">
-                <div class="card-img">
-                  <img src="./images/blog-img-03.png" alt="techure img" />
+              </article>
+              <!-- end article -->
+              <article class="single-post-item mb-80">
+                <div class="post-thumbnail">
+                  <a href="blog-details.html">
+                    <img src="./images/blog-img-02.png" alt="techure img" />
+                  </a>
                 </div>
-                <div class="card-content">
-                  <div class="badge-wrap">
-                    <div class="card-badge">
-                      <i class="fa-solid fa-user"></i>
-
-                      <p class="badge-text">By Admin</p>
-                    </div>
-                    <div class="card-badge">
+                <!-- end post-thumbnail -->
+                <div class="post-content-wrapper">
+                  <div class="post-meta">
+                    <span>
+                      <a href="#">
+                        <span class="admin-img">
+                          <i class="fa-solid fa-user"></i>
+          
+                          <span class="meta-text">By Admin</span>
+                        </span>
+                      </a>
+                    </span>
+          
+                    <span>
                       <i class="fa-solid fa-calendar-days"></i>
-
-                      <p class="badge-text">October 19, 2024</p>
+          
+                      <span class="meta-text">October 19, 2024</span>
                     </div>
+              
+                  
+                  <div class="post-heading pt-20">
+                    <a href="blog-details.html">
+                      <h4 class="post-title">
+                        Driving Success Through the Technological Expertise Tech for
+                        Tomorrow
+                      </h4>
+                    </a>
                   </div>
-                  <!-- end badge-wrap -->
-                  <div class="card-heading pt-20">
-                    <h4 class="card-title">
-                      Driving Success Through the Technological Expertise Tech
-                      for Tomorrow
-                    </h4>
-                  </div>
-                  <!-- end card-heading -->
+                  <!-- end post-heading -->
                   <div class="mt-30">
-                    <a href="blog-details.html" class="card--btn">
+                    <a href="blog-details.html" class="card--btn theme--btn">
                       <button class="theme-btn style-two">Read More</button>
                       <button class="theme-btn style-two">
                         <svg
+                          width="22"
+                          height="16"
+                          viewBox="0 0 22 16"
                           xmlns="http://www.w3.org/2000/svg"
-                          width="26"
-                          height="26"
-                          viewBox="0 0 26 26"
-                          fill="none"
                         >
                           <path
                             fill-rule="evenodd"
                             clip-rule="evenodd"
-                            d="M20.838 6.40246L6.4015 20.839L5.16406 19.6016L19.6006 5.16502L20.838 6.40246Z"
-                            fill="white"
-                          />
+                            d="M21.2054 8.875H0.789062V7.125H21.2054V8.875Z"
+                            fill="#07000E"
+                          ></path>
                           <path
                             fill-rule="evenodd"
                             clip-rule="evenodd"
-                            d="M18.9755 5.77843C16.0654 8.68847 16.2466 13.6255 18.9755 16.3544L19.5942 16.9731L20.8316 15.7357L20.2129 15.1169C18.141 13.0451 18.0124 9.21636 20.2129 7.01586L20.8313 6.39747L19.5939 5.16004L18.9755 5.77843Z"
-                            fill="white"
-                          />
+                            d="M20.3299 7.125C16.2145 7.125 12.8516 10.7441 12.8516 14.6033V15.4783H14.6016V14.6033C14.6016 11.6733 17.2179 8.875 20.3299 8.875H21.2044V7.125H20.3299Z"
+                            fill="#07000E"
+                          ></path>
                           <path
                             fill-rule="evenodd"
                             clip-rule="evenodd"
-                            d="M20.2182 7.0172C17.3081 9.92724 12.371 9.74604 9.64216 7.01716L9.02344 6.39844L10.2609 5.161L10.8796 5.77972C12.9515 7.85167 16.7802 7.98025 18.9807 5.77976L19.5991 5.16137L20.8365 6.39881L20.2182 7.0172Z"
-                            fill="white"
-                          />
+                            d="M20.3299 8.87683C16.2145 8.87683 12.8516 5.25767 12.8516 1.39844V0.523438H14.6016V1.39844C14.6016 4.32861 17.2179 7.12683 20.3299 7.12683H21.2044V8.87683H20.3299Z"
+                            fill="#07000E"
+                          ></path>
                         </svg>
                       </button>
                     </a>
                   </div>
                   <!-- end theme-btn -->
+          
                 </div>
-                <!-- end card-img -->
-              </div>
-              <!-- end card-item -->
+              </article>
+              <!-- end article -->
             </div>
             <nav>
-              <ul
-                class="pagination style-one pagination-lg justify-content-center"
-              >
+              <ul class="pagination style-one pagination-lg justify-content-center">
                 <li class="page-item active" aria-current="page">
                   <span class="page-link">1</span>
                 </li>
@@ -624,6 +648,7 @@
               </ul>
             </nav>
           </div>
+          
           <!-- end col-lg-8 -->
           <div class="col-lg-4">
             <aside>
@@ -704,9 +729,11 @@
                         <p class="badge-text">October 19, 2024</p>
                       </div>
                     </div>
-                    <h3 class="post-title">
-                      Powering Progress Through the best Seamless Solutions
-                    </h3>
+                    <a href="blog-details.html">
+                      <h3 class="post-title">
+                        Powering Progress Through the best Seamless Solutions
+                      </h3>
+                    </a>
                   </div>
                   <div class="post-item">
                     <div class="post-meta">
@@ -716,9 +743,11 @@
                         <p class="badge-text">October 19, 2024</p>
                       </div>
                     </div>
-                    <h3 class="post-title">
-                      Powering Progress Through the best Seamless Solutions
-                    </h3>
+                    <a href="blog-details.html">
+                      <h3 class="post-title">
+                        Powering Progress Through the best Seamless Solutions
+                      </h3>
+                    </a>
                   </div>
                   <div class="post-item">
                     <div class="post-meta">
@@ -728,13 +757,15 @@
                         <p class="badge-text">October 19, 2024</p>
                       </div>
                     </div>
-                    <h3 class="post-title">
-                      Powering Progress Through the best Seamless Solutions
-                    </h3>
+                    <a href="blog-details.html">
+                      <h3 class="post-title">
+                        Powering Progress Through the best Seamless Solutions
+                      </h3>
+                    </a>
                   </div>
                 </div>
-                <div class="card-wrapper style-fifteen mt-40">
-                  <div class="card-item">
+                
+                  <div class="card-item mt-40">
                     <div class="side-section-heading">
                       <h4 class="section-title">Catagory</h4>
                       <svg
@@ -766,25 +797,25 @@
                     </div>
                     <div class="catagory-wrap mt-40">
                       <a href="#" class="catagory-item">
-                        <p>Prcisino Pixels</p>
-                        <p>01</p>
+                        <span>Prcisino Pixels</span>
+                        <span>01</span>
                       </a>
 
                       <a href="#" class="catagory-item">
-                        <p>Data Loom</p>
-                        <p>02</p>
+                        <span>Data Loom</span>
+                        <span>02</span>
                       </a>
                       <a href="#" class="catagory-item">
-                        <p>Cloud Vista</p>
-                        <p>03</p>
+                        <span>Cloud Vista</span>
+                        <span>03</span>
                       </a>
                       <a href="#" class="catagory-item">
-                        <p>Tech Genius</p>
-                        <p>04</p>
+                        <span>Tech Genius</span>
+                        <span>04</span>
                       </a>
                     </div>
                   </div>
-                </div>
+             
                 <div class="popular-tags mt-40">
                   <div class="side-section-heading">
                     <h4 class="section-title">Popular Tags</h4>
@@ -834,35 +865,14 @@
                       <p class="section-desc">Need Help?Call Us</p>
                       <h4 class="section-title">(+888) 178 456 765</h4>
                     </div>
-                    <div class="mt-30">
-                      <a href="contact.html">
+                    <div class="mt-30 theme--btn">
+                      <a href="contact.html ">
                         <button class="theme-btn style-two">Contact Us</button>
                         <button class="theme-btn style-two">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="26"
-                            height="26"
-                            viewBox="0 0 26 26"
-                            fill="none"
-                          >
-                            <path
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
-                              d="M20.838 6.40246L6.4015 20.839L5.16406 19.6016L19.6006 5.16502L20.838 6.40246Z"
-                              fill="white"
-                            />
-                            <path
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
-                              d="M18.9755 5.77843C16.0654 8.68847 16.2466 13.6255 18.9755 16.3544L19.5942 16.9731L20.8316 15.7357L20.2129 15.1169C18.141 13.0451 18.0124 9.21636 20.2129 7.01586L20.8313 6.39747L19.5939 5.16004L18.9755 5.77843Z"
-                              fill="white"
-                            />
-                            <path
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
-                              d="M20.2182 7.0172C17.3081 9.92724 12.371 9.74604 9.64216 7.01716L9.02344 6.39844L10.2609 5.161L10.8796 5.77972C12.9515 7.85167 16.7802 7.98025 18.9807 5.77976L19.5991 5.16137L20.8365 6.39881L20.2182 7.0172Z"
-                              fill="white"
-                            />
+                          <svg width="22" height="16" viewBox="0 0 22 16" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M21.2054 8.875H0.789062V7.125H21.2054V8.875Z" fill="#07000E"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M20.3299 7.125C16.2145 7.125 12.8516 10.7441 12.8516 14.6033V15.4783H14.6016V14.6033C14.6016 11.6733 17.2179 8.875 20.3299 8.875H21.2044V7.125H20.3299Z" fill="#07000E"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M20.3299 8.87683C16.2145 8.87683 12.8516 5.25767 12.8516 1.39844V0.523438H14.6016V1.39844C14.6016 4.32861 17.2179 7.12683 20.3299 7.12683H21.2044V8.87683H20.3299Z" fill="#07000E"></path>
                           </svg>
                         </button>
                       </a>

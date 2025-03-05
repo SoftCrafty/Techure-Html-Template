@@ -2,8 +2,8 @@
 @use "../../mixin" as m;
 /*-======== card =======-*/
 
-.card-wrapper {
-  &.style-six {
+.info-card-wrapper {
+  &.style-three {
     .card-item {
       border: 1px solid v.$border-color-03;
       @include m.border-radius(20px);

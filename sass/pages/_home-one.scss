@@ -186,12 +186,7 @@
     }
     .right {
       width: 65%;
-      .card-wrapper {
-        display: flex;
-        justify-content: space-between;
-        gap: 30px;
-        flex-wrap: wrap;
-      }
+
       @include m.xl {
         flex-basis: 100%;
       }

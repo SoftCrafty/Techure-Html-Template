@@ -1,8 +1,8 @@
 @use "../../variables" as v;
 @use "../../mixin" as m;
 /*-======== card =======-*/
-.card-wrapper {
-  &.style-twelve {
+.project-card-wrapper {
+  &.style-three {
     .card-grid {
       display: grid;
       gap: 30px;
