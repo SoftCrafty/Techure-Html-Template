@@ -22,6 +22,7 @@
       left: 0;
       top: 50%;
       @include m.transform(translateY(-50%));
+
       @include m.md {
         width: 100%;
         position: relative;
@@ -98,6 +99,8 @@
     }
     .faq-img {
       height: 800px;
+      position: relative;
+      z-index: -1;
       @include m.sm {
         width: 100%;
         height: 400px;

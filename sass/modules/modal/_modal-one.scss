@@ -57,3 +57,14 @@
 video {
   width: 100%;
 }
+
+// test
+.sections-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: red;
+  font-size: 42px;
+  font-weight: 700;
+  color: #fff;
+}

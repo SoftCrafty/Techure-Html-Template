@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="css/line-awesome.min.css" />
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/chosen.min.css" />
     <!-- end inject -->
@@ -51,7 +53,7 @@
                     <a href="index.html"
                       >Home <i class="fa-solid fa-angle-down"></i
                     ></a>
-                    <ul class="dropdown-menu-item">
+                    <ul class="submenu">
                       <li><a href="index.html">Home 01</a></li>
                       <li><a href="index-two.html">Home 02</a></li>
                       <li><a href="index-three.html">Home 03</a></li>
@@ -65,7 +67,7 @@
                     <a href="services.html"
                       >Services <i class="fa-solid fa-angle-down"></i
                     ></a>
-                    <ul class="dropdown-menu-item">
+                    <ul class="submenu">
                       <li><a href="services.html">Services</a></li>
                       <li>
                         <a href="services-details.html">Services Details</a>
@@ -76,8 +78,8 @@
                     <a href="project.html"
                       >Projects <i class="fa-solid fa-angle-down"></i
                     ></a>
-                    <ul class="dropdown-menu-item">
-                      <li><a href="project.html">Project One</a></li>
+                    <ul class="submenu">
+                      <li><a href="project.html">Project</a></li>
                       <li>
                         <a href="project-details.html">Project Details</a>
                       </li>
@@ -87,7 +89,7 @@
                     <a href="blog.html"
                       >Blog <i class="fa-solid fa-angle-down"></i
                     ></a>
-                    <ul class="dropdown-menu-item">
+                    <ul class="submenu">
                       <li><a href="blog.html">Blog</a></li>
                       <li><a href="blog-details.html">Blog Details</a></li>
                     </ul>
@@ -396,14 +398,14 @@
       <div class="overlay"></div>
 
       <div class="container">
-        <div class="hero-content">
+        <div class="hero-content wow animate__backInLeft">
           <div class="section-header style-one">
-            <h2 class="section-title">Blog Details</h2>
+            <h2 class="section-title">Contact Us</h2>
           </div>
           <div class="back">
             <a href="index.html">Home</a>
             <i class="fa-solid fa-chevron-right"></i>
-            <a href="blog-details.html">Blog Details</a>
+            <a href="contact.html">Contact Us</a>
           </div>
         </div>
 
@@ -416,7 +418,10 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
-            <div class="section-header style-one pb-40">
+            <div
+              class="section-header style-one pb-40 wow animate__backInLeft"
+              data-wow-delay="0.5s"
+            >
               <h2 class="section-title">Contact Us</h2>
               <p class="section-desc pt-20">
                 Technology is constantly evolving, shaping our future and
@@ -425,7 +430,10 @@
                 artificial
               </p>
             </div>
-            <div class="contact-info-wrapper">
+            <div
+              class="contact-info-wrapper wow animate__backInLeft"
+              data-wow-delay="0.5s"
+            >
               <div class="contact-item">
                 <div class="icon">
                   <i class="fa-solid fa-location-dot"></i>
@@ -474,7 +482,10 @@
           </div>
           <!-- end col-lg-6 --->
           <div class="col-lg-6">
-            <div class="form-box form-wrapper style-one">
+            <div
+              class="form-box form-wrapper style-one wow animate__backInRight"
+              data-wow-delay="0.5s"
+            >
               <div class="form-content contact-form-action">
                 <form action="*">
                   <div class="form-slide">
@@ -604,50 +615,64 @@
       </div>
     </section>
     <!--============END BLOG AREA ============-->
-    <!--==========START fOOTER AREA===========-->
+    <!--============ START fOOTER AREA ===========-->
     <section class="footer-area style-one pt-80 pb-40">
       <div class="container">
         <div class="footer-wrapper pb-40">
-          <div class="section-header style-one">
+          <div
+            class="section-header style-one section-meta mb-15 wow animate__ animate__lightSpeedInLeft"
+          >
             <h2 class="section-title">Start your Journey With Us</h2>
             <p class="section-desc">
               In the realm of IT Technology, innovation and advancement are key
               elements. From cutting-edge software
             </p>
           </div>
-          <a href="#" class="circle-box"> Let’s Talk </a>
+          <a href="#" class="circle-box auto-bounce section-meta mb-15">
+            Let’s Talk
+          </a>
         </div>
         <div class="footer-wrap pt-40 pb-80">
           <div class="row">
             <div class="col-lg-4 col-md-6">
-              <div class="company-logo">
-                <img src="images/logo-img-02.png" alt="techure logo" />
-              </div>
-              <div class="input-group input-group-lg">
-                <input
-                  class="form-control form-control-lg"
-                  type="text"
-                  placeholder="Your Email..."
-                  aria-label=".form-control-lg example"
-                />
-                <span class="input-group-text group-btn"
-                  ><i class="lab la-telegram"></i
-                ></span>
-              </div>
+              <div
+                class="wow animate__animated animate__fadeInUp"
+                data-wow-delay="0.2s"
+              >
+                <div class="company-logo">
+                  <img src="images/logo-img-02.png" alt="techure logo" />
+                </div>
+                <div class="input-group input-group-lg">
+                  <input
+                    class="form-control form-control-lg"
+                    type="text"
+                    placeholder="Your Email..."
+                    aria-label=".form-control-lg example"
+                  />
+                  <span class="input-group-text group-btn"
+                    ><i class="lab la-telegram"></i
+                  ></span>
+                </div>
 
-              <div class="shear-media">
-                <ul>
-                  <li class="ms-0"><i class="fa-brands fa-pinterest-p"></i></li>
-                  <li><i class="fa-brands fa-linkedin"></i></li>
-                  <li><i class="fa-brands fa-x-twitter"></i></li>
-                  <li><i class="fa-brands fa-facebook-f"></i></li>
-                </ul>
+                <div class="shear-media">
+                  <div class="media--icons">
+                    <a href="#" class="ms-0"
+                      ><i class="fa-brands fa-pinterest-p"></i
+                    ></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  </div>
+                </div>
+                <!-- end shear-media -->
               </div>
-              <!-- end shear-media -->
             </div>
             <!-- end col-lg-4 -->
             <div class="col-lg-4 col-md-6">
-              <div class="footer-list">
+              <div
+                class="footer-list wow animate__animated animate__fadeInUp"
+                data-wow-delay="0.3s"
+              >
                 <h4>Service</h4>
                 <ul>
                   <li><a href="#">Shaping the Digital Landscape</a></li>
@@ -660,7 +685,10 @@
             <!-- end -col-lg-4 -->
 
             <div class="col-lg-4 col-md-6">
-              <div class="footer-list">
+              <div
+                class="footer-list wow animate__animated animate__fadeInUp"
+                data-wow-delay="0.4s"
+              >
                 <h4>Service</h4>
                 <div class="mb-20">
                   <p class="text-sub">Email</p>
@@ -687,13 +715,15 @@
         <div class="copyright-area pt-60">
           <div class="row">
             <div class="col-lg-6">
-              <p class="copyright-desc">
+              <p
+                class="copyright-desc wow animate__ animate__lightSpeedInLeft animated"
+              >
                 &copy; <a href="#">Yoursitename</a> 2025 | All Rights Rserved
               </p>
             </div>
 
             <div class="col-lg-6">
-              <ul>
+              <ul class="wow animate__ animate__lightSpeedInRight animated">
                 <li><a href="#">Terms & Conditions</a></li>
                 <li><a href="#">Privacy policy</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
@@ -712,7 +742,11 @@
     <script src="js/waypoints.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/all.min.js"></script>
+    <script>
+      new WOW().init()
+    </script>
   </body>
 </html>

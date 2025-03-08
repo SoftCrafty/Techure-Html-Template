@@ -46,6 +46,7 @@
       &.style-one {
         padding: 0px;
         background: none;
+        box-shadow: none;
 
         @include m.border-radius(0px);
         .about-wrap {
@@ -84,4 +85,19 @@
     }
   }
 }
-/*-======== our team area =======-*/
+/*-======== faq area =======-*/
+.faq-area {
+  &.style-two {
+    .accordion {
+      .faq-item {
+        .faq--btn {
+          button {
+            .faq-icon {
+              background: v.$gray-100 !important ;
+            }
+          }
+        }
+      }
+    }
+  }
+}

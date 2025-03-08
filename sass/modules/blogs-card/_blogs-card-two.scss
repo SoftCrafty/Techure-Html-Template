@@ -34,23 +34,22 @@
         @include m.border-radius(20px);
 
         .card-sub {
-          ul {
-            li {
-              display: inline-block;
-              margin-right: 8px;
-              svg {
-                width: 18px;
-                height: 18px;
-                path {
-                  fill: v.$primary-color;
-                }
+          a {
+            display: inline-block;
+            margin-right: 8px;
+            color: v.$gray-800;
+            svg {
+              width: 18px;
+              height: 18px;
+              path {
+                fill: v.$primary-color;
               }
-              span {
-                font-size: 12px;
-                font-weight: v.$font-weight-regular;
-                margin-left: 5px;
-                color: v.$gray-800;
-              }
+            }
+            span {
+              font-size: 12px;
+              font-weight: v.$font-weight-regular;
+              margin-left: 5px;
+              color: v.$gray-800;
             }
           }
         }

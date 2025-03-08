@@ -52,11 +52,11 @@
             @include m.device-525px {
               margin-top: 40px;
             }
-            ul {
+            .media--icons {
               display: flex;
               align-items: center;
               gap: 20px;
-              li {
+              a {
                 width: 38px;
                 height: 38px;
                 background: v.$gray-100;

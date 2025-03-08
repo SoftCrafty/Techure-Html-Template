@@ -332,12 +332,14 @@ $(".slider-carousel-seven").owlCarousel({
 $("#Country").chosen({no_results_text: "Oops, nothing found!"}); 
 
 /*==== Hover Active =====*/
-
-
 $(".service-card").hover(function() {
   $('.service-card').removeClass('item-active');
   $(this).addClass('item-active');
 });
-        });
+
+
+/*==== wow =====*/
+
+  });
   })(jQuery);
   

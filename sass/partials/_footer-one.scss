@@ -88,8 +88,8 @@
         }
       }
       .shear-media {
-        ul {
-          li {
+        .media--icons {
+          a {
             display: inline-block;
             color: v.$white;
             margin-left: 17px;
@@ -159,9 +159,11 @@
         }
       }
       ul {
+        float: right;
         @include m.sm {
           text-align: center;
         }
+
         li {
           font-size: 18px;
           font-weight: v.$font-weight-medium;

@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="css/line-awesome.min.css" />
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/chosen.min.css" />
     <!-- end inject -->
@@ -53,7 +55,7 @@
               <ul>
                 <li>
                   <a href="index.html">Home <i class="fa-solid fa-angle-down"></i></a>
-                  <ul class="dropdown-menu-item">
+                  <ul class="submenu">
                     <li><a href="index.html">Home 01</a></li>
                     <li><a href="index-two.html">Home 02</a></li>
                     <li><a href="index-three.html">Home 03</a></li>
@@ -67,7 +69,7 @@
                   <a href="services.html"
                     >Services <i class="fa-solid fa-angle-down"></i
                   ></a>
-                  <ul class="dropdown-menu-item">
+                  <ul class="submenu">
                     <li><a href="services.html">Services</a></li>
                     <li>
                       <a href="services-details.html">Services Details</a>
@@ -78,8 +80,8 @@
                   <a href="project.html"
                     >Projects <i class="fa-solid fa-angle-down"></i
                   ></a>
-                  <ul class="dropdown-menu-item">
-                    <li><a href="project.html">Project One</a></li>
+                  <ul class="submenu">
+                    <li><a href="project.html">Project</a></li>
                     <li>
                       <a href="project-details.html">Project Details</a>
                     </li>
@@ -87,7 +89,7 @@
                 </li>
                 <li>
                   <a href="blog.html">Blog <i class="fa-solid fa-angle-down"></i></a>
-                  <ul class="dropdown-menu-item">
+                  <ul class="submenu">
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="blog-details.html">Blog Details</a></li>
                   </ul>
@@ -401,9 +403,8 @@
     <!--============  START HERO AREA ============-->
     <section class="hero-area style-four pt-140">
       <div class="overlay"></div>
-
       <div class="container">
-        <div class="hero-content">
+        <div class="hero-content wow animate__backInLeft">
           <div class="section-header style-one">
             <h2 class="section-title">Blog Details</h2>
           </div>
@@ -425,15 +426,16 @@
           <div class="col-lg-8">
 
             <article class="single-post-item">
-              <div class="post-thumbnail">
+              <div class="post-thumbnail ">
                 <img
                 src="./images/blog-details-img-01.png"
                 alt="techure blog post details"
+                class="wow custom-animate"
               />
               </div>
             
               <div class="post-content-wrapper">
-                <div class="post-meta  pt-20">
+                <div class="post-meta  pt-20 wow animate__slideInUp" data-wow-delay="0.5s">
                   <span>
                     <a href="#">
                       <span class="admin-img">
@@ -452,34 +454,38 @@
               </div>
             
               <div class="content">
-                <div class="section-header style-one pt-20">
-                  <h2 class="section-title">Driving Success Through</h2>
+                <div class="wow animate__backInLeft" data-wow-delay="0.5s">
+                  <div class="section-header style-one pt-20">
+                    <h2 class="section-title">Driving Success Through</h2>
+                  </div>
+                  <p class="section-desc pt-20">
+                    Technology is constantly evolving, shaping our future
+                    and transforming how we live encompasses innovations in
+                    software, hardware, communication, and automation
+                  </p>
+                  <p class="section-desc pt-30">
+                    Technology is constantly evolving, shaping our future
+                    and transforming how we live encompasses innovations in
+                    software, hardware, communication, and automation
+                    Technology is constantly evolving, shaping our future
+                    and transforming how we live encompasses innovations in
+                    software, hardware, communication, and
+                    automationTechnology is constantly evolving
+                  </p>
                 </div>
-                <p class="section-desc pt-20">
-                  Technology is constantly evolving, shaping our future
-                  and transforming how we live encompasses innovations in
-                  software, hardware, communication, and automation
-                </p>
-                <p class="section-desc pt-30">
-                  Technology is constantly evolving, shaping our future
-                  and transforming how we live encompasses innovations in
-                  software, hardware, communication, and automation
-                  Technology is constantly evolving, shaping our future
-                  and transforming how we live encompasses innovations in
-                  software, hardware, communication, and
-                  automationTechnology is constantly evolving
-                </p>
-                <h4 class="section--title pt-30">
-                  Where Technology Meets Tomorrow
-                </h4>
-                <p class="section-desc pt-20 pb-10">
-                  Technology is constantly evolving, shaping our future
-                  and transforming how we live encompasses innovations in
-                  software, hardware, communication, and automation
-                  Technology is constantly evolving, shaping our future
-                  and transforming how we live encompasses
-                </p>
-                <ul>
+                <div class="wow animate__backInLeft" data-wow-delay="0.5s">
+                  <h4 class="section--title pt-30">
+                    Where Technology Meets Tomorrow
+                  </h4>
+                  <p class="section-desc pt-20 pb-10">
+                    Technology is constantly evolving, shaping our future
+                    and transforming how we live encompasses innovations in
+                    software, hardware, communication, and automation
+                    Technology is constantly evolving, shaping our future
+                    and transforming how we live encompasses
+                  </p>
+                </div>
+                <ul class="wow animate__backInLeft" data-wow-delay="0.5s">
                   <li>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -625,17 +631,18 @@
                     IT Technology constantly strive to improve efficiency
                   </li>
                 </ul>
-            
-                <h4 class="section--title pt-30">
-                  Digitally Driven Globally Connected
-                </h4>
-                <p class="section-desc pt-30">
-                  Technology is constantly evolving, shaping our future
-                  and transforming how we live encompasses innovations in
-                  software, hardware, communication, and automation
-                  Technology is constantly evolving, shaping our future
-                  and transforming how we live encompasses
-                </p>
+                <div class="wow animate__backInLeft" data-wow-delay="0.5s">
+                  <h4 class="section--title pt-30">
+                    Digitally Driven Globally Connected
+                  </h4>
+                  <p class="section-desc pt-30">
+                    Technology is constantly evolving, shaping our future
+                    and transforming how we live encompasses innovations in
+                    software, hardware, communication, and automation
+                    Technology is constantly evolving, shaping our future
+                    and transforming how we live encompasses
+                  </p>
+                </div>
               </div>
             </article>
             <div class="blog-post-details">
@@ -787,7 +794,7 @@
               </div>
               <!-- end slider-wrapper style-seven -->
               <div class="comment-wrapper pt-60">
-                <div class="comment-info">
+                <div class="comment-info wow animate__backInLeft" data-wow-delay="0.5s">
                   <h3 class="section-title">1 Comment</h3>
                   <div class="user-comment mt-30">
                     <div class="user-info">
@@ -816,7 +823,7 @@
                     <a href="#" class="replay-btn mt-20"> Replay </a>
                   </div>
                 </div>
-                <div class="comment-form pt-60">
+                <div class="comment-form pt-60 wow animate__backInLeft" data-wow-delay="0.6s" >
                   <h3 class="section-title">Leave A Comment</h3>
                   <div class="form-box form-wrapper style-one p-0 mt-30">
                     <div class="form-content contact-form-action">
@@ -891,7 +898,7 @@
           <!-- end col-lg-8 -->
           <div class="col-lg-4">
             <aside>
-              <div class="sidebar style-two">
+              <div class="sidebar style-two wow animate__backInRight" data-wow-delay="0.5s">
                 <div class="search-bar">
                   <input
                     type="text"
@@ -1125,50 +1132,64 @@
       </div>
     </section>
     <!--============END BLOG AREA ============-->
-    <!--==========START fOOTER AREA===========-->
+    <!--============ START fOOTER AREA ===========-->
     <section class="footer-area style-one pt-80 pb-40">
       <div class="container">
         <div class="footer-wrapper pb-40">
-          <div class="section-header style-one">
+          <div
+            class="section-header style-one section-meta mb-15 wow animate__ animate__lightSpeedInLeft"
+          >
             <h2 class="section-title">Start your Journey With Us</h2>
             <p class="section-desc">
               In the realm of IT Technology, innovation and advancement are key
               elements. From cutting-edge software
             </p>
           </div>
-          <a href="#" class="circle-box"> Let’s Talk </a>
+          <a href="#" class="circle-box auto-bounce section-meta mb-15">
+            Let’s Talk
+          </a>
         </div>
         <div class="footer-wrap pt-40 pb-80">
           <div class="row">
             <div class="col-lg-4 col-md-6">
-              <div class="company-logo">
-                <img src="images/logo-img-02.png" alt="techure logo" />
-              </div>
-              <div class="input-group input-group-lg">
-                <input
-                  class="form-control form-control-lg"
-                  type="text"
-                  placeholder="Your Email..."
-                  aria-label=".form-control-lg example"
-                />
-                <span class="input-group-text group-btn"
-                  ><i class="lab la-telegram"></i
-                ></span>
-              </div>
+              <div
+                class="wow animate__animated animate__fadeInUp"
+                data-wow-delay="0.2s"
+              >
+                <div class="company-logo">
+                  <img src="images/logo-img-02.png" alt="techure logo" />
+                </div>
+                <div class="input-group input-group-lg">
+                  <input
+                    class="form-control form-control-lg"
+                    type="text"
+                    placeholder="Your Email..."
+                    aria-label=".form-control-lg example"
+                  />
+                  <span class="input-group-text group-btn"
+                    ><i class="lab la-telegram"></i
+                  ></span>
+                </div>
 
-              <div class="shear-media">
-                <ul>
-                  <li class="ms-0"><i class="fa-brands fa-pinterest-p"></i></li>
-                  <li><i class="fa-brands fa-linkedin"></i></li>
-                  <li><i class="fa-brands fa-x-twitter"></i></li>
-                  <li><i class="fa-brands fa-facebook-f"></i></li>
-                </ul>
+                <div class="shear-media">
+                  <div class="media--icons">
+                    <a href="#" class="ms-0"
+                      ><i class="fa-brands fa-pinterest-p"></i
+                    ></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  </div>
+                </div>
+                <!-- end shear-media -->
               </div>
-              <!-- end shear-media -->
             </div>
             <!-- end col-lg-4 -->
             <div class="col-lg-4 col-md-6">
-              <div class="footer-list">
+              <div
+                class="footer-list wow animate__animated animate__fadeInUp"
+                data-wow-delay="0.3s"
+              >
                 <h4>Service</h4>
                 <ul>
                   <li><a href="#">Shaping the Digital Landscape</a></li>
@@ -1181,7 +1202,10 @@
             <!-- end -col-lg-4 -->
 
             <div class="col-lg-4 col-md-6">
-              <div class="footer-list">
+              <div
+                class="footer-list wow animate__animated animate__fadeInUp"
+                data-wow-delay="0.4s"
+              >
                 <h4>Service</h4>
                 <div class="mb-20">
                   <p class="text-sub">Email</p>
@@ -1208,13 +1232,15 @@
         <div class="copyright-area pt-60">
           <div class="row">
             <div class="col-lg-6">
-              <p class="copyright-desc">
+              <p
+                class="copyright-desc wow animate__ animate__lightSpeedInLeft animated"
+              >
                 &copy; <a href="#">Yoursitename</a> 2025 | All Rights Rserved
               </p>
             </div>
 
             <div class="col-lg-6">
-              <ul>
+              <ul class="wow animate__ animate__lightSpeedInRight animated">
                 <li><a href="#">Terms & Conditions</a></li>
                 <li><a href="#">Privacy policy</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
@@ -1231,9 +1257,13 @@
     <script src="js/chosen.min.js"></script>
     <script src="js/jquery.counterup.min.js"></script>
     <script src="js/waypoints.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/all.min.js"></script>
+    <script>
+      new WOW().init()
+    </script>
   </body>
 </html>
