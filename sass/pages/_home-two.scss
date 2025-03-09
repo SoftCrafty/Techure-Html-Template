@@ -10,7 +10,7 @@
         justify-content: center;
         align-items: center;
         gap: 60px;
-        padding-top: 38px;
+        padding-top: 20px;
         @include m.device-525px {
           flex-wrap: wrap;
         }

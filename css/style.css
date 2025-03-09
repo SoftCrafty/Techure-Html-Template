@@ -4326,7 +4326,6 @@ p {
 
 /*-======== lates-service-area=======-*/
 .lates-service-area {
-  padding-top: 150px;
   background: #f7f1fc;
 }
 .lates-service-area .letes-wrapper {
@@ -4409,7 +4408,7 @@ p {
 
 /*-======== about-area=======-*/
 .about-area .section-header {
-  padding-bottom: 220px;
+  padding-bottom: 172px;
 }
 
 /*-======== lates-project-area =======-*/
@@ -4513,7 +4512,7 @@ p {
   justify-content: center;
   align-items: center;
   gap: 60px;
-  padding-top: 38px;
+  padding-top: 20px;
 }
 @media (max-width: 525px) {
   .hero-area.style-two .hero-content .hero-section {
@@ -7731,9 +7730,6 @@ p {
     row-gap: 8px;
   }
 }
-.blog-card-wrapper.style-three .card-item .card-img .badge-wrap a {
-  background: #f7f1fc;
-}
 .blog-card-wrapper.style-three .card-item .card-img .badge-wrap .card-badge {
   display: flex;
   gap: 5px;
@@ -8106,7 +8102,7 @@ p {
 /* Theme Default CSS */
 /*-======== client-box =======-*/
 .team-card-wrapper.style-one {
-  padding-top: 60px;
+  padding-top: 30px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
