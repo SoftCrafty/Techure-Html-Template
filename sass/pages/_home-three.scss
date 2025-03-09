@@ -70,6 +70,9 @@
 /*-======== about area style-three =======-*/
 .about-area {
   &.style-three {
+    .about--header {
+      padding-bottom: 60px !important;
+    }
     .about-wrap {
       display: flex;
       gap: 30px;

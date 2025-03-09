@@ -556,6 +556,10 @@
   padding-top: 215px;
 }
 
+.pt-220 {
+  padding-top: 220px;
+}
+
 .pt-250 {
   padding-top: 250px;
 }
@@ -739,6 +743,10 @@
 
 .pb-200 {
   padding-bottom: 200px;
+}
+
+.pb-230 {
+  padding-bottom: 230px;
 }
 
 /*-- Padding Left --*/
@@ -3281,30 +3289,6 @@ p {
   fill: #573db8;
 }
 
-.custom-animate {
-  animation: custom-animate 1.6s forwards cubic-bezier(0.645, 0.045, 0.355, 1) 0.4s;
-  opacity: 0;
-}
-
-.custom-animate-two {
-  animation: custom-animate-two 1.6s forwards cubic-bezier(0.645, 0.045, 0.355, 1) 0.4s;
-  opacity: 0;
-}
-
-.custom-animate-three {
-  animation: custom-animate-three 1.6s forwards cubic-bezier(0.645, 0.045, 0.355, 1) 0.4s;
-  opacity: 0;
-}
-
-.auto-bounce {
-  animation: auto-bounce 3s infinite;
-  -webkit-animation: auto-bounce 3s infinite;
-}
-
-.cssanimation span {
-  display: inline;
-}
-
 /**
  * Stylesheet:  style.css
  * Theme:       Technova - IT Startup & Agency HTML5 Template
@@ -5040,6 +5024,9 @@ p {
 }
 
 /*-======== about area style-three =======-*/
+.about-area.style-three .about--header {
+  padding-bottom: 60px !important;
+}
 .about-area.style-three .about-wrap {
   display: flex;
   gap: 30px;
@@ -5500,6 +5487,16 @@ p {
   font-weight: 500;
   margin-right: 8px;
 }
+.services-details-area .service-wrapper .info-card-wrapper .card-item {
+  background: #f7f1fc;
+  border: 0;
+}
+.services-details-area .service-wrapper .info-card-wrapper .card-item .card-svg {
+  background: #ffffff !important;
+}
+.services-details-area .service-wrapper .info-card-wrapper .card-item .card-svg svg path {
+  fill: #573db8 !important;
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .services-details-area .service-wrapper {
     margin-top: 30px;
@@ -5696,6 +5693,7 @@ p {
   gap: 10px;
   align-items: center;
   color: #716f73;
+  font-size: 14px;
 }
 .blog-details-area .single-post-item .post-content-wrapper .post-meta span svg path {
   fill: #573db8;
@@ -6517,6 +6515,7 @@ p {
   letter-spacing: 4px;
   color: #07000e;
   line-height: 18px;
+  text-transform: uppercase;
 }
 .section-header.style-one .section-title {
   font-size: 72px;
@@ -8057,7 +8056,7 @@ p {
   font-weight: 700;
   line-height: 72px;
   letter-spacing: 8px;
-  -webkit-text-stroke: 1px #07000e;
+  -webkit-text-stroke: 2px #07000e;
   color: #ffffff;
 }
 .about-wrapper.style-two .about-wrap .about-content .tech-count .count-sup {
@@ -8106,7 +8105,7 @@ p {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 0px 30px;
 }
 .team-card-wrapper.style-one .card-item {
   display: flex;
@@ -8746,7 +8745,7 @@ video {
   align-items: center;
   gap: 110px;
   padding: 58px 60px;
-  margin-top: -130px;
+  margin-top: -160px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
@@ -8908,7 +8907,7 @@ video {
   border: 1px solid #8fd45f;
 }
 .testimonial-wrapper.style-one .testimonial-carousel .owl-dots {
-  margin-top: 60px !important;
+  margin-top: 80px !important;
   height: 50px;
 }
 .testimonial-wrapper.style-one .testimonial-carousel .owl-dots .owl-dot {
@@ -10484,6 +10483,22 @@ video {
 }
 .pagination.style-one .page-item .page-link:hover svg path {
   color: #ffffff;
+}
+
+.google-map-area.style-one .mapouter {
+  position: relative;
+  text-align: right;
+  width: 100%;
+  height: 500px;
+}
+.google-map-area.style-one .gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  width: 100%;
+  height: 500px;
+}
+.google-map-area.style-one .gmap_iframe {
+  height: 500px !important;
 }
 
 /**

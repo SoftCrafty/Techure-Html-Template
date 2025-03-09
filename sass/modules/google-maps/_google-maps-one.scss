@@ -1,0 +1,19 @@
+.google-map-area {
+  &.style-one {
+    .mapouter {
+      position: relative;
+      text-align: right;
+      width: 100%;
+      height: 500px;
+    }
+    .gmap_canvas {
+      overflow: hidden;
+      background: none !important;
+      width: 100%;
+      height: 500px;
+    }
+    .gmap_iframe {
+      height: 500px !important;
+    }
+  }
+}
