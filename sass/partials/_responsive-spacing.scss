@@ -26,11 +26,16 @@
   }
 }
 @include m.device-425px {
+  .res-py-120 {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .res-py-100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
   .res-pt-120 {
     padding-top: 120px;
-  }
-  .res-py-120 {
-    padding: 120px 0;
   }
   .res-pt-30 {
     padding-top: 30px;
@@ -76,7 +81,7 @@
     padding-bottom: 80px;
   }
   .res-pb-100 {
-    padding-bottom: 100px;
+    padding-bottom: 100px !important;
   }
 }
 

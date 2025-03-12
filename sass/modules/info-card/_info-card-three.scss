@@ -42,6 +42,10 @@
           opacity: 0;
           visibility: hidden;
           @include m.transition(2s);
+          @include m.device-425px {
+            opacity: 1;
+            visibility: visible;
+          }
           img {
             width: 100%;
           }

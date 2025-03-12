@@ -4332,7 +4332,7 @@ p {
 }
 @media (max-width: 425px) {
   .hero-area.style-one .hero-wrapper {
-    margin-top: 0;
+    margin-top: 0 !important;
   }
 }
 @media (max-width: 1024px) {
@@ -7651,6 +7651,12 @@ p {
   -ms-transition: all 2s;
   -o-transition: all 2s;
   transition: all 2s;
+}
+@media (max-width: 425px) {
+  .info-card-wrapper.style-three .card-item.service-card .card-img {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 .info-card-wrapper.style-three .card-item.service-card .card-img img {
   width: 100%;
@@ -12007,11 +12013,16 @@ video {
   }
 }
 @media (max-width: 425px) {
+  .res-py-120 {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .res-py-100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
   .res-pt-120 {
     padding-top: 120px;
-  }
-  .res-py-120 {
-    padding: 120px 0;
   }
   .res-pt-30 {
     padding-top: 30px;
@@ -12056,7 +12067,7 @@ video {
     padding-bottom: 80px;
   }
   .res-pb-100 {
-    padding-bottom: 100px;
+    padding-bottom: 100px !important;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
