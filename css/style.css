@@ -12019,7 +12019,7 @@ video {
 @media (max-width: 1024px) {
   .res-lap-py-100 {
     padding-top: 100px;
-    padding-bottom: 100%;
+    padding-bottom: 100px;
   }
   .res-1024-pb-100 {
     padding-bottom: 100px;
@@ -12054,6 +12054,9 @@ video {
   }
   .res-pt-120 {
     padding-top: 120px;
+  }
+  .res-pt-20 {
+    padding-top: 20px;
   }
   .res-pt-30 {
     padding-top: 30px;
