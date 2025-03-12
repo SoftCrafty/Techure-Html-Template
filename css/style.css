@@ -8709,6 +8709,11 @@ p {
     flex-direction: column;
   }
 }
+@media only screen and (min-width: 0px) and (max-width: 576px) and (min-width: 0px) and (max-width: 576px) {
+  .about-wrapper.style-two .about-wrap .about-content .tech-count {
+    align-items: start;
+  }
+}
 .about-wrapper.style-two .about-wrap .about-content .tech-count .coun-title {
   min-width: 216px;
   font-size: 72px;
@@ -12010,6 +12015,15 @@ video {
   }
   .res-1024-pt-100 {
     padding-top: 100px;
+  }
+  .res-pt-100 {
+    padding-top: 100px;
+  }
+  .res-pt-115 {
+    padding-top: 115px;
+  }
+  .res-pt-40 {
+    padding-top: 40px;
   }
 }
 @media (max-width: 425px) {

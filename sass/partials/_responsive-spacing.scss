@@ -24,6 +24,15 @@
   .res-1024-pt-100 {
     padding-top: 100px;
   }
+  .res-pt-100 {
+    padding-top: 100px;
+  }
+  .res-pt-115 {
+    padding-top: 115px;
+  }
+  .res-pt-40 {
+    padding-top: 40px;
+  }
 }
 @include m.device-425px {
   .res-py-120 {
