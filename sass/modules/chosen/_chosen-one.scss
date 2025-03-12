@@ -19,8 +19,10 @@
       box-shadow: none !important;
       span {
         color: v.$gray-800;
+        margin-left: 10px !important;
       }
       div {
+        right: 10px !important;
         b {
           display: block !important;
           width: 16px !important;

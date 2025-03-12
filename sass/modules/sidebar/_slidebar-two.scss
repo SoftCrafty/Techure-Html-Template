@@ -37,7 +37,7 @@
         position: relative;
         border: 0;
         background: v.$gray-100;
-        padding-left: 30px;
+        padding-left: 15px;
         padding-right: 40px;
         @include m.border-radius(50px);
         &::placeholder {
@@ -98,7 +98,6 @@
         align-items: center;
         border-bottom: 1px solid v.$border-color-04;
         padding-bottom: 10px;
-
         .section-title {
           font-size: 24px;
           font-weight: v.$font-weight-bold;
@@ -128,6 +127,7 @@
         flex-wrap: wrap;
         align-items: center;
         gap: 10px;
+
         a {
           padding: 4px 10px;
           border: 1px solid v.$border-color-04;
@@ -135,6 +135,11 @@
           color: v.$gray-800;
           font-size: 14px;
           font-weight: v.$font-weight-regular;
+          @include m.transition(0.3s);
+          &:hover {
+            background: v.$primary-color;
+            color: v.$white;
+          }
         }
       }
     }
@@ -144,7 +149,7 @@
           font-size: 26px;
         }
         .theme-btn {
-          padding: 16px;
+          padding: 17px;
         }
       }
     }

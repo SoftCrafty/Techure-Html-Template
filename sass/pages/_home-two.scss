@@ -4,6 +4,37 @@
 .hero-area {
   &.style-two {
     background: v.$gray-900;
+    position: relative;
+    z-index: 1;
+    opacity: 0.9;
+    .overlay--img {
+      width: 100%;
+      height: 100%;
+      .overlay-img {
+        position: absolute;
+        z-index: -1;
+        img {
+          width: 412px;
+          height: 412px;
+          @include m.xs {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        @include m.xs {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .overlay-img-one {
+        top: 90px;
+        left: 0;
+      }
+      .overlay-img-two {
+        bottom: 64px;
+        right: 140px;
+      }
+    }
     .hero-content {
       .hero-section {
         display: flex;
@@ -23,6 +54,9 @@
           font-weight: v.$font-weight-bold;
           line-height: 127px;
           color: v.$white;
+          @include m.nesthubmax {
+            font-size: 96px;
+          }
           @include m.device-1200px {
             font-size: 96px;
           }
@@ -83,6 +117,10 @@
       .left {
         flex-basis: 52%;
         padding-top: 56px;
+        @include m.nesthubmax {
+          flex-basis: 62%;
+
+        }
         @include m.nesthub {
           flex-basis: 70%;
         }
@@ -168,7 +206,12 @@
       }
       .theme-btn {
         &.style-one {
-          background: v.$primary-color;
+          background: linear-gradient(
+            -225deg,
+            #3d4e81 0%,
+            #5753c9 48%,
+            #6e7ff3 100%
+          );
           a {
             color: v.$white;
             svg {
@@ -358,7 +401,36 @@
       padding-top: 245px;
       position: relative;
       z-index: 1;
+      @include m.laptop_m_four {
+        padding-top: 130px;
+      }
+      @include m.device-425px {
+        padding-top: 100px;
+      }
       .client-content {
+        .best-award-logo {
+          position: relative;
+          height: 124px;
+          width: 124px;
+          border-radius: 50%;
+          background: #524e55;
+          .best-award-icon {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            @include m.transform(translate(-50%, -50%));
+          }
+          .best-award-text {
+            position: relative;
+            text-align: center;
+            line-height: 120px;
+            animation: rotate-spin 4s linear infinite;
+          }
+          @include m.xs {
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
         .section-header {
           .section-title {
             color: v.$white;
@@ -414,5 +486,10 @@
 .new-blog-area {
   &.style-two {
     background: v.$gray-100;
+    .section--header {
+      @include m.device-425px {
+        padding-bottom: 0px;
+      }
+    }
   }
 }

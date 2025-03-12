@@ -4,6 +4,10 @@
 .contact-card {
   &.style-one {
     .contact-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
       background: v.$primary-color;
       padding: 40px;
       @include m.border-radius(20px);
@@ -22,18 +26,45 @@
           color: v.$white;
         }
         .section-title {
-          color: v.$white;
           font-size: 32px;
           font-weight: v.$font-weight-bold;
           padding: 20px 0 0 0;
+          a {
+            color: v.$white;
+          }
           @include m.laptop_m_four {
             font-size: 24px;
+          }
+        }
+      }
+      .theme--btn {
+        a {
+          .theme-btn {
+            &.style-two {
+              &:nth-child(2) {
+                padding: 11px;
+              }
+            }
+          }
+        }
+        &:hover {
+          .theme-btn {
+            box-shadow: 0 15px 60px -5px rgba(0, 0, 0, 0.5);
+            background: v.$gray-900;
+            color: v.$white;
+          }
+          svg {
+            path {
+              fill: v.$white;
+            }
           }
         }
       }
       .theme-btn {
         background: v.$white;
         color: v.$gray-900;
+        transition: 0.5s ease;
+
         svg {
           path {
             fill: v.$gray-900;

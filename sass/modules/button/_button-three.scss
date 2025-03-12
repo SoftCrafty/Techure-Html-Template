@@ -3,6 +3,7 @@
 /*-======== theme-btn two =======-*/
 .theme-btn {
   &.style-three {
+    padding: 16px 30px !important;
     width: 100%;
     background: v.$secondary;
     color: v.$gray-900;
@@ -14,14 +15,27 @@
       padding: 21px 30px;
       @include m.border-radius(50px);
       border: 1px solid rgba(7, 0, 14, 0.2);
+      @include m.transition(0.3s);
+
       @include m.device-320px {
         padding: 10px 20px;
       }
     }
-
+    &:hover {
+      background: v.$gray-900;
+      color: v.$white;
+      svg {
+        @include m.transform(rotate(0deg));
+        path {
+          fill: v.$white;
+        }
+      }
+    }
     svg {
-      width: 26px;
-      height: 26px;
+      width: 22px;
+      height: 22px;
+      @include m.transform(rotate(-45deg));
+      @include m.transition(0.3s);
       path {
         fill: v.$gray-900;
       }

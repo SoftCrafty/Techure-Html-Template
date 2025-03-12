@@ -24,6 +24,11 @@
             }
           }
         }
+        .more-btn {
+          svg {
+            @include m.transform(rotate(45deg));
+          }
+        }
       }
       @include m.xl {
         width: 325px;
@@ -69,6 +74,17 @@
         .more-btn {
           display: flex;
           margin-top: 35px;
+          align-items: center;
+          &:hover {
+            p {
+              color: v.$primary-color;
+            }
+            svg {
+              path {
+                fill: v.$primary-color;
+              }
+            }
+          }
           p {
             font-size: 18px;
             font-weight: v.$font-weight-bold;
@@ -78,6 +94,7 @@
             width: 21px;
             height: 21px;
             margin-left: 10px;
+            @include m.transition(0.3s);
             path {
               fill: v.$gray-900;
             }

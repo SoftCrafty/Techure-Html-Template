@@ -7,6 +7,12 @@
     .card-item {
       background: v.$white;
       padding: 30px;
+      border: 1px solid transparent;
+
+      @include m.transition(0.3s);
+      &:hover {
+        border-color: v.$primary-color;
+      }
       @include m.border-radius(20px);
       @include m.md {
         margin-bottom: 30px;
@@ -41,6 +47,7 @@
         .more-btn {
           display: flex;
           margin-top: 35px;
+          align-items: center;
           p {
             color: v.$gray-900;
             font-size: 18px;
@@ -50,9 +57,17 @@
             width: 21px;
             height: 21px;
             margin-left: 10px;
+            @include m.transition(0.3s);
             path {
               fill: v.$gray-900;
             }
+          }
+        }
+      }
+      &:hover {
+        .more-btn {
+          svg {
+            @include m.transform(rotate(45deg));
           }
         }
       }

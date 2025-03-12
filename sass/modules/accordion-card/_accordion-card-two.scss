@@ -7,10 +7,6 @@
 
     .faq-wrap {
       color: v.$gray-900 !important;
-      @include m.device-425px {
-        padding: 30px;
-
-      }
       .section-header {
         .section-title {
           color: v.$gray-900 !important;
@@ -49,13 +45,17 @@
               }
 
               .faq-icon {
-                width: 40px;
-                height: 40px;
-                text-align: center;
-                line-height: 40px;
-                background: v.$white;
-                @include m.border-radius(50%);
-                flex-shrink: 0;
+                i {
+                  color: v.$gray-900;
+                }
+              }
+              .faq--title {
+                .single-num {
+                  color: v.$gray-800;
+                  font-weight: v.$font-weight-bold;
+                  font-size: 18px;
+                  margin-right: 8px;
+                }
               }
             }
           }
@@ -71,5 +71,4 @@
       }
     }
   }
-
 }

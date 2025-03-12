@@ -2,15 +2,29 @@
 @use "./mixin" as m;
 /*-======== services-details-area  =======-*/
 .project-details-area {
+  @include m.device-768px {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
   .project-details-wrapper {
     .section-title {
       font-size: 32px;
       font-weight: v.$font-weight-bold;
       line-height: 41px;
+      @include m.md {
+        margin-top: 30px;
+      }
+      @include m.sm {
+        margin-top: 30px;
+      }
+      @include m.xs {
+        margin-top: 30px;
+      }
     }
     .project-post-details {
       img {
         @include m.border-radius(20px);
+        width: 100%;
       }
       .project-post-info {
         display: flex;
@@ -79,6 +93,7 @@
       padding-bottom: 30px;
       img {
         @include m.border-radius(20px);
+        width: 100%;
       }
     }
 
@@ -95,6 +110,11 @@
           font-size: 18px;
           font-weight: v.$font-weight-medium;
           margin-left: 8px;
+          a {
+            color: v.$gray-800;
+            font-size: 18px;
+            font-weight: v.$font-weight-medium;
+          }
         }
       }
     }
@@ -102,6 +122,10 @@
       .owl-stage-outer {
         padding-bottom: 60px !important;
       }
+    }
+    .section-small-title {
+      font-weight: v.$font-weight-bold;
+      font-size: 24px;
     }
   }
 }

@@ -6,14 +6,23 @@
   &.style-two {
     border-bottom: 1px solid v.$color-06;
     padding: 27px 0;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1023;
     padding: 20px 0;
     &.header-fixed {
+      position: fixed;
       background: v.$gray-900;
+      .logo {
+        .standard-logo {
+          display: none;
+        }
+        .sticky-logo {
+          display: block;
+        }
+      }
     }
     .logo {
       display: flex;
@@ -68,7 +77,7 @@
       position: relative;
       @include m.border-radius(50px);
       cursor: pointer;
-      @include m.laptop_m_three {
+      @include m.laptop_m_two {
         display: none;
       }
 
@@ -110,7 +119,7 @@
       @include m.border-radius(50px);
       cursor: pointer;
       text-align: center;
-      @include m.laptop_m_three {
+      @include m.laptop_m_two {
         display: flex !important;
         justify-content: center;
         align-items: center;

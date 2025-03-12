@@ -11,6 +11,9 @@
             .slider-item {
               .section-header {
                 width: 720px;
+                @include m.xs {
+                  width: 100%;
+                }
                 .section-title {
                   color: v.$white;
                 }
@@ -24,6 +27,19 @@
         right: 0;
         bottom: 50%;
         @include m.transform(translateY(-50%));
+        @include m.xs {
+          left: 50%;
+          bottom: -100px;
+          @include m.transform(translateX(-50%));
+        }
+        .disabled {
+          background: none !important;
+          svg {
+            path {
+              fill: v.$primary-color;
+            }
+          }
+        }
         .owl-prev,
         .owl-next {
           width: 60px;
@@ -31,7 +47,7 @@
           @include m.border-radius(50%);
           line-height: 60px;
           @include m.transition(0.5s);
-          background: inherit;
+          background: v.$primary-color;
           &:hover {
             background: v.$primary-color;
             svg {
@@ -44,7 +60,7 @@
             width: 18px;
             height: 18px;
             path {
-              fill: v.$primary-color;
+              fill: v.$white;
             }
           }
         }

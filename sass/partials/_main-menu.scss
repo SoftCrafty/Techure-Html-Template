@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   float: right;
-  @include m.laptop_m_three {
+  @include m.laptop_m_two {
     float: right;
   }
   .number-with-btn {
@@ -54,7 +54,7 @@
           line-height: 10px;
         }
         &:hover {
-          color: v.$primary-color;
+          color: v.$primary-color !important;
         }
       }
 
@@ -68,7 +68,7 @@
       }
     }
   }
-  @include m.laptop_m_three {
+  @include m.laptop_m_two {
     display: none;
   }
 }

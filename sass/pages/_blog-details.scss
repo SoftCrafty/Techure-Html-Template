@@ -43,6 +43,11 @@
           font-size: 18px;
           font-weight: v.$font-weight-medium;
           margin-right: 8px;
+          a {
+            color: v.$gray-800;
+            font-size: 18px;
+            font-weight: v.$font-weight-medium;
+          }
         }
       }
       .section--title {
@@ -51,6 +56,7 @@
       }
     }
   }
+
   .comment-wrapper {
     .comment-info {
       .section-title {
@@ -64,6 +70,9 @@
         .user-info {
           display: flex;
           justify-content: space-between;
+          svg {
+            @include m.transform(rotate(180deg));
+          }
           .user-name {
             font-size: 24px;
             font-weight: v.$font-weight-bold;

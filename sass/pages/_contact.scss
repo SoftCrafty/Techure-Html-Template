@@ -27,6 +27,11 @@
         .section-title {
           font-size: 18px;
           font-weight: v.$font-weight-bold;
+          a {
+            font-size: 18px;
+            font-weight: v.$font-weight-bold;
+            color: v.$gray-900;
+          }
         }
       }
       .shear-media {
@@ -34,11 +39,11 @@
         @include m.device-525px {
           margin-top: 0px;
         }
-        ul {
+        .media--icons {
           display: flex;
           align-items: center;
           gap: 20px;
-          li {
+          a {
             width: 38px;
             height: 38px;
             background: v.$gray-100;
@@ -68,12 +73,14 @@
       }
       .form-content {
         .form-control {
-          border: 0px;
+          border-color: v.$border-color-02;
+          background: v.$gray-100;
         }
+
         .user-chosen-select-container {
           .chosen-container-single {
             .chosen-single {
-              border: 0px;
+              background: v.$gray-100 !important;
             }
           }
         }

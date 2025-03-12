@@ -8,7 +8,9 @@
     .section-header {
       &.style-two {
         border-bottom: 1px solid v.$border-color-03;
-
+        @include m.xs {
+          padding-bottom: 40px;
+        }
         .section-meta {
           font-size: 24px;
           font-weight: v.$font-weight-bold;
@@ -62,6 +64,9 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      @include m.xs {
+        padding-top: 38px;
+      }
       @include m.device-525px {
         flex-wrap: wrap;
       }
@@ -135,6 +140,9 @@
 
     .copyright-area {
       .copyright-desc {
+        a {
+          color: v.$primary-color;
+        }
         @include m.device-525px {
           text-align: center;
         }

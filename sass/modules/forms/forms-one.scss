@@ -3,9 +3,13 @@
 /*-======== forms =======-*/
 .form-wrapper {
   &.style-one {
-    padding: 60px 40px;
+    padding: 62px 40px;
     background: v.$white;
     @include m.border-radius(20px);
+    @include m.device-425px{
+    padding: 50px 25px;
+
+    }
     @include m.md {
       margin-top: 40px;
     }

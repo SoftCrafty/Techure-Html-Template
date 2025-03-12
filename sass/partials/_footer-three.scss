@@ -5,7 +5,9 @@
   &.style-three {
     position: relative;
     z-index: 1;
-
+    @include m.device-425px {
+      padding-top: 100px;
+    }
     .footer-wrapper {
       background: v.$white;
       padding: 80px 135px 30px 135px;

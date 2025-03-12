@@ -39,14 +39,14 @@
             margin-right: 8px;
             color: v.$gray-800;
             svg {
-              width: 18px;
-              height: 18px;
+              width: 14px;
+              height: 15px;
               path {
                 fill: v.$primary-color;
               }
             }
             span {
-              font-size: 12px;
+              font-size: 14px;
               font-weight: v.$font-weight-regular;
               margin-left: 5px;
               color: v.$gray-800;
@@ -59,6 +59,13 @@
             font-size: 24px;
             font-weight: v.$font-weight-bold;
             margin-bottom: 34px;
+            a {
+              color: v.$gray-900;
+              @include m.transition(0.3s);
+              &:hover {
+                color: v.$primary-color;
+              }
+            }
           }
         }
         .more-btn {
@@ -66,14 +73,25 @@
           display: flex;
           gap: 5px;
           align-items: center;
+          &:hover {
+            p {
+              color: v.$primary-color;
+            }
+            svg {
+              path {
+                fill: v.$primary-color;
+              }
+            }
+          }
           p {
             color: v.$gray-900;
             font-size: 18px;
             font-weight: v.$font-weight-bold;
+            @include m.transition(0.3s);
           }
           svg {
             path {
-              @include m.transition(0.4s);
+              @include m.transition(0.3s);
             }
           }
         }

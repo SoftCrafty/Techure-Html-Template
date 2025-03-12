@@ -3,6 +3,14 @@
 /*-======== services-details-area  =======-*/
 .service-area {
   &.style-one {
+    .info-card-wrapper {
+      @include m.rmaxwd(576) {
+        padding-left: 15px;
+      }
+      @include m.device-525px {
+        padding-left: 30px;
+      }
+    }
     .card-wrapper {
       display: flex;
       justify-content: space-between;

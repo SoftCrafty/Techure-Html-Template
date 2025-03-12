@@ -30,29 +30,15 @@
   })
   /*=====  Navbar Fixed ======*/
         var $window = $(window);
-          $window.on('scroll', function() {
-            //header fixed animation and control
-            if($window.scrollTop() > 0) {
-                $(".header-two").addClass('header-fixed');
-            }else{
-                $(".header-two").removeClass('header-fixed');
-            }
-
-        });
-  /*=====  Navbar three Fixed ======*/
-
-        var $window = $(window);
         $window.on('scroll', function() {
           //header fixed animation and control
           if($window.scrollTop() > 0) {
-              $(".header-three").addClass('header-fixed-three');
+              $(".header-area").addClass('header-fixed');
           }else{
-              $(".header-three").removeClass('header-fixed-three');
+              $(".header-area").removeClass('header-fixed');
           }
 
       });
-
-  
   /*=========== Sub menu ============*/
       var dropdowmMenu = $('.off-canvas-menu .off-canvas-dropdown');
       dropdowmMenu.parent('li').children('.item').append(function() {
@@ -102,41 +88,7 @@ if (numberCounter.length) {
         }
   /*==== tech-service-carousel =====*/
 
-  $('.tech-service-carousel').owlCarousel({
-    
-    loop: true,
-   autoplay:true,
-   dots:false,	
-  autoplayTimeout:1000,
-  autoPlaySpeed: 1000,
-  autoplayHoverPause:true,
-  responsive: {
-    0: {
-      items: 1,
-    },
-    600: {
-      items: 1,
-    },
-    1199:{
-      items: 2,
 
-    },
-    1200:{
-      items: 2,
-
-    },
-    1300:{
-      items: 2,
-
-    },
-    1400: {
-      items: 2,
-    },
-    1920:{
-      items:3,
-    }
-  },
-})
 
 /*==== Testimonal carousel =====*/
 $(".testimonial-carousel").owlCarousel({
@@ -275,30 +227,18 @@ $(".slider-carousel-five").owlCarousel({
 /*==== slider-carouser-six carousel =====*/
 
 $(".slider-carousel-six").owlCarousel({
-  loop: true,
-  margin: 30,
+  loop: false,
+  margin: 0,
+  items:1,
   nav: true,
   dots: false,
-  autoplay:true,
-  autoplayTimeout:6000,
+  autoplay: true,
+  autoplayTimeout: 6000,
   responsiveClass: true,
   navText: [
     `<i class="fa-solid fa-arrow-left"></i>`,
   `<i class="fa-solid fa-arrow-right"></i>`,
 ],
-  responsive: {
-    0: {
-      items: 1,
-    },
-    600: {
-      items: 1,
-    },
-    1000: {
-      items: 1,
-      loop: true,
-    },
-    
-  },
 });
 /*==== slider-carouser-seven carousel =====*/
 
@@ -327,6 +267,23 @@ $(".slider-carousel-seven").owlCarousel({
     },
     
   },
+});
+
+$(".slider-carousel-seves").owlCarousel({
+  loop: false,
+items:1,
+  margin: 0,
+  nav: true,
+  dots: false,
+  autoplay: false,
+  autoplayTimeout: 6000,
+  responsiveClass: true,
+  navText: [
+    `<i class="fa-solid fa-arrow-left"></i>`,
+  `<i class="fa-solid fa-arrow-right"></i>`,
+],
+
+  
 });
 // drop
 $("#Country").chosen({no_results_text: "Oops, nothing found!"}); 

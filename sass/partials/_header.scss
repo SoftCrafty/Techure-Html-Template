@@ -6,12 +6,27 @@
   &.style-one {
     padding: 27px 0;
     background: v.$gray-100;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1023;
     padding: 20px 0;
+    &.header-fixed {
+      position: fixed;
+      &.style-one {
+        background: v.$gray-100;
+
+        .logo {
+          .standard-logo {
+            display: none;
+          }
+          .sticky-logo {
+            display: block;
+          }
+        }
+      }
+    }
     .logo {
       display: flex;
       justify-content: start;
@@ -28,7 +43,7 @@
         font-weight: v.$font-weight-bold;
       }
     }
-    
+
     .bar-btn {
       width: 50px;
       height: 50px;
@@ -36,7 +51,7 @@
       position: relative;
       @include m.border-radius(50px);
       cursor: pointer;
-      @include m.laptop_m_three {
+      @include m.laptop_m_two {
         display: none;
       }
       &.style-one {
@@ -48,7 +63,7 @@
           .bar-line {
             width: 2px;
             height: 2px;
-            background: rgb(228, 219, 219);
+            background: v.$white;
             display: block;
             align-items: center;
             &.bar-line:nth-child(1) {
@@ -72,7 +87,7 @@
       @include m.border-radius(50px);
       cursor: pointer;
       text-align: center;
-      @include m.laptop_m_three {
+      @include m.laptop_m_two {
         display: flex !important;
         justify-content: center;
         align-items: center;
