@@ -9,6 +9,9 @@
     @include m.laptop_m_four {
       padding: 20px;
     }
+    @include m.rmaxwd(1280){
+      padding: 20px;
+    }
     @include m.md {
       margin-top: 40px;
       padding: 40px;

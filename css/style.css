@@ -4281,6 +4281,8 @@ p {
 }
 .hero-area.style-one .shear-media .media--icons a svg {
   display: block;
+}
+.hero-area.style-one .shear-media .media--icons a svg path {
   fill: #07000e;
 }
 @media (max-width: 1440px) {
@@ -11088,6 +11090,11 @@ video {
     padding: 20px;
   }
 }
+@media (max-width: 1280px) {
+  .sidebar.style-two {
+    padding: 20px;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .sidebar.style-two {
     margin-top: 40px;
@@ -12010,16 +12017,20 @@ video {
   }
 }
 @media (max-width: 1024px) {
+  .res-lap-py-100 {
+    padding-top: 100px;
+    padding-bottom: 100%;
+  }
   .res-1024-pb-100 {
     padding-bottom: 100px;
   }
   .res-1024-pt-100 {
     padding-top: 100px;
   }
-  .res-pt-100 {
+  .res-lap-pt-100 {
     padding-top: 100px;
   }
-  .res-pt-115 {
+  .res-lap-pt-115 {
     padding-top: 115px;
   }
   .res-pt-40 {
@@ -12034,6 +12045,12 @@ video {
   .res-py-100 {
     padding-top: 100px;
     padding-bottom: 100px;
+  }
+  .res-pt-110 {
+    padding-top: 110px;
+  }
+  .res-pt-115 {
+    padding-top: 115px;
   }
   .res-pt-120 {
     padding-top: 120px;
@@ -12059,14 +12076,8 @@ video {
   .res-pt-100 {
     padding-top: 100px;
   }
-  .res-pb-120 {
-    padding-bottom: 120px;
-  }
-  .res-pb-120 .res-pb-40 {
+  .res-pb-40 {
     padding-bottom: 40px;
-  }
-  .res-pb-120 {
-    padding-bottom: 120px;
   }
   .res-pb-50 {
     padding-bottom: 50px;
@@ -12082,6 +12093,15 @@ video {
   }
   .res-pb-100 {
     padding-bottom: 100px !important;
+  }
+  .res-pb-110 {
+    padding-bottom: 110px;
+  }
+  .res-pb-115 {
+    padding-bottom: 115px;
+  }
+  .res-pb-120 {
+    padding-bottom: 120px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
