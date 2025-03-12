@@ -21,8 +21,14 @@
       @include m.laptop_l {
         top: 40%;
       }
-      ul {
-        li {
+      .media--icons {
+        a {
+          display: block;
+          margin-top: 6px;
+          svg {
+            display: block;
+            fill: v.$gray-900;
+          }
           margin-top: 70px;
           @include m.laptop_l {
             margin-top: 30px;

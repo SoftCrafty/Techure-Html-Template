@@ -6,6 +6,12 @@
     @include m.transition(0.4s);
 
     border: 1px solid v.$border-color-03;
+    @include m.md {
+      margin-top: 15px;
+    }
+    @include m.sm {
+      margin-top: 15px;
+    }
     &:hover {
       border-color: v.$primary-color;
       .more-btn {

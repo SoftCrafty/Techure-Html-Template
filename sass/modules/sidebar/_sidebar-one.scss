@@ -8,6 +8,9 @@
       background: v.$gray-100;
       @include m.border-radius(20px);
       padding: 40px;
+      @include m.device-425px {
+        padding: 20px;
+      }
       .side-section-heading {
         display: flex;
         justify-content: space-between;

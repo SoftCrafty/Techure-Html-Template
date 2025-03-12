@@ -50,9 +50,15 @@
           flex-direction: column;
           gap: 30px;
         }
+        @include m.device-425px {
+          gap: 10px;
+        }
         .info-item {
           display: flex;
           gap: 15px;
+          @include m.device-375px {
+            flex-direction: column;
+          }
           h3 {
             font-size: 24px;
             font-weight: 700;
@@ -63,9 +69,6 @@
             color: v.$gray-800;
           }
           .shear-media {
-            @include m.device-525px {
-              margin-top: 40px;
-            }
             .media--icons {
               display: flex;
               align-items: center;
