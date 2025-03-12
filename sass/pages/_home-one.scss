@@ -71,6 +71,9 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      @include m.device-425px {
+        margin-top: 0 !important;
+      }
       @include m.laptop_m_four {
         flex-wrap: wrap;
         margin-top: 30px;

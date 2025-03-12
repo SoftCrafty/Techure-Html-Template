@@ -4330,6 +4330,11 @@ p {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 425px) {
+  .hero-area.style-one .hero-wrapper {
+    margin-top: 0;
+  }
+}
 @media (max-width: 1024px) {
   .hero-area.style-one .hero-wrapper {
     flex-wrap: wrap;
@@ -12002,6 +12007,9 @@ video {
   }
 }
 @media (max-width: 425px) {
+  .res-pt-120 {
+    padding-top: 120px;
+  }
   .res-py-120 {
     padding: 120px 0;
   }
@@ -12031,6 +12039,9 @@ video {
   }
   .res-pb-120 .res-pb-40 {
     padding-bottom: 40px;
+  }
+  .res-pb-120 {
+    padding-bottom: 120px;
   }
   .res-pb-50 {
     padding-bottom: 50px;
