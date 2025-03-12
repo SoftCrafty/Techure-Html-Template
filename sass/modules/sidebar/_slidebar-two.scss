@@ -46,8 +46,8 @@
       }
       .search-icon {
         position: absolute;
-        top: 50%;
-        right: 10px;
+        top: 46%;
+        right: 12px;
         @include m.transform(translateY(-50%));
       }
     }
