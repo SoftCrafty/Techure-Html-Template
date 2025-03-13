@@ -5,6 +5,9 @@
 .blog-card-wrapper {
   &.style-four {
     .single-post-item {
+      @include m.device-425px{
+        margin-top: 50px;
+      }
       .post-thumbnail {
         img {
           border-top-right-radius: 20px;

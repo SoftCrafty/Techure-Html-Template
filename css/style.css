@@ -8437,6 +8437,11 @@ p {
 ===========================*/
 /* Theme Default CSS */
 /*-======== card =======-*/
+@media (max-width: 425px) {
+  .blog-card-wrapper.style-four .single-post-item {
+    margin-top: 50px;
+  }
+}
 .blog-card-wrapper.style-four .single-post-item .post-thumbnail img {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
