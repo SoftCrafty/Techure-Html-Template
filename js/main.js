@@ -293,9 +293,22 @@ $(".service-card").hover(function() {
   $('.service-card').removeClass('item-active');
   $(this).addClass('item-active');
 });
+//back to top button
+            var scrollToTop = $('#scroll-to-top');
+            if ($window.scrollTop() > 300) {
+                scrollToTop.addClass('is-active');
+            } else {
+                scrollToTop.removeClass('is-active');
+            }
+        });
 
-
-/*==== wow =====*/
+        /*===== back to top button animate ======*/
+        $document.on('click', '#scroll-to-top', function() {
+            $dom.animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
 
   });
   })(jQuery);
