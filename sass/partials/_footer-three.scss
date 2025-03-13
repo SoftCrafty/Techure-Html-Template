@@ -6,7 +6,7 @@
     position: relative;
     z-index: 1;
     @include m.device-425px {
-      padding-top: 100px;
+      padding-top: 80px;
     }
     .footer-wrapper {
       background: v.$white;
@@ -53,7 +53,7 @@
           border: 1px solid v.$border-color-03;
           border-right: none !important;
           background: v.$white;
-          color: v.$white;
+          color: v.$gray-900 !important;
           @include m.border-radius(50px !important);
           padding-left: 25px;
 

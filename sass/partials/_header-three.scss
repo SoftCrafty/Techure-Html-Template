@@ -198,6 +198,7 @@
       @include m.border-radius(8px);
       color: v.$gray-100 !important;
       margin: 0 !important;
+      color: v.$gray-900 !important;
     }
     .btn {
       border-top-right-radius: 8px;

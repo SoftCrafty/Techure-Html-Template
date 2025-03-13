@@ -3860,6 +3860,7 @@ p {
   border-radius: 8px;
   color: #f7f1fc !important;
   margin: 0 !important;
+  color: #07000e !important;
 }
 .header-area .search-dropdown .btn {
   border-top-right-radius: 8px;
@@ -11339,7 +11340,7 @@ video {
 /* Theme Default CSS */
 /*-======== footer area =======-*/
 .footer-area.style-one {
-  background: #07000e;
+  background: rgba(7, 0, 14, 0.8);
 }
 .footer-area.style-one a {
   color: #ffffff !important;
@@ -11782,7 +11783,7 @@ video {
 }
 @media (max-width: 425px) {
   .footer-area.style-three {
-    padding-top: 100px;
+    padding-top: 80px;
   }
 }
 .footer-area.style-three .footer-wrapper {
@@ -11842,7 +11843,7 @@ video {
   border: 1px solid #cdcccf;
   border-right: none !important;
   background: #ffffff;
-  color: #ffffff;
+  color: #07000e !important;
   -webkit-border-radius: 50px !important;
   -moz-border-radius: 50px !important;
   border-radius: 50px !important;
@@ -12139,6 +12140,9 @@ video {
   }
   .res-pb-120 {
     padding-bottom: 120px;
+  }
+  .res-mb-70 {
+    margin-bottom: 70px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {

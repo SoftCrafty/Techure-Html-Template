@@ -228,7 +228,7 @@ $(".slider-carousel-five").owlCarousel({
 
 $(".slider-carousel-six").owlCarousel({
   loop: false,
-  margin: 0,
+  margin: 20,
   items:1,
   nav: true,
   dots: false,
