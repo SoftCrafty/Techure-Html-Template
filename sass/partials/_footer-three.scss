@@ -6,7 +6,7 @@
     position: relative;
     z-index: 1;
     @include m.device-425px {
-      padding-top: 80px;
+      padding-top: 60px;
     }
     .footer-wrapper {
       background: v.$white;

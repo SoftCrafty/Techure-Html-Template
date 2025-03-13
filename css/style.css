@@ -4788,46 +4788,55 @@ p {
 @media only screen and (min-width: 1025px) and (max-width: 1280px) {
   .hero-area.style-two .hero-content .hero-section .section-title {
     font-size: 96px;
+    line-height: 96px;
   }
 }
 @media (max-width: 1200px) {
   .hero-area.style-two .hero-content .hero-section .section-title {
     font-size: 96px;
+    line-height: 96px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1024px) {
   .hero-area.style-two .hero-content .hero-section .section-title {
     font-size: 82px;
+    line-height: 96px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .hero-area.style-two .hero-content .hero-section .section-title {
     font-size: 48px;
+    line-height: 48px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .hero-area.style-two .hero-content .hero-section .section-title {
     font-size: 48px;
+    line-height: 48px;
   }
 }
 @media (max-width: 525px) {
   .hero-area.style-two .hero-content .hero-section .section-title {
     font-size: 62px;
+    line-height: 62px;
   }
 }
 @media (max-width: 425px) {
   .hero-area.style-two .hero-content .hero-section .section-title {
     font-size: 52px;
+    line-height: 52px;
   }
 }
 @media (max-width: 375px) {
   .hero-area.style-two .hero-content .hero-section .section-title {
     font-size: 46px;
+    line-height: 46px;
   }
 }
 @media (max-width: 320px) {
   .hero-area.style-two .hero-content .hero-section .section-title {
     font-size: 40px;
+    line-height: 40px;
   }
 }
 .hero-area.style-two .hero-content .hero-section .hero-img {
@@ -4900,6 +4909,11 @@ p {
 @media only screen and (min-width: 0px) and (max-width: 576px) {
   .hero-area.style-two .hero-wrap .left {
     flex-basis: 100%;
+  }
+}
+@media (max-width: 425px) {
+  .hero-area.style-two .hero-wrap .left {
+    padding-top: 40px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -12065,8 +12079,8 @@ video {
     padding-top: 110px;
   }
   .res-py-80 {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
   }
   .res-py-90 {
     padding-top: 90px !important;

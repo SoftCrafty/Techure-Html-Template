@@ -56,32 +56,41 @@
           color: v.$white;
           @include m.nesthubmax {
             font-size: 96px;
+            line-height: 96px;
           }
           @include m.device-1200px {
             font-size: 96px;
+            line-height: 96px;
           }
           @include m.nesthub {
             font-size: 82px;
+            line-height: 96px;
           }
           @include m.md {
             font-size: 48px;
+            line-height: 48px;
           }
 
           @include m.sm {
             font-size: 48px;
+            line-height: 48px;
           }
 
           @include m.device-525px {
             font-size: 62px;
+            line-height: 62px;
           }
           @include m.device-425px {
             font-size: 52px;
+            line-height: 52px;
           }
           @include m.device-375px {
             font-size: 46px;
+            line-height: 46px;
           }
           @include m.device-320px {
             font-size: 40px;
+            line-height: 40px;
           }
         }
         .hero-img {
@@ -119,7 +128,6 @@
         padding-top: 56px;
         @include m.nesthubmax {
           flex-basis: 62%;
-
         }
         @include m.nesthub {
           flex-basis: 70%;
@@ -133,6 +141,9 @@
         }
         @include m.xs {
           flex-basis: 100%;
+        }
+        @include m.device-425px {
+          padding-top: 40px;
         }
       }
       .right {
