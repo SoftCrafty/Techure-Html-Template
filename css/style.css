@@ -10384,6 +10384,10 @@ video {
   font-size: 14px;
   font-weight: 400;
 }
+.slider-wrapper.style-seven .slider-carousel .owl-stage-outer .owl-stage .owl-item .slider-item .post-info-wrap .post-tags .tags-wrap a:hover {
+  background: #573db8;
+  color: #ffffff;
+}
 @media (max-width: 525px) {
   .slider-wrapper.style-seven .slider-carousel .owl-stage-outer .owl-stage .owl-item .slider-item .post-info-wrap .shear-media {
     margin-top: 40px;
@@ -11145,6 +11149,7 @@ video {
   top: 46%;
   right: 12px;
   transform: translateY(-50%);
+  cursor: pointer;
 }
 .sidebar.style-two .popular-post .post-item {
   border-bottom: 1px solid rgb(236, 236, 236);

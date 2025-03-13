@@ -9,7 +9,7 @@
     @include m.laptop_m_four {
       padding: 20px;
     }
-    @include m.rmaxwd(1280){
+    @include m.rmaxwd(1280) {
       padding: 20px;
     }
     @include m.md {
@@ -52,6 +52,7 @@
         top: 46%;
         right: 12px;
         @include m.transform(translateY(-50%));
+        cursor: pointer;
       }
     }
     .popular-post {

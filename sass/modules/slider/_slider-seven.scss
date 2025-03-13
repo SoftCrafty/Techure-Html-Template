@@ -53,6 +53,10 @@
                       color: v.$gray-800;
                       font-size: 14px;
                       font-weight: v.$font-weight-regular;
+                      &:hover {
+                        background: v.$primary-color;
+                        color: v.$white;
+                      }
                     }
                   }
                 }
