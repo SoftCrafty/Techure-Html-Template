@@ -29,6 +29,34 @@
         width: 288px;
         height: 288px;
       }
+
+      @include m.md {
+        &:nth-child(2) {
+          .card-img {
+            img {
+              height: 315px;
+            }
+          }
+        }
+      }
+      @include m.sm {
+        &:nth-child(2) {
+          .card-img {
+            img {
+              height: 380px;
+            }
+          }
+        }
+      }
+      @include m.device-375px {
+        &:nth-child(2) {
+          .card-img {
+            img {
+              height: 280px;
+            }
+          }
+        }
+      }
       .card-img {
         position: relative;
 
@@ -40,6 +68,7 @@
             width: 300px;
             height: 330px;
           }
+
           @include m.device-375px {
             width: 236px;
             height: 280px;

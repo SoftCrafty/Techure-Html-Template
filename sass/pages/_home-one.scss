@@ -41,7 +41,7 @@
         top: 30%;
         left: 24px;
       }
-      @include m.device-480px {
+      @include m.device-525px {
         display: none;
       }
     }
@@ -55,13 +55,21 @@
         line-height: 100px;
         @include m.lg {
           font-size: 74px;
+          line-height: 74px;
+        }
+        @include m.sm {
+          font-size: 80px;
+          line-height: 80px;
         }
 
         @include m.xs {
-          font-size: 50px;
-          line-height: 60px;
+          font-size: 64px;
+          line-height: 72px;
         }
-
+        @include m.device-425px {
+          font-size: 54px;
+          line-height: 54px;
+        }
         .text-bold {
           font-weight: v.$font-weight-bold;
         }
@@ -91,7 +99,13 @@
         }
         .video-box {
           @include m.device-576px {
-            margin-top: 70px;
+            margin-top: 20px;
+          }
+          @include m.device-480px {
+            margin-top: 20px;
+          }
+          @include m.device-425px {
+            margin-top: 36px;
           }
         }
       }
@@ -105,18 +119,17 @@
             width: 600px;
             height: 540px;
           }
-
           @include m.lg {
             width: 480px;
             margin-top: 50px;
           }
           @include m.md {
-            margin-top: 75px !important;
+            margin-top: 55px !important;
             width: 450px;
             height: 460px;
           }
           @include m.xs {
-            margin-top: 75px !important;
+            margin-top: 0px !important;
             width: 450px;
           }
           @include m.device-425px {
@@ -246,6 +259,10 @@
 /*-======== lates-service-area=======-*/
 .lates-service-area {
   background: v.$gray-100;
+  @include m.nesthub {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
   .letes-wrapper {
     display: flex;
     justify-content: space-between;
@@ -255,7 +272,7 @@
     .left {
       flex-basis: 35%;
 
-      @include m.sm {
+      @include m.laptop_m {
         flex-basis: 100%;
       }
       @include m.md {
@@ -274,7 +291,10 @@
     }
     .right {
       width: 65%;
-
+      @include m.laptop_m_three {
+        width: 100%;
+        margin-top: 20px;
+      }
       @include m.xl {
         flex-basis: 100%;
       }
@@ -308,6 +328,9 @@
 /*-======== about-area=======-*/
 
 .about-area {
+  @include m.nesthub {
+    padding-top: 120px;
+  }
   .section-header {
     padding-bottom: 172px;
   }
@@ -316,6 +339,9 @@
 /*-======== lates-project-area =======-*/
 
 .lates-project-area {
+  @include m.nesthub {
+    padding-top: 115px;
+  }
   .section-header {
     .card-wrapper {
       &.style-three {
@@ -336,7 +362,14 @@
 /*-======== our-team-area =======-*/
 .our-team-area {
   background: v.$gray-100;
+  @include m.nesthub {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
   .story-area {
+    @include m.nesthub {
+      padding-top: 100px;
+    }
     @include m.xs {
       padding-top: 80px;
     }
@@ -346,6 +379,16 @@
 /*-======== tech-experiences-area =======-*/
 
 .tech-experiences-area {
+  @include m.device-425px {
+    .section-header {
+      .section-title {
+        font-size: 46px;
+      }
+    }
+  }
+  @include m.nesthub {
+    padding-bottom: 80px;
+  }
   img {
     @include m.border-radius(20px);
     @include m.xl {
@@ -368,6 +411,9 @@
 /*-======== work-process-area =======-*/
 
 .work-process-area {
+  @include m.nesthub {
+    padding-top: 120px;
+  }
   &.style-one {
     background: v.$gray-100;
 
@@ -396,6 +442,9 @@
       }
     }
     .clients-testimonial-area {
+      @include m.nesthub {
+        padding-top: 120px;
+      }
       @include m.device-425px {
         padding-top: 50px;
       }
@@ -403,9 +452,21 @@
   }
 }
 
+/*-========faq-area =======-*/
+@include m.nesthub {
+  .faq-area {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
 /*-======== new-blog-area =======-*/
 
 .new-blog-area {
+  @include m.nesthub {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
   background: v.$gray-100;
   .card-wrapper {
     &.style-five {

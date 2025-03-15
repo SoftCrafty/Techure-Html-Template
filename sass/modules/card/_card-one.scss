@@ -2,7 +2,7 @@
 @use "../../mixin" as m;
 /*-======== client-box =======-*/
 .card-wrapper {
-  &.style-four {
+  &.style-one {
     display: grid;
     overflow: hidden;
     .grid-item {
@@ -53,7 +53,7 @@
           grid-template-columns: 20% 40% 40%;
         }
         @include m.md {
-          grid-template-columns: 20% 40% 40%;
+          grid-template-columns: 50% 50%;
         }
         @include m.device-768px {
           grid-template-columns: 50% 50%;
@@ -78,6 +78,9 @@
           &:nth-child(2) {
             border-right: 1px solid v.$border-color-02;
             border-left: 1px solid v.$border-color-02;
+            @include m.md {
+              border-left: 0;
+            }
             @include m.device-768px {
               border-left: 0;
             }

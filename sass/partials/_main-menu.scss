@@ -14,7 +14,7 @@
     align-items: center;
     float: right;
     gap: 30px;
-    margin-left: 80px;
+    margin-left: 50px;
     .contact-number {
       a {
         color: v.$gray-900;
@@ -68,7 +68,7 @@
       }
     }
   }
-  @include m.laptop_m_two {
+  @include m.laptop_m {
     display: none;
   }
 }

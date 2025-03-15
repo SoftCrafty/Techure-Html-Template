@@ -2,6 +2,12 @@
 @use "./mixin" as m;
 /*-======== services-details-area  =======-*/
 .services-details-area {
+  @include m.laptop_m_four {
+    padding-bottom: 0px;
+  }
+  @include m.md {
+    padding-bottom: 80px;
+  }
   .section-title {
     font-size: 32px;
     font-weight: v.$font-weight-bold;
@@ -24,6 +30,9 @@
   }
   .service-wrapper {
     .info-card-wrapper {
+      @include m.device-768px {
+        padding-left: 34px;
+      }
       @include m.xs {
         margin-left: 30px;
       }

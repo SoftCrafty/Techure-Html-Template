@@ -66,6 +66,7 @@
       align-items: center;
       @include m.xs {
         padding-top: 38px;
+        flex-wrap: wrap;
       }
       @include m.device-525px {
         flex-wrap: wrap;
@@ -75,10 +76,14 @@
         align-items: start;
       }
       .menu-list {
+        @include m.xs {
+          margin-bottom: 30px;
+        }
         ul {
           display: flex;
           align-items: center;
           gap: 20px;
+
           @include m.device-425px {
             flex-direction: column;
             align-items: start;

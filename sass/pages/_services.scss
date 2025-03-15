@@ -4,6 +4,12 @@
 .service-area {
   &.style-one {
     .info-card-wrapper {
+      @include m.nesthub {
+        padding-left: 34px;
+      }
+      @include m.device-768px {
+        padding-left: 34px;
+      }
       @include m.rmaxwd(576) {
         padding-left: 15px;
       }

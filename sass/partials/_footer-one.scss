@@ -13,7 +13,7 @@
       justify-content: space-between;
       align-items: center;
       border-bottom: 1px solid v.$border-color-05;
-      @include m.md {
+      @include m.sm {
         flex-wrap: wrap;
       }
 
@@ -55,9 +55,10 @@
         color: v.$white;
         @include m.border-radius(50%);
         flex-shrink: 0;
-        @include m.xs {
+        @include m.sm {
           margin: auto;
           margin-top: 30px;
+          margin-bottom: 30px;
         }
       }
     }

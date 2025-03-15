@@ -4,6 +4,9 @@
 .hero-area {
   &.style-three {
     background: v.$white;
+    @include m.laptop_m_four {
+      padding-top: 200px;
+    }
     @include m.device-425px {
       padding-top: 150px;
     }
@@ -36,6 +39,15 @@
         @include m.laptop_m_three {
           font-size: 65px;
           line-height: 85px;
+        }
+
+        @include m.sm {
+          font-size: 65px;
+          line-height: 78px;
+        }
+        @include m.sm {
+          font-size: 58px;
+          line-height: 68px;
         }
         @include m.device-375px {
           font-size: 52px;
@@ -80,6 +92,14 @@
   }
 }
 
+.lates-service-area {
+  &.style-three {
+    @include m.laptop_m_three {
+      padding-top: 120px;
+      padding-bottom: 120px;
+    }
+  }
+}
 /*-======== about area style-three =======-*/
 .about-area {
   &.style-three {
@@ -119,6 +139,13 @@
       }
     }
     .about-wrapper {
+      @include m.md {
+        margin-top: 20px;
+      }
+
+      @include m.sm {
+        margin-top: 20px;
+      }
       .section-desc {
         padding-top: 30px;
         padding-bottom: 40px;
@@ -126,9 +153,24 @@
       .count-box-wrapper {
         &.style-three {
           gap: 70px;
+          @include m.rmaxwd(1280) {
+            gap: 60px;
+            row-gap: 30px;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+          }
           @include m.laptop_m_four {
             flex-wrap: wrap;
             gap: 40px;
+          }
+          @include m.md {
+            justify-content: space-between;
+          }
+          @include m.sm {
+            justify-content: space-between;
+          }
+          @include m.device-375px {
+            flex-direction: column;
           }
           .counter-item {
             &:nth-child(1) {
@@ -139,6 +181,9 @@
             }
             &:nth-child(3) {
               width: 125px;
+            }
+            @include m.md {
+              margin-top: 15px;
             }
             .coun-title {
               letter-spacing: -2px;
@@ -186,6 +231,14 @@
     .theme--btn {
       display: flex;
       justify-content: center;
+    }
+    .our-team-area {
+      @include m.nesthub {
+        padding-bottom: 0px;
+      }
+      @include m.md {
+        padding-top: 120px;
+      }
     }
   }
 }
@@ -285,6 +338,13 @@
 .faq-area {
   &.style-three {
     background: v.$gray-100;
+    @include m.nesthub {
+      padding-top: 100px;
+      padding-bottom: 170px;
+    }
+    @include m.md {
+      padding-bottom: 140px;
+    }
     .faq-img {
       padding-right: 84px;
       position: relative;
@@ -294,8 +354,30 @@
         padding-right: 45px;
         height: 100%;
       }
-      @include m.xs {
-        padding-right: 0;
+
+      @include m.nesthub {
+        padding-right: 0px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+
+        float: inherit;
+      }
+
+      @include m.md {
+        padding-right: 0px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        float: inherit;
+        padding: 40px;
+      }
+      @include m.sm {
+        padding-right: 0px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        float: inherit;
         padding: 40px;
       }
 
@@ -347,6 +429,21 @@
         @include m.xs {
           margin-bottom: 30px;
           padding-right: 0px;
+        }
+        .faq-wrap {
+          .section-header {
+            @include m.nesthub {
+              margin-top: 30px;
+            }
+
+            @include m.md {
+              margin-top: 30px;
+            }
+
+            @include m.sm {
+              margin-top: 30px;
+            }
+          }
         }
       }
     }
@@ -400,6 +497,14 @@
           }
         }
       }
+    }
+  }
+}
+
+.new-blog-area {
+  &.style-three {
+    @include m.nesthub {
+      padding-bottom: 40px;
     }
   }
 }

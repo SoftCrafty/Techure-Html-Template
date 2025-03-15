@@ -59,12 +59,12 @@
             line-height: 96px;
           }
           @include m.device-1200px {
-            font-size: 96px;
+            font-size: 70px;
             line-height: 96px;
           }
           @include m.nesthub {
-            font-size: 82px;
-            line-height: 96px;
+            font-size: 70px;
+            line-height: 80px;
           }
           @include m.md {
             font-size: 48px;
@@ -298,6 +298,9 @@
 
 .work-process-area {
   &.style-two {
+    @include m.nesthub {
+      padding-top: 100px;
+    }
     background: v.$gray-100;
     .section-header {
       &.style-two {
@@ -328,6 +331,9 @@
 /*-======== clients-rivews-area =======-*/
 
 .clients-rivews-area {
+  @include m.lg {
+    padding-bottom: 110px;
+  }
   .slider-wrapper {
     .slider-carousel {
       .slider-img {

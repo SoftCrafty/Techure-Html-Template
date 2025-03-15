@@ -32,18 +32,24 @@
         @include m.sm {
           margin-bottom: 30px;
           flex-basis: 100%;
+          font-size: 52px;
+          line-height: 52px;
         }
         @include m.device-768px {
           font-size: 60px;
           line-height: 60px;
         }
-        @include m.device-425px {
+        @include m.rmaxwd(767) {
           font-size: 52px;
-          line-height: 58px;
+          line-height: 52px;
+        }
+        @include m.device-425px {
+          font-size: 48px;
+          line-height: 48px;
         }
         @include m.device-320px {
           font-size: 42px;
-          line-height: 48px;
+          line-height: 42px;
         }
       }
 

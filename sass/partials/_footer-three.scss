@@ -28,7 +28,7 @@
                 font-size: 48px;
               }
               @include m.sm {
-                font-size: 36px;
+                font-size: 42px;
               }
               @include m.device-375px {
                 font-size: 28px;
@@ -86,11 +86,20 @@
         align-items: center;
         border-bottom: 1px solid v.$border-color-03;
         padding-bottom: 30px;
+        .section-title {
+          @include m.md {
+            font-size: 60px;
+          }
+          @include m.sm {
+            font-size: 60px;
+          }
+        }
         @include m.laptop_m_three {
           flex-wrap: wrap;
           justify-content: center;
           gap: 40px;
         }
+
         @include m.device-525px {
           flex-wrap: wrap;
         }
@@ -149,6 +158,17 @@
 
       .copyright-area {
         .copyright-desc {
+          @include m.md {
+            text-align: center;
+            margin-bottom: 20px;
+          }
+          @include m.sm {
+            text-align: center;
+            margin-bottom: 20px;
+          }
+          a {
+            color: v.$gray-900;
+          }
           @include m.device-525px {
             text-align: center;
           }

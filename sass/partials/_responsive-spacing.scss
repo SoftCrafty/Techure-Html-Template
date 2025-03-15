@@ -2,11 +2,16 @@
 @use "./mixin" as m;
 // responsive spacing
 
-.responsive-pb-100 {
-  @include m.laptop_m_four {
+@include m.laptop_m_four {
+  .responsive-pb-100 {
     padding-bottom: 100px;
   }
+  .res-nesthub-py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
 }
+
 @include m.device-425px {
   .res-py-120 {
     padding: 120px 0;
@@ -18,6 +23,10 @@
   }
 }
 @include m.laptop_m_four {
+  .res-lap-py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
   .res-lap-py-100 {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -35,14 +44,18 @@
   .res-lap-pt-115 {
     padding-top: 115px;
   }
-  .res-pt-40 {
-    padding-top: 40px;
+  .res-lap-pt-120 {
+    padding-top: 120px;
+  }
+  .res-lap-pt-70 {
+    padding-top: 70px;
   }
 }
-@include m.device-425px {
+@include m.sm {
   .res-pt-0 {
     padding-top: 0px;
   }
+
   .res-py-120 {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -67,7 +80,7 @@
     padding-top: 115px;
   }
   .res-pt-120 {
-    padding-top: 120px;
+    padding-top: 120px !important;
   }
   .res-pt-20 {
     padding-top: 20px;
@@ -107,7 +120,7 @@
     padding-bottom: 40px;
   }
   .res-pb-50 {
-    padding-bottom: 50px;
+    padding-bottom: 50px !important;
   }
   .res-pb-60 {
     padding-bottom: 60px;
@@ -116,9 +129,6 @@
     padding-bottom: 70px;
   }
   .res-pb-80 {
-    padding-bottom: 80px;
-  }
-  .res-pt-90 {
     padding-bottom: 80px;
   }
   .res-pb-100 {
@@ -135,15 +145,38 @@
     padding-bottom: 120px;
   }
   // margin
-
+  .res-mt-0 {
+    margin-top: 0;
+  }
   .res-mb-70 {
     margin-bottom: 70px;
+  }
+  .res-mt-40 {
+    margin-top: 40px;
+  }
+  .res-mb-0 {
+    margin-bottom: 0 !important;
   }
 }
 
 @include m.md {
   .res-md-pt-150 {
     padding-top: 150px;
+  }
+  .res-md-pt-100 {
+    padding-top: 100px;
+  }
+  .res-md-pt-80 {
+    padding-top: 80px;
+  }
+  .res-md-pb-100 {
+    padding-bottom: 100px;
+  }
+  .res-md-pb-80 {
+    padding-bottom: 80px;
+  }
+  .res-md-mt-0 {
+    margin-top: 0 !important;
   }
 }
 
