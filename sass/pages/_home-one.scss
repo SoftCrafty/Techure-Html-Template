@@ -251,11 +251,6 @@
 
 /*-======== tech-serices-area=======-*/
 
-.tech-serices-area {
-  position: relative;
-  overflow: hidden;
-}
-
 /*-======== lates-service-area=======-*/
 .lates-service-area {
   background: v.$gray-100;
@@ -307,6 +302,9 @@
       @include m.md {
         flex-basis: 100%;
       }
+      @include m.laptop_m_four {
+        padding-left: 40px;
+      }
     }
     @include m.xl {
       flex-wrap: wrap;
@@ -319,9 +317,6 @@
     }
     @include m.md {
       flex-wrap: wrap;
-    }
-    @include m.laptop_m_four {
-      padding-left: 40px;
     }
   }
 }
@@ -379,6 +374,15 @@
 /*-======== tech-experiences-area =======-*/
 
 .tech-experiences-area {
+  position: relative;
+  overflow: hidden;
+  @include m.device-375px {
+    .section-header {
+      .section-title {
+        font-size: 40px !important;
+      }
+    }
+  }
   @include m.device-425px {
     .section-header {
       .section-title {
@@ -386,6 +390,7 @@
       }
     }
   }
+
   @include m.nesthub {
     padding-bottom: 80px;
   }

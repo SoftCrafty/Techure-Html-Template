@@ -17,14 +17,12 @@
       rel="stylesheet"
     />
     <!-- inject:css -->
+    <link rel="stylesheet" href="/css/nice-select.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/fontawesome.min.css" />
     <link rel="stylesheet" href="css/line-awesome.min.css" />
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="./css/chosen.min.css" />
-    <!-- <link rel="stylesheet" href="./css/animate.min.css" />
-    <link rel="stylesheet" href="./css/animate.css" /> -->
     <link rel="stylesheet" href="./css/style.css" />
     <!-- end inject -->
   </head>
@@ -1101,7 +1099,7 @@
                 </div>
               </div>
               <!-- end count-box-wrapper -->
-              <div class="mt-40">
+              <div class="mt-40 about--theme-btn">
                 <a href="about-us.html" class="theme--btn">
                   <button class="theme-btn style-two">Know About Us</button>
                   <button class="theme-btn style-two">
@@ -2571,11 +2569,11 @@
                     </div>
                   </div>
                   <div class="mt-30">
-                    <div
-                      class="main-search-input-item user-chosen-select-container"
-                    >
-                      <select class="user-chosen-select">
-                        <option value="0">Chose An Option</option>
+                    <div class="select--box">
+                      <select class="nice-select wide">
+                        <option value="0" data-display="Select">
+                          Chose An Option
+                        </option>
                         <option value="1">Cloud computing</option>
                         <option value="2">Artificial intelligece</option>
                         <option value="3">Data science</option>
@@ -2838,7 +2836,7 @@
               <!-- end  contact--box-->
 
               <div class="contact--box wow custom-animate bg-2">
-                <div class="d-flex align-items-center">
+                <div class="contact--tech-box">
                   <svg
                     width="36"
                     height="36"
@@ -3847,10 +3845,9 @@
     </div>
     <!-- template js files -->
     <script src="js/jquery-3.7.1.min.js"></script>
-    <script src="js/chosen.min.js"></script>
     <script src="js/jquery.counterup.min.js"></script>
     <script src="js/waypoints.min.js"></script>
-    <!-- <script src="js/wow.min.js"></script> -->
+    <script src="js/jquery.nice-select.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>

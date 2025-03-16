@@ -11,6 +11,9 @@
       font-size: 32px;
       font-weight: v.$font-weight-bold;
       line-height: 41px;
+      @include m.device-375px {
+        font-size: 26px;
+      }
       @include m.md {
         margin-top: 30px;
       }

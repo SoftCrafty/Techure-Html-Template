@@ -180,6 +180,9 @@
         }
         .review-content {
           padding-bottom: 30px;
+          @include m.device-425px{
+            padding-bottom: 15px;
+          }
           h4 {
             font-weight: v.$font-weight-bold;
             font-size: 18px;

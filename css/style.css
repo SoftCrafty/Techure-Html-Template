@@ -3408,7 +3408,6 @@ p {
 /* Theme Default CSS */
 /*-======== header area =======-*/
 .header-area.style-one {
-  padding: 27px 0;
   background: #f7f1fc;
   position: absolute;
   top: 0;
@@ -3946,9 +3945,6 @@ p {
   font-weight: 900;
   line-height: 10px;
 }
-.main-menu ul li a:hover {
-  color: #573db8 !important;
-}
 .main-menu ul li:hover .submenu {
   visibility: visible;
   opacity: 1;
@@ -3962,37 +3958,45 @@ p {
 
 /*-======== submenu =======-*/
 .submenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: inherit !important;
   position: absolute;
-  left: 0;
-  top: 50px;
-  width: 220px;
+  top: 57px;
+  left: -20px;
+  padding: 0px 0px;
+  width: 210px;
+  gap: 0px !important;
   background-color: #ffffff;
-  padding: 15px 25px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  border-radius: 8px;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
-  -webkit-box-shadow: 0 0 40px rgba(82, 85, 90, 0.1);
-  -moz-box-shadow: 0 0 40px rgba(82, 85, 90, 0.1);
-  box-shadow: 0 0 40px rgba(82, 85, 90, 0.1);
+  z-index: 99999;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  border-top: 2px solid #573db8;
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(8, 0, 42, 0.08);
+  -moz-box-shadow: 0px 10px 20px 0px rgba(8, 0, 42, 0.08);
+  box-shadow: 0px 10px 20px 0px rgba(8, 0, 42, 0.08);
+  -webkit-transform-origin: top;
   transform-origin: top;
-  opacity: 0;
-  visibility: hidden;
-  display: block !important;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
   transform: scaleY(0);
 }
-.submenu li {
-  display: block !important;
-  margin-top: 8px;
-}
 .submenu li a {
-  color: #031f42;
-  font-weight: 600;
-  font-size: 15px;
+  padding: 10px 20px;
+  color: #07000e;
+  border-bottom: 1px solid #e3e3e3;
+  margin-right: 0;
+  width: 100%;
+  display: inline-block;
+}
+.submenu li a:hover {
+  background: #573db8;
+  border-bottom: 0px;
+  color: #ffffff !important;
 }
 
 /**
@@ -4546,11 +4550,6 @@ p {
 }
 
 /*-======== tech-serices-area=======-*/
-.tech-serices-area {
-  position: relative;
-  overflow: hidden;
-}
-
 /*-======== lates-service-area=======-*/
 .lates-service-area {
   background: #f7f1fc;
@@ -4625,6 +4624,11 @@ p {
     flex-basis: 100%;
   }
 }
+@media (max-width: 1024px) {
+  .lates-service-area .letes-wrapper .right {
+    padding-left: 40px;
+  }
+}
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .lates-service-area .letes-wrapper {
     flex-wrap: wrap;
@@ -4643,11 +4647,6 @@ p {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .lates-service-area .letes-wrapper {
     flex-wrap: wrap;
-  }
-}
-@media (max-width: 1024px) {
-  .lates-service-area .letes-wrapper {
-    padding-left: 40px;
   }
 }
 
@@ -4695,6 +4694,15 @@ p {
 }
 
 /*-======== tech-experiences-area =======-*/
+.tech-experiences-area {
+  position: relative;
+  overflow: hidden;
+}
+@media (max-width: 375px) {
+  .tech-experiences-area .section-header .section-title {
+    font-size: 40px !important;
+  }
+}
 @media (max-width: 425px) {
   .tech-experiences-area .section-header .section-title {
     font-size: 46px;
@@ -5050,6 +5058,11 @@ p {
 }
 .hero-area.style-two .hero-wrap .global-client-review .review-content {
   padding-bottom: 30px;
+}
+@media (max-width: 425px) {
+  .hero-area.style-two .hero-wrap .global-client-review .review-content {
+    padding-bottom: 15px;
+  }
 }
 .hero-area.style-two .hero-wrap .global-client-review .review-content h4 {
   font-weight: 700;
@@ -5588,6 +5601,7 @@ p {
 @media (max-width: 375px) {
   .about-area.style-three .about-wrapper .count-box-wrapper.style-three {
     flex-direction: column;
+    align-items: center;
   }
 }
 .about-area.style-three .about-wrapper .count-box-wrapper.style-three .counter-item:nth-child(1) {
@@ -5610,6 +5624,11 @@ p {
 .about-area.style-three .about-wrapper .count-box-wrapper.style-three .counter-item .coun-title .plus-text {
   -webkit-text-stroke: 2px #07000e;
   color: #ffffff;
+}
+@media (max-width: 375px) {
+  .about-area.style-three .about-wrapper .about--theme-btn {
+    text-align: center;
+  }
 }
 
 /*-======== tech-serices-area area style-three 
@@ -5680,6 +5699,7 @@ p {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .contact-area.style-two .contact-wrap {
     flex-direction: column;
+    align-items: center;
   }
 }
 .contact-area.style-two .contact-wrap .contact--box {
@@ -5703,8 +5723,22 @@ p {
     height: 250px;
   }
 }
+@media (max-width: 375px) {
+  .contact-area.style-two .contact-wrap .contact--box {
+    width: 100%;
+  }
+}
 .contact-area.style-two .contact-wrap .contact--box.bg-2 {
   background: rgba(143, 212, 95, 0.2);
+}
+.contact-area.style-two .contact-wrap .contact--box .contact--tech-box {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1280px) {
+  .contact-area.style-two .contact-wrap .contact--box .contact--tech-box {
+    align-items: flex-start;
+  }
 }
 .contact-area.style-two .contact-wrap .contact--box .section-title {
   font-size: 18px;
@@ -5715,6 +5749,11 @@ p {
 @media (max-width: 1199px) {
   .contact-area.style-two .contact-wrap .contact--box .section-title {
     padding-bottom: 30px !important;
+  }
+}
+@media (max-width: 375px) {
+  .contact-area.style-two .contact-wrap .contact--box .section-title {
+    width: 243px;
   }
 }
 .contact-area.style-two .contact-wrap .contact--box a {
@@ -5778,7 +5817,7 @@ p {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .faq-area.style-three .faq-img {
     padding-right: 0px;
-    width: 100%;
+    width: 65%;
     margin-left: auto;
     margin-right: auto;
     float: inherit;
@@ -5793,6 +5832,7 @@ p {
     margin-right: auto;
     float: inherit;
     padding: 40px;
+    padding-bottom: 0px !important;
   }
 }
 .faq-area.style-three .faq-img .counter-box {
@@ -5825,6 +5865,12 @@ p {
     left: 0px;
   }
 }
+@media (max-width: 425px) {
+  .faq-area.style-three .faq-img .counter-box {
+    width: 160px;
+    height: 160px;
+  }
+}
 .faq-area.style-three .faq-img .counter-box .count-content {
   text-align: center;
   line-height: 200px;
@@ -5832,6 +5878,11 @@ p {
 .faq-area.style-three .faq-img .counter-box .count-content .coun-title {
   font-size: 72px;
   font-weight: 700;
+}
+@media (max-width: 425px) {
+  .faq-area.style-three .faq-img .counter-box .count-content .coun-title {
+    font-size: 52px;
+  }
 }
 .faq-area.style-three .faq-img img {
   width: 100%;
@@ -6205,11 +6256,6 @@ p {
     padding-left: 34px;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 576px) {
-  .services-details-area .service-wrapper .info-card-wrapper {
-    margin-left: 30px;
-  }
-}
 .services-details-area .service-wrapper .info-card-wrapper .card-item {
   background: #f7f1fc;
   border: 0;
@@ -6275,6 +6321,11 @@ p {
   font-size: 32px;
   font-weight: 700;
   line-height: 41px;
+}
+@media (max-width: 375px) {
+  .project-details-area .project-details-wrapper .section-title {
+    font-size: 26px;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .project-details-area .project-details-wrapper .section-title {
@@ -9195,6 +9246,11 @@ p {
   flex-wrap: wrap;
   gap: 0px 30px;
 }
+@media (max-width: 425px) {
+  .team-card-wrapper.style-one {
+    padding-top: 15px;
+  }
+}
 .team-card-wrapper.style-one .card-item {
   display: flex;
   align-items: center;
@@ -9494,11 +9550,11 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  -webkit-transition: all 2s;
-  -moz-transition: all 2s;
-  -ms-transition: all 2s;
-  -o-transition: all 2s;
-  transition: all 2s;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
@@ -9578,11 +9634,16 @@ p {
   width: 100%;
   height: 100%;
   opacity: 0;
-  -webkit-transition: all 2s;
-  -moz-transition: all 2s;
-  -ms-transition: all 2s;
-  -o-transition: all 2s;
-  transition: all 2s;
+  -webkit-transition: all 1.5s;
+  -moz-transition: all 1.5s;
+  -ms-transition: all 1.5s;
+  -o-transition: all 1.5s;
+  transition: all 1.5s;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .team-card-wrapper.style-three .card-item .card-team-img img {
+    opacity: 1;
+  }
 }
 .team-card-wrapper.style-three .card-item .media-wrapper {
   display: flex;
@@ -9660,6 +9721,7 @@ p {
   margin-right: 0px;
 }
 .team-card-wrapper.style-three .card-item:hover {
+  transition-delay: 0.2;
   background: #573db8;
 }
 .team-card-wrapper.style-three .card-item:hover .section-heading .section-title {
@@ -10110,6 +10172,11 @@ video {
 }
 .slider-wrapper.style-two .our-teams-carousel .owl-dots {
   margin-top: 60px !important;
+}
+@media (max-width: 425px) {
+  .slider-wrapper.style-two .our-teams-carousel .owl-dots {
+    margin-top: 40px !important;
+  }
 }
 .slider-wrapper.style-two .our-teams-carousel .owl-dots .owl-dot {
   -webkit-transition: all 0.3s;
@@ -10988,6 +11055,9 @@ video {
     width: 100%;
   }
 }
+.form-wrapper.style-one .nice-select {
+  background: none !important;
+}
 
 /**
  * Stylesheet:  style.css
@@ -11067,6 +11137,35 @@ video {
   .user-chosen-select-container b {
     background-size: 16px 16px !important;
   }
+}
+
+/**
+ * Stylesheet:  style.css
+ * Theme:       Technova - IT Startup & Agency HTML5 Template
+ * Version:     1.0
+ * Author:     	BoomDevs
+ * 
+ */
+/* Table of contents
+=========================
+
+===========================*/
+/* Theme Default CSS */
+/*===============select==============*/
+.nice-select {
+  font-size: 18px !important;
+  font-weight: 400;
+  height: 60px;
+  border-color: #cdcccf;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  line-height: 60px;
+  margin-bottom: 30px;
+}
+.nice-select .option:hover {
+  background: #573db8 !important;
+  color: #ffffff !important;
 }
 
 /**
@@ -12527,6 +12626,10 @@ video {
     padding-top: 80px !important;
     padding-bottom: 80px !important;
   }
+  .res-py-63 {
+    padding-top: 63px !important;
+    padding-bottom: 63px !important;
+  }
   .res-py-90 {
     padding-top: 90px !important;
     padding-bottom: 90px !important;
@@ -12547,13 +12650,13 @@ video {
     padding-top: 40px;
   }
   .res-pt-50 {
-    padding-top: 50px;
+    padding-top: 50px !important;
   }
   .res-pt-60 {
-    padding-top: 60px;
+    padding-top: 60px !important;
   }
   .res-pt-70 {
-    padding-top: 70px;
+    padding-top: 70px !important;
   }
   .res-pt-80 {
     padding-top: 80px;

@@ -33,9 +33,7 @@
       @include m.device-768px {
         padding-left: 34px;
       }
-      @include m.xs {
-        margin-left: 30px;
-      }
+
       .card-item {
         background: v.$gray-100;
         border: 0;
