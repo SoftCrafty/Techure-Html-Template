@@ -359,6 +359,12 @@
   margin-bottom: 250px;
 }
 
+/*-------padding top and bottom --------*/
+.py {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 /*-- Padding Top --*/
 .pt-5 {
   padding-top: 5px;
@@ -3420,13 +3426,25 @@ p {
   position: fixed;
 }
 .header-area.style-one.header-fixed.style-one {
-  background: #f7f1fc;
+  background: #07000e;
 }
 .header-area.style-one.header-fixed.style-one .logo .standard-logo {
   display: none;
 }
 .header-area.style-one.header-fixed.style-one .logo .sticky-logo {
   display: block;
+}
+.header-area.style-one.header-fixed.style-one .main-menu ul li a {
+  color: #ffffff;
+}
+.header-area.style-one.header-fixed.style-one .main-menu .submenu ul li a {
+  color: #07000e;
+}
+.header-area.style-one.header-fixed.style-one .number-with-btn .contact-number a {
+  color: #ffffff !important;
+}
+.header-area.style-one.header-fixed.style-one .number-with-btn .contact-number a svg path {
+  fill: #f7f1fc;
 }
 .header-area.style-one .logo {
   display: flex;
@@ -3987,7 +4005,7 @@ p {
 }
 .submenu li a {
   padding: 10px 20px;
-  color: #07000e;
+  color: #07000e !important;
   border-bottom: 1px solid #e3e3e3;
   margin-right: 0;
   width: 100%;
@@ -6235,6 +6253,11 @@ p {
   font-size: 32px;
   font-weight: 700;
   line-height: 41px;
+}
+@media (max-width: 375px) {
+  .services-details-area .section-title {
+    font-size: 26px;
+  }
 }
 .services-details-area ul {
   margin-top: 10px;
@@ -11071,86 +11094,6 @@ video {
 
 ===========================*/
 /* Theme Default CSS */
-/*================= Chosen select ====================*/
-.user-chosen-select-container .chosen-container {
-  width: 100% !important;
-}
-.user-chosen-select-container .chosen-container .chosen-single {
-  height: 60px !important;
-  line-height: 60px !important;
-  font-size: 18px !important;
-  font-weight: 500;
-  padding-left: 11px !important;
-  border-color: #cdcccf !important;
-  -webkit-border-radius: 50px !important;
-  -moz-border-radius: 50px !important;
-  border-radius: 50px !important;
-  background: #ffffff !important;
-  box-shadow: none !important;
-}
-.user-chosen-select-container .chosen-container .chosen-single span {
-  color: #716f73;
-  margin-left: 10px !important;
-}
-.user-chosen-select-container .chosen-container .chosen-single div {
-  right: 10px !important;
-}
-.user-chosen-select-container .chosen-container .chosen-single div b {
-  display: block !important;
-  width: 16px !important;
-  height: 100% !important;
-  background-size: 16px 16px !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-}
-.user-chosen-select-container .chosen-container.chosen-container-single .chosen-search input[type=text] {
-  padding: 10px 20px !important;
-  -webkit-border-radius: 5px !important;
-  -moz-border-radius: 5px !important;
-  border-radius: 5px !important;
-  background: none !important;
-}
-.user-chosen-select-container .chosen-container.chosen-container-active.chosen-with-drop .chosen-single {
-  border-bottom-left-radius: 0 !important;
-  border-bottom-right-radius: 0 !important;
-  border-top-left-radius: 5px !important;
-  border-top-right-radius: 5px !important;
-  background: #ffffff !important;
-}
-.user-chosen-select-container .chosen-container.chosen-container-active.chosen-with-drop .chosen-single div b {
-  display: block !important;
-  width: 16px !important;
-  height: 100% !important;
-  background: url("../images/chose-sprite-dwon.png");
-  background-size: 11px 11px !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-}
-.user-chosen-select-container .chosen-container .chosen-results li {
-  padding: 11px 10px !important;
-}
-.user-chosen-select-container .chosen-container .chosen-results li.active-result {
-  font-size: 18px;
-  font-weight: 500 !important;
-}
-@media (max-width: 1440px) {
-  .user-chosen-select-container b {
-    background-size: 16px 16px !important;
-  }
-}
-
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- * 
- */
-/* Table of contents
-=========================
-
-===========================*/
-/* Theme Default CSS */
 /*===============select==============*/
 .nice-select {
   font-size: 18px !important;
@@ -12581,46 +12524,113 @@ video {
 }
 @media (max-width: 1024px) {
   .res-lap-py-0 {
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+  .res-lap-pt-0 {
+    padding-top: 0 !important;
+  }
+  .res-lap-py-120 {
+    padding-top: 120px !important;
+    padding-bottom: 120px !important;
   }
   .res-lap-py-100 {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-  .res-1024-pb-100 {
-    padding-bottom: 100px;
-  }
-  .res-1024-pt-100 {
-    padding-top: 100px;
-  }
-  .res-lap-pt-100 {
-    padding-top: 100px;
-  }
-  .res-lap-pt-115 {
-    padding-top: 115px;
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
   }
   .res-lap-pt-120 {
-    padding-top: 120px;
+    padding-top: 120px !important;
+  }
+  .res-lap-pt-115 {
+    padding-top: 115px !important;
+  }
+  .res-lap-pt-100 {
+    padding-top: 100px !important;
+  }
+  .res-lap-pt-90 {
+    padding-top: 90px !important;
+  }
+  .res-lap-pt-80 {
+    padding-top: 80px !important;
   }
   .res-lap-pt-70 {
-    padding-top: 70px;
+    padding-top: 70px !important;
+  }
+  .res-lap-pt-60 {
+    padding-top: 60px !important;
+  }
+  .res-lap-pt-50 {
+    padding-top: 50px !important;
+  }
+  .res-lap-pt-40 {
+    padding-top: 40px !important;
+  }
+  .res-lap-pt-30 {
+    padding-top: 30px !important;
+  }
+  .res-lap-pt-20 {
+    padding-top: 20px !important;
+  }
+  .res-lap-pt-10 {
+    padding-top: 10px !important;
+  }
+  .res-lap-pb-0 {
+    padding-bottom: 0px !important;
+  }
+  .res-lap-pb-120 {
+    padding-bottom: 120px !important;
+  }
+  .res-lap-pb-115 {
+    padding-bottom: 120px !important;
+  }
+  .res-lap-pb-110 {
+    padding-bottom: 110px !important;
+  }
+  .res-lap-pb-100 {
+    padding-bottom: 100px !important;
+  }
+  .res-lap-pb-90 {
+    padding-bottom: 90px !important;
+  }
+  .res-lap-pb-80 {
+    padding-bottom: 80px !important;
+  }
+  .res-lap-pb-70 {
+    padding-bottom: 70px !important;
+  }
+  .res-lap-pb-60 {
+    padding-bottom: 60px !important;
+  }
+  .res-lap-pb-50 {
+    padding-bottom: 50px !important;
+  }
+  .res-lap-pb-40 {
+    padding-bottom: 40px !important;
+  }
+  .res-lap-pb-30 {
+    padding-bottom: 30px !important;
+  }
+  .res-lap-pb-20 {
+    padding-bottom: 20px !important;
+  }
+  .res-lap-pb-10 {
+    padding-bottom: 10px !important;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .res-pt-0 {
-    padding-top: 0px;
+    padding-top: 0px !important;
   }
   .res-py-120 {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 120px !important;
+    padding-bottom: 120px !important;
   }
   .res-py-100 {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
   }
   .res-pt-110 {
-    padding-top: 110px;
+    padding-top: 110px !important;
   }
   .res-py-80 {
     padding-top: 80px !important;
@@ -12635,19 +12645,19 @@ video {
     padding-bottom: 90px !important;
   }
   .res-pt-115 {
-    padding-top: 115px;
+    padding-top: 115px !important;
   }
   .res-pt-120 {
     padding-top: 120px !important;
   }
   .res-pt-20 {
-    padding-top: 20px;
+    padding-top: 20px !important;
   }
   .res-pt-30 {
-    padding-top: 30px;
+    padding-top: 30px !important;
   }
   .res-pt-40 {
-    padding-top: 40px;
+    padding-top: 40px !important;
   }
   .res-pt-50 {
     padding-top: 50px !important;
@@ -12659,55 +12669,55 @@ video {
     padding-top: 70px !important;
   }
   .res-pt-80 {
-    padding-top: 80px;
+    padding-top: 80px !important;
   }
   .res-pt-90 {
-    padding-top: 90px;
+    padding-top: 90px !important;
   }
   .res-pt-100 {
-    padding-top: 100px;
+    padding-top: 100px !important;
   }
   .res-pb-20 {
-    padding-bottom: 20px;
+    padding-bottom: 20px !important;
   }
   .res-pb-30 {
-    padding-bottom: 30px;
+    padding-bottom: 30px !important;
   }
   .res-pb-40 {
-    padding-bottom: 40px;
+    padding-bottom: 40px !important;
   }
   .res-pb-50 {
     padding-bottom: 50px !important;
   }
   .res-pb-60 {
-    padding-bottom: 60px;
+    padding-bottom: 60px !important;
   }
   .res-pb-70 {
-    padding-bottom: 70px;
+    padding-bottom: 70px !important;
   }
   .res-pb-80 {
-    padding-bottom: 80px;
+    padding-bottom: 80px !important;
   }
   .res-pb-100 {
     padding-bottom: 100px !important;
   }
   .res-pb-110 {
-    padding-bottom: 110px;
+    padding-bottom: 110px !important;
   }
   .res-pb-115 {
-    padding-bottom: 115px;
+    padding-bottom: 115px !important;
   }
   .res-pb-120 {
-    padding-bottom: 120px;
+    padding-bottom: 120px !important;
   }
   .res-mt-0 {
-    margin-top: 0;
+    margin-top: 0 !important;
   }
   .res-mb-70 {
-    margin-bottom: 70px;
+    margin-bottom: 70px !important;
   }
   .res-mt-40 {
-    margin-top: 40px;
+    margin-top: 40px !important;
   }
   .res-mb-0 {
     margin-bottom: 0 !important;
@@ -12715,19 +12725,19 @@ video {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .res-md-pt-150 {
-    padding-top: 150px;
+    padding-top: 150px !important;
   }
   .res-md-pt-100 {
-    padding-top: 100px;
+    padding-top: 100px !important;
   }
   .res-md-pt-80 {
-    padding-top: 80px;
+    padding-top: 80px !important;
   }
   .res-md-pb-100 {
-    padding-bottom: 100px;
+    padding-bottom: 100px !important;
   }
   .res-md-pb-80 {
-    padding-bottom: 80px;
+    padding-bottom: 80px !important;
   }
   .res-md-mt-0 {
     margin-top: 0 !important;
@@ -12735,11 +12745,11 @@ video {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .res-md-pt-150 {
-    padding-top: 150px;
+    padding-top: 150px !important;
   }
 }
 @media (max-width: 375px) {
   .res-375-pb-60 {
-    padding-top: 60px;
+    padding-top: 60px !important;
   }
 }

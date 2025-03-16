@@ -14,7 +14,7 @@
     &.header-fixed {
       position: fixed;
       &.style-one {
-        background: v.$gray-100;
+        background: v.$gray-900;
 
         .logo {
           .standard-logo {
@@ -22,6 +22,36 @@
           }
           .sticky-logo {
             display: block;
+          }
+        }
+        .main-menu {
+          ul {
+            li {
+              a {
+                color: v.$white;
+              }
+            }
+          }
+          .submenu {
+            ul {
+              li {
+                a {
+                  color: v.$gray-900;
+                }
+              }
+            }
+          }
+        }
+        .number-with-btn {
+          .contact-number {
+            a {
+              color: v.$white !important;
+              svg {
+                path {
+                  fill: v.$gray-100;
+                }
+              }
+            }
           }
         }
       }

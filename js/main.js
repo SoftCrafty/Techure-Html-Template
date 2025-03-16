@@ -283,9 +283,6 @@ items:1,
 
   
 });
-// drop
-$("#Country").chosen({no_results_text: "Oops, nothing found!"}); 
-
 /*==== Hover Active =====*/
 $(".service-card").hover(function() {
   $('.service-card').removeClass('item-active');
@@ -293,15 +290,8 @@ $(".service-card").hover(function() {
 });
 
 
-
-/*==== Chosen select =====*/
- var userChosenSelect = $('.user-chosen-select');
- $(userChosenSelect).chosen({no_results_text: "Oops, nothing found!",allow_single_deselect: true}); 
+$('select').niceSelect();
   });
-
-  /*====  select =====*/
-
-  $('select').niceSelect();
   })(jQuery);
 
   
