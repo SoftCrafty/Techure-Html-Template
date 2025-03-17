@@ -5649,7 +5649,7 @@ p {
   }
 }
 
-/*-======== tech-serices-area area style-three 
+/*-======== tech-serices-area area style-three
 =======-*/
 .tech-serices-area.style-three .tech-service.style-one {
   background: #8fd45f;
@@ -5702,6 +5702,9 @@ p {
   .contact-area.style-two .form-wrapper.style-one {
     margin-bottom: 30px;
   }
+}
+.contact-area.style-two .form-wrapper.style-one .form-content form .nice-select {
+  background-color: #ffffff !important;
 }
 .contact-area.style-two .form-wrapper.style-one .form-content form .theme-btn {
   background: #573db8;
@@ -9671,8 +9674,8 @@ p {
 .team-card-wrapper.style-three .card-item .media-wrapper {
   display: flex;
   align-items: center;
-  width: 320px;
   justify-content: end;
+  position: relative;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .team-card-wrapper.style-three .card-item .media-wrapper {
@@ -9682,13 +9685,26 @@ p {
   }
 }
 .team-card-wrapper.style-three .card-item .media-wrapper .shear-media {
-  opacity: 0;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
   cursor: pointer;
+  z-index: -1;
+  position: absolute;
+  right: 68px;
+  top: 50%;
+  width: 280px;
+  transform: transitionY(-50%);
+  opacity: 0;
+  visibility: hidden;
+}
+.team-card-wrapper.style-three .card-item .media-wrapper .shear-media ul {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .team-card-wrapper.style-three .card-item .media-wrapper .shear-media ul li {
   display: inline-block;
@@ -9701,7 +9717,7 @@ p {
   height: 37px;
   line-height: 37px;
   text-align: center;
-  margin-right: -45px;
+  margin-left: -45px;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
@@ -9737,11 +9753,13 @@ p {
   border: 0px;
   border-color: none;
 }
-.team-card-wrapper.style-three .card-item .media-wrapper:has(.media-wrap:hover) .shear-media {
+.team-card-wrapper.style-three .card-item .media-wrapper:hover .shear-media {
   opacity: 1;
+  z-index: 1;
+  visibility: visible;
 }
-.team-card-wrapper.style-three .card-item .media-wrapper:has(.media-wrap:hover) .shear-media ul li {
-  margin-right: 0px;
+.team-card-wrapper.style-three .card-item .media-wrapper:hover .shear-media ul li {
+  margin-left: 0px;
 }
 .team-card-wrapper.style-three .card-item:hover {
   transition-delay: 0.2;
@@ -11105,6 +11123,108 @@ video {
   border-radius: 50px;
   line-height: 60px;
   margin-bottom: 30px;
+  -webkit-tap-highlight-color: transparent;
+  background-color: #fff;
+  border: 1px solid #cdcccf;
+  box-sizing: border-box;
+  clear: both;
+  cursor: pointer;
+  display: block;
+  float: left;
+  outline: none;
+  padding-left: 18px;
+  padding-right: 30px;
+  position: relative;
+  text-align: left !important;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  width: auto;
+}
+.nice-select.open:after {
+  -webkit-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+.nice-select.open .list {
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transform: scale(1) translateY(0);
+  -ms-transform: scale(1) translateY(0);
+  transform: scale(1) translateY(0);
+}
+.nice-select .list {
+  width: 100% !important;
+  left: 0 !important;
+  right: 0 !important;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px rgba(68, 68, 68, 0.11);
+  box-sizing: border-box;
+  margin-top: 4px;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  -webkit-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transform: scale(0.75) translateY(-21px);
+  -ms-transform: scale(0.75) translateY(-21px);
+  transform: scale(0.75) translateY(-21px);
+  -webkit-transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+  transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+  z-index: 9;
+}
+.nice-select .option {
+  cursor: pointer;
+  font-weight: 400;
+  line-height: 40px;
+  list-style: none;
+  min-height: 40px;
+  outline: none;
+  padding-left: 18px;
+  padding-right: 29px;
+  text-align: left;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.nice-select .option.selected {
+  font-weight: bold;
+}
+.nice-select .option.selected.focus {
+  background-color: #f6f6f6;
+}
+.nice-select:after {
+  border-bottom: 2px solid #999;
+  border-right: 2px solid #999;
+  content: "";
+  display: block;
+  height: 5px;
+  margin-top: -4px;
+  pointer-events: none;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  -webkit-transform-origin: 66% 66%;
+  -ms-transform-origin: 66% 66%;
+  transform-origin: 66% 66%;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  width: 5px;
+}
+.nice-select.wide {
+  width: 100% !important;
 }
 .nice-select .option:hover {
   background: #573db8 !important;

@@ -205,7 +205,7 @@
   }
 }
 
-/*-======== tech-serices-area area style-three 
+/*-======== tech-serices-area area style-three
 =======-*/
 .tech-serices-area {
   &.style-three {
@@ -266,6 +266,9 @@
         }
         .form-content {
           form {
+            .nice-select {
+              background-color: v.$white !important;
+            }
             .theme-btn {
               background: v.$primary-color;
               color: v.$white;
