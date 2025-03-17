@@ -102,12 +102,8 @@
             textarea {
               border-color: v.$gray-200;
             }
-            .user-chosen-select-container {
-              .chosen-container {
-                .chosen-single {
-                  border-color: v.$gray-200 !important;
-                }
-              }
+            .nice-select {
+              border-color: v.$gray-200 !important;
             }
             .form-slide {
               div {

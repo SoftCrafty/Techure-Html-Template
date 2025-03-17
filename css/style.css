@@ -6594,7 +6594,7 @@ p {
 .blog-details-area .comment-wrapper .comment-form .form-box .form-content form textarea {
   border-color: #ececec;
 }
-.blog-details-area .comment-wrapper .comment-form .form-box .form-content form .user-chosen-select-container .chosen-container .chosen-single {
+.blog-details-area .comment-wrapper .comment-form .form-box .form-content form .nice-select {
   border-color: #ececec !important;
 }
 .blog-details-area .comment-wrapper .comment-form .form-box .form-content form .form-slide div {
