@@ -79,6 +79,9 @@
       grid-template-columns: repeat(1, 2fr) 3fr;
       .card-img {
         height: 400px;
+        @include m.rmaxwd(1280) {
+          height: 300px;
+        }
         @include m.xs {
           height: 300px;
         }
@@ -88,6 +91,9 @@
       grid-template-columns: repeat(3, 1fr);
       .card-img {
         height: 450px;
+        @include m.rmaxwd(1280) {
+          height: 350px;
+        }
         @include m.xs {
           height: 300px;
         }

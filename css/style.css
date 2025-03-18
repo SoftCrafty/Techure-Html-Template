@@ -8502,6 +8502,11 @@ p {
 .project-card-wrapper.style-three .row-1 .card-img {
   height: 400px;
 }
+@media (max-width: 1280px) {
+  .project-card-wrapper.style-three .row-1 .card-img {
+    height: 300px;
+  }
+}
 @media only screen and (min-width: 0px) and (max-width: 576px) {
   .project-card-wrapper.style-three .row-1 .card-img {
     height: 300px;
@@ -8512,6 +8517,11 @@ p {
 }
 .project-card-wrapper.style-three .row-2 .card-img {
   height: 450px;
+}
+@media (max-width: 1280px) {
+  .project-card-wrapper.style-three .row-2 .card-img {
+    height: 350px;
+  }
 }
 @media only screen and (min-width: 0px) and (max-width: 576px) {
   .project-card-wrapper.style-three .row-2 .card-img {
