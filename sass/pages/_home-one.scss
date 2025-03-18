@@ -70,7 +70,7 @@
           font-size: 54px;
           line-height: 54px;
         }
-        .text-bold {
+        span {
           font-weight: v.$font-weight-bold;
         }
       }
@@ -113,33 +113,46 @@
         position: relative;
         margin-left: 27px;
         margin-right: 30px;
+        width: 636px;
+        @include m.xl {
+          width: 600px;
+        }
+        @include m.lg {
+          width: 480px;
+          margin-top: 90px;
+        }
+        @include m.md {
+          margin-top: 70px !important;
+          width: 450px;
+        }
+        @include m.sm {
+          width: 530px;
+        }
+        @include m.xs {
+          margin-top: 0px !important;
+          width: 450px;
+        }
+        @include m.device-425px {
+          width: 350px;
+        }
+        @include m.device-375px {
+          width: 300px;
+        }
+        @include m.device-320px {
+          width: 250px;
+        }
         .hero-img {
           position: relative;
+          width: 100%;
           @include m.xl {
-            width: 600px;
             height: 540px;
           }
-          @include m.lg {
-            width: 480px;
-            margin-top: 50px;
-          }
+
           @include m.md {
-            margin-top: 55px !important;
-            width: 450px;
             height: 460px;
           }
-          @include m.xs {
-            margin-top: 0px !important;
-            width: 450px;
-          }
-          @include m.device-425px {
-            width: 350px;
-          }
-          @include m.device-375px {
-            width: 300px;
-          }
+
           @include m.device-320px {
-            width: 250px;
             height: 320px;
             object-fit: cover;
           }
