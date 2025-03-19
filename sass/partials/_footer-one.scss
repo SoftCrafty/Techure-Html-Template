@@ -4,7 +4,7 @@
 /*-======== footer area =======-*/
 .footer-area {
   &.style-one {
-    background: v.$black-800;
+    background: v.$gray-900;
     a {
       color: v.$white !important;
     }
@@ -32,6 +32,7 @@
         .section-title {
           color: v.$white;
           padding-bottom: 20px;
+          line-height: 80px;
           @include m.device-375px {
             font-size: 48px;
             line-height: 48px;
@@ -46,12 +47,7 @@
         height: 160px;
         line-height: 160px;
         text-align: center;
-        background: linear-gradient(
-          -225deg,
-          #3d4e81 0%,
-          #5753c9 48%,
-          #6e7ff3 100%
-        );
+        background: v.$primary-color;
         color: v.$white;
         @include m.border-radius(50%);
         flex-shrink: 0;
