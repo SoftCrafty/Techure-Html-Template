@@ -46,3 +46,25 @@ p {
     }
   }
 }
+.custom-animate {
+  animation: custom-animate 1.6s forwards cubic-bezier(0.645, 0.045, 0.355, 1)
+    0.4s;
+  opacity: 0;
+}
+
+.custom-animate-two {
+  animation: custom-animate-two 1.6s forwards
+    cubic-bezier(0.645, 0.045, 0.355, 1) 0.4s;
+  opacity: 0;
+}
+
+.custom-animate-three {
+  animation: custom-animate-three 1.6s forwards
+    cubic-bezier(0.645, 0.045, 0.355, 1) 0.4s;
+  opacity: 0;
+}
+.auto-bounce {
+  animation: auto-bounce 3s infinite;
+
+  -webkit-animation: auto-bounce 3s infinite;
+}

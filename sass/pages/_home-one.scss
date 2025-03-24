@@ -475,8 +475,17 @@
               flex-basis: 100%;
             }
           }
-          .theme-btn {
+          .right--btn {
             flex-basis: 37%;
+            .theme--btn {
+              float: right;
+              @include m.md {
+                float: left;
+              }
+              @include m.sm {
+                float: left;
+              }
+            }
             @include m.md {
               flex-basis: 100%;
             }

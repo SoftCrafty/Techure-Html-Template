@@ -3400,6 +3400,26 @@ p {
   fill: #573db8;
 }
 
+.custom-animate {
+  animation: custom-animate 1.6s forwards cubic-bezier(0.645, 0.045, 0.355, 1) 0.4s;
+  opacity: 0;
+}
+
+.custom-animate-two {
+  animation: custom-animate-two 1.6s forwards cubic-bezier(0.645, 0.045, 0.355, 1) 0.4s;
+  opacity: 0;
+}
+
+.custom-animate-three {
+  animation: custom-animate-three 1.6s forwards cubic-bezier(0.645, 0.045, 0.355, 1) 0.4s;
+  opacity: 0;
+}
+
+.auto-bounce {
+  animation: auto-bounce 3s infinite;
+  -webkit-animation: auto-bounce 3s infinite;
+}
+
 /**
  * Stylesheet:  style.css
  * Theme:       Technova - IT Startup & Agency HTML5 Template
@@ -4785,16 +4805,29 @@ p {
     flex-basis: 100%;
   }
 }
-.work-process-area.style-one .section-header.style-two .section-content .theme-btn {
+.work-process-area.style-one .section-header.style-two .section-content .right--btn {
   flex-basis: 37%;
 }
+.work-process-area.style-one .section-header.style-two .section-content .right--btn .theme--btn {
+  float: right;
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .work-process-area.style-one .section-header.style-two .section-content .theme-btn {
+  .work-process-area.style-one .section-header.style-two .section-content .right--btn .theme--btn {
+    float: left;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .work-process-area.style-one .section-header.style-two .section-content .right--btn .theme--btn {
+    float: left;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .work-process-area.style-one .section-header.style-two .section-content .right--btn {
     flex-basis: 100%;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .work-process-area.style-one .section-header.style-two .section-content .theme-btn {
+  .work-process-area.style-one .section-header.style-two .section-content .right--btn {
     flex-basis: 100%;
   }
 }
@@ -5116,7 +5149,7 @@ p {
   margin-top: 10px;
 }
 .hero-area.style-two .hero-wrap .theme-btn.style-one {
-  background: linear-gradient(-225deg, #3d4e81 0%, #5753c9 48%, #6e7ff3 100%);
+  background: #573db8;
 }
 .hero-area.style-two .hero-wrap .theme-btn.style-one a {
   color: #ffffff;

@@ -180,7 +180,7 @@
         }
         .review-content {
           padding-bottom: 30px;
-          @include m.device-425px{
+          @include m.device-425px {
             padding-bottom: 15px;
           }
           h4 {
@@ -220,12 +220,7 @@
       }
       .theme-btn {
         &.style-one {
-          background: linear-gradient(
-            -225deg,
-            #3d4e81 0%,
-            #5753c9 48%,
-            #6e7ff3 100%
-          );
+          background: v.$primary-color;
           a {
             color: v.$white;
             svg {
