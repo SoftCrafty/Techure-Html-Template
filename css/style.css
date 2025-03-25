@@ -3571,6 +3571,7 @@ p {
 .header-area.style-two.header-fixed {
   position: fixed;
   background: #07000e;
+  border: 0 !important;
 }
 .header-area.style-two.header-fixed .logo .standard-logo {
   display: none;
@@ -5159,6 +5160,10 @@ p {
 }
 
 /*-======== lastar-area style-two =======-*/
+.lates-service-area.style-two {
+  position: relative;
+  overflow: hidden;
+}
 .lates-service-area.style-two .count-box-wrapper.style-two {
   position: relative;
 }
@@ -5326,6 +5331,7 @@ p {
   padding-bottom: 80px;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
 .client-area.style-two::after {
   content: "";

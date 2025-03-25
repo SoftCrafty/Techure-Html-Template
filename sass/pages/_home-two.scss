@@ -238,6 +238,8 @@
 /*-======== lastar-area style-two =======-*/
 .lates-service-area {
   &.style-two {
+    position: relative;
+    overflow: hidden;
     .count-box-wrapper {
       &.style-two {
         position: relative;
@@ -398,6 +400,7 @@
     padding-bottom: 80px;
     background-size: cover;
     background-position: center;
+    overflow: hidden;
     &::after {
       content: "";
       position: absolute;

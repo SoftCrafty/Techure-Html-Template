@@ -291,7 +291,7 @@ $(".service-card").hover(function() {
 
 
  $('select').niceSelect();
-
+ new WOW().init();
   });
   })(jQuery);
 

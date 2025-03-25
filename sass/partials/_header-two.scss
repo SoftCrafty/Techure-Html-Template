@@ -15,6 +15,7 @@
     &.header-fixed {
       position: fixed;
       background: v.$gray-900;
+      border: 0 !important;
       .logo {
         .standard-logo {
           display: none;
