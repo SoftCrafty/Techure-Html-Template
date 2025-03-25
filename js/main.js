@@ -290,8 +290,8 @@ $(".service-card").hover(function() {
 });
 
 
+  new WOW().init();
  $('select').niceSelect();
- new WOW().init();
   });
   })(jQuery);
 

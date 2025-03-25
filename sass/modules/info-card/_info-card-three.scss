@@ -61,6 +61,7 @@
             font-weight: v.$font-weight-bold;
           }
           svg {
+            @include m.transition(0.3s);
             path {
               fill: v.$gray-900;
             }
@@ -69,6 +70,17 @@
       }
       &:hover {
         border-color: v.$primary-color;
+        .more-btn {
+          p {
+            color: v.$primary-color;
+          }
+          svg {
+            transform: rotate(45deg);
+            path {
+              fill: v.$primary-color;
+            }
+          }
+        }
       }
     }
   }

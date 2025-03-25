@@ -4850,6 +4850,7 @@ p {
     padding-bottom: 120px;
   }
 }
+
 /*-======== new-blog-area =======-*/
 .new-blog-area {
   background: #f7f1fc;
@@ -6555,6 +6556,10 @@ p {
 ===========================*/
 /* Theme Default CSS */
 /*==================BLOG DETAILS ARE===================*/
+.blog-details-area {
+  position: relative;
+  overflow: hidden;
+}
 .blog-details-area .single-post-item .post-thumbnail img {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -8164,11 +8169,27 @@ p {
   color: #07000e;
   font-weight: 700;
 }
+.info-card-wrapper.style-three .card-item.service-card .more-btn svg {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
 .info-card-wrapper.style-three .card-item.service-card .more-btn svg path {
   fill: #07000e;
 }
 .info-card-wrapper.style-three .card-item:hover {
   border-color: #573db8;
+}
+.info-card-wrapper.style-three .card-item:hover .more-btn p {
+  color: #573db8;
+}
+.info-card-wrapper.style-three .card-item:hover .more-btn svg {
+  transform: rotate(45deg);
+}
+.info-card-wrapper.style-three .card-item:hover .more-btn svg path {
+  fill: #573db8;
 }
 
 .solutions-items-active {
@@ -9138,6 +9159,8 @@ p {
   }
 }
 .about-wrapper.style-one .about-wrap .about-support {
+  position: relative;
+  z-index: 2;
   display: flex;
   gap: 20px;
   background: #f7f1fc;
@@ -11329,7 +11352,7 @@ video {
   .accordion-wrapper.style-one .faq-wrap {
     width: 100%;
     position: relative;
-    margin-top: -60px;
+    margin-top: -210px;
     transform: translateY(0%);
   }
 }
@@ -11337,7 +11360,15 @@ video {
   .accordion-wrapper.style-one .faq-wrap {
     width: 100%;
     position: relative;
-    margin-top: -60px;
+    margin-top: -210px;
+    transform: translateY(0%);
+  }
+}
+@media (max-width: 576px) {
+  .accordion-wrapper.style-one .faq-wrap {
+    width: 100%;
+    position: relative;
+    margin-top: -130px;
     transform: translateY(0%);
   }
 }
@@ -11390,7 +11421,7 @@ video {
   color: #ffffff;
 }
 .accordion-wrapper.style-one .faq-img {
-  height: 800px;
+  height: 100%;
   position: relative;
   z-index: -1;
 }
@@ -11403,13 +11434,13 @@ video {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .accordion-wrapper.style-one .faq-img {
     width: 100%;
-    height: 400px;
+    height: 100%;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .accordion-wrapper.style-one .faq-img {
     width: 100%;
-    height: 400px;
+    height: 100%;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {

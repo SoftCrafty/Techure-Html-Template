@@ -508,8 +508,8 @@
 }
 
 /*-========faq-area =======-*/
-@include m.nesthub {
-  .faq-area {
+.faq-area {
+  @include m.nesthub {
     padding-top: 120px;
     padding-bottom: 120px;
   }

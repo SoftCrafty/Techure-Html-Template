@@ -2,6 +2,8 @@
 @use "./mixin" as m;
 /*==================BLOG DETAILS ARE===================*/
 .blog-details-area {
+  position: relative;
+  overflow: hidden;
   .single-post-item {
     .post-thumbnail {
       img {
