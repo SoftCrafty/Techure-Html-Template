@@ -96,7 +96,7 @@
     @include m.border-radius(50px);
     line-height: 50px;
     cursor: pointer;
-    @include m.laptop_m_two {
+    @include m.laptop_m {
       display: none;
     }
   }
@@ -109,7 +109,7 @@
     @include m.border-radius(50px);
     cursor: pointer;
     text-align: center;
-    @include m.laptop_m_two {
+    @include m.laptop_m {
       display: flex !important;
       justify-content: center;
       align-items: center;

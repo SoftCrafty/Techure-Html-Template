@@ -188,6 +188,12 @@
           font-weight: v.$font-weight-medium;
           display: inline-block;
           margin-right: 20px;
+          a {
+            color: v.$white;
+            &:hover {
+              color: v.$primary-color !important;
+            }
+          }
         }
       }
     }

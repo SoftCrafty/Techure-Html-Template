@@ -93,13 +93,17 @@
               color: v.$gray-900;
               font-weight: v.$font-weight-regular;
               font-size: 18px;
+              @include m.transition(0.4s);
+              &:hover {
+                color: v.$primary-color;
+              }
             }
           }
         }
       }
       .shear-media {
         @include m.device-525px {
-          margin-top: 40px;
+          margin-top: 20px;
         }
         .media--icons {
           display: flex;
@@ -113,6 +117,11 @@
             @include m.border-radius(50%);
             line-height: 38px;
             text-align: center;
+            @include m.transition(0.4s);
+            &:hover {
+              background: v.$primary-color;
+              color: v.$white;
+            }
           }
         }
       }
@@ -139,11 +148,18 @@
         font-weight: v.$font-weight-regular;
         a {
           color: v.$gray-800;
+          @include m.transition(0.3s);
+          &:hover {
+            color: v.$primary-color !important;
+          }
         }
       }
     }
 
     .copyright-area {
+      @include m.device-525px {
+        padding-top: 40px;
+      }
       .copyright-desc {
         a {
           color: v.$primary-color;

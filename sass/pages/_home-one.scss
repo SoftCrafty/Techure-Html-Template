@@ -38,6 +38,13 @@
             }
           }
           margin-top: 70px;
+          &:hover {
+            svg {
+              path {
+                fill: v.$primary-color;
+              }
+            }
+          }
           @include m.laptop_l {
             margin-top: 30px;
           }

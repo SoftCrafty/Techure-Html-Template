@@ -79,14 +79,16 @@
         }
 
         .card-wrap {
-          position: absolute;
-          bottom: -92px;
-          left: 0;
-          width: 400px;
-          height: 200px;
-          background: v.$primary-color;
-          border-top-left-radius: 200px;
-          border-top-right-radius: 200px;
+          position: relative;
+          // position: absolute;
+          // bottom: -92px;
+          // left: 0;
+          // width: 400px;
+          // height: 200px;
+          // background: v.$primary-color;
+          // border-top-left-radius: 200px;
+          // border-top-right-radius: 200px;
+          // z-index: 2;
           @include m.md {
             width: 330px;
             height: 210px;
@@ -101,7 +103,7 @@
             .media-wrap {
               position: absolute;
               left: 50%;
-              top: -22px;
+              bottom: 80px;
               background: v.$white;
               width: 50px;
               height: 50px;
@@ -111,6 +113,7 @@
               @include m.transition(0.4s);
               cursor: pointer;
               font-size: 16px;
+              z-index: 2;
               &:hover {
                 background: v.$secondary;
               }
@@ -118,11 +121,11 @@
 
             .shear-media {
               position: absolute;
-              top: -45%;
+              top: -145px;
               left: 50%;
               background: #ffffff;
               padding: 20px 12px;
-              @include m.transform(translate(-50%, -50%));
+              @include m.transform(translate(-50%, 100%));
               @include m.border-radius(50px);
               @include m.transition(0.6s);
               font-size: 16px;
@@ -132,9 +135,17 @@
               ul {
                 li {
                   a {
+                    @include m.transition(0.3s);
                     svg {
                       path {
                         fill: v.$gray-900;
+                      }
+                    }
+                    &:hover {
+                      svg {
+                        path {
+                          fill: v.$primary-color !important;
+                        }
                       }
                     }
                   }
@@ -145,11 +156,21 @@
               .shear-media {
                 opacity: 1;
                 visibility: visible;
-                z-index: 1;
+                z-index: 2;
+                @include m.transform(translate(-50%, -100%));
               }
             }
           }
           .card-content {
+            position: absolute;
+            bottom: -92px;
+            left: 0;
+            width: 400px;
+            height: 200px;
+            background: v.$primary-color;
+            border-top-left-radius: 200px;
+            border-top-right-radius: 200px;
+            z-index: 1;
             .card-title {
               font-size: 24px;
               font-weight: v.$font-weight-bold;
