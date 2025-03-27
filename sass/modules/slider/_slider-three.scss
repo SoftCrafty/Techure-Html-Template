@@ -9,7 +9,7 @@
           .owl-item {
             .slider-item {
               background: v.$white;
-              padding: 40px 60px;
+              padding: 38px 60px;
               @include m.border-radius(20px);
               @include m.device-480px {
                 padding: 30px;
@@ -76,7 +76,7 @@
               }
             }
             &.active {
-              .slider-item{
+              .slider-item {
                 @include m.border-radius(20px);
                 border: 1px solid v.$secondary;
               }
