@@ -25,28 +25,10 @@
           border: 1px solid transparent;
           @include m.border-radius(20px);
           &.left-img {
-            height: 485px;
-            @include m.md {
-              height: 420px;
-            }
-            @include m.rmaxwd(767) {
-              height: 430px;
-            }
-            @include m.xs {
-              height: 320px;
-            }
+            height: 100%;
           }
           &.right-img {
-            height: 560px;
-            @include m.md {
-              height: 495px;
-            }
-            @include m.rmaxwd(767) {
-              height: 430px;
-            }
-            @include m.xs {
-              height: 320px;
-            }
+            height: 100%;
           }
         }
         .card-meta {
