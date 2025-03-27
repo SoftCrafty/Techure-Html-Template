@@ -374,6 +374,17 @@
   @include m.nesthub {
     padding-top: 120px;
   }
+  .count-box-wrapper {
+    &.about-box-couter {
+      gap: 136px;
+      @include m.laptop_m {
+        gap: 105px;
+      }
+      @include m.laptop_m_three {
+        gap: 13px;
+      }
+    }
+  }
   .section-header {
     padding-bottom: 216px;
   }
