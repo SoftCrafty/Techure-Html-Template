@@ -5,7 +5,7 @@
 .blog-card-wrapper {
   &.style-four {
     .single-post-item {
-      @include m.device-425px{
+      @include m.device-425px {
         margin-top: 50px;
       }
       .post-thumbnail {
@@ -53,7 +53,7 @@
             .post-title {
               font-size: 32px;
               font-weight: v.$font-weight-bold;
-              padding-right: 90px;
+              padding-right: 0px;
               @include m.md {
                 padding-right: 0;
               }

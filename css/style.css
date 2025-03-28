@@ -3755,11 +3755,11 @@ p {
   content: "";
   position: absolute;
   top: 50%;
-  left: 40%;
+  left: 38%;
   width: 1px;
   height: 80%;
   background: rgba(7, 0, 14, 0.4);
-  transform: translate(50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .header-area.style-three .contact-number {
   font-size: 18px;
@@ -4939,7 +4939,7 @@ p {
   gap: 60px;
   padding-top: 20px;
 }
-@media (max-width: 525px) {
+@media only screen and (min-width: 0px) and (max-width: 767px) {
   .hero-area.style-two .hero-content .hero-section {
     flex-wrap: wrap;
   }
@@ -4981,12 +4981,6 @@ p {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .hero-area.style-two .hero-content .hero-section .section-title {
-    font-size: 48px;
-    line-height: 48px;
-  }
-}
-@media (max-width: 525px) {
-  .hero-area.style-two .hero-content .hero-section .section-title {
     font-size: 62px;
     line-height: 62px;
   }
@@ -5025,11 +5019,6 @@ p {
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .hero-area.style-two .hero-content .hero-section .hero-img {
-    width: 48%;
-  }
-}
-@media (max-width: 525px) {
   .hero-area.style-two .hero-content .hero-section .hero-img {
     width: 80%;
     -webkit-border-radius: 20px;
@@ -5217,6 +5206,16 @@ p {
 }
 .lates-service-area.style-two .count-box-wrapper.style-two .counter-item h2 {
   padding-bottom: 27px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .lates-service-area.style-two .count-box-wrapper.style-two .counter-item h2 {
+    padding-bottom: 5px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .lates-service-area.style-two .count-box-wrapper.style-two .counter-item h2 {
+    padding-bottom: 5px;
+  }
 }
 
 /*-======== ite-technology-area =======-*/
@@ -6085,6 +6084,12 @@ p {
   padding-top: 257px;
   padding-bottom: 167px;
   z-index: 1;
+}
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .hero-area.style-four {
+    padding-top: 170px;
+    padding-bottom: 85px;
+  }
 }
 .hero-area.style-four .overlay {
   background-image: url(../images/overlay-img-03.png);
@@ -9015,7 +9020,7 @@ p {
 .blog-card-wrapper.style-four .single-post-item .post-content-wrapper .post-heading a .post-title {
   font-size: 32px;
   font-weight: 700;
-  padding-right: 90px;
+  padding-right: 0px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .blog-card-wrapper.style-four .single-post-item .post-content-wrapper .post-heading a .post-title {
@@ -9403,20 +9408,6 @@ p {
 .team-card-wrapper.style-one .card-item .card-img .card-wrap {
   position: relative;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .team-card-wrapper.style-one .card-item .card-img .card-wrap {
-    width: 330px;
-    height: 210px;
-    border-top-left-radius: 150px;
-    border-top-right-radius: 150px;
-  }
-}
-@media (max-width: 375px) {
-  .team-card-wrapper.style-one .card-item .card-img .card-wrap {
-    width: 288px;
-    height: 200px;
-  }
-}
 .team-card-wrapper.style-one .card-item .card-img .card-wrap .media-wrapper .media-wrap {
   position: absolute;
   left: 50%;
@@ -9488,6 +9479,11 @@ p {
   border-top-left-radius: 200px;
   border-top-right-radius: 200px;
   z-index: 1;
+}
+@media (max-width: 375px) {
+  .team-card-wrapper.style-one .card-item .card-img .card-wrap .card-content {
+    width: 300px;
+  }
 }
 .team-card-wrapper.style-one .card-item .card-img .card-wrap .card-content .card-title {
   font-size: 24px;
@@ -11500,11 +11496,15 @@ video {
   line-height: 27px;
   padding-bottom: 15px;
 }
+.accordion-wrapper.style-two .faq-wrap .accordion .faq-item .faq-header button.them-btn[aria-expanded=true] .faq-icon i {
+  color: #573db8;
+}
 .accordion-wrapper.style-two .faq-wrap .accordion .faq-item .faq-header button.them-btn[aria-expanded=true] .faq-icon i::before {
   content: "\f068";
 }
 .accordion-wrapper.style-two .faq-wrap .accordion .faq-item .faq-header button .faq-icon i {
   color: #07000e;
+  font-size: 18px;
 }
 .accordion-wrapper.style-two .faq-wrap .accordion .faq-item .faq-header button .faq--title .single-num {
   color: #716f73;

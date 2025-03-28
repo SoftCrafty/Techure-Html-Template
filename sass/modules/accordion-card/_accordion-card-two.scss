@@ -37,6 +37,7 @@
               &.them-btn[aria-expanded="true"] {
                 .faq-icon {
                   i {
+                    color: v.$primary-color;
                     &::before {
                       content: "\f068";
                     }
@@ -47,6 +48,7 @@
               .faq-icon {
                 i {
                   color: v.$gray-900;
+                  font-size: 18px;
                 }
               }
               .faq--title {

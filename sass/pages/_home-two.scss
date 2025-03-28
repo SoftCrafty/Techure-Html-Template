@@ -42,7 +42,7 @@
         align-items: center;
         gap: 60px;
         padding-top: 20px;
-        @include m.device-525px {
+        @include m.sm {
           flex-wrap: wrap;
         }
         @include m.sm {
@@ -72,11 +72,6 @@
           }
 
           @include m.sm {
-            font-size: 48px;
-            line-height: 48px;
-          }
-
-          @include m.device-525px {
             font-size: 62px;
             line-height: 62px;
           }
@@ -102,10 +97,6 @@
             width: 48%;
           }
           @include m.sm {
-            width: 48%;
-          }
-
-          @include m.device-525px {
             width: 80%;
             @include m.border-radius(20px);
           }
@@ -270,6 +261,12 @@
           }
           h2 {
             padding-bottom: 27px;
+            @include m.md {
+              padding-bottom: 5px;
+            }
+            @include m.sm {
+              padding-bottom: 5px;
+            }
           }
         }
       }

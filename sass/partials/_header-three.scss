@@ -72,11 +72,11 @@
           content: "";
           position: absolute;
           top: 50%;
-          left: 40%;
+          left: 38%;
           width: 1px;
           height: 80%;
           background: v.$border-color-07;
-          @include m.transform(translate(50%, -50%));
+          @include m.transform(translate(-50%, -50%));
         }
       }
     }

@@ -80,25 +80,7 @@
 
         .card-wrap {
           position: relative;
-          // position: absolute;
-          // bottom: -92px;
-          // left: 0;
-          // width: 400px;
-          // height: 200px;
-          // background: v.$primary-color;
-          // border-top-left-radius: 200px;
-          // border-top-right-radius: 200px;
-          // z-index: 2;
-          @include m.md {
-            width: 330px;
-            height: 210px;
-            border-top-left-radius: 150px;
-            border-top-right-radius: 150px;
-          }
-          @include m.device-375px {
-            width: 288px;
-            height: 200px;
-          }
+
           .media-wrapper {
             .media-wrap {
               position: absolute;
@@ -171,6 +153,9 @@
             border-top-left-radius: 200px;
             border-top-right-radius: 200px;
             z-index: 1;
+            @include m.device-375px {
+              width: 300px;
+            }
             .card-title {
               font-size: 24px;
               font-weight: v.$font-weight-bold;

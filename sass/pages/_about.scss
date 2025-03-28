@@ -12,6 +12,10 @@
     padding-top: 257px;
     padding-bottom: 167px;
     z-index: 1;
+    @include m.xs {
+      padding-top: 170px;
+      padding-bottom: 85px;
+    }
 
     .overlay {
       background-image: url(../images/overlay-img-03.png);
