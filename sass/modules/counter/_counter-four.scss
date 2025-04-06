@@ -1,0 +1,15 @@
+@use "../../variables" as v;
+@use "../../mixin" as m;
+/*-======== counter box =======-*/
+
+.coun-title {
+  &.style-four {
+    min-width: 216px;
+    font-size: 72px;
+    font-weight: v.$font-weight-bold;
+    line-height: 72px;
+    letter-spacing: 8px;
+    -webkit-text-stroke: 2px v.$gray-900;
+    color: v.$white;
+  }
+}
