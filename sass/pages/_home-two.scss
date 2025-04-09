@@ -328,6 +328,8 @@
 /*-======== clients-rivews-area =======-*/
 
 .clients-rivews-area {
+  background: v.$gray-100;
+
   @include m.lg {
     padding-bottom: 110px;
   }
@@ -346,6 +348,7 @@
 /*-======== faq-area  style-two=======-*/
 .faq-area {
   &.style-two {
+    background: v.$gray-100;
     .accordion-wrapper {
       padding-right: 30px;
       @include m.device-768px {

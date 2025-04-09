@@ -5295,6 +5295,9 @@ p {
 }
 
 /*-======== clients-rivews-area =======-*/
+.clients-rivews-area {
+  background: #f7f1fc;
+}
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .clients-rivews-area {
     padding-bottom: 110px;
@@ -5310,6 +5313,9 @@ p {
 }
 
 /*-======== faq-area  style-two=======-*/
+.faq-area.style-two {
+  background: #f7f1fc;
+}
 .faq-area.style-two .accordion-wrapper {
   padding-right: 30px;
 }
@@ -8008,6 +8014,9 @@ p {
   }
 }
 .info-card-wrapper.style-one .card-item .card-svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 80px;
   height: 80px;
   -webkit-border-radius: 50px;
@@ -10325,7 +10334,7 @@ video {
 /* Theme Default CSS */
 /*-======== slider  =======-*/
 .slider-wrapper.style-two .our-teams-carousel {
-  padding-top: 95px;
+  padding-top: 60px;
 }
 .slider-wrapper.style-two .our-teams-carousel .owl-dots {
   margin-top: 60px !important;
