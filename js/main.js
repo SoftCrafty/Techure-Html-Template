@@ -289,6 +289,30 @@
     $('select').niceSelect();
       });
 
+
+      $('.owl-carousel').each(function() {
+        var $carousel = $(this);
+        $carousel.owlCarousel({
+            autoplay: $carousel.data('autoplay'),
+            center: $carousel.data('center-mode'),
+            variableWidth: $carousel.data('variable-width'),
+            loop: $carousel.data('loop'),
+            dots: $carousel.data('dots'),
+            nav: $carousel.data('arrows'),
+            swipeToSlide: $carousel.data('swipe-slide'),
+            autoplayHoverPause: $carousel.data('pause-hover'),
+            autoplaySpeed: $carousel.data('autoplay-speed'),
+            speed: $carousel.data('slide-speed'),
+            items: $carousel.data('slides-show-desktop'),
+            slideBy: $carousel.data('slides-scroll'),
+            responsive: {
+                0: { items: $carousel.data('slides-show-mobile') },
+                768: { items: $carousel.data('slides-show-tablet') },
+                1024: { items: $carousel.data('slides-show-desktop') }
+            }
+        });
+    }); 
+
   
 })(jQuery);
 
