@@ -5884,9 +5884,6 @@ p {
   bottom: 0;
   width: initial !important;
 }
-.contact-area.style-two .contact-wrap .contact--box img {
-  width: 100%;
-}
 @media (max-width: 1199px) {
   .contact-area.style-two .contact-wrap .contact--box img {
     height: 100px;

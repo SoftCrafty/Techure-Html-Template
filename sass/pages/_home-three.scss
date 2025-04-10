@@ -347,7 +347,7 @@
           width: initial !important;
         }
         img {
-          width: 100%;
+          
           @include m.laptop_m_three {
             height: 100px;
           }
