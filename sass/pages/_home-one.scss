@@ -549,3 +549,119 @@
     }
   }
 }
+
+
+// testing testimonial area
+
+.tech-testimonial-item{
+  padding: 40px;
+  border-radius: 20px;
+  border: 1px solid #8FD45F;
+  background-color: white;
+
+  hr{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: gray;
+  }
+}
+.tech-testi-author-colon{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.tech-author{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+  }
+
+  .tech-author-title{
+    h3{
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 1.2;
+    }
+  }
+}
+
+.tech-author-review{
+  p{
+    
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 44px;
+      color: #716f73;
+  }
+}
+.tech-review-star{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 25px;
+
+ span{
+   color: #FFB34E;
+
+   &:last-child{
+    color: lightgray;
+   }
+  i{
+    color: #FFB34E;
+  }
+ }
+}
+
+.tech-testimonial-container {
+  
+  .slick-slide {
+    margin: 0 15px; /* 15px space between slides */
+  }
+  .slick-dots{
+    display: flex ;
+    justify-content: center;
+    margin-top: 80px;
+    padding-bottom: 150px;
+    gap: 8px;
+  }
+}
+
+/* Base dot */
+.slick-dots li {
+  width: 34px;
+  height: 34px;
+  border: 1px solid transparent; /* outer ring */
+  padding: 5px;
+  border-radius: 50%;
+  background: transparent;
+  
+  transition: all 0.3s ease;
+  position: relative;
+
+  button{
+    width: 18px;
+  height: 18px;
+  background-color: lightgray;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+}
+
+/* Inner dot when active */
+.slick-dots li.slick-active{
+  border-color: #6c3dd8;
+  & button{
+    background-color: #6c3dd8;
+  }
+}
