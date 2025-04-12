@@ -298,7 +298,7 @@
         dots: true,
         arrows: false,
         autoplay: true,             
-        autoplaySpeed: 3000, 
+        autoplaySpeed: 4000, 
         infinite: true,
         customPaging: function(slider, i) {
           return '<button class="custom-dot"></button>';
@@ -313,42 +313,23 @@
             }
           },
           {
+            breakpoint: 576,
+            settings: {              
+              dots: false,
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            }
+          },         
+          {
             breakpoint: 480,
             settings: {
               slidesToShow: 1,
-              slidesToScroll: 1
+              slidesToScroll: 1,
+              dots: false,
             }
-          }
-          // You can unslick at a given breakpoint now by adding:
-          // settings: "unslick"
-          // instead of a settings object
+          }         
         ]
       });
-
-
-    //   $('.owl-carousel').each(function() {
-    //     var $carousel = $(this);
-    //     $carousel.owlCarousel({
-    //         autoplay: $carousel.data('autoplay'),
-    //         center: $carousel.data('center-mode'),
-    //         variableWidth: $carousel.data('variable-width'),
-    //         loop: $carousel.data('loop'),
-    //         dots: $carousel.data('dots'),
-    //         nav: $carousel.data('arrows'),
-    //         swipeToSlide: $carousel.data('swipe-slide'),
-    //         autoplayHoverPause: $carousel.data('pause-hover'),
-    //         autoplaySpeed: $carousel.data('autoplay-speed'),
-    //         speed: $carousel.data('slide-speed'),
-    //         items: $carousel.data('slides-show-desktop'),
-    //         slideBy: $carousel.data('slides-scroll'),
-    //         responsive: {
-    //             0: { items: $carousel.data('slides-show-mobile') },
-    //             768: { items: $carousel.data('slides-show-tablet') },
-    //             1024: { items: $carousel.data('slides-show-desktop') }
-    //         }
-    //     });
-    // }); 
-
   
 })(jQuery);
 

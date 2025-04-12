@@ -116,11 +116,15 @@
           font-size: 18px;
           font-weight: v.$font-weight-medium;
           margin-left: 8px;
-          a {
-            color: v.$gray-800;
-            font-size: 18px;
-            font-weight: v.$font-weight-medium;
+          
+          color: v.$gray-800;
+          font-size: 18px;
+          font-weight: v.$font-weight-medium;
+          img{
+            width: auto;
+            border-radius: 0;
           }
+          
         }
       }
     }

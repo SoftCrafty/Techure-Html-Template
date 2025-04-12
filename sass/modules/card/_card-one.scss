@@ -50,7 +50,7 @@
           grid-template-columns: 24% 38% 38%;
         }
         @include m.lg {
-          grid-template-columns: 20% 40% 40%;
+          grid-template-columns: 10% 45% 45%;
         }
         @include m.md {
           grid-template-columns: 50% 50%;
@@ -96,13 +96,10 @@
       }
       .card-item {
         padding: 40px;
-        @include m.xs {
-          padding: 30px !important;
+        @include m.sm {
+          padding: 20px !important;
         }
-        @include m.device-480px {
-          padding: 30px 0px !important;
-        }
-
+      
         .card-content {
           width: 410px;
           @include m.xl {

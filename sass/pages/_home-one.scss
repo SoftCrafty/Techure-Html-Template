@@ -563,6 +563,9 @@
     padding: 25px;
   }
 
+  @include m.xs{
+    padding: 15px;
+  }
   hr{
     margin-top: 30px;
     margin-bottom: 30px;
@@ -664,12 +667,20 @@
   
   .slick-slide {
     margin: 0 15px; /* 15px space between slides */
+    margin-bottom: 2px;
   }
   .slick-dots{
     display: flex ;
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 70px;
     gap: 8px;
+
+    @include m.md{
+      margin-top: 50px;
+    }
+    @include m.sm{
+      margin-top: 40px;
+    }
   }
 }
 
