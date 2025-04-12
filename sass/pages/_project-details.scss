@@ -120,9 +120,10 @@
           color: v.$gray-800;
           font-size: 18px;
           font-weight: v.$font-weight-medium;
-          img{
-            width: auto;
-            border-radius: 0;
+          
+          svg{
+            color: v.$primary-color;
+            font-size: 16px;
           }
           
         }

@@ -6738,9 +6738,9 @@ p {
   font-size: 18px;
   font-weight: 500;
 }
-.project-details-area .project-details-wrapper .project-wrap ul li img {
-  width: auto;
-  border-radius: 0;
+.project-details-area .project-details-wrapper .project-wrap ul li svg {
+  color: #573db8;
+  font-size: 16px;
 }
 .project-details-area .project-details-wrapper .slider-carousel-seven .owl-stage-outer {
   padding-bottom: 60px !important;
