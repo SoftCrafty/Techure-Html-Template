@@ -29,6 +29,9 @@
         font-weight: v.$font-weight-medium;
         font-size: 18px;
       }
+      svg{
+        color: v.$primary-color;
+      }
     }
   }
   .service-wrapper {

@@ -39,6 +39,7 @@
         @include m.sm {
           gap: 12px;
           flex-direction: column;
+          align-items: start;
         }
 
         .section-title {

@@ -58,10 +58,11 @@
                   align-items: center;
                   justify-content: space-between;
                   ul {
+                    display: flex;
                     li {
                       display: inline-block;
                       color: v.$color-3;
-                      margin-right: 10px;
+                      margin-right: 3px;
                       &:nth-child(5) {
                         color: v.$gray-200;
                       }

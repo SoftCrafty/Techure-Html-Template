@@ -165,10 +165,12 @@
         }
         @include m.xs {
           flex-wrap: wrap;
+          gap: 15px;
         }
         @include m.device-525px {
           justify-content: center;
         }
+
         .review-content {
           padding-bottom: 30px;
           @include m.device-425px {
@@ -346,9 +348,14 @@
 }
 
 /*-======== faq-area  style-two=======-*/
+
+
 .faq-area {
   &.style-two {
-    background: v.$gray-100;
+   
+    @include m.nesthub{
+      padding-bottom: 120px;
+    }
     .accordion-wrapper {
       padding-right: 30px;
       @include m.device-768px {
@@ -386,6 +393,21 @@
         @include m.border-radius(20px);
       }
     }
+  }
+}
+.faq-res-space{
+  @include m.nesthub{
+    padding-bottom: 0 !important;
+  }
+  @include m.md{
+    padding-top: 90px;
+  }
+  @include m.sm{
+    padding-top: 75px;
+    padding-bottom: 40px;
+  }
+  @include m.xs{
+    padding-top: 40px;
   }
 }
 /*-======== client-logo-area  style-two=======-*/

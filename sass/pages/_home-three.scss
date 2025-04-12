@@ -168,10 +168,12 @@
           }
           @include m.sm {
             justify-content: space-between;
+            gap: 20px;
           }
           @include m.device-375px {
             flex-direction: column;
             align-items: center;
+            gap: 15px;
           }
           .counter-item {
             &:nth-child(1) {
@@ -294,6 +296,8 @@
       .contact--box {
         padding: 20px;
         padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
         @include m.box-shadow(0px 0px 60px 0px rgba(0, 0, 0, 0.05));
         flex-basis: 50%;
         @include m.border-radius(20px);
@@ -326,9 +330,7 @@
           @include m.laptop_m_three {
             padding-bottom: 30px !important;
           }
-          @include m.device-375px {
-            width: 243px;
-          }
+          
         }
         a {
           color: v.$gray-900;
@@ -345,13 +347,9 @@
           right: 0;
           bottom: 0;
           width: initial !important;
+          z-index: -1;
         }
-        img {
-          
-          @include m.laptop_m_three {
-            height: 100px;
-          }
-        }
+        
       }
     }
   }

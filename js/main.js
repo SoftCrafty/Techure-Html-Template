@@ -124,7 +124,8 @@
             margin: 30,
             responsive : {
                 0 : {
-                    items: 1
+                    items: 1,
+                    dots: false,
                 },
                 767 : {
                     items: 2

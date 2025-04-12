@@ -97,7 +97,7 @@
         @include m.laptop_m_three {
           flex-wrap: wrap;
           justify-content: center;
-          gap: 40px;
+          gap: 20px;
         }
 
         @include m.device-525px {
