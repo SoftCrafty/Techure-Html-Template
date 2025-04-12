@@ -4915,16 +4915,32 @@ p {
   border: 1px solid #8FD45F;
   background-color: white;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tech-testimonial-item {
+    padding: 25px;
+  }
+}
 .tech-testimonial-item hr {
   margin-top: 30px;
   margin-bottom: 30px;
   color: gray;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .tech-testimonial-item hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 .tech-testi-author-colon {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .tech-testi-author-colon .tech-colon {
+    display: none;
+  }
 }
 
 .tech-author {
@@ -4942,12 +4958,47 @@ p {
   font-size: 24px;
   line-height: 1.2;
 }
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .tech-author .tech-author-title h3 {
+    font-size: 22px;
+  }
+}
 
 .tech-author-review p {
   font-weight: 500;
   font-size: 28px;
   line-height: 44px;
   color: #716f73;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .tech-author-review p {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tech-author-review p {
+    font-size: 22px;
+    line-height: 1.3;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .tech-author-review p {
+    font-size: 26px;
+    line-height: 1.4;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .tech-author-review p {
+    font-size: 22px;
+    line-height: 1.3;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .tech-author-review p {
+    font-size: 20px;
+    line-height: 1.3;
+  }
 }
 
 .tech-review-star {
@@ -7353,8 +7404,8 @@ p {
 .count-box-wrapper.style-two .counter-item {
   width: 300px;
   position: relative;
-  align-items: end;
-  text-align: end;
+  align-items: center;
+  text-align: center;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .count-box-wrapper.style-two .counter-item {

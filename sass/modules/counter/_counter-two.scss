@@ -18,8 +18,8 @@
     .counter-item {
       width: 300px;
       position: relative;
-      align-items: end;
-      text-align: end;
+      align-items: center;
+      text-align: center;
       @include m.md {
         align-items: start;
         text-align: start;
