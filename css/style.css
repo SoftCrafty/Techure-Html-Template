@@ -5429,7 +5429,7 @@ p {
 }
 @media only screen and (min-width: 992px) and (max-width: 1024px) {
   .work-process-area.style-two {
-    padding-top: 100px;
+    padding-top: 0px;
   }
 }
 .work-process-area.style-two .section-header.style-two .section-content .section-title {
@@ -10937,6 +10937,11 @@ video {
   align-items: center;
   gap: 30px;
 }
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .slider-wrapper.style-five .slider-carousel .owl-stage-outer .owl-stage .owl-item .slider-item .client-heading .client-info .client-profile {
+    gap: 15px;
+  }
+}
 .slider-wrapper.style-five .slider-carousel .owl-stage-outer .owl-stage .owl-item .slider-item .client-heading .client-info .client-profile img {
   width: 80px;
   height: 80px;
@@ -10944,9 +10949,20 @@ video {
   -moz-border-radius: 50%;
   border-radius: 50%;
 }
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .slider-wrapper.style-five .slider-carousel .owl-stage-outer .owl-stage .owl-item .slider-item .client-heading .client-info .client-profile img {
+    width: 60px;
+    height: 60px;
+  }
+}
 .slider-wrapper.style-five .slider-carousel .owl-stage-outer .owl-stage .owl-item .slider-item .client-heading .client-info .client-profile .client-title {
   font-weight: 700;
   font-size: 24px;
+}
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .slider-wrapper.style-five .slider-carousel .owl-stage-outer .owl-stage .owl-item .slider-item .client-heading .client-info .client-profile .client-title {
+    font-size: 20px;
+  }
 }
 .slider-wrapper.style-five .slider-carousel .owl-stage-outer .owl-stage .owl-item .slider-item .client-heading .client-info .client-profile .client-decs {
   font-weight: 500;
