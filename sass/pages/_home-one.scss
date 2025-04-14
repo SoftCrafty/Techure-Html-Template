@@ -674,6 +674,7 @@
     justify-content: center;
     margin-top: 70px;
     gap: 8px;
+    bottom: unset;
 
     @include m.md{
       margin-top: 50px;
