@@ -567,8 +567,8 @@
     padding: 15px;
   }
   hr{
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
     color: gray;
 
     @include m.sm{
@@ -598,7 +598,7 @@
   img{
     height: 80px;
     width: 80px;
-    border-radius: 50%;
+    border-radius: 50% !important;
   }
 
   .tech-author-title{
@@ -670,7 +670,7 @@
     margin-bottom: 2px;
   }
   .slick-dots{
-    display: flex ;
+    display: flex !important;
     justify-content: center;
     margin-top: 70px;
     gap: 8px;
@@ -686,8 +686,8 @@
 
 /* Base dot */
 .slick-dots li {
-  width: 34px;
-  height: 34px;
+  width: 34px !important;
+  height: 34px !important;
   border: 1px solid transparent; /* outer ring */
   padding: 5px;
   border-radius: 50%;
@@ -697,15 +697,19 @@
   position: relative;
 
   button{
-    width: 18px;
-  height: 18px;
-  background-color: lightgray;
+    width: 18px Im !important;
+  height: 18px !important;
+  background-color: lightgray !important;
   border: none;
   border-radius: 50%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  &::before{
+    display: none !important;
+  }
   }
 }
 
@@ -713,6 +717,6 @@
 .slick-dots li.slick-active{
   border-color: #6c3dd8;
   & button{
-    background-color: #6c3dd8;
+    background-color: #6c3dd8 !important;
   }
 }
