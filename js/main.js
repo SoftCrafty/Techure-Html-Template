@@ -1,7 +1,6 @@
 (function ($){
     "use strict";
     $(document).ready(function () {
-
       /*==== SlideBar =====*/
       /*=========Btn==========*/
         var barBtn = $('.bar-btn');
@@ -37,17 +36,14 @@
               }else{
                   $(".header-area").removeClass('header-fixed');
               }
-
           });
       /*=========== Sub menu ============*/
           var dropdowmMenu = $('.off-canvas-menu .off-canvas-dropdown');
           dropdowmMenu.parent('li').children('.item').append(function() {
           return `<button class="off-canvas-dropdown-toggle icon-element icon-element-xs" type="button"><i class="fa-solid fa-sort-down upbtn"></i></button>`;
           });
-
       /*=========== sub menu ============*/
         var dropMenuToggler = $('.off-canvas-dropdown-toggle');
-
           dropMenuToggler.on('click', function() {
               var Self = $(this);
               Self.toggleClass('active');
@@ -60,18 +56,13 @@
           /*==== Video Play =====*/
           var playBtn = $('.play-btn');
           var modalClose = $('.btn-close, .modal');
-
-
           playBtn.on('click', function(){
           var mediaVideo = $("#player").get(0);
               mediaVideo.play();
           });
-
           modalClose.on('click', function(){
           var mediaVideo = $("#player").get(0);
-
           mediaVideo.pause();
-
           });
     /*==== Counter =====*/
     var numberCounter = $('.counter');
@@ -85,9 +76,7 @@
             var bootstrapTooltip = $('.them-btn [data-bs-toggle="tooltip"]');
             if (bootstrapTooltip.length) {
                 bootstrapTooltip.tooltip();
-            }
-      /*==== tech-service-carousel =====*/
-
+            }      
     /*==== Testimonal carousel =====*/
     $(".testimonial-carousel").owlCarousel({
         loop: true,
@@ -108,7 +97,6 @@
             items: 2,
             loop: false,
           },
-
         },
       });
 
@@ -123,17 +111,16 @@
             smartSpeed: 700,
             margin: 30,
             responsive : {
-                0 : {
-                    items: 1,
-                    dots: false,
-                },
-                767 : {
-                    items: 2
-                },
-                992 : {
-                    items: 3
-                },
-
+              0 : {
+                  items: 1,
+                  dots: false,
+              },
+              767 : {
+                  items: 2
+              },
+              992 : {
+                  items: 3
+              },
             }
         });
     }
@@ -156,9 +143,7 @@
         },
         1000: {
           items: 1,
-          loop: false,
         },
-
       },
     });
 
@@ -172,7 +157,6 @@
       autoplay:true,
       autoplayTimeout:5000,
       responsiveClass: true,
-
       navText: [
         ` Prev`,
       `Next `,
@@ -188,7 +172,6 @@
           items: 1,
           loop: true,
         },
-
       },
     });
     /*==== slider-carouser-five carousel =====*/
@@ -212,12 +195,10 @@
           items: 1,
           loop: true,
         },
-
       },
     });
 
     /*==== slider-carouser-six carousel =====*/
-
     $(".slider-carousel-six").owlCarousel({
       loop: false,
       margin: 20,
@@ -233,7 +214,6 @@
     ],
     });
     /*==== slider-carouser-seven carousel =====*/
-
     $(".slider-carousel-seven").owlCarousel({
       loop: true,
       margin: 30,
@@ -257,7 +237,6 @@
           items: 1,
           loop: true,
         },
-
       },
     });
 
@@ -275,7 +254,6 @@
       `<i class="fa-solid fa-arrow-right"></i>`,
     ],
 
-
     });
     /*==== Hover Active =====*/
     $(".service-card").hover(function() {
@@ -290,47 +268,46 @@
     $('select').niceSelect();
       });
 
-
-      
-      $('.tech-testimonial-container').slick({
-        infinite: true,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        dots: true,
-        arrows: false,
-        autoplay: true,             
-        autoplaySpeed: 4000, 
-        infinite: true,
-        customPaging: function(slider, i) {
-          return '<button class="custom-dot"></button>';
+      //testimonial slick slider
+    $('.tech-testimonial-container').slick({
+      infinite: true,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      dots: true,
+      arrows: false,
+      autoplay: true,             
+      autoplaySpeed: 4000, 
+      infinite: true,
+      customPaging: function(slider, i) {
+        return '<button class="custom-dot"></button>';
+      },
+      responsive: [
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            
+          }
         },
-        responsive: [
-          {
-            breakpoint: 991,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-             
-            }
-          },
-          {
-            breakpoint: 576,
-            settings: {              
-              dots: false,
-              slidesToShow: 1,
-              slidesToScroll: 1,
-            }
-          },         
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              dots: false,
-            }
-          }         
-        ]
-      });
+        {
+          breakpoint: 576,
+          settings: {              
+            dots: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        },         
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: false,
+          }
+        }         
+      ]
+    });
   
 })(jQuery);
 

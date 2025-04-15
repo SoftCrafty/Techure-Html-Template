@@ -4,7 +4,7 @@
 .blog-details-area {
   position: relative;
   overflow: hidden;
-  .single-post-item {
+  .single-post-item.formate-image {    
     .post-thumbnail {
       img {
         @include m.border-radius(20px);
@@ -18,13 +18,12 @@
         a {
           color: v.$gray-900;
         }
-        span {
-          display: flex;
-          gap: 10px;
-          align-items: center;
-          color: v.$gray-800;
-          font-size: 14px;
-
+        .author-img,
+        .blog-category,
+        .post-date {
+          a {
+            color: v.$gray-800;
+          }
           svg {
             path {
               fill: v.$primary-color;
@@ -32,6 +31,12 @@
           }
           .meta-text {
             font-weight: v.$font-weight-regular;
+            margin-left: 3px;
+          }
+        }
+        .blog-category{
+          @include m.xs{
+            display: none;
           }
         }
       }
@@ -45,10 +50,8 @@
           font-size: 18px;
           font-weight: v.$font-weight-medium;
           margin-right: 8px;
-          a {
-            color: v.$gray-800;
-            font-size: 18px;
-            font-weight: v.$font-weight-medium;
+          svg{
+            color: v.$primary-color;
           }
         }
       }
@@ -79,8 +82,6 @@
             font-size: 24px;
             font-weight: v.$font-weight-bold;
           }
-        }
-        .section-desc {
         }
         .replay-btn {
           font-size: 18px;
