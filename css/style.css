@@ -3942,6 +3942,107 @@ p {
   fill: #ffffff;
 }
 
+.search-container {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.432);
+  backdrop-filter: blur(50px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-container form {
+  display: flex;
+}
+
+/* ====== search field ======= */
+.search-field {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(15px);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.search-field .search {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .search-field .search {
+    width: 100%;
+  }
+}
+
+.search-field .search .close-btn {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid #573db8;
+}
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .search-field .search .close-btn {
+    top: 30px;
+    right: 30px;
+  }
+}
+
+.search-field .search form {
+  display: flex;
+  width: 70%;
+  border-radius: 10px;
+  border: 1px solid rgba(5, 5, 5, 0.1);
+  overflow: hidden;
+  transform: scale(0);
+  transition: all 0.4s;
+}
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .search-field .search form {
+    width: 80%;
+    flex-direction: column;
+  }
+}
+
+.search-field .search form input {
+  width: 100%;
+  padding: 0 20px;
+  background: white;
+  border: 0;
+  transition: 0.4s ease;
+  height: 60px;
+}
+
+.search-field .search form button {
+  padding: 0 25px;
+  border: none;
+  color: white;
+  background-color: #573db8;
+  height: 60px;
+}
+
+.search-field.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.search-field.active .search form {
+  transform: scale(1);
+}
+
 /**
  * Stylesheet:  style.css
  * Theme:       Technova - IT Startup & Agency HTML5 Template

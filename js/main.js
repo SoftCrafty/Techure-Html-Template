@@ -22,11 +22,7 @@
       menubarCloseBtn.on('click', function() {
       $('.off-canvas').removeClass('active')
       });
-      /*=====  Search bar ======*/
-      var searchBar =$(".search-icon-box");
-      searchBar.on("click", function () {
-        $('.search-box').toggleClass('active');
-      })
+     
       /*=====  Navbar Fixed ======*/
             var $window = $(window);
             $window.on('scroll', function() {
@@ -65,6 +61,14 @@
           var mediaVideo = $("#player").get(0);
           mediaVideo.pause();
           });
+
+       // search field 
+      $('#search').click(function () {
+          $('#search-field').addClass("active")
+      });
+      $('.close-btn').click(function () {
+          $('#search-field').removeClass("active")
+      });
     /*==== Counter =====*/
     var numberCounter = $('.counter');
     if (numberCounter.length) {
