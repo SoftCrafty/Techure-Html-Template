@@ -5,83 +5,86 @@
 .blog-card-wrapper {
   &.style-four {
     .single-post-item {
-      @include m.device-425px {
-        margin-top: 50px;
-      }
-      .post-thumbnail {
-        img {
-          border-top-right-radius: 20px;
-          border-top-left-radius: 20px;
-          width: 100%;
+      &.formate-image{
+        @include m.device-425px {
+          margin-top: 50px;
         }
-      }
-      .post-content-wrapper {
-        background: v.$gray-100;
-        padding: 20px;
-        border-bottom-right-radius: 20px;
-        border-bottom-left-radius: 20px;
-        .post-meta {
-          display: flex;
-          gap: 25px;
-          a {
-            color: v.$gray-900;
+        .post-thumbnail {
+          img {
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+            width: 100%;
           }
-          span {
+        }
+        .post-content-wrapper {
+          background: v.$gray-100;
+          padding: 20px;
+          border-bottom-right-radius: 20px;
+          border-bottom-left-radius: 20px;
+          .post-meta {
             display: flex;
-            gap: 10px;
-            align-items: center;
-            color: v.$gray-800;
-
-            svg {
-              path {
-                fill: v.$primary-color;
+            gap: 25px;
+            a {
+              color: v.$gray-900;
+            }
+            .author-img,
+            .blog-category,
+            .post-date {
+              a {
+                color: v.$gray-800;
+              }
+              svg {
+                path {
+                  fill: v.$primary-color;
+                }
+              }
+              .meta-text {
+                font-weight: v.$font-weight-regular;
+                margin-left: 3px;
               }
             }
-            .meta-text {
-              font-weight: v.$font-weight-regular;
+          }
+          .post-heading {
+            .post-title {              
+              a {
+                font-size: 32px;
+                color: v.$gray-900;
+                font-weight: v.$font-weight-bold;
+                padding-right: 0px;
+                @include m.md {
+                  padding-right: 0;
+                }
+                @include m.sm {
+                  padding-right: 0;
+                }
+                @include m.xs {
+                  padding-right: 0;
+                  font-size: 24px;
+                }
+              }
+              &:hover {
+                a {
+                  color: v.$primary-color;
+                }
+              }
             }
           }
-        }
-        .post-heading {
-          a {
-            color: v.$gray-900;
+          .theme-btn {
+            @include m.transition(0.3s);
+            &:nth-child(1) {
+              background: v.$white;
+              color: v.$gray-900;
+              border: 0;
+            }
+          }
+          .card--btn {
+            @include m.transition(0.3s);
             &:hover {
-              .post-title {
-                color: v.$primary-color;
-              }
-            }
-            .post-title {
-              font-size: 32px;
-              font-weight: v.$font-weight-bold;
-              padding-right: 0px;
-              @include m.md {
-                padding-right: 0;
-              }
-              @include m.sm {
-                padding-right: 0;
-              }
-              @include m.xs {
-                padding-right: 0;
-                font-size: 24px;
-              }
-            }
-          }
-        }
-        .theme-btn {
-          @include m.transition(0.3s);
-          &:nth-child(1) {
-            background: v.$white;
-            color: v.$gray-900;
-            border: 0;
-          }
-        }
-        .card--btn {
-          @include m.transition(0.3s);
-          &:hover {
-            color: v.$white;
-            .theme-btn {
-              background: v.$gray-900;
               color: v.$white;
+              .theme-btn {
+                background: v.$gray-900;
+                color: v.$white;
+              }
             }
           }
         }

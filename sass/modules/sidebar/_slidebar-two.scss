@@ -27,6 +27,7 @@
     .side-section-heading {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       padding-bottom: 10px;
       border-bottom: 1px solid v.$color-07;
       .section-title {
@@ -53,6 +54,9 @@
         right: 12px;
         @include m.transform(translateY(-50%));
         cursor: pointer;
+        svg{
+          color: v.$primary-color;
+        }
       }
     }
     .popular-post {
@@ -64,32 +68,36 @@
           border: 0;
         }
         .post-meta {
-          margin-bottom: 10px;
-          .meta-sub {
-            display: flex;
-            gap: 10px;
-            align-items: center;
-            svg {
-              path {
-                fill: v.$primary-color;
-              }
-            }
-            .badge-text {
-              font-size: 14px;
-              font-weight: v.$font-weight-medium;
+          margin-bottom: 5px;
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          svg {
+            path {
+              fill: v.$primary-color;
             }
           }
+          .badge-text {
+            font-size: 14px;
+            font-weight: v.$font-weight-medium;
+            color: v.$gray-800;
+          }
+          
         }
-        a {
-          &:hover {
-            .post-title {
+        
+        .post-title {
+          line-height: 1;
+          a{
+            font-size: 18px;
+            font-weight: 700;
+            color: black;
+          }
+
+          &:hover{
+            a{
               color: v.$primary-color;
             }
           }
-        }
-        .post-title {
-          font-size: 18px;
-          font-weight: 700;
         }
       }
     }
