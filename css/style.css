@@ -9260,6 +9260,11 @@ p {
   font-weight: 400;
   margin-left: 3px;
 }
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .blog-card-wrapper.style-four .single-post-item.formate-image .post-content-wrapper .post-meta .blog-category {
+    display: none;
+  }
+}
 .blog-card-wrapper.style-four .single-post-item.formate-image .post-content-wrapper .post-heading .post-title a {
   font-size: 32px;
   color: #07000e;
@@ -9279,7 +9284,7 @@ p {
 @media only screen and (min-width: 0px) and (max-width: 576px) {
   .blog-card-wrapper.style-four .single-post-item.formate-image .post-content-wrapper .post-heading .post-title a {
     padding-right: 0;
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 .blog-card-wrapper.style-four .single-post-item.formate-image .post-content-wrapper .post-heading .post-title:hover a {
@@ -12195,8 +12200,21 @@ video {
 ===========================*/
 /* Theme Default CSS */
 /*-======== sidebar style-one  =======-*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .pagination {
+    margin-top: -30px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .pagination {
+    margin-top: -40px;
+  }
+}
 .pagination.style-one .page-item {
   margin-left: 20px;
+}
+.pagination.style-one .page-item:first-child {
+  margin-left: 0;
 }
 .pagination.style-one .page-item.active .page-link {
   color: #ffffff;

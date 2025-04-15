@@ -43,6 +43,11 @@
                 margin-left: 3px;
               }
             }
+            .blog-category{
+              @include m.xs{
+                display: none;
+              }
+            }
           }
           .post-heading {
             .post-title {              
@@ -59,7 +64,7 @@
                 }
                 @include m.xs {
                   padding-right: 0;
-                  font-size: 24px;
+                  font-size: 22px;
                 }
               }
               &:hover {

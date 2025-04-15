@@ -2,9 +2,18 @@
 @use "../../mixin" as m;
 /*-======== sidebar style-one  =======-*/
 .pagination {
+  @include m.md{
+    margin-top: -30px;
+  }
+  @include m.sm{
+    margin-top: -40px;
+  }
   &.style-one {
     .page-item {
       margin-left: 20px;
+      &:first-child{
+        margin-left: 0;
+      }
       &.active {
         .page-link {
           color: v.$white;
