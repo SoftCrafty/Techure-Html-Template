@@ -4145,45 +4145,51 @@ p {
   content: "\f106";
 }
 
-.off-canvas-menu {
+.off-canvas .main-menu.mobile-menu {
+  display: block;
+}
+.off-canvas .main-menu.mobile-menu ul {
+  display: block;
   text-transform: capitalize;
   padding-top: 60px;
   font-weight: 500;
 }
-.off-canvas-menu .list-item {
+.off-canvas .main-menu.mobile-menu ul li {
   border-bottom: 1px solid #e3e3e3;
 }
-.off-canvas-menu .list-item.active .item a, .off-canvas-menu .list-item:hover .item a {
+.off-canvas .main-menu.mobile-menu ul li.active .item a, .off-canvas .main-menu.mobile-menu ul li:hover .item a {
   color: #031f42;
 }
-.off-canvas-menu .list-item.active .item .icon-element-xs, .off-canvas-menu .list-item:hover .item .icon-element-xs {
+.off-canvas .main-menu.mobile-menu ul li.active .item .icon-element-xs, .off-canvas .main-menu.mobile-menu ul li:hover .item .icon-element-xs {
   color: #031f42;
 }
-.off-canvas-menu .list-item > div {
+.off-canvas .main-menu.mobile-menu ul li > div {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 12px 0px;
 }
-.off-canvas-menu .list-item > div > a {
+.off-canvas .main-menu.mobile-menu ul li > div > a {
   color: #031f42;
   text-decoration: none !important;
 }
-.off-canvas-menu .list-item .off-canvas-dropdown {
+.off-canvas .main-menu.mobile-menu ul li .off-canvas-dropdown {
+  padding-top: 0;
   display: none;
   padding-left: 20px;
   font-size: #031f42;
 }
-.off-canvas-menu .list-item .off-canvas-dropdown li {
+.off-canvas .main-menu.mobile-menu ul li .off-canvas-dropdown li {
   margin-bottom: 8px;
+  padding-bottom: 8px;
 }
-.off-canvas-menu .list-item .off-canvas-dropdown li a {
+.off-canvas .main-menu.mobile-menu ul li .off-canvas-dropdown li a {
   color: #031f42;
 }
-.off-canvas-menu .active .off-canvas-dropdown {
+.off-canvas .main-menu.mobile-menu ul .active .off-canvas-dropdown {
   display: block !important;
 }
-.off-canvas-menu .active svg {
+.off-canvas .main-menu.mobile-menu ul .active svg {
   transform: rotate(180deg);
   color: #573db8;
 }

@@ -38,12 +38,13 @@
               }
           });
       /*=========== Sub menu ============*/
-          var dropdowmMenu = $('.off-canvas-menu .off-canvas-dropdown');
+          var dropdowmMenu = $('.mobile-menu ul .off-canvas-dropdown');
           dropdowmMenu.parent('li').children('.item').append(function() {
           return `<button class="off-canvas-dropdown-toggle icon-element icon-element-xs" type="button"><i class="fa-solid fa-sort-down upbtn"></i></button>`;
           });
       /*=========== sub menu ============*/
-        var dropMenuToggler = $('.off-canvas-dropdown-toggle');
+      // var dropMenuToggler = $('.mobile-menu ul li');
+         var dropMenuToggler = $('.off-canvas-dropdown-toggle');
           dropMenuToggler.on('click', function() {
               var Self = $(this);
               Self.toggleClass('active');

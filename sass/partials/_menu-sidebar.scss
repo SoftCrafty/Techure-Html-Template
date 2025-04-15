@@ -57,56 +57,66 @@
     }
   }
 }
-.off-canvas-menu {
-  text-transform: capitalize;
-  padding-top: 60px;
-  font-weight: v.$font-weight-medium;
-  .list-item {
-    border-bottom: 1px solid v.$border-color;
-    &.active,
-    &:hover {
-      .item {
-        a {
-          color: v.$color-1;
-        }
-        .icon-element-xs {
-          color: v.$color-1;
-        }
-      }
-    }
-
-    > div {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 12px 0px;
-      > a {
-        color: v.$color-1;
-        text-decoration: none !important;
-      }
-    }
-    .off-canvas-dropdown {
-      display: none;
-      padding-left: 20px;
-      font-size: v.$color-1;
+.off-canvas{
+  .main-menu.mobile-menu{
+    display: block;
+    ul {
+      display: block;
+      text-transform: capitalize;
+      padding-top: 60px;
+      font-weight: v.$font-weight-medium;
       li {
-        margin-bottom: 8px;
-        a {
-          color: v.$color-1;
+        border-bottom: 1px solid v.$border-color;
+        
+        &.active,
+        &:hover {
+          .item {
+            a {
+              color: v.$color-1;
+            }
+            .icon-element-xs {
+              color: v.$color-1;
+            }
+          }
+        }
+    
+        > div {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 12px 0px;
+          > a {
+            color: v.$color-1;
+            text-decoration: none !important;
+          }
+        }
+        .off-canvas-dropdown {
+          padding-top: 0;
+          display: none;
+          padding-left: 20px;
+          font-size: v.$color-1;
+          li {
+            margin-bottom: 8px;
+            padding-bottom: 8px;
+            a {
+              color: v.$color-1;
+            }
+          }
         }
       }
-    }
-  }
-  .active {
-    .off-canvas-dropdown {
-      display: block !important;
-    }
-    svg {
-      transform: rotate(180deg);
-      color: v.$primary-color;
+      .active {
+        .off-canvas-dropdown {
+          display: block !important;
+        }
+        svg {
+          transform: rotate(180deg);
+          color: v.$primary-color;
+        }
+      }
     }
   }
 }
+
 .sidebar-filter-wrap {
   padding-top: 60px;
 }
