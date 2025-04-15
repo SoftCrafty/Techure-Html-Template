@@ -3485,6 +3485,9 @@ p {
 .header-area.style-one.header-fixed.style-one .main-menu ul li a {
   color: #ffffff;
 }
+.header-area.style-one.header-fixed.style-one .main-menu.mobile-menu ul li a {
+  color: #031f42;
+}
 .header-area.style-one.header-fixed.style-one .main-menu .submenu ul li a {
   color: #07000e;
 }
@@ -3854,6 +3857,7 @@ p {
   display: block !important;
 }
 .header-area .search-box .input-group-append {
+  border: none;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
   border-bottom-left-radius: 0;
@@ -5408,7 +5412,12 @@ p {
   display: none;
 }
 .lates-service-area.style-two .count-box-wrapper.style-two .counter-item h2 {
-  padding-bottom: 27px;
+  padding-bottom: 20px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .lates-service-area.style-two .count-box-wrapper.style-two .counter-item h2 {
+    padding-bottom: 5px;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .lates-service-area.style-two .count-box-wrapper.style-two .counter-item h2 {
@@ -9490,7 +9499,7 @@ p {
   align-items: center;
   height: 100%;
   padding-top: 120px;
-  padding-bottom: 150px;
+  padding-bottom: 130px;
 }
 .about-wrapper.style-two .about-wrap .about-content .section-heading .section-title {
   font-size: 62px;
@@ -9541,6 +9550,16 @@ p {
   display: flex;
   flex-wrap: wrap;
   padding-top: 10px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .about-wrapper.style-two .about-wrap .about-content .tech-list ul {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about-wrapper.style-two .about-wrap .about-content .tech-list ul {
+    flex-direction: row;
+  }
 }
 @media only screen and (min-width: 0px) and (max-width: 576px) {
   .about-wrapper.style-two .about-wrap .about-content .tech-list ul {
@@ -11984,6 +12003,7 @@ video {
 .sidebar.style-one .card-item .side-section-heading {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-bottom: 10px;
   border-bottom: 1px solid rgb(236, 236, 236);
 }
@@ -12712,9 +12732,15 @@ video {
 .footer-area.style-two .footer-copy-list li a:hover {
   color: #573db8 !important;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .footer-area.style-two .copyright-area {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
 @media (max-width: 525px) {
   .footer-area.style-two .copyright-area {
-    padding-top: 40px;
+    padding-top: 25px;
   }
 }
 .footer-area.style-two .copyright-area .copyright-desc a {

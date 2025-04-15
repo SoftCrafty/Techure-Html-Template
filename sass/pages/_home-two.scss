@@ -262,7 +262,10 @@
             display: none;
           }
           h2 {
-            padding-bottom: 27px;
+            padding-bottom: 20px;
+            @include m.lg {
+              padding-bottom: 5px;
+            }
             @include m.md {
               padding-bottom: 5px;
             }

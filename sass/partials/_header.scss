@@ -32,6 +32,15 @@
               }
             }
           }
+          &.mobile-menu{
+            ul{
+              li{
+                a{
+                  color: v.$color-1;
+                }
+              }
+            }
+          }
           .submenu {
             ul {
               li {
