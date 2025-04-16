@@ -270,7 +270,7 @@
     /*==== Hover Active =====*/
     $(".service-card").on('mouseenter', function () {
       $('.service-card').removeClass('item-active');
-      $(this).addClass('item-active');
+      $(this).addClass('item-active'); 
     });
 
     // wow js

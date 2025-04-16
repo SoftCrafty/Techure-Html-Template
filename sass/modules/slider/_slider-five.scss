@@ -10,6 +10,7 @@
             .slider-item {
               background: v.$white;
               padding: 40px 40px;
+              margin-bottom: 2px;
               @include m.border-radius(20px);
               @include m.device-480px {
                 padding: 30px;
