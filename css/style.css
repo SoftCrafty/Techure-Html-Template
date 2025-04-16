@@ -5093,7 +5093,7 @@ p {
   position: relative;
 }
 .slick-dots li button {
-  width: 18px Im !important;
+  width: 18px !important;
   height: 18px !important;
   background-color: lightgray !important;
   border: none;
