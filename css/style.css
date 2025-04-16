@@ -1,15 +1,41 @@
 @charset "UTF-8";
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
 /* Table of contents
 =========================
 
 ===========================*/
+.preloader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: #573DB8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+.preloader .loader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.preloader .loader img {
+  animation: loading 2s linear infinite;
+}
+.preloader .loader h3 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /* Theme Default CSS */
 /*==== font weight ====*/
 /* Deafult Margin & Padding */
@@ -2933,17 +2959,6 @@
     padding-bottom: 125px;
   }
 }
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 * {
   padding: 0;
@@ -3366,17 +3381,6 @@ body {
     transform: rotate(360deg);
   }
 }
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-========  common =======-*/
 .contact-number {
@@ -3448,17 +3452,6 @@ p {
   -webkit-animation: auto-bounce 3s infinite;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== header area =======-*/
 .header-area.style-one {
@@ -3576,17 +3569,6 @@ p {
   fill: #ffffff;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== header area =======-*/
 .header-area.style-two {
@@ -3710,17 +3692,6 @@ p {
   fill: #ffffff;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== header area =======-*/
 .header-area {
@@ -4043,17 +4014,6 @@ p {
   transform: scale(1);
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== main-menu =======-*/
 .menu-wrapper {
@@ -4170,17 +4130,6 @@ p {
   color: #ffffff !important;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*====== off-canvas =======*/
 .off-canvas,
@@ -4303,17 +4252,6 @@ p {
   padding-top: 60px;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*====== off-canvas =======*/
 .off-canvas-sidebar-contact .off-canvas-contact,
@@ -4417,17 +4355,6 @@ p {
   fill: #ffffff;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== hero area =======-*/
 .hero-area.style-one {
@@ -5188,17 +5115,6 @@ p {
   background-color: #6c3dd8 !important;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== hero area style-two =======-*/
 .hero-area.style-two {
@@ -5809,17 +5725,6 @@ p {
   }
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== hero area style-three =======-*/
 .hero-area.style-three {
@@ -6396,17 +6301,6 @@ p {
   }
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== hero area =======-*/
 .hero-area.style-four {
@@ -6584,17 +6478,6 @@ p {
 }
 
 /*-======== faq area =======-*/
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== services-details-area  =======-*/
 @media only screen and (min-width: 992px) and (max-width: 1024px) {
@@ -6629,17 +6512,6 @@ p {
   }
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== services-details-area  =======-*/
 @media (max-width: 1024px) {
@@ -6727,17 +6599,6 @@ p {
   border: 0px;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== services-details-area  =======-*/
 @media (max-width: 768px) {
@@ -6892,29 +6753,7 @@ p {
   font-size: 24px;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*==================BLOG DETAILS ARE===================*/
 .blog-details-area {
@@ -7019,17 +6858,6 @@ p {
   width: 100%;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== contact area =======-*/
 .contact-us-area.style-one .contact-info-wrapper {
@@ -7123,17 +6951,6 @@ p {
   background: #f7f1fc !important;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== video-box =======-*/
 .video-box.style-one {
@@ -7195,17 +7012,6 @@ p {
   animation: 2s ease pulse infinite;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== video-box =======-*/
 .video-box.style-two {
@@ -7254,17 +7060,6 @@ p {
   }
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== client-box =======-*/
 .user-client.style-one {
@@ -7303,17 +7098,6 @@ p {
   color: #ffffff;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== theme-btn one =======-*/
 .theme-btn.style-one {
@@ -7345,17 +7129,6 @@ p {
   fill: #07000e;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== theme-btn two =======-*/
 .theme--btn:hover .theme-btn {
@@ -7425,17 +7198,6 @@ p {
   fill: #ffffff;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== theme-btn two =======-*/
 .theme-btn.style-three {
@@ -7489,17 +7251,6 @@ p {
   fill: #07000e;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== counter box =======-*/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -7535,17 +7286,6 @@ p {
   }
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== counter box =======-*/
 .count-box-wrapper.style-two {
@@ -7659,17 +7399,6 @@ p {
   display: none;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== counter box =======-*/
 .count-box-wrapper.style-three {
@@ -7729,17 +7458,6 @@ p {
   color: #07000e;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== counter box =======-*/
 .coun-title.style-four {
@@ -7752,17 +7470,6 @@ p {
   color: #ffffff;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== tech-service =======-*/
 .tech-service.style-one {
@@ -7852,17 +7559,6 @@ p {
   }
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== section header  =======-*/
 .section-header.style-one .section-meta {
@@ -7904,17 +7600,6 @@ p {
   }
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== section header  =======-*/
 .section-header.style-two .section-meta {
@@ -7997,17 +7682,6 @@ p {
   }
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== client-box =======-*/
 .card-wrapper.style-one {
@@ -8178,17 +7852,6 @@ p {
   -webkit-text-stroke: 1px #716f73;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== card-seven =======-*/
 .card-wrapper.style-seven {
@@ -8255,17 +7918,6 @@ p {
   padding: 15px;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== info card =======-*/
 .info-card-wrapper.style-one {
@@ -8389,17 +8041,6 @@ p {
   fill: #07000e;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== card =======-*/
 .info-card-wrapper.style-two .card-item {
@@ -8478,17 +8119,6 @@ p {
   transform: rotate(45deg);
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== card =======-*/
 .info-card-wrapper.style-three .card-item {
@@ -8591,17 +8221,6 @@ p {
   visibility: visible !important;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== client-box =======-*/
 .porject-card-wrapper.style-one .card-item {
@@ -8684,17 +8303,6 @@ p {
   background: #573db8;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== card =======-*/
 .project-card-wrapper.style-two .card-item {
@@ -8819,17 +8427,6 @@ p {
   padding-top: 20px;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== card =======-*/
 .project-card-wrapper.style-three .card-grid {
@@ -8951,17 +8548,6 @@ p {
   }
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== client-box =======-*/
 .post-card.style-1 {
@@ -9102,17 +8688,6 @@ p {
   transition: all 0.4s;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== client-box =======-*/
 .blog-card-wrapper.style-two .card-item {
@@ -9225,17 +8800,6 @@ p {
   transition: all 0.3s;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== client-box =======-*/
 .blog-card-wrapper.style-three .card-item .card-img {
@@ -9330,17 +8894,6 @@ p {
   fill: #ffffff;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== card =======-*/
 @media (max-width: 425px) {
@@ -9439,17 +8992,6 @@ p {
   color: #ffffff;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== about-wrapper =======-*/
 .about-wrapper.style-one {
@@ -9582,17 +9124,6 @@ p {
   margin-bottom: 20px;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== about-wrapper =======-*/
 .about-wrapper.style-two .about-wrap {
@@ -9694,17 +9225,6 @@ p {
   height: 100%;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== client-box =======-*/
 .team-card-wrapper.style-one {
@@ -9872,17 +9392,6 @@ p {
   }
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== card =======-*/
 .team-card-wrapper.style-two .card-item {
@@ -10006,17 +9515,6 @@ p {
   color: #716f73;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== card =======-*/
 .team-card-wrapper.style-three .card-item {
@@ -10232,17 +9730,6 @@ p {
   color: #ffffff;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== modal-area =======-*/
 .modal.style-one {
@@ -10312,17 +9799,6 @@ video {
   color: #fff;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== client-logo-box =======-*/
 .client-logo-wrapper.style-one {
@@ -10367,17 +9843,6 @@ video {
   }
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== client-logo-box =======-*/
 .client-logo-wrapper.style-two {
@@ -10424,17 +9889,6 @@ video {
   fill: #ffffff;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== client-logo-box =======-*/
 .client-logo-wrapper.style-three {
@@ -10482,17 +9936,6 @@ video {
   fill: #07000e;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== info-list  =======-*/
 .info-list-wrapper.style-one {
@@ -10513,17 +9956,6 @@ video {
   margin: 0 30px;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== slider  =======-*/
 .testimonial-wrapper.style-one .testimonial-carousel .owl-stage-outer .owl-stage .owl-item .testimonial-item {
@@ -10645,17 +10077,6 @@ video {
   background: #573db8 !important;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== slider  =======-*/
 .slider-wrapper.style-two .our-teams-carousel {
@@ -10720,17 +10141,6 @@ video {
   }
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== slider  =======-*/
 .slider-wrapper.style-three .slider-carousel .owl-stage-outer .owl-stage .owl-item .slider-item {
@@ -10852,17 +10262,6 @@ video {
   background: #573db8 !important;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== slider  =======-*/
 .slider-wrapper.style-four .slider-carousel {
@@ -11036,17 +10435,6 @@ video {
   }
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== slider  =======-*/
 .slider-wrapper.style-five .slider-carousel .owl-stage-outer .owl-stage .owl-item .slider-item {
@@ -11231,17 +10619,6 @@ video {
   }
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== slider  =======-*/
 .slider-wrapper.style-six .slider-carousel .owl-stage-outer {
@@ -11310,17 +10687,6 @@ video {
   fill: #ffffff;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== slider  =======-*/
 .slider-wrapper.style-seven .slider-carousel .owl-stage-outer {
@@ -11492,17 +10858,6 @@ video {
   }
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== forms =======-*/
 .form-wrapper.style-one {
@@ -11572,17 +10927,6 @@ video {
   background: none !important;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*===============select==============*/
 .nice-select {
@@ -11703,17 +11047,6 @@ video {
   color: #ffffff !important;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== accordion =======-*/
 .accordion-wrapper.style-one {
@@ -11852,17 +11185,6 @@ video {
   border-radius: 20px;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== accordion =======-*/
 .accordion-wrapper.style-two {
@@ -11917,17 +11239,6 @@ video {
   color: #07000e;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== accordion =======-*/
 .accordion-wrapper.style-three {
@@ -12004,17 +11315,6 @@ video {
   color: #07000e;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== counter box =======-*/
 .contact-card.style-one .contact-content {
@@ -12076,17 +11376,6 @@ video {
   fill: #07000e;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== card =======-*/
 .sidebar.style-one .card-item {
@@ -12140,17 +11429,6 @@ video {
   color: #573db8 !important;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== sidebar style-two  =======-*/
 .sidebar.style-two {
@@ -12323,17 +11601,6 @@ video {
   padding: 17px;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== sidebar style-one  =======-*/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -12410,17 +11677,6 @@ video {
   height: 500px !important;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== footer area =======-*/
 .footer-area.style-one {
@@ -12630,17 +11886,6 @@ video {
   color: #573db8 !important;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== footer-area  style-two=======-*/
 .footer-area.style-two {
@@ -12898,17 +12143,6 @@ video {
   color: #716f73;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 /*-======== footer-area  style-two=======-*/
 .footer-area.style-three {
@@ -13159,17 +12393,6 @@ video {
   color: #716f73;
 }
 
-/**
- * Stylesheet:  style.css
- * Theme:       Technova - IT Startup & Agency HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- *
- */
-/* Table of contents
-=========================
-
-===========================*/
 /* Theme Default CSS */
 @media (max-width: 1024px) {
   .responsive-pb-100 {

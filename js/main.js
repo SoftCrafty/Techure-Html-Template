@@ -1,6 +1,13 @@
 (function ($){
     "use strict";
     $(document).ready(function () {
+      //preloader
+      $(window).on('load', function () {
+        setTimeout(function () {
+          $('#preloader').fadeOut('slow');
+        }, 2000); 
+      });
+
       /*==== SlideBar =====*/
       /*=========Btn==========*/
         var barBtn = $('.bar-btn');
