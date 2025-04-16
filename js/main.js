@@ -70,10 +70,10 @@
           });
 
        // search field 
-      $('#search').click(function () {
+      $('#search').on('click', function () {
           $('#search-field').addClass("active")
       });
-      $('.close-btn').click(function () {
+      $('.close-btn').on('click', function () {
           $('#search-field').removeClass("active")
       });
     /*==== Counter =====*/
@@ -268,7 +268,7 @@
 
     });
     /*==== Hover Active =====*/
-    $(".service-card").hover(function() {
+    $(".service-card").on('mouseenter', function () {
       $('.service-card').removeClass('item-active');
       $(this).addClass('item-active');
     });
