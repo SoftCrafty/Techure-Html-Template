@@ -52,8 +52,10 @@
         width: 80px;
         height: 1px;
         position: absolute;
-        right: -125px;
-        top: 50%;
+        right: -64px;
+        top: 43%;
+        // right: -125px;
+        // top: 50%;
         @include m.transform(translateY(-50%));
         display: block;
         background: v.$border-color-03;
