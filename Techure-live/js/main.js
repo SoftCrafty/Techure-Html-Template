@@ -1,14 +1,13 @@
 (function ($){
     "use strict";
-     //preloader
+    //preloader
     document.addEventListener("DOMContentLoaded", function () {
       setTimeout(function () {
         document.getElementById("preloader").style.display = "none";
       }, 500); // optional delay
     });
 
-    $(document).ready(function () {
-     
+    $(document).ready(function () {  
       /*==== SlideBar =====*/
       /*=========Btn==========*/
         var barBtn = $('.bar-btn');
@@ -85,11 +84,11 @@
               time: 2000
           });
       }
-      /*==== Bootstrap tooltip =====*/
-        var bootstrapTooltip = $('.them-btn [data-bs-toggle="tooltip"]');
-        if (bootstrapTooltip.length) {
-            bootstrapTooltip.tooltip();
-        }      
+        /*==== Bootstrap tooltip =====*/
+              var bootstrapTooltip = $('.them-btn [data-bs-toggle="tooltip"]');
+              if (bootstrapTooltip.length) {
+                  bootstrapTooltip.tooltip();
+              }      
       /*==== Testimonal carousel =====*/
       $(".testimonial-carousel").owlCarousel({
           loop: true,
@@ -160,167 +159,166 @@
         },
       });
 
-      /*==== slider-carouser-four carousel =====*/
+          /*==== slider-carouser-four carousel =====*/
 
-      $(".slider-carousel-four").owlCarousel({
-        loop: true,
-        margin: 30,
-        nav: true,
-        dots: false,
-        autoplay:true,
-        autoplayTimeout:5000,
-        responsiveClass: true,
-        navText: [
-          ` Prev`,
-        `Next `,
-      ],
-        responsive: {
-          0: {
-            items: 1,
-          },
-          600: {
-            items: 1,
-          },
-          1000: {
-            items: 1,
+          $(".slider-carousel-four").owlCarousel({
             loop: true,
-          },
-        },
-      });
-      /*==== slider-carouser-five carousel =====*/
+            margin: 30,
+            nav: true,
+            dots: false,
+            autoplay:true,
+            autoplayTimeout:5000,
+            responsiveClass: true,
+            navText: [
+              ` Prev`,
+            `Next `,
+          ],
+            responsive: {
+              0: {
+                items: 1,
+              },
+              600: {
+                items: 1,
+              },
+              1000: {
+                items: 1,
+                loop: true,
+              },
+            },
+          });
+          /*==== slider-carouser-five carousel =====*/
 
-      $(".slider-carousel-five").owlCarousel({
-        loop: true,
-        margin: 30,
-        nav: false,
-        dots: true,
-        autoplay:true,
-        autoplayTimeout:6000,
-        responsiveClass: true,
-        responsive: {
-          0: {
-            items: 1,
-          },
-          600: {
-            items: 1,
-          },
-          1000: {
-            items: 1,
+          $(".slider-carousel-five").owlCarousel({
             loop: true,
-          },
-        },
-      });
+            margin: 30,
+            nav: false,
+            dots: true,
+            autoplay:true,
+            autoplayTimeout:6000,
+            responsiveClass: true,
+            responsive: {
+              0: {
+                items: 1,
+              },
+              600: {
+                items: 1,
+              },
+              1000: {
+                items: 1,
+                loop: true,
+              },
+            },
+          });
 
-      /*==== slider-carouser-six carousel =====*/
-      $(".slider-carousel-six").owlCarousel({
-        loop: false,
-        margin: 20,
-        items:1,
-        nav: true,
-        dots: false,
-        autoplay: true,
-        autoplayTimeout: 6000,
-        responsiveClass: true,
-        navText: [
-          `<i class="fa-solid fa-arrow-left"></i>`,
-        `<i class="fa-solid fa-arrow-right"></i>`,
-      ],
-      });
-      /*==== slider-carouser-seven carousel =====*/
-      $(".slider-carousel-seven").owlCarousel({
-        loop: true,
-        margin: 30,
-        nav: true,
-        dots: false,
-        autoplay:false,
-        autoplayTimeout:6000,
-        responsiveClass: true,
-        navText: [
-          `<i class="fa-solid fa-arrow-left"></i> <p>Previous</p>`,
-        `<p>Next</p> <i class="fa-solid fa-arrow-right"></i> `,
-      ],
-        responsive: {
-          0: {
-            items: 1,
-          },
-          600: {
-            items: 1,
-          },
-          1000: {
-            items: 1,
+          /*==== slider-carouser-six carousel =====*/
+          $(".slider-carousel-six").owlCarousel({
+            loop: false,
+            margin: 20,
+            items:1,
+            nav: true,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 6000,
+            responsiveClass: true,
+            navText: [
+              `<i class="fa-solid fa-arrow-left"></i>`,
+            `<i class="fa-solid fa-arrow-right"></i>`,
+          ],
+          });
+          /*==== slider-carouser-seven carousel =====*/
+          $(".slider-carousel-seven").owlCarousel({
             loop: true,
+            margin: 30,
+            nav: true,
+            dots: false,
+            autoplay:false,
+            autoplayTimeout:6000,
+            responsiveClass: true,
+            navText: [
+              `<i class="fa-solid fa-arrow-left"></i> <p>Previous</p>`,
+            `<p>Next</p> <i class="fa-solid fa-arrow-right"></i> `,
+          ],
+            responsive: {
+              0: {
+                items: 1,
+              },
+              600: {
+                items: 1,
+              },
+              1000: {
+                items: 1,
+                loop: true,
+              },
+            },
+          });
+
+          $(".slider-carousel-seves").owlCarousel({
+            loop: false,
+          items:1,
+            margin: 0,
+            nav: true,
+            dots: false,
+            autoplay: false,
+            autoplayTimeout: 6000,
+            responsiveClass: true,
+            navText: [
+              `<i class="fa-solid fa-arrow-left"></i>`,
+            `<i class="fa-solid fa-arrow-right"></i>`,
+          ],
+
+          });
+          /*==== Hover Active =====*/
+          $(".service-card").on('mouseenter', function () {
+            $('.service-card').removeClass('item-active');
+            $(this).addClass('item-active'); 
+          });
+
+          // wow js
+            new WOW().init();
+
+            //nice select
+          $('select').niceSelect();
+          //testimonial slick slider
+        $('.tech-testimonial-container').slick({
+          infinite: true,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          dots: true,
+          arrows: false,
+          autoplay: true,             
+          autoplaySpeed: 4000, 
+          infinite: true,
+          customPaging: function(slider, i) {
+            return '<button class="custom-dot"></button>';
           },
-        },
-      });
-
-      $(".slider-carousel-seves").owlCarousel({
-        loop: false,
-      items:1,
-        margin: 0,
-        nav: true,
-        dots: false,
-        autoplay: false,
-        autoplayTimeout: 6000,
-        responsiveClass: true,
-        navText: [
-          `<i class="fa-solid fa-arrow-left"></i>`,
-        `<i class="fa-solid fa-arrow-right"></i>`,
-      ],
-
-      });
-      /*==== Hover Active =====*/
-      $(".service-card").on('mouseenter', function () {
-        $('.service-card').removeClass('item-active');
-        $(this).addClass('item-active'); 
-      });
-
-      // wow js
-        new WOW().init();
-
-        //nice select
-      $('select').niceSelect();
-      
-      //testimonial slick slider
-      $('.tech-testimonial-container').slick({
-        infinite: true,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        dots: true,
-        arrows: false,
-        autoplay: true,             
-        autoplaySpeed: 4000, 
-        infinite: true,
-        customPaging: function(slider, i) {
-          return '<button class="custom-dot"></button>';
-        },
-        responsive: [
-          {
-            breakpoint: 991,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              
-            }
-          },
-          {
-            breakpoint: 576,
-            settings: {              
-              dots: false,
-              slidesToShow: 1,
-              slidesToScroll: 1,
-            }
-          },         
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              dots: false,
-            }
-          }         
-        ]
-      });
-  });
+          responsive: [
+            {
+              breakpoint: 991,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                
+              }
+            },
+            {
+              breakpoint: 576,
+              settings: {              
+                dots: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              }
+            },         
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: false,
+              }
+            }         
+          ]
+        });
+    });    
 
   
 })(jQuery);

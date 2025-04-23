@@ -9,7 +9,6 @@
           .owl-item {
             .slider-item {
               background: v.$white;
-              // padding: 30px 40px;
               padding: 30px 40px;
               @include m.border-radius(20px);
               @include m.device-480px {

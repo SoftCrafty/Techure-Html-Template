@@ -51,11 +51,9 @@
         content: "";
         width: 80px;
         height: 1px;
-        position: absolute;
-        right: -64px;
+        position: absolute;       
         top: 43%;
-        // right: -125px;
-        // top: 50%;
+        right: -105px;
         @include m.transform(translateY(-50%));
         display: block;
         background: v.$border-color-03;
@@ -71,7 +69,7 @@
           right: -50px;
           width: 40px;
         }
-        @include m.device-480px {
+        @include m.xs {
           display: none;
         }
       }
