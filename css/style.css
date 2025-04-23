@@ -9008,15 +9008,15 @@ p {
     margin-top: 50px;
   }
 }
-.blog-card-wrapper.style-four .single-post-item.formate-video .post-thumbnail {
+.blog-card-wrapper.style-four .single-post-item.formate-video .post-video {
   position: relative;
 }
-.blog-card-wrapper.style-four .single-post-item.formate-video .post-thumbnail img {
+.blog-card-wrapper.style-four .single-post-item.formate-video .post-video img {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   width: 100%;
 }
-.blog-card-wrapper.style-four .single-post-item.formate-video .post-thumbnail .play-btn {
+.blog-card-wrapper.style-four .single-post-item.formate-video .post-video .play-btn {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -9026,7 +9026,7 @@ p {
   color: #ffffff;
   cursor: pointer;
 }
-.blog-card-wrapper.style-four .single-post-item.formate-video .post-thumbnail .play-icon {
+.blog-card-wrapper.style-four .single-post-item.formate-video .post-video .play-icon {
   width: 48px;
   height: 48px;
   position: absolute;
@@ -9127,6 +9127,134 @@ p {
   color: #ffffff;
 }
 .blog-card-wrapper.style-four .single-post-item.formate-video .post-content-wrapper .card--btn:hover .theme-btn {
+  background: #07000e;
+  color: #ffffff;
+}
+@media (max-width: 425px) {
+  .blog-card-wrapper.style-four .single-post-item.formate-gallery {
+    margin-top: 50px;
+  }
+}
+.blog-card-wrapper.style-four .single-post-item.formate-gallery button.post-gallery-btn {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  transition: 0.3s;
+  z-index: 99;
+  background-color: #ffffff;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: hidden;
+  border: none;
+}
+.blog-card-wrapper.style-four .single-post-item.formate-gallery button.post-gallery-btn:hover {
+  background-color: #573db8;
+  color: white;
+}
+.blog-card-wrapper.style-four .single-post-item.formate-gallery button.post-gallery-btn.prev-btn {
+  left: 30px;
+}
+.blog-card-wrapper.style-four .single-post-item.formate-gallery button.post-gallery-btn.next-btn {
+  right: 30px;
+}
+.blog-card-wrapper.style-four .single-post-item.formate-gallery button.post-gallery-btn i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #b0b0b0;
+  font-size: 17px;
+  transition: all 0.5s ease-out;
+}
+.blog-card-wrapper.style-four .single-post-item.formate-gallery .post-gallary img {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  width: 100%;
+}
+.blog-card-wrapper.style-four .single-post-item.formate-gallery .post-content-wrapper {
+  background: #f7f1fc;
+  padding: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.blog-card-wrapper.style-four .single-post-item.formate-gallery .post-content-wrapper .post-meta {
+  display: flex;
+  gap: 25px;
+}
+.blog-card-wrapper.style-four .single-post-item.formate-gallery .post-content-wrapper .post-meta a {
+  color: #07000e;
+}
+.blog-card-wrapper.style-four .single-post-item.formate-gallery .post-content-wrapper .post-meta .author-img a,
+.blog-card-wrapper.style-four .single-post-item.formate-gallery .post-content-wrapper .post-meta .blog-category a,
+.blog-card-wrapper.style-four .single-post-item.formate-gallery .post-content-wrapper .post-meta .post-date a {
+  color: #716f73;
+}
+.blog-card-wrapper.style-four .single-post-item.formate-gallery .post-content-wrapper .post-meta .author-img svg path,
+.blog-card-wrapper.style-four .single-post-item.formate-gallery .post-content-wrapper .post-meta .blog-category svg path,
+.blog-card-wrapper.style-four .single-post-item.formate-gallery .post-content-wrapper .post-meta .post-date svg path {
+  fill: #573db8;
+}
+.blog-card-wrapper.style-four .single-post-item.formate-gallery .post-content-wrapper .post-meta .author-img .meta-text,
+.blog-card-wrapper.style-four .single-post-item.formate-gallery .post-content-wrapper .post-meta .blog-category .meta-text,
+.blog-card-wrapper.style-four .single-post-item.formate-gallery .post-content-wrapper .post-meta .post-date .meta-text {
+  font-weight: 400;
+  margin-left: 3px;
+}
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .blog-card-wrapper.style-four .single-post-item.formate-gallery .post-content-wrapper .post-meta .blog-category {
+    display: none;
+  }
+}
+.blog-card-wrapper.style-four .single-post-item.formate-gallery .post-content-wrapper .post-heading .post-title a {
+  font-size: 32px;
+  color: #07000e;
+  font-weight: 700;
+  padding-right: 0px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .blog-card-wrapper.style-four .single-post-item.formate-gallery .post-content-wrapper .post-heading .post-title a {
+    padding-right: 0;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .blog-card-wrapper.style-four .single-post-item.formate-gallery .post-content-wrapper .post-heading .post-title a {
+    padding-right: 0;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .blog-card-wrapper.style-four .single-post-item.formate-gallery .post-content-wrapper .post-heading .post-title a {
+    padding-right: 0;
+    font-size: 22px;
+  }
+}
+.blog-card-wrapper.style-four .single-post-item.formate-gallery .post-content-wrapper .post-heading .post-title:hover a {
+  color: #573db8;
+}
+.blog-card-wrapper.style-four .single-post-item.formate-gallery .post-content-wrapper .theme-btn {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.blog-card-wrapper.style-four .single-post-item.formate-gallery .post-content-wrapper .theme-btn:nth-child(1) {
+  background: #ffffff;
+  color: #07000e;
+  border: 0;
+}
+.blog-card-wrapper.style-four .single-post-item.formate-gallery .post-content-wrapper .card--btn {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.blog-card-wrapper.style-four .single-post-item.formate-gallery .post-content-wrapper .card--btn:hover {
+  color: #ffffff;
+}
+.blog-card-wrapper.style-four .single-post-item.formate-gallery .post-content-wrapper .card--btn:hover .theme-btn {
   background: #07000e;
   color: #ffffff;
 }

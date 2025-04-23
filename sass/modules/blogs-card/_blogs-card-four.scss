@@ -98,7 +98,7 @@
         @include m.device-425px {
           margin-top: 50px;
         }
-        .post-thumbnail {
+        .post-video {
           position: relative;
           img {
             border-top-right-radius: 20px;
@@ -136,6 +136,133 @@
             opacity: 1;
             animation: 2s ease pulse infinite;
           }
+        }
+        .post-content-wrapper {
+          background: v.$gray-100;
+          padding: 20px;
+          border-bottom-right-radius: 20px;
+          border-bottom-left-radius: 20px;
+          .post-meta {
+            display: flex;
+            gap: 25px;
+            a {
+              color: v.$gray-900;
+            }
+            .author-img,
+            .blog-category,
+            .post-date {
+              a {
+                color: v.$gray-800;
+              }
+              svg {
+                path {
+                  fill: v.$primary-color;
+                }
+              }
+              .meta-text {
+                font-weight: v.$font-weight-regular;
+                margin-left: 3px;
+              }
+            }
+            .blog-category{
+              @include m.xs{
+                display: none;
+              }
+            }
+          }
+          .post-heading {
+            .post-title {              
+              a {
+                font-size: 32px;
+                color: v.$gray-900;
+                font-weight: v.$font-weight-bold;
+                padding-right: 0px;
+                @include m.md {
+                  padding-right: 0;
+                }
+                @include m.sm {
+                  padding-right: 0;
+                }
+                @include m.xs {
+                  padding-right: 0;
+                  font-size: 22px;
+                }
+              }
+              &:hover {
+                a {
+                  color: v.$primary-color;
+                }
+              }
+            }
+          }
+          .theme-btn {
+            @include m.transition(0.3s);
+            &:nth-child(1) {
+              background: v.$white;
+              color: v.$gray-900;
+              border: 0;
+            }
+          }
+          .card--btn {
+            @include m.transition(0.3s);
+            &:hover {
+              color: v.$white;
+              .theme-btn {
+                background: v.$gray-900;
+                color: v.$white;
+              }
+            }
+          }
+        }
+      }
+      &.formate-gallery{
+        @include m.device-425px {
+          margin-top: 50px;
+        }
+        button{
+         
+          &.post-gallery-btn{
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            transition: 0.3s;
+            z-index: 99;
+            background-color: #ffffff;
+            cursor: pointer;
+            top: 50%;
+            transform: translateY(-50%);
+            overflow: hidden;
+            border: none;
+            &:hover{
+              background-color: v.$primary-color;
+              color: white;
+            }
+          }
+          &.post-gallery-btn.prev-btn {
+            left: 30px;
+          }
+          &.post-gallery-btn.next-btn {
+            right: 30px;
+          }
+          &.post-gallery-btn i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #b0b0b0;
+            font-size: 17px;
+            transition: all 0.5s ease-out;
+          }
+        }
+        .post-gallary {
+          
+          img {
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+            width: 100%;
+          }         
+          
         }
         .post-content-wrapper {
           background: v.$gray-100;
