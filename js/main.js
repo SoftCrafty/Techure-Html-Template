@@ -324,7 +324,7 @@
       $('.post-gallery').slick({
         slidesToShow: 1,
         infinite: true,
-       // autoplay: true,
+        autoplay: true,
         draggable: true,
         arrows: true,
         slidesToScroll: 1,
