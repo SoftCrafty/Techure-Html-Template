@@ -337,6 +337,37 @@
         nextArrow:
           "<button type='button' class='post-gallery-btn next-btn'><i class='fa fa-arrow-right'></i></button>",
       });
+
+      // accordion button icon change
+      function syncFaqIcons() {
+        document.querySelectorAll('.them-btn').forEach(button => {
+          const icon = button.querySelector('.faq-icon svg');
+          const isExpanded = button.getAttribute('aria-expanded') === 'true';
+      
+          // Clean up both classes
+          icon.classList.remove('fa-plus', 'fa-minus');
+      
+          // Set correct icon
+          if (isExpanded) {
+            icon.classList.add('fa-minus');
+          } else {
+            icon.classList.add('fa-plus');
+          }
+        });
+      }
+      
+      // Run once on initial load
+      window.addEventListener('DOMContentLoaded', syncFaqIcons);      
+     
+      document.querySelectorAll('.them-btn').forEach(button => {
+        button.addEventListener('click', () => {
+          setTimeout(syncFaqIcons); 
+        });
+      });
+      
+
+
+
   });
 
   
