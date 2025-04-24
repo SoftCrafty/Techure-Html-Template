@@ -5,7 +5,7 @@
 .blog-card-wrapper {
   &.style-four {
     .single-post-item {
-      &.formate-image{
+      &.format-image{
         @include m.device-425px {
           margin-top: 50px;
         }
@@ -94,7 +94,7 @@
           }
         }
       }
-      &.formate-video{
+      &.format-video{
         @include m.device-425px {
           margin-top: 50px;
         }
@@ -215,7 +215,7 @@
           }
         }
       }
-      &.formate-gallery{
+      &.format-gallery{
         @include m.device-425px {
           margin-top: 50px;
         }
@@ -343,7 +343,7 @@
           }
         }
       }
-      &.formate-audio{
+      &.format-audio{
         @include m.device-425px {
           margin-top: 50px;
         }
