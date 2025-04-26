@@ -30,6 +30,8 @@
       menubarCloseBtn.on('click', function() {
       $('.off-canvas').removeClass('active')
       });
+
+      $('.off-canvas .main-menu').addClass('mobile-menu');
      
       /*=====  Navbar Fixed ======*/
             var $window = $(window);

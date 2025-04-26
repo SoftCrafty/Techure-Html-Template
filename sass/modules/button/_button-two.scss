@@ -3,21 +3,16 @@
 /*-======== theme-btn two =======-*/
 
 .theme--btn {
+  display: flex;
+  align-items: center;
   &:hover {
     .theme-btn {
       background: v.$gray-900;
       color: v.$white;
-      svg {
-        path {
-          fill: v.$white;
-        }
+      .icon-right-arrow {
+        @include m.transform(rotate(360deg));
       }
-
-      &:nth-child(2) {
-        svg {
-          @include m.transform(rotate(360deg));
-        }
-      }
+      
     }
   }
 }
@@ -47,16 +42,13 @@
       @include m.device-320px {
         padding: 10px;
       }
-      svg {
-        width: 26px;
-        height: 26px;
+      .icon-right-arrow:before {
         @include m.transition(0.4s);
         @include m.transform(rotate(-45deg));
-
-        path {
-          fill: v.$white;
-        }
+        color: v.$white;
+        
       }
     }
   }
+ 
 }
