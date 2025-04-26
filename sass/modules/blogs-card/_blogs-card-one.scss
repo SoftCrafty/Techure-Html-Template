@@ -101,23 +101,22 @@
           p {
             color: v.$primary-color;
           }
-          svg {
-            path {
-              fill: v.$primary-color;
-            }
+          i {
+            @include m.transform(rotate(45deg));
+              color: v.$primary-color;
           }
+          
         }
         p {
           color: v.$gray-900;
           font-size: 18px;
           font-weight: v.$font-weight-bold;
         }
-        svg {
-          @include m.transform(rotate(-45deg));
+        i {
+          @include m.transform(rotate(0deg));
           @include m.transition(0.4s);
-
-          width: 22px;
-          height: 22px;
+          font-size: 22px;
+          color: v.$gray-900;
           path {
             @include m.transition(0.4s);
           }

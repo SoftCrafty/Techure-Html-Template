@@ -77,10 +77,10 @@
             p {
               color: v.$primary-color;
             }
-            svg {
-              path {
-                fill: v.$primary-color;
-              }
+            i {
+              
+              color: v.$primary-color;
+              @include m.transform(rotate(45deg));
             }
           }
           p {
@@ -89,10 +89,9 @@
             font-weight: v.$font-weight-bold;
             @include m.transition(0.3s);
           }
-          svg {
-            path {
-              @include m.transition(0.3s);
-            }
+          i {            
+            @include m.transition(0.3s);           
+            
           }
         }
       }

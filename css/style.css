@@ -7275,7 +7275,7 @@ p {
 /* Theme Default CSS */
 /*-======== theme-btn two =======-*/
 .theme-btn.style-three {
-  padding: 16px 30px !important;
+  padding: 20px 30px !important;
   width: 100%;
   background: #8fd45f;
   color: #07000e;
@@ -7285,7 +7285,7 @@ p {
   line-height: 18px;
 }
 .theme-btn.style-three:nth-child(1) {
-  padding: 21px 30px;
+  padding: 25px 30px;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   border-radius: 50px;
@@ -7305,24 +7305,18 @@ p {
   background: #07000e;
   color: #ffffff;
 }
-.theme-btn.style-three:hover svg {
+.theme-btn.style-three:hover i {
   transform: rotate(0deg);
+  color: #ffffff;
 }
-.theme-btn.style-three:hover svg path {
-  fill: #ffffff;
-}
-.theme-btn.style-three svg {
-  width: 22px;
-  height: 22px;
-  transform: rotate(-45deg);
+.theme-btn.style-three i:before {
+  transform: rotate(45deg);
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-}
-.theme-btn.style-three svg path {
-  fill: #07000e;
+  color: #07000e;
 }
 
 /* Theme Default CSS */
@@ -8023,7 +8017,7 @@ p {
 .info-card-wrapper.style-one .card-item:hover .card-svg svg path {
   fill: #ffffff;
 }
-.info-card-wrapper.style-one .card-item:hover .more-btn svg {
+.info-card-wrapper.style-one .card-item:hover .more-btn i {
   transform: rotate(45deg);
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -8093,26 +8087,23 @@ p {
 .info-card-wrapper.style-one .card-item .card-content .more-btn:hover p {
   color: #573db8;
 }
-.info-card-wrapper.style-one .card-item .card-content .more-btn:hover svg path {
-  fill: #573db8;
+.info-card-wrapper.style-one .card-item .card-content .more-btn:hover i {
+  color: #573db8;
 }
 .info-card-wrapper.style-one .card-item .card-content .more-btn p {
   font-size: 18px;
   font-weight: 700;
   color: #07000e;
 }
-.info-card-wrapper.style-one .card-item .card-content .more-btn svg {
-  width: 21px;
-  height: 21px;
+.info-card-wrapper.style-one .card-item .card-content .more-btn i {
+  font-size: 20px;
   margin-left: 10px;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-}
-.info-card-wrapper.style-one .card-item .card-content .more-btn svg path {
-  fill: #07000e;
+  color: #07000e;
 }
 
 /* Theme Default CSS */
@@ -8176,21 +8167,21 @@ p {
   font-size: 18px;
   font-weight: 700;
 }
-.info-card-wrapper.style-two .card-item .card-content .more-btn svg {
-  width: 21px;
-  height: 21px;
+.info-card-wrapper.style-two .card-item .card-content .more-btn i {
   margin-left: 10px;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+  color: #07000e;
 }
-.info-card-wrapper.style-two .card-item .card-content .more-btn svg path {
-  fill: #07000e;
+.info-card-wrapper.style-two .card-item:hover .more-btn p {
+  color: #573db8;
 }
-.info-card-wrapper.style-two .card-item:hover .more-btn svg {
+.info-card-wrapper.style-two .card-item:hover .more-btn i {
   transform: rotate(45deg);
+  color: #573db8;
 }
 
 /* Theme Default CSS */
@@ -8736,25 +8727,26 @@ p {
 .post-card.style-1 .post-content .more-btn:hover p {
   color: #573db8;
 }
-.post-card.style-1 .post-content .more-btn:hover svg path {
-  fill: #573db8;
+.post-card.style-1 .post-content .more-btn:hover i {
+  transform: rotate(45deg);
+  color: #573db8;
 }
 .post-card.style-1 .post-content .more-btn p {
   color: #07000e;
   font-size: 18px;
   font-weight: 700;
 }
-.post-card.style-1 .post-content .more-btn svg {
-  transform: rotate(-45deg);
+.post-card.style-1 .post-content .more-btn i {
+  transform: rotate(0deg);
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
   -ms-transition: all 0.4s;
   -o-transition: all 0.4s;
   transition: all 0.4s;
-  width: 22px;
-  height: 22px;
+  font-size: 22px;
+  color: #07000e;
 }
-.post-card.style-1 .post-content .more-btn svg path {
+.post-card.style-1 .post-content .more-btn i path {
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
   -ms-transition: all 0.4s;
@@ -8853,8 +8845,9 @@ p {
 .blog-card-wrapper.style-two .card-item .card-content .more-btn:hover p {
   color: #573db8;
 }
-.blog-card-wrapper.style-two .card-item .card-content .more-btn:hover svg path {
-  fill: #573db8;
+.blog-card-wrapper.style-two .card-item .card-content .more-btn:hover i {
+  color: #573db8;
+  transform: rotate(45deg);
 }
 .blog-card-wrapper.style-two .card-item .card-content .more-btn p {
   color: #07000e;
@@ -8866,7 +8859,7 @@ p {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-.blog-card-wrapper.style-two .card-item .card-content .more-btn svg path {
+.blog-card-wrapper.style-two .card-item .card-content .more-btn i {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
@@ -10637,8 +10630,7 @@ video {
   color: #ececec;
 }
 .slider-wrapper.style-three .slider-carousel .owl-stage-outer .owl-stage .owl-item .slider-item .reviwes-icons .quote-right-img {
-  width: 60px;
-  height: 60px;
+  width: auto;
 }
 .slider-wrapper.style-three .slider-carousel .owl-stage-outer .owl-stage .owl-item .slider-item .reviwes-icons .quote-right-img path {
   stroke: #8fd45f;

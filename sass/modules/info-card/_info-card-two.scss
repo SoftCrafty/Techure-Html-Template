@@ -53,21 +53,21 @@
             font-size: 18px;
             font-weight: v.$font-weight-bold;
           }
-          svg {
-            width: 21px;
-            height: 21px;
+          i {            
             margin-left: 10px;
-            @include m.transition(0.3s);
-            path {
-              fill: v.$gray-900;
-            }
+            @include m.transition(0.3s);            
+            color: v.$gray-900;            
           }
         }
       }
       &:hover {
         .more-btn {
-          svg {
+          p{
+            color: v.$primary-color;
+          }
+          i {
             @include m.transform(rotate(45deg));
+            color: v.$primary-color;
           }
         }
       }

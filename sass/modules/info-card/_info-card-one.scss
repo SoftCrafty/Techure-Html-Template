@@ -25,7 +25,7 @@
           }
         }
         .more-btn {
-          svg {
+          i {
             @include m.transform(rotate(45deg));
           }
         }
@@ -86,10 +86,10 @@
             p {
               color: v.$primary-color;
             }
-            svg {
-              path {
-                fill: v.$primary-color;
-              }
+            i {
+              
+                color: v.$primary-color;
+              
             }
           }
           p {
@@ -97,14 +97,12 @@
             font-weight: v.$font-weight-bold;
             color: v.$gray-900;
           }
-          svg {
-            width: 21px;
-            height: 21px;
+          i {
+            font-size: 20px;
             margin-left: 10px;
             @include m.transition(0.3s);
-            path {
-              fill: v.$gray-900;
-            }
+            color: v.$gray-900;
+            
           }
         }
       }
