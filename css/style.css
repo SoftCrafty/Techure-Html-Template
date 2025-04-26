@@ -5868,6 +5868,7 @@ p {
   border-radius: 50%;
   line-height: 50px;
   text-align: center;
+  color: #573db8;
 }
 .hero-area.style-three .watch-now .play-btn h4 {
   font-size: 18px;
@@ -8252,15 +8253,13 @@ p {
   color: #07000e;
   font-weight: 700;
 }
-.info-card-wrapper.style-three .card-item.service-card .more-btn svg {
+.info-card-wrapper.style-three .card-item.service-card .more-btn i {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-}
-.info-card-wrapper.style-three .card-item.service-card .more-btn svg path {
-  fill: #07000e;
+  color: #07000e;
 }
 .info-card-wrapper.style-three .card-item:hover {
   border-color: #573db8;
@@ -8268,11 +8267,9 @@ p {
 .info-card-wrapper.style-three .card-item:hover .more-btn p {
   color: #573db8;
 }
-.info-card-wrapper.style-three .card-item:hover .more-btn svg {
+.info-card-wrapper.style-three .card-item:hover .more-btn i {
   transform: rotate(45deg);
-}
-.info-card-wrapper.style-three .card-item:hover .more-btn svg path {
-  fill: #573db8;
+  color: #573db8;
 }
 
 .solutions-items-active {
@@ -8950,15 +8947,18 @@ p {
   border: 0;
   color: #07000e;
 }
-.blog-card-wrapper.style-three .card-item .card-content .card--btn .theme-btn.style-two svg path {
-  fill: #07000e;
+.blog-card-wrapper.style-three .card-item .card-content .card--btn .theme-btn.style-two i::before {
+  color: #07000e;
 }
 .blog-card-wrapper.style-three .card-item .card-content .card--btn:hover .theme-btn {
   background: #573db8;
   color: #ffffff;
 }
-.blog-card-wrapper.style-three .card-item .card-content .card--btn:hover .theme-btn svg path {
-  fill: #ffffff;
+.blog-card-wrapper.style-three .card-item .card-content .card--btn:hover .theme-btn i {
+  transform: rotate(60deg);
+}
+.blog-card-wrapper.style-three .card-item .card-content .card--btn:hover .theme-btn i::before {
+  color: #ffffff;
 }
 
 /* Theme Default CSS */

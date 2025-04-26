@@ -60,11 +60,11 @@
             color: v.$gray-900;
             font-weight: v.$font-weight-bold;
           }
-          svg {
+          i {
             @include m.transition(0.3s);
-            path {
-              fill: v.$gray-900;
-            }
+            
+              color: v.$gray-900;
+            
           }
         }
       }
@@ -74,11 +74,11 @@
           p {
             color: v.$primary-color;
           }
-          svg {
+          i {
             transform: rotate(45deg);
-            path {
-              fill: v.$primary-color;
-            }
+            
+            color: v.$primary-color;
+            
           }
         }
       }

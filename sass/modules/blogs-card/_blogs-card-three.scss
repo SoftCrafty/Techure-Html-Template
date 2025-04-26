@@ -75,20 +75,19 @@
               background: v.$white;
               border: 0;
               color: v.$gray-900;
-              svg {
-                path {
-                  fill: v.$gray-900;
-                }
-              }
+              i::before {                
+                color: v.$gray-900             
+              }             
             }
           }
           &:hover {
             .theme-btn {
               background: v.$primary-color;
               color: v.$white;
-              svg {
-                path {
-                  fill: v.$white;
+              i{
+                @include m.transform(rotate(60deg));
+                &::before {                
+                  color: v.$white; 
                 }
               }
             }
