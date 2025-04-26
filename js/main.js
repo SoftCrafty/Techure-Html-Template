@@ -365,10 +365,6 @@
           setTimeout(syncFaqIcons); 
         });
       });
-      
-
-
-
   });
 
   jQuery(document).ready(function($) {
