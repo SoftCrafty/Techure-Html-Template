@@ -44,11 +44,14 @@
         background: v.$gray-100;
         border: 0;
         .card-svg {
-          background: v.$white !important;
-          svg {
-            path {
-              fill: v.$primary-color !important;
-            }
+          background: v.$white ;
+          span {            
+            color: v.$primary-color ;            
+          }
+        }
+        &:hover{
+          .card-svg{
+            background-color: v.$primary-color;
           }
         }
       }

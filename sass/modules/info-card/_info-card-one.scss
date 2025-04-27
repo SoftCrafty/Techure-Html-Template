@@ -23,7 +23,7 @@
           }
         }
         .more-btn {
-          i {
+          i,span {
             @include m.transform(rotate(45deg));
           }
         }
@@ -80,10 +80,8 @@
             p {
               color: v.$primary-color;
             }
-            i {
-              
-                color: v.$primary-color;
-              
+            i,span {
+                color: v.$primary-color;              
             }
           }
           p {
@@ -91,7 +89,7 @@
             font-weight: v.$font-weight-bold;
             color: v.$gray-900;
           }
-          i {
+          i,span {
             font-size: 20px;
             margin-left: 10px;
             @include m.transition(0.3s);

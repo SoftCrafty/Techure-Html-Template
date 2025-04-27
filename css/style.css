@@ -38,8 +38,8 @@
 }
 @font-face {
   font-family: "icomoon";
-  src: url("../fonts/icomoon.eot?3wnx3t");
-  src: url("../fonts/icomoon.eot?3wnx3t#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?3wnx3t") format("truetype"), url("../fonts/icomoon.woff?3wnx3t") format("woff"), url("../fonts/icomoon.svg?3wnx3t#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?s86efx");
+  src: url("../fonts/icomoon.eot?s86efx#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?s86efx") format("truetype"), url("../fonts/icomoon.woff?s86efx") format("woff"), url("../fonts/icomoon.svg?s86efx#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -56,6 +56,34 @@
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-service-8:before {
+  content: "\e903";
+}
+
+.icon-service-7:before {
+  content: "\e904";
+}
+
+.icon-service-6:before {
+  content: "\e905";
+}
+
+.icon-service-5:before {
+  content: "\e906";
+}
+
+.icon-service-4:before {
+  content: "\e907";
+}
+
+.icon-service-3:before {
+  content: "\e908";
+}
+
+.icon-service-2:before {
+  content: "\e909";
 }
 
 .icon-info-icon-3:before {
@@ -6652,10 +6680,13 @@ p {
   border: 0;
 }
 .services-details-area .service-wrapper .info-card-wrapper .card-item .card-svg {
-  background: #ffffff !important;
+  background: #ffffff;
 }
-.services-details-area .service-wrapper .info-card-wrapper .card-item .card-svg svg path {
-  fill: #573db8 !important;
+.services-details-area .service-wrapper .info-card-wrapper .card-item .card-svg span {
+  color: #573db8;
+}
+.services-details-area .service-wrapper .info-card-wrapper .card-item:hover .card-svg {
+  background-color: #573db8;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .services-details-area .service-wrapper {
@@ -8034,7 +8065,7 @@ p {
 .info-card-wrapper.style-one .card-item:hover .card-svg span {
   color: #ffffff;
 }
-.info-card-wrapper.style-one .card-item:hover .more-btn i {
+.info-card-wrapper.style-one .card-item:hover .more-btn i, .info-card-wrapper.style-one .card-item:hover .more-btn span {
   transform: rotate(45deg);
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -8105,7 +8136,7 @@ p {
 .info-card-wrapper.style-one .card-item .card-content .more-btn:hover p {
   color: #573db8;
 }
-.info-card-wrapper.style-one .card-item .card-content .more-btn:hover i {
+.info-card-wrapper.style-one .card-item .card-content .more-btn:hover i, .info-card-wrapper.style-one .card-item .card-content .more-btn:hover span {
   color: #573db8;
 }
 .info-card-wrapper.style-one .card-item .card-content .more-btn p {
@@ -8113,7 +8144,7 @@ p {
   font-weight: 700;
   color: #07000e;
 }
-.info-card-wrapper.style-one .card-item .card-content .more-btn i {
+.info-card-wrapper.style-one .card-item .card-content .more-btn i, .info-card-wrapper.style-one .card-item .card-content .more-btn span {
   font-size: 20px;
   margin-left: 10px;
   -webkit-transition: all 0.3s;
