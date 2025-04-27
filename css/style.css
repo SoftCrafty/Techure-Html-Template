@@ -9663,8 +9663,6 @@ p {
   font-weight: 500;
   flex-basis: 50%;
   margin-top: 20px;
-}
-.about-wrapper.style-two .about-wrap .about-content .tech-list ul li a {
   color: #716f73;
   font-size: 18px;
   font-weight: 500;
@@ -10651,6 +10649,9 @@ video {
 }
 .slider-wrapper.style-three .slider-carousel .owl-stage-outer .owl-stage .owl-item .slider-item .reviwes-icons .quote-right-img path {
   stroke: #8fd45f;
+}
+.slider-wrapper.style-three .slider-carousel .owl-stage-outer .owl-stage .owl-item .slider-item .reviwes-icons img {
+  width: auto;
 }
 .slider-wrapper.style-three .slider-carousel .owl-stage-outer .owl-stage .owl-item .slider-item .client-comment {
   font-size: 28px;

@@ -68,12 +68,11 @@
               font-size: 18px;
               font-weight: v.$font-weight-medium;
               flex-basis: 50%;
-              margin-top: 20px;
-              a {
-                color: v.$gray-800;
-                font-size: 18px;
-                font-weight: v.$font-weight-medium;
-              }
+              margin-top: 20px;              
+              color: v.$gray-800;
+              font-size: 18px;
+              font-weight: v.$font-weight-medium;
+              
               svg {
                 path {
                   color: v.$primary-color;
