@@ -21,6 +21,9 @@
           font-size: 24px;
           font-weight: v.$font-weight-bold;
         }
+        span{
+          @include m.transform(rotate(45deg));
+        }
       }
       .section-heading {
         display: flex;

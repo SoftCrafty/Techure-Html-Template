@@ -11862,6 +11862,9 @@ video {
   font-size: 24px;
   font-weight: 700;
 }
+.sidebar.style-one .card-item .side-section-heading span {
+  transform: rotate(45deg);
+}
 .sidebar.style-one .card-item .section-heading {
   display: flex;
   justify-content: space-between;
