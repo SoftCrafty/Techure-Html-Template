@@ -35,7 +35,7 @@
       }
     }
     &:nth-child(2) {
-      padding: 14px;
+      padding: 16px;
       @include m.border-radius(50%);
       margin-left: -5px;
       @include m.transition(0.3s);

@@ -6923,6 +6923,10 @@ p {
   font-size: 24px;
   font-weight: 700;
 }
+.blog-details-area .comment-wrapper .comment-info .user-comment .user-info .comment-colon {
+  width: 40px;
+  height: 28px;
+}
 .blog-details-area .comment-wrapper .comment-info .user-comment .replay-btn {
   font-size: 18px;
   font-weight: 700;
@@ -7259,7 +7263,7 @@ p {
   }
 }
 .theme-btn.style-two:nth-child(2) {
-  padding: 14px;
+  padding: 16px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
