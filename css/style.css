@@ -38,8 +38,8 @@
 }
 @font-face {
   font-family: "icomoon";
-  src: url("../fonts/icomoon.eot?js0y85");
-  src: url("../fonts/icomoon.eot?js0y85#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?js0y85") format("truetype"), url("../fonts/icomoon.woff?js0y85") format("woff"), url("../fonts/icomoon.svg?js0y85#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?3wnx3t");
+  src: url("../fonts/icomoon.eot?3wnx3t#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?3wnx3t") format("truetype"), url("../fonts/icomoon.woff?3wnx3t") format("woff"), url("../fonts/icomoon.svg?3wnx3t#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -58,9 +58,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-info-icon-3:before {
+  content: "\e900";
+}
+
+.icon-info-icon-2:before {
+  content: "\e901";
+}
+
+.icon-info-icon-1:before {
+  content: "\e902";
+}
+
 .icon-right-arrow:before {
   content: "a";
-  font-size: 30px;
+  font-size: 28px;
 }
 
 /* Theme Default CSS */
@@ -8015,8 +8027,8 @@ p {
 .info-card-wrapper.style-one .card-item:hover .card-svg {
   background: #573db8;
 }
-.info-card-wrapper.style-one .card-item:hover .card-svg svg path {
-  fill: #ffffff;
+.info-card-wrapper.style-one .card-item:hover .card-svg span {
+  color: #ffffff;
 }
 .info-card-wrapper.style-one .card-item:hover .more-btn i {
   transform: rotate(45deg);
@@ -8064,8 +8076,9 @@ p {
   transform: translateY(-50px);
   box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
 }
-.info-card-wrapper.style-one .card-item .card-svg svg path {
-  fill: #573db8;
+.info-card-wrapper.style-one .card-item .card-svg span {
+  font-size: 44px;
+  color: #573db8;
   -webkit-transition: all 0.6s;
   -moz-transition: all 0.6s;
   -ms-transition: all 0.6s;
