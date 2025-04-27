@@ -9,8 +9,8 @@
     .theme-btn {
       background: v.$gray-900;
       color: v.$white;
-      .icon-right-arrow {
-        @include m.transform(rotate(360deg));
+      &:nth-child(2) {
+        @include m.transform(rotate(405deg));
       }
       
     }
@@ -31,20 +31,22 @@
       @include m.border-radius(50px);
       border: 1px solid rgba(7, 0, 14, 0.2);
       @include m.device-320px {
-        padding: 10px 10px;
+      padding: 10px 10px;
       }
     }
     &:nth-child(2) {
-      padding: 16px;
+     // padding: 16px 18px;
+      height: 60px;
+      width: 60px;
       @include m.border-radius(50%);
       margin-left: -5px;
       @include m.transition(0.3s);
       @include m.device-320px {
-        padding: 10px;
+      padding: 10px;
       }
-      .icon-right-arrow:before {
+      &.icon-right-arrow:before {
         @include m.transition(0.4s);
-        @include m.transform(rotate(-45deg));
+        @include m.transform(rotate(45deg));
         color: v.$white;
         
       }

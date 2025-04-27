@@ -316,15 +316,15 @@
               flex-basis: 100%;
             }
           }
-          .theme-btn {
-            flex-basis: 37%;
-            @include m.md {
-              flex-basis: 100%;
-            }
-            @include m.sm {
-              flex-basis: 100%;
-            }
-          }
+          // .theme-btn {
+          //  // flex-basis: 37%;
+          //   @include m.md {
+          //     flex-basis: 100%;
+          //   }
+          //   @include m.sm {
+          //     flex-basis: 100%;
+          //   }
+          // }
         }
       }
     }
