@@ -7049,12 +7049,29 @@ p {
   height: 200px;
   background: rgb(204, 204, 204);
 }
-.blog-details-wrapper .client-review {
+.blog-details-wrapper .author-info {
   background-color: #8FD45F;
   border-radius: 20px;
   padding: 40px;
+  position: relative;
+  margin-top: 100px;
 }
-.blog-details-wrapper .client-review p {
+.blog-details-wrapper .author-info .author-thumb {
+  flex-shrink: 0;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  overflow: hidden;
+}
+.blog-details-wrapper .author-info .author-thumb img {
+  object-fit: cover;
+  width: 120px;
+}
+.blog-details-wrapper .author-info p {
   color: #07000e;
 }
 .blog-details-wrapper .post-img {

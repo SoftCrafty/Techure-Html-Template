@@ -180,10 +180,29 @@
     }
   }
 
-  .client-review{
+  .author-info{
     background-color: #8FD45F;
     border-radius: 20px;
     padding: 40px;
+    position: relative;
+    margin-top: 100px;
+
+    .author-thumb{      
+      flex-shrink: 0;
+      width: 120px;
+      height: 120px;
+      position: absolute;
+      top: 0px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      overflow: hidden;    
+
+      img{
+        object-fit: cover;
+        width: 120px;        
+      }
+    }
 
     p {
       color: v.$gray-900;
