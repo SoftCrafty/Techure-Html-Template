@@ -160,6 +160,7 @@
         font-size: 22px;
         margin-bottom: 0px;
         color: v.$gray-100;
+        font-weight: 700;
 
         a{
           font-size: 22px;
@@ -216,6 +217,92 @@
       @include m.border-radius(20px);
     }
   }
+
+  .single.single-post #respond {
+    margin-bottom: 2rem;
+  }
+  .post-comments-form {
+    margin-top: 40px;
+    .post-comments-title h2 {
+      margin-top: 20px;
+      margin-bottom: 30px;
+      font-size: 38px;
+      line-height: normal;
+      font-weight: 700;
+    }
+
+    form{
+      .contacts-name,
+      .contacts-email{
+      
+        label{
+          font-size: 18px;
+          font-weight: 700;
+          color: black;
+        }
+        input{
+          height: 50px;
+          width: 100%;
+          margin-top: 5px;
+          border-radius: 10px;
+          outline: none;
+          border: 1px solid gray;
+          padding: 0 20px;
+        }
+       
+      }
+      p{
+        margin-top: 20px;
+      }
+
+      .contacts-message{
+        margin-top: 20px;
+        label{
+          font-size: 18px;
+          font-weight: 700;
+          color: black;
+        }
+        textarea{
+          width: 100%;
+          margin-top: 5px;
+          border-radius: 10px;
+          outline: none;
+          border: 1px solid gray;
+          padding: 20px;
+        }
+
+      }
+
+    }
+  }
+
+
+
+
+  .comment-form {
+    .section-title {
+      font-size: 24px;
+      font-weight: v.$font-weight-bold;
+    }
+    .form-box {
+      .form-content {
+        form {
+          input,
+          textarea {
+            border-color: v.$gray-200;
+          }
+          .nice-select {
+            border-color: v.$gray-200 !important;
+          }
+          .form-slide {
+            div {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
   
 
   .comment-wrapper {
@@ -253,29 +340,6 @@
         }
       }
     }
-    .comment-form {
-      .section-title {
-        font-size: 24px;
-        font-weight: v.$font-weight-bold;
-      }
-      .form-box {
-        .form-content {
-          form {
-            input,
-            textarea {
-              border-color: v.$gray-200;
-            }
-            .nice-select {
-              border-color: v.$gray-200 !important;
-            }
-            .form-slide {
-              div {
-                width: 100%;
-              }
-            }
-          }
-        }
-      }
-    }
+    
   }
 }

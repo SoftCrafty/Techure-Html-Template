@@ -7034,6 +7034,7 @@ p {
   font-size: 22px;
   margin-bottom: 0px;
   color: #f7f1fc;
+  font-weight: 700;
 }
 .blog-details-wrapper .blog-post-nav .post-navigation .text h4 a {
   font-size: 22px;
@@ -7083,6 +7084,68 @@ p {
   -moz-border-radius: 20px;
   border-radius: 20px;
 }
+.blog-details-wrapper .single.single-post #respond {
+  margin-bottom: 2rem;
+}
+.blog-details-wrapper .post-comments-form {
+  margin-top: 40px;
+}
+.blog-details-wrapper .post-comments-form .post-comments-title h2 {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 38px;
+  line-height: normal;
+  font-weight: 700;
+}
+.blog-details-wrapper .post-comments-form form .contacts-name label,
+.blog-details-wrapper .post-comments-form form .contacts-email label {
+  font-size: 18px;
+  font-weight: 700;
+  color: black;
+}
+.blog-details-wrapper .post-comments-form form .contacts-name input,
+.blog-details-wrapper .post-comments-form form .contacts-email input {
+  height: 50px;
+  width: 100%;
+  margin-top: 5px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid gray;
+  padding: 0 20px;
+}
+.blog-details-wrapper .post-comments-form form p {
+  margin-top: 20px;
+}
+.blog-details-wrapper .post-comments-form form .contacts-message {
+  margin-top: 20px;
+}
+.blog-details-wrapper .post-comments-form form .contacts-message label {
+  font-size: 18px;
+  font-weight: 700;
+  color: black;
+}
+.blog-details-wrapper .post-comments-form form .contacts-message textarea {
+  width: 100%;
+  margin-top: 5px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid gray;
+  padding: 20px;
+}
+.blog-details-wrapper .comment-form .section-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+.blog-details-wrapper .comment-form .form-box .form-content form input,
+.blog-details-wrapper .comment-form .form-box .form-content form textarea {
+  border-color: #ececec;
+}
+.blog-details-wrapper .comment-form .form-box .form-content form .nice-select {
+  border-color: #ececec !important;
+}
+.blog-details-wrapper .comment-form .form-box .form-content form .form-slide div {
+  width: 100%;
+}
 .blog-details-wrapper .comment-wrapper .comment-info .section-title {
   font-size: 24px;
   font-weight: 700;
@@ -7118,20 +7181,6 @@ p {
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   border-radius: 50px;
-}
-.blog-details-wrapper .comment-wrapper .comment-form .section-title {
-  font-size: 24px;
-  font-weight: 700;
-}
-.blog-details-wrapper .comment-wrapper .comment-form .form-box .form-content form input,
-.blog-details-wrapper .comment-wrapper .comment-form .form-box .form-content form textarea {
-  border-color: #ececec;
-}
-.blog-details-wrapper .comment-wrapper .comment-form .form-box .form-content form .nice-select {
-  border-color: #ececec !important;
-}
-.blog-details-wrapper .comment-wrapper .comment-form .form-box .form-content form .form-slide div {
-  width: 100%;
 }
 
 /* Theme Default CSS */
