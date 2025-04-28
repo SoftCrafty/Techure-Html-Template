@@ -6917,20 +6917,20 @@ p {
     display: none;
   }
 }
-.blog-details-area .single-post-item.format-image .post-content-wrapper .content ul {
+.blog-details-area .single-post-item.format-image .post-content-wrapper .post-content ul {
   margin-top: 10px;
 }
-.blog-details-area .single-post-item.format-image .post-content-wrapper .content ul li {
+.blog-details-area .single-post-item.format-image .post-content-wrapper .post-content ul li {
   margin-top: 20px;
   color: #716f73;
   font-size: 18px;
   font-weight: 500;
   margin-right: 8px;
 }
-.blog-details-area .single-post-item.format-image .post-content-wrapper .content ul li svg {
+.blog-details-area .single-post-item.format-image .post-content-wrapper .post-content ul li svg {
   color: #573db8;
 }
-.blog-details-area .single-post-item.format-image .post-content-wrapper .content .section--title {
+.blog-details-area .single-post-item.format-image .post-content-wrapper .post-content .section--title {
   font-size: 32px;
   font-weight: 700;
 }
