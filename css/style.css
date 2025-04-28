@@ -3512,18 +3512,22 @@ p {
 }
 
 .custom-animate {
-  animation: custom-animate 1.6s forwards cubic-bezier(0.645, 0.045, 0.355, 1) 0.4s;
+  animation: custom-animate 1s forwards cubic-bezier(0.645, 0.045, 0.355, 1) 0.4s;
   opacity: 0;
 }
 
 .custom-animate-two {
-  animation: custom-animate-two 1.6s forwards cubic-bezier(0.645, 0.045, 0.355, 1) 0.4s;
+  animation: custom-animate-two 1s forwards cubic-bezier(0.645, 0.045, 0.355, 1) 0.4s;
   opacity: 0;
 }
 
 .custom-animate-three {
-  animation: custom-animate-three 1.6s forwards cubic-bezier(0.645, 0.045, 0.355, 1) 0.4s;
+  animation: custom-animate-three 1s forwards cubic-bezier(0.645, 0.045, 0.355, 1) 0.4s;
   opacity: 0;
+}
+
+.animate__animated {
+  animation-duration: 0.6s !important; /* Default is often 1s */
 }
 
 .auto-bounce {
@@ -4472,6 +4476,11 @@ p {
     top: 40%;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .hero-area.style-one .shear-media {
+    left: 30px;
+  }
+}
 .hero-area.style-one .shear-media .media--icons a {
   display: block;
   margin-top: 6px;
@@ -4495,6 +4504,7 @@ p {
   .hero-area.style-one .shear-media {
     top: 30%;
     left: 24px;
+    display: none;
   }
 }
 @media (max-width: 525px) {
@@ -4520,7 +4530,7 @@ p {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .hero-area.style-one .hero-content .section-title {
-    font-size: 80px;
+    font-size: 72px;
     line-height: 80px;
   }
 }
@@ -4532,12 +4542,17 @@ p {
 }
 @media (max-width: 425px) {
   .hero-area.style-one .hero-content .section-title {
-    font-size: 54px;
-    line-height: 54px;
+    font-size: 48px;
+    line-height: 52px;
   }
 }
 .hero-area.style-one .hero-content .section-title span {
   font-weight: 700;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .hero-area.style-one .hero-content .section-title br {
+    display: none;
+  }
 }
 .hero-area.style-one .hero-wrapper {
   position: relative;
@@ -12207,7 +12222,7 @@ video {
 }
 @media (max-width: 375px) {
   .footer-area.style-one .footer-wrapper .section-header .section-title {
-    font-size: 48px;
+    font-size: 46px;
     line-height: 48px;
   }
 }

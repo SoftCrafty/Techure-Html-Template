@@ -27,6 +27,9 @@
       @include m.laptop_l {
         top: 40%;
       }
+      @include m.md {
+        left: 30px;
+      }
       .media--icons {
         a {
           display: block;
@@ -53,6 +56,7 @@
       @include m.device-576px {
         top: 30%;
         left: 24px;
+        display: none;
       }
       @include m.device-525px {
         display: none;
@@ -71,7 +75,7 @@
           line-height: 74px;
         }
         @include m.sm {
-          font-size: 80px;
+          font-size: 72px;
           line-height: 80px;
         }
 
@@ -80,11 +84,17 @@
           line-height: 72px;
         }
         @include m.device-425px {
-          font-size: 54px;
-          line-height: 54px;
+          font-size: 48px;
+          line-height: 52px;
         }
         span {
           font-weight: v.$font-weight-bold;
+        }
+
+        br{
+          @include m.sm{
+            display: none;
+          }
         }
       }
     }
