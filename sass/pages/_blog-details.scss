@@ -69,6 +69,114 @@
           font-weight: v.$font-weight-bold;
         }
       }
+      .post-info-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include m.xs {
+          flex-wrap: wrap;
+        }
+        .post-tags {
+          display: flex;
+          gap: 10px;
+          .section-title {
+            font-size: 32px;
+            font-weight: v.$font-weight-bold;
+          }
+          .tags-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            a {
+              display: inline-flex;
+              justify-content: center;
+              align-items: center;
+              padding: 4px 10px;
+              border: 1px solid v.$border-color-04;
+              @include m.border-radius(50px);
+              color: v.$gray-800;
+              font-size: 14px;
+              font-weight: v.$font-weight-regular;
+              &:hover {
+                background: v.$primary-color;
+                color: v.$white;
+              }
+            }
+          }
+        }
+        .shear-media {
+          @include m.device-525px {
+            margin-top: 40px;
+          }
+          .media--icons {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            a {
+              width: 38px;
+              height: 38px;
+              background: v.$gray-100;
+              @include m.border-radius(50%);
+              line-height: 38px;
+              text-align: center;
+              svg {
+                path {
+                  fill: v.$primary-color;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .blog-post-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0px;
+    overflow: hidden;
+    border-top: 1px solid rgb(204, 204, 204);
+    border-bottom: 1px solid rgb(204, 204, 204);
+
+    .post-navigation{
+      width: 49%;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 1rem 0px;
+
+      .post-img{
+        width: 96px;
+        height: 96px;
+        position: relative;
+        flex-shrink: 0;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+
+      .text h4 {
+        font-size: 22px;
+        margin-bottom: 0px;
+        color: v.$gray-100;
+
+        a{
+          font-size: 22px;
+          color: black;
+        }
+      }
+      &:nth-child(3) {
+        justify-content: end;
+        flex-direction: row-reverse;
+        text-align: right;
+      }
+    }
+
+    .divider {
+      width: 1px;
+      height: 200px;
+      background: rgb(204, 204, 204);
     }
   }
 
@@ -89,65 +197,7 @@
       @include m.border-radius(20px);
     }
   }
-  .post-info-wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    @include m.xs {
-      flex-wrap: wrap;
-    }
-    .post-tags {
-      display: flex;
-      gap: 10px;
-      .section-title {
-        font-size: 32px;
-        font-weight: v.$font-weight-bold;
-      }
-      .tags-wrap {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        a {
-          display: inline-flex;
-          justify-content: center;
-          align-items: center;
-          padding: 4px 10px;
-          border: 1px solid v.$border-color-04;
-          @include m.border-radius(50px);
-          color: v.$gray-800;
-          font-size: 14px;
-          font-weight: v.$font-weight-regular;
-          &:hover {
-            background: v.$primary-color;
-            color: v.$white;
-          }
-        }
-      }
-    }
-    .shear-media {
-      @include m.device-525px {
-        margin-top: 40px;
-      }
-      .media--icons {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        a {
-          width: 38px;
-          height: 38px;
-          background: v.$gray-100;
-          @include m.border-radius(50%);
-          line-height: 38px;
-          text-align: center;
-          svg {
-            path {
-              fill: v.$primary-color;
-            }
-          }
-        }
-      }
-    }
-  }
+  
 
   .comment-wrapper {
     .comment-info {
