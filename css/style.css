@@ -6882,6 +6882,23 @@ p {
 .blog-details-wrapper {
   position: relative;
   overflow: hidden;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .blog-details-wrapper {
+    padding: 100px 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .blog-details-wrapper {
+    padding: 80px 0;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .blog-details-wrapper {
+    padding: 80px 0;
+  }
 }
 .blog-details-wrapper .single-post-item.format-image .post-thumbnail img {
   -webkit-border-radius: 20px;
@@ -6923,6 +6940,21 @@ p {
   font-weight: 700;
   margin-top: 20px;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .blog-details-wrapper .single-post-item.format-image .post-content-wrapper .post-title {
+    font-size: 34px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .blog-details-wrapper .single-post-item.format-image .post-content-wrapper .post-title {
+    font-size: 32px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .blog-details-wrapper .single-post-item.format-image .post-content-wrapper .post-title {
+    font-size: 28px;
+  }
+}
 .blog-details-wrapper .single-post-item.format-image .post-content-wrapper .post-content p {
   padding-top: 20px;
 }
@@ -6943,6 +6975,21 @@ p {
   font-size: 32px;
   font-weight: 700;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .blog-details-wrapper .single-post-item.format-image .post-content-wrapper .post-content .section--title {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .blog-details-wrapper .single-post-item.format-image .post-content-wrapper .post-content .section--title {
+    font-size: 28px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .blog-details-wrapper .single-post-item.format-image .post-content-wrapper .post-content .section--title {
+    font-size: 26px;
+  }
+}
 .blog-details-wrapper .single-post-item.format-image .post-content-wrapper .post-info-wrap {
   display: flex;
   justify-content: space-between;
@@ -6960,6 +7007,21 @@ p {
 .blog-details-wrapper .single-post-item.format-image .post-content-wrapper .post-info-wrap .post-tags .section-title {
   font-size: 32px;
   font-weight: 700;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .blog-details-wrapper .single-post-item.format-image .post-content-wrapper .post-info-wrap .post-tags .section-title {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .blog-details-wrapper .single-post-item.format-image .post-content-wrapper .post-info-wrap .post-tags .section-title {
+    font-size: 28px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .blog-details-wrapper .single-post-item.format-image .post-content-wrapper .post-info-wrap .post-tags .section-title {
+    font-size: 26px;
+  }
 }
 .blog-details-wrapper .single-post-item.format-image .post-content-wrapper .post-info-wrap .post-tags .tags-wrap {
   display: flex;
@@ -7022,6 +7084,11 @@ p {
   gap: 20px;
   padding: 1rem 0px;
 }
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .blog-details-wrapper .blog-post-nav .post-navigation {
+    padding: 0;
+  }
+}
 .blog-details-wrapper .blog-post-nav .post-navigation .post-img {
   width: 96px;
   height: 96px;
@@ -7030,14 +7097,33 @@ p {
   border-radius: 8px;
   overflow: hidden;
 }
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .blog-details-wrapper .blog-post-nav .post-navigation .post-img {
+    display: none;
+  }
+}
 .blog-details-wrapper .blog-post-nav .post-navigation .text h4 {
   font-size: 22px;
   margin-bottom: 0px;
   color: #f7f1fc;
   font-weight: 700;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .blog-details-wrapper .blog-post-nav .post-navigation .text h4 {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .blog-details-wrapper .blog-post-nav .post-navigation .text h4 {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .blog-details-wrapper .blog-post-nav .post-navigation .text h4 {
+    font-size: 16px;
+  }
+}
 .blog-details-wrapper .blog-post-nav .post-navigation .text h4 a {
-  font-size: 22px;
   color: black;
 }
 .blog-details-wrapper .blog-post-nav .post-navigation:nth-child(3) {
@@ -7068,9 +7154,20 @@ p {
   border-radius: 50%;
   overflow: hidden;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .blog-details-wrapper .author-info .author-thumb {
+    height: 80px;
+    width: 80px;
+  }
+}
 .blog-details-wrapper .author-info .author-thumb img {
   object-fit: cover;
   width: 120px;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .blog-details-wrapper .author-info .author-thumb img {
+    width: 80px;
+  }
 }
 .blog-details-wrapper .author-info p {
   color: #07000e;
@@ -7096,6 +7193,33 @@ p {
   font-size: 38px;
   line-height: normal;
   font-weight: 700;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .blog-details-wrapper .post-comments-form .post-comments-title h2 {
+    font-size: 32px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .blog-details-wrapper .post-comments-form .post-comments-title h2 {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .blog-details-wrapper .post-comments-form .post-comments-title h2 {
+    font-size: 28px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .blog-details-wrapper .post-comments-form form .contacts-name,
+  .blog-details-wrapper .post-comments-form form .contacts-email {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .blog-details-wrapper .post-comments-form form .contacts-name,
+  .blog-details-wrapper .post-comments-form form .contacts-email {
+    margin-bottom: 20px;
+  }
 }
 .blog-details-wrapper .post-comments-form form .contacts-name label,
 .blog-details-wrapper .post-comments-form form .contacts-email label {

@@ -1,9 +1,21 @@
-@use "./variables" as v;
-@use "./mixin" as m;
+@use "../variables" as v;
+@use "../mixin" as m;
 /*==================BLOG DETAILS ARE===================*/
 .blog-details-wrapper {
   position: relative;
   overflow: hidden;
+  padding-top: 150px;
+  padding-bottom: 150px;
+
+  @include m.lg{
+    padding: 100px 0;
+  }
+  @include m.md{
+    padding: 80px 0;
+  }
+  @include m.sm{
+    padding: 80px 0;
+  }
   .single-post-item.format-image {    
     .post-thumbnail {
       img {
@@ -45,6 +57,16 @@
         color: #07000e;
         font-weight: 700;
         margin-top: 20px;
+
+        @include m.lg{
+          font-size: 34px;
+        }
+        @include m.sm{
+          font-size: 32px;
+        }
+        @include m.xxs{
+          font-size: 28px;
+        }
       }
       .post-content {
 
@@ -67,6 +89,16 @@
         .section--title {
           font-size: 32px;
           font-weight: v.$font-weight-bold;
+
+          @include m.md{
+            font-size: 30px;
+          }
+          @include m.sm{
+            font-size: 28px;
+          }
+          @include m.xxs{
+            font-size: 26px;
+          }
         }
       }
       .post-info-wrap {
@@ -82,6 +114,16 @@
           .section-title {
             font-size: 32px;
             font-weight: v.$font-weight-bold;
+
+            @include m.md{
+              font-size: 30px;
+            }
+            @include m.sm{
+              font-size: 28px;
+            }
+            @include m.xxs{
+              font-size: 26px;
+            }
           }
           .tags-wrap {
             display: flex;
@@ -140,12 +182,17 @@
     border-top: 1px solid rgb(204, 204, 204);
     border-bottom: 1px solid rgb(204, 204, 204);
 
+  
     .post-navigation{
       width: 49%;
       display: flex;
       align-items: center;
       gap: 20px;
       padding: 1rem 0px;
+
+      @include m.xs{
+        padding: 0;
+      }
 
       .post-img{
         width: 96px;
@@ -154,6 +201,10 @@
         flex-shrink: 0;
         border-radius: 8px;
         overflow: hidden;
+
+        @include m.xs{
+          display: none;
+        }
       }
 
       .text h4 {
@@ -162,8 +213,17 @@
         color: v.$gray-100;
         font-weight: 700;
 
-        a{
-          font-size: 22px;
+        @include m.lg{
+          font-size: 18px;
+        }
+        @include m.md{
+          font-size: 18px;
+        }
+        @include m.sm{
+          font-size: 16px;
+        }
+
+        a{          
           color: black;
         }
       }
@@ -198,10 +258,17 @@
       transform: translate(-50%, -50%);
       border-radius: 50%;
       overflow: hidden;    
+      @include m.xxs{
+        height: 80px;
+        width: 80px;
+      }
 
       img{
         object-fit: cover;
-        width: 120px;        
+        width: 120px;     
+        @include m.xxs{          
+          width: 80px;
+        }   
       }
     }
 
@@ -229,12 +296,27 @@
       font-size: 38px;
       line-height: normal;
       font-weight: 700;
+
+      @include m.md{
+        font-size: 32px;
+      }
+      @include m.sm{
+        font-size: 30px;
+      }
+      @include m.xxs{
+        font-size: 28px;
+      }
     }
 
     form{
       .contacts-name,
       .contacts-email{
-      
+      @include m.md{
+        margin-bottom: 20px;
+      }
+      @include m.sm{
+        margin-bottom: 20px;
+      }
         label{
           font-size: 18px;
           font-weight: 700;
