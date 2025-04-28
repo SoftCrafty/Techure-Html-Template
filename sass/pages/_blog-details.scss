@@ -40,24 +40,24 @@
           }
         }
       }
-    }
-    .content {
-      ul {
-        margin-top: 10px;
-        li {
-          margin-top: 20px;
-          color: v.$gray-800;
-          font-size: 18px;
-          font-weight: v.$font-weight-medium;
-          margin-right: 8px;
-          svg{
-            color: v.$primary-color;
+      .content {
+        ul {
+          margin-top: 10px;
+          li {
+            margin-top: 20px;
+            color: v.$gray-800;
+            font-size: 18px;
+            font-weight: v.$font-weight-medium;
+            margin-right: 8px;
+            svg{
+              color: v.$primary-color;
+            }
           }
         }
-      }
-      .section--title {
-        font-size: 32px;
-        font-weight: v.$font-weight-bold;
+        .section--title {
+          font-size: 32px;
+          font-weight: v.$font-weight-bold;
+        }
       }
     }
   }
