@@ -4440,14 +4440,28 @@ p {
 
 /* Theme Default CSS */
 .page-breadcrumb-area {
-  background-image: url("../../images/breadcrumb.png");
+  background-image: url("../images/breadcrumb.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
   min-height: 520px;
-  margin-bottom: 150px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .page-breadcrumb-area {
+    min-height: 450px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .page-breadcrumb-area {
+    min-height: 400px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .page-breadcrumb-area {
+    min-height: 400px;
+  }
 }
 
 .breadcrumb-wrapper .page-heading .page-title {
@@ -4456,11 +4470,63 @@ p {
   line-height: 72px;
   letter-spacing: -2px;
 }
+@media (max-width: 768px) {
+  .breadcrumb-wrapper .page-heading .page-title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .breadcrumb-wrapper .page-heading .page-title {
+    font-size: 48px;
+    line-height: 50px;
+  }
+}
+@media (max-width: 425px) {
+  .breadcrumb-wrapper .page-heading .page-title {
+    font-size: 46px;
+    line-height: 48px;
+  }
+}
+@media (max-width: 375px) {
+  .breadcrumb-wrapper .page-heading .page-title {
+    font-size: 42px;
+    line-height: 48px;
+  }
+}
 .breadcrumb-wrapper .breadcrumb-list ul {
   display: flex;
   align-items: center;
   gap: 25px;
   margin-top: 30px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .breadcrumb-wrapper .breadcrumb-list ul {
+    margin-top: 20px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .breadcrumb-wrapper .breadcrumb-list ul {
+    margin-top: 15px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .breadcrumb-wrapper .breadcrumb-list ul {
+    margin-top: 15px;
+  }
+}
+.breadcrumb-wrapper .breadcrumb-list ul li {
+  position: relative;
+}
+.breadcrumb-wrapper .breadcrumb-list ul li::before {
+  content: "\f054";
+  font-family: "Font Awesome 6 Pro";
+  font-weight: 900;
+  position: absolute;
+  right: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #07000e;
 }
 .breadcrumb-wrapper .breadcrumb-list ul li:nth-child(2) a {
   color: #573db8;
@@ -4476,6 +4542,24 @@ p {
   color: #07000e;
   display: inline-block;
   padding-right: 5px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .breadcrumb-wrapper .breadcrumb-list ul li a {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .breadcrumb-wrapper .breadcrumb-list ul li a {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .breadcrumb-wrapper .breadcrumb-list ul li a {
+    font-size: 18px;
+  }
+}
+.breadcrumb-wrapper .breadcrumb-list ul li:last-child::before {
+  display: none;
 }
 
 /* Theme Default CSS */
@@ -6922,20 +7006,24 @@ p {
 .blog-details-wrapper {
   position: relative;
   overflow: hidden;
+  padding-top: 150px;
   padding-bottom: 150px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .blog-details-wrapper {
+    padding: 100px 0;
     padding-bottom: 100px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .blog-details-wrapper {
+    padding: 80px 0;
     padding-bottom: 80px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .blog-details-wrapper {
+    padding: 80px 0;
     padding-bottom: 80px;
   }
 }

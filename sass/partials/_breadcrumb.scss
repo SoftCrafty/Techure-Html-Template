@@ -3,14 +3,23 @@
 @use "../mixin" as m;
 
 .page-breadcrumb-area{
-    background-image: url("../../images/breadcrumb.png");
+    background-image: url("../images/breadcrumb.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
     min-height: 520px;
-    margin-bottom: 150px;
+
+    @include m.lg{
+        min-height: 450px;        ;
+    }
+    @include m.md{
+    min-height: 400px;
+    }
+    @include m.sm{
+    min-height: 400px;
+    }
 }
 
 .breadcrumb-wrapper{
@@ -20,6 +29,23 @@
             font-weight: 700;
             line-height: 72px;
             letter-spacing: -2px;
+
+            @include m.device-768px {
+                font-size: 60px;
+                line-height: 60px;
+            }
+            @include m.rmaxwd(767) {
+            font-size: 48px;
+            line-height: 50px;
+            }
+            @include m.device-425px {
+            font-size: 46px;
+            line-height: 48px;
+            }
+            @include m.device-375px {
+            font-size: 42px;
+            line-height: 48px;
+            }
         }
     }
 
@@ -30,8 +56,29 @@
             align-items: center;
             gap: 25px;
             margin-top: 30px;
+
+            @include m.lg{
+                margin-top: 20px;
+            }
+            @include m.md{
+                margin-top: 15px;
+            }
+            @include m.sm{
+                margin-top: 15px;
+            }
             li {
-              
+              position: relative;
+
+              &::before {
+                content: "\f054"; // angle-right
+                font-family: "Font Awesome 6 Pro";
+                font-weight: 900;
+                position: absolute;
+                right: -12px;
+                top: 50%;
+                transform: translateY(-50%);
+                color: #07000e;
+              }
                 &:nth-child(2) {
                     a {
                         color: v.$primary-color; 
@@ -47,8 +94,24 @@
                     font-size: 24px;
                     font-weight: 700;
                     color: #07000e;
-                    display: inline-block; // Helps with positioning
-                    padding-right: 5px;   // Leave space for the icon
+                    display: inline-block; 
+                    padding-right: 5px;   
+
+                    @include m.lg{
+                        font-size: 22px;
+                    }
+                    @include m.md{
+                        font-size: 20px;
+                    }
+                    @include m.sm{
+                        font-size: 18px;
+                    }
+                }
+
+                &:last-child{
+                    &::before{
+                        display: none;
+                    }
                 }
 
             }
