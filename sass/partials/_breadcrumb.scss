@@ -1,0 +1,58 @@
+
+@use "../variables" as v;
+@use "../mixin" as m;
+
+.page-breadcrumb-area{
+    background-image: url("../../images/breadcrumb.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    min-height: 520px;
+    margin-bottom: 150px;
+}
+
+.breadcrumb-wrapper{
+    .page-heading{
+        .page-title{
+            font-size: 70px;
+            font-weight: 700;
+            line-height: 72px;
+            letter-spacing: -2px;
+        }
+    }
+
+    .breadcrumb-list{
+       
+        ul{
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            margin-top: 30px;
+            li {
+              
+                &:nth-child(2) {
+                    a {
+                        color: v.$primary-color; 
+                    }
+                }
+                &.active{
+                    font-size: 24px;
+                    font-weight: 700;
+                    color: #07000e;
+                }
+            
+                a {
+                    font-size: 24px;
+                    font-weight: 700;
+                    color: #07000e;
+                    display: inline-block; // Helps with positioning
+                    padding-right: 5px;   // Leave space for the icon
+                }
+
+            }
+            
+        }
+    }
+}
