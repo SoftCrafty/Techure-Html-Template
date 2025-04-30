@@ -7315,6 +7315,12 @@ p {
   background: #07000e;
   color: #ffffff;
 }
+.blog-details-wrapper .single-post-item.format-audio iframe {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  width: 100%;
+}
 .blog-details-wrapper .single-post-item.format-audio .post-content-wrapper {
   background: #f7f1fc;
   padding: 20px;

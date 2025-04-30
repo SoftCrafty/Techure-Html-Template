@@ -287,7 +287,11 @@
         }
       }
     }
-    &.format-audio{      
+    &.format-audio{    
+      iframe {
+        @include m.border-radius(20px);
+        width: 100%;
+      }  
       .post-content-wrapper {
         background: v.$gray-100;
         padding: 20px;
