@@ -7739,6 +7739,9 @@ p {
   border: 1px solid gray;
   padding: 0 20px;
 }
+.blog-details-wrapper .post-comments-form form .comment-form-cookies-consent {
+  display: none;
+}
 .blog-details-wrapper .post-comments-form form p {
   margin-top: 20px;
 }
