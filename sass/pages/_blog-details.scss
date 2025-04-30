@@ -215,11 +215,7 @@
           animation: 2s ease pulse infinite;
         }
       }
-      .post-content-wrapper {
-        background: v.$gray-100;
-        padding: 20px;
-        border-bottom-right-radius: 20px;
-        border-bottom-left-radius: 20px;
+      .post-content-wrapper {        
         .post-meta {
           display: flex;
           gap: 25px;
@@ -265,6 +261,108 @@
             font-size: 22px;
           }          
           
+        }
+        .post-content {
+  
+          p{
+            padding-top: 20px;
+          }
+          ul {
+            margin-top: 10px;
+            li {
+              margin-top: 20px;
+              color: v.$gray-800;
+              font-size: 18px;
+              font-weight: v.$font-weight-medium;
+              margin-right: 8px;
+              svg{
+                color: v.$primary-color;
+              }
+            }
+          }
+          .section--title {
+            font-size: 32px;
+            font-weight: v.$font-weight-bold;
+  
+            @include m.md{
+              font-size: 30px;
+            }
+            @include m.sm{
+              font-size: 28px;
+            }
+            @include m.xxs{
+              font-size: 26px;
+            }
+          }
+        }
+        .post-info-wrap {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          @include m.xs {
+            flex-wrap: wrap;
+          }
+          .post-tags {
+            display: flex;
+            gap: 10px;
+            .section-title {
+              font-size: 32px;
+              font-weight: v.$font-weight-bold;
+  
+              @include m.md{
+                font-size: 30px;
+              }
+              @include m.sm{
+                font-size: 28px;
+              }
+              @include m.xxs{
+                font-size: 26px;
+              }
+            }
+            .tags-wrap {
+              display: flex;
+              flex-wrap: wrap;
+              gap: 10px;
+              a {
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                padding: 4px 10px;
+                border: 1px solid v.$border-color-04;
+                @include m.border-radius(50px);
+                color: v.$gray-800;
+                font-size: 14px;
+                font-weight: v.$font-weight-regular;
+                &:hover {
+                  background: v.$primary-color;
+                  color: v.$white;
+                }
+              }
+            }
+          }
+          .shear-media {
+            @include m.device-525px {
+              margin-top: 40px;
+            }
+            .media--icons {
+              display: flex;
+              align-items: center;
+              gap: 20px;
+              a {
+                width: 38px;
+                height: 38px;
+                background: v.$gray-100;
+                @include m.border-radius(50%);
+                line-height: 38px;
+                text-align: center;
+                svg {
+                  path {
+                    fill: v.$primary-color;
+                  }
+                }
+              }
+            }
+          }
         }
         
         .theme-btn {
@@ -293,10 +391,6 @@
         width: 100%;
       }  
       .post-content-wrapper {
-        background: v.$gray-100;
-        padding: 20px;
-        border-bottom-right-radius: 20px;
-        border-bottom-left-radius: 20px;
         .post-meta {
           display: flex;
           gap: 25px;
@@ -342,6 +436,108 @@
             font-size: 22px;
           }          
           
+        }
+        .post-content {
+  
+          p{
+            padding-top: 20px;
+          }
+          ul {
+            margin-top: 10px;
+            li {
+              margin-top: 20px;
+              color: v.$gray-800;
+              font-size: 18px;
+              font-weight: v.$font-weight-medium;
+              margin-right: 8px;
+              svg{
+                color: v.$primary-color;
+              }
+            }
+          }
+          .section--title {
+            font-size: 32px;
+            font-weight: v.$font-weight-bold;
+  
+            @include m.md{
+              font-size: 30px;
+            }
+            @include m.sm{
+              font-size: 28px;
+            }
+            @include m.xxs{
+              font-size: 26px;
+            }
+          }
+        }
+        .post-info-wrap {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          @include m.xs {
+            flex-wrap: wrap;
+          }
+          .post-tags {
+            display: flex;
+            gap: 10px;
+            .section-title {
+              font-size: 32px;
+              font-weight: v.$font-weight-bold;
+  
+              @include m.md{
+                font-size: 30px;
+              }
+              @include m.sm{
+                font-size: 28px;
+              }
+              @include m.xxs{
+                font-size: 26px;
+              }
+            }
+            .tags-wrap {
+              display: flex;
+              flex-wrap: wrap;
+              gap: 10px;
+              a {
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                padding: 4px 10px;
+                border: 1px solid v.$border-color-04;
+                @include m.border-radius(50px);
+                color: v.$gray-800;
+                font-size: 14px;
+                font-weight: v.$font-weight-regular;
+                &:hover {
+                  background: v.$primary-color;
+                  color: v.$white;
+                }
+              }
+            }
+          }
+          .shear-media {
+            @include m.device-525px {
+              margin-top: 40px;
+            }
+            .media--icons {
+              display: flex;
+              align-items: center;
+              gap: 20px;
+              a {
+                width: 38px;
+                height: 38px;
+                background: v.$gray-100;
+                @include m.border-radius(50%);
+                line-height: 38px;
+                text-align: center;
+                svg {
+                  path {
+                    fill: v.$primary-color;
+                  }
+                }
+              }
+            }
+          }
         }
         
         .theme-btn {
