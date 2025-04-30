@@ -248,31 +248,31 @@
             }
           }
         }
-        .post-heading {
-          .post-title {              
-            a {
-              font-size: 32px;
-              color: v.$gray-900;
-              font-weight: v.$font-weight-bold;
-              padding-right: 0px;
-              @include m.md {
-                padding-right: 0;
-              }
-              @include m.sm {
-                padding-right: 0;
-              }
-              @include m.xs {
-                padding-right: 0;
-                font-size: 22px;
-              }
+        
+        .post-title {              
+          a {
+            font-size: 32px;
+            color: v.$gray-900;
+            font-weight: v.$font-weight-bold;
+            padding-right: 0px;
+            @include m.md {
+              padding-right: 0;
             }
-            &:hover {
-              a {
-                color: v.$primary-color;
-              }
+            @include m.sm {
+              padding-right: 0;
+            }
+            @include m.xs {
+              padding-right: 0;
+              font-size: 22px;
+            }
+          }
+          &:hover {
+            a {
+              color: v.$primary-color;
             }
           }
         }
+        
         .theme-btn {
           @include m.transition(0.3s);
           &:nth-child(1) {
