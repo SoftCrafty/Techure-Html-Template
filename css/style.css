@@ -7666,7 +7666,10 @@ p {
   }
 }
 .blog-details-wrapper .author-info .author-text {
-  text-align: left;
+  margin-top: 30px;
+}
+.blog-details-wrapper .author-info .author-text .section-meta {
+  margin-top: -8px;
 }
 .blog-details-wrapper .author-info p {
   color: #07000e;
