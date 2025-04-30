@@ -7665,6 +7665,9 @@ p {
     width: 80px;
   }
 }
+.blog-details-wrapper .author-info .author-text {
+  text-align: left;
+}
 .blog-details-wrapper .author-info p {
   color: #07000e;
 }
