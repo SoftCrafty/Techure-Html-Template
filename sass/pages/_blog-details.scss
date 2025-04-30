@@ -215,7 +215,7 @@
           animation: 2s ease pulse infinite;
         }
       }
-      .post-content-wrapper {        
+      .post-content-wrapper {
         .post-meta {
           display: flex;
           gap: 25px;
@@ -244,23 +244,21 @@
             }
           }
         }
-        
-        .post-title {            
-          font-size: 32px;
-          color: v.$gray-900;
-          font-weight: v.$font-weight-bold;
-          padding-right: 0px;
-          @include m.md {
-            padding-right: 0;
+        .post-title{        
+          font-size: 40px;
+          color: #07000e;
+          font-weight: 700;
+          margin-top: 20px;
+  
+          @include m.lg{
+            font-size: 34px;
           }
-          @include m.sm {
-            padding-right: 0;
+          @include m.sm{
+            font-size: 32px;
           }
-          @include m.xs {
-            padding-right: 0;
-            font-size: 22px;
-          }          
-          
+          @include m.xxs{
+            font-size: 28px;
+          }
         }
         .post-content {
   
@@ -361,25 +359,6 @@
                   }
                 }
               }
-            }
-          }
-        }
-        
-        .theme-btn {
-          @include m.transition(0.3s);
-          &:nth-child(1) {
-            background: v.$white;
-            color: v.$gray-900;
-            border: 0;
-          }
-        }
-        .card--btn {
-          @include m.transition(0.3s);
-          &:hover {
-            color: v.$white;
-            .theme-btn {
-              background: v.$gray-900;
-              color: v.$white;
             }
           }
         }
@@ -419,23 +398,21 @@
             }
           }
         }
-        
-        .post-title {            
-          font-size: 32px;
-          color: v.$gray-900;
-          font-weight: v.$font-weight-bold;
-          padding-right: 0px;
-          @include m.md {
-            padding-right: 0;
+        .post-title{        
+          font-size: 40px;
+          color: #07000e;
+          font-weight: 700;
+          margin-top: 20px;
+  
+          @include m.lg{
+            font-size: 34px;
           }
-          @include m.sm {
-            padding-right: 0;
+          @include m.sm{
+            font-size: 32px;
           }
-          @include m.xs {
-            padding-right: 0;
-            font-size: 22px;
-          }          
-          
+          @include m.xxs{
+            font-size: 28px;
+          }
         }
         .post-content {
   
@@ -536,25 +513,6 @@
                   }
                 }
               }
-            }
-          }
-        }
-        
-        .theme-btn {
-          @include m.transition(0.3s);
-          &:nth-child(1) {
-            background: v.$white;
-            color: v.$gray-900;
-            border: 0;
-          }
-        }
-        .card--btn {
-          @include m.transition(0.3s);
-          &:hover {
-            color: v.$white;
-            .theme-btn {
-              background: v.$gray-900;
-              color: v.$white;
             }
           }
         }
