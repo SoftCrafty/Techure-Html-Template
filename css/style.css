@@ -7973,6 +7973,10 @@ p {
   border-radius: 50px;
 }
 
+.sidebar.style-two .search-bar .search-icon {
+  border: none;
+}
+
 /* Theme Default CSS */
 /*-======== contact area =======-*/
 .contact-us-area.style-one .contact-info-wrapper {
