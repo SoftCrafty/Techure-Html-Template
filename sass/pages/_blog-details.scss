@@ -124,6 +124,10 @@
               p{
                 padding-top: 20px;
 
+                @include m.xxs{
+                  font-size: 16px;
+                }
+
                 strong{
                   font-size: 32px;
                   font-weight: v.$font-weight-bold;
@@ -409,6 +413,9 @@
       
               p{
                 padding-top: 20px;
+                @include m.xxs{
+                  font-size: 16px;
+                }
 
                 strong{
                   font-size: 32px;
@@ -665,6 +672,9 @@
       
               p{
                 padding-top: 20px;
+                @include m.xxs{
+                  font-size: 16px;
+                }
 
                 strong{
                   font-size: 32px;
@@ -875,6 +885,9 @@
             }
             @include m.sm{
               font-size: 16px;
+            }
+            @include m.xxs{
+              display: none;
             }
 
             a{          

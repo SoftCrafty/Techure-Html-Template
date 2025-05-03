@@ -88,6 +88,16 @@
                     font-size: 24px;
                     font-weight: 700;
                     color: #07000e;
+
+                    @include m.lg{
+                        font-size: 22px;
+                    }
+                    @include m.md{
+                        font-size: 20px;
+                    }
+                    @include m.sm{
+                        font-size: 18px;
+                    }
                 }
             
                 a {

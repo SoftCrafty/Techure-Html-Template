@@ -4536,6 +4536,21 @@ p {
   font-weight: 700;
   color: #07000e;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .breadcrumb-wrapper .breadcrumb-list ul li.active {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .breadcrumb-wrapper .breadcrumb-list ul li.active {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .breadcrumb-wrapper .breadcrumb-list ul li.active {
+    font-size: 18px;
+  }
+}
 .breadcrumb-wrapper .breadcrumb-list ul li a {
   font-size: 24px;
   font-weight: 700;
@@ -7129,6 +7144,11 @@ p {
 .blog-area .blog-details-wrapper .single-post-item.format-image .post-content-wrapper .post-content p {
   padding-top: 20px;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .blog-area .blog-details-wrapper .single-post-item.format-image .post-content-wrapper .post-content p {
+    font-size: 16px;
+  }
+}
 .blog-area .blog-details-wrapper .single-post-item.format-image .post-content-wrapper .post-content p strong {
   font-size: 32px;
   font-weight: 700;
@@ -7429,6 +7449,11 @@ p {
 .blog-area .blog-details-wrapper .single-post-item.single-video-post .post-content-wrapper .post-content p {
   padding-top: 20px;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .blog-area .blog-details-wrapper .single-post-item.single-video-post .post-content-wrapper .post-content p {
+    font-size: 16px;
+  }
+}
 .blog-area .blog-details-wrapper .single-post-item.single-video-post .post-content-wrapper .post-content p strong {
   font-size: 32px;
   font-weight: 700;
@@ -7697,6 +7722,11 @@ p {
 .blog-area .blog-details-wrapper .single-post-item.format-audio .post-content-wrapper .post-content p {
   padding-top: 20px;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .blog-area .blog-details-wrapper .single-post-item.format-audio .post-content-wrapper .post-content p {
+    font-size: 16px;
+  }
+}
 .blog-area .blog-details-wrapper .single-post-item.format-audio .post-content-wrapper .post-content p strong {
   font-size: 32px;
   font-weight: 700;
@@ -7916,6 +7946,11 @@ p {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .blog-area .blog-details-wrapper .blog-post-nav .post-navigation .text h4 {
     font-size: 16px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .blog-area .blog-details-wrapper .blog-post-nav .post-navigation .text h4 {
+    display: none;
   }
 }
 .blog-area .blog-details-wrapper .blog-post-nav .post-navigation .text h4 a {
