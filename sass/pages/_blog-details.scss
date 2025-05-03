@@ -38,7 +38,11 @@
               align-items: center;
               margin-top: 20px;
               a {
-                color: v.$gray-900;
+                color: v.$gray-900;                
+              }
+
+              @include m.lg{
+                gap: 15px;
               }
 
               .author-img{
@@ -47,13 +51,34 @@
                   width: 40px;
                   border-radius: 50%;
                   margin-right: 8px;
+
+                  @include m.xxs{
+                    height: 35px;
+                    width: 35px;
+                  }
                 }
               }
               span{
+                @include m.lg{
+                  font-size: 15px;
+                }
                 svg{
                   color: v.$primary-color;
                   margin-right: 8px;
                   font-size: 18px;
+
+                  @include m.lg{
+                    margin-right: 5px;
+                  }
+                  @include m.xxs{
+                    margin-right: 2px;
+                  }
+                }
+
+                &:last-child{
+                  @include m.sm{
+                    display: none;
+                  }
                 }
               }
               .author-img,
@@ -91,7 +116,7 @@
                 font-size: 32px;
               }
               @include m.xxs{
-                font-size: 28px;
+                font-size: 25px;
               }
             }
             .post-content {
@@ -105,13 +130,16 @@
                   color: #07000e;
         
                   @include m.md{
-                    font-size: 30px;
-                  }
-                  @include m.sm{
                     font-size: 28px;
                   }
-                  @include m.xxs{
+                  @include m.sm{
                     font-size: 26px;
+                  }
+                  @include m.xs{
+                    font-size: 24px;
+                  }
+                  @include m.xxs{
+                    font-size: 22px;
                   }
                 }
                 &.blog-imgs{
@@ -175,13 +203,16 @@
                   margin-bottom: 5px;
 
                   @include m.md{
-                    font-size: 30px;
-                  }
-                  @include m.sm{
                     font-size: 28px;
                   }
-                  @include m.xxs{
+                  @include m.sm{
                     font-size: 26px;
+                  }
+                  @include m.xs{
+                    font-size: 24px;
+                  }
+                  @include m.xxs{
+                    font-size: 22px;
                   }
                 }
 
@@ -215,15 +246,17 @@
                   font-size: 32px;
                   font-weight: v.$font-weight-bold;
                   margin-bottom: 5px;
-
                   @include m.md{
-                    font-size: 30px;
-                  }
-                  @include m.sm{
                     font-size: 28px;
                   }
-                  @include m.xxs{
+                  @include m.sm{
                     font-size: 26px;
+                  }
+                  @include m.xs{
+                    font-size: 24px;
+                  }
+                  @include m.xxs{
+                    font-size: 22px;
                   }
                 }
                 .post-tag-list {
@@ -295,6 +328,9 @@
               a {
                 color: v.$gray-900;
               }
+              @include m.lg{
+                gap: 15px;
+              }
 
               .author-img{
                 img{
@@ -302,13 +338,33 @@
                   width: 40px;
                   border-radius: 50%;
                   margin-right: 8px;
+
+                  @include m.xxs{
+                    height: 35px;
+                    width: 35px;
+                  }
                 }
               }
               span{
+                @include m.lg{
+                  font-size: 15px;
+                }
                 svg{
                   color: v.$primary-color;
                   margin-right: 8px;
                   font-size: 18px;
+
+                  @include m.lg{
+                    margin-right: 5px;
+                  }
+                  @include m.xxs{
+                    margin-right: 2px;
+                  }
+                }
+                &:last-child{
+                  @include m.sm{
+                    display: none;
+                  }
                 }
               }
               .author-img,
@@ -346,7 +402,7 @@
                 font-size: 32px;
               }
               @include m.xxs{
-                font-size: 28px;
+                font-size: 25px;
               }
             }
             .post-content {
@@ -360,13 +416,16 @@
                   color: #07000e;
         
                   @include m.md{
-                    font-size: 30px;
-                  }
-                  @include m.sm{
                     font-size: 28px;
                   }
-                  @include m.xxs{
+                  @include m.sm{
                     font-size: 26px;
+                  }
+                  @include m.xs{
+                    font-size: 24px;
+                  }
+                  @include m.xxs{
+                    font-size: 22px;
                   }
                 }
                 &.blog-imgs{
@@ -430,13 +489,16 @@
                   margin-bottom: 5px;
 
                   @include m.md{
-                    font-size: 30px;
-                  }
-                  @include m.sm{
                     font-size: 28px;
                   }
-                  @include m.xxs{
+                  @include m.sm{
                     font-size: 26px;
+                  }
+                  @include m.xs{
+                    font-size: 24px;
+                  }
+                  @include m.xxs{
+                    font-size: 22px;
                   }
                 }
 
@@ -472,13 +534,16 @@
                   margin-bottom: 5px;
 
                   @include m.md{
-                    font-size: 30px;
-                  }
-                  @include m.sm{
                     font-size: 28px;
                   }
-                  @include m.xxs{
+                  @include m.sm{
                     font-size: 26px;
+                  }
+                  @include m.xs{
+                    font-size: 24px;
+                  }
+                  @include m.xxs{
+                    font-size: 22px;
                   }
                 }
                 .post-tag-list {
@@ -515,7 +580,11 @@
               align-items: center;
               margin-top: 20px;
               a {
-                color: v.$gray-900;
+                color: v.$gray-900;                
+              }
+
+              @include m.lg{
+                gap: 15px;
               }
 
               .author-img{
@@ -524,13 +593,34 @@
                   width: 40px;
                   border-radius: 50%;
                   margin-right: 8px;
+
+                  @include m.xxs{
+                    height: 35px;
+                    width: 35px;
+                  }
                 }
               }
               span{
+                @include m.lg{
+                  font-size: 15px;
+                }
                 svg{
                   color: v.$primary-color;
                   margin-right: 8px;
                   font-size: 18px;
+
+                  @include m.lg{
+                    margin-right: 5px;
+                  }
+                  @include m.xxs{
+                    margin-right: 2px;
+                  }
+                }
+
+                &:last-child{
+                  @include m.sm{
+                    display: none;
+                  }
                 }
               }
               .author-img,
@@ -568,7 +658,7 @@
                 font-size: 32px;
               }
               @include m.xxs{
-                font-size: 28px;
+                font-size: 25px;
               }
             }
             .post-content {
@@ -582,13 +672,16 @@
                   color: #07000e;
         
                   @include m.md{
-                    font-size: 30px;
-                  }
-                  @include m.sm{
                     font-size: 28px;
                   }
-                  @include m.xxs{
+                  @include m.sm{
                     font-size: 26px;
+                  }
+                  @include m.xs{
+                    font-size: 24px;
+                  }
+                  @include m.xxs{
+                    font-size: 22px;
                   }
                 }
                 &.blog-imgs{
@@ -652,13 +745,16 @@
                   margin-bottom: 5px;
 
                   @include m.md{
-                    font-size: 30px;
-                  }
-                  @include m.sm{
                     font-size: 28px;
                   }
-                  @include m.xxs{
+                  @include m.sm{
                     font-size: 26px;
+                  }
+                  @include m.xs{
+                    font-size: 24px;
+                  }
+                  @include m.xxs{
+                    font-size: 22px;
                   }
                 }
 
@@ -694,13 +790,16 @@
                   margin-bottom: 5px;
 
                   @include m.md{
-                    font-size: 30px;
-                  }
-                  @include m.sm{
                     font-size: 28px;
                   }
-                  @include m.xxs{
+                  @include m.sm{
                     font-size: 26px;
+                  }
+                  @include m.xs{
+                    font-size: 24px;
+                  }
+                  @include m.xxs{
+                    font-size: 22px;
                   }
                 }
                 .post-tag-list {
@@ -768,7 +867,7 @@
             color: v.$gray-100;
             font-weight: 700;
 
-            @include m.lg{
+            @include m.xl{
               font-size: 18px;
             }
             @include m.md{
