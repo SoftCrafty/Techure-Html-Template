@@ -7880,13 +7880,21 @@ p {
   gap: 20px;
 }
 .blog-area .blog-details-wrapper .single-post-item.format-audio .post-content-wrapper .single-post-meta .blog-post-tag .post-tag-list a {
-  background: #f7f1fc;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  line-height: 38px;
-  text-align: center;
-  font-size: 22px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  color: #716f73;
+  font-size: 14px;
+  font-weight: 400;
+}
+.blog-area .blog-details-wrapper .single-post-item.format-audio .post-content-wrapper .single-post-meta .blog-post-tag .post-tag-list a:hover {
+  background: #573db8;
+  color: #ffffff;
 }
 .blog-area .blog-details-wrapper .single-post-item.format-audio .post-content-wrapper .single-post-meta .blog-post-tag .post-tag-list a svg path {
   fill: #573db8;
