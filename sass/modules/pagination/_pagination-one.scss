@@ -8,6 +8,7 @@
     display: flex;
     align-items: center;
     gap: 15px;
+    justify-content: center;
     @include m.md{
       margin-top: -30px;
     }
@@ -18,7 +19,7 @@
       li {
         
         &.active {
-          .page-link {
+          a {
             color: v.$white;
             background: v.$primary-color;
           }
@@ -35,6 +36,7 @@
           padding: 0;
           text-align: center;
           line-height: 50px;
+          display: block;
           @include m.transition(0.5s);
   
           svg {

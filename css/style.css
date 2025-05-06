@@ -13271,6 +13271,7 @@ video {
   display: flex;
   align-items: center;
   gap: 15px;
+  justify-content: center;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .basic-pagination ul {
@@ -13282,7 +13283,7 @@ video {
     margin-top: -40px;
   }
 }
-.basic-pagination ul li.active .page-link {
+.basic-pagination ul li.active a {
   color: #ffffff;
   background: #573db8;
 }
@@ -13299,6 +13300,7 @@ video {
   padding: 0;
   text-align: center;
   line-height: 50px;
+  display: block;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
