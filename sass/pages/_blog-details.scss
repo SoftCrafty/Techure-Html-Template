@@ -266,13 +266,30 @@
                   display: flex;
                   align-items: center;
                   gap: 20px;
-                  a {               
-                    background: v.$gray-100;
-                    @include m.border-radius(50%);
-                    line-height: 38px;
-                    text-align: center;
-                    font-size: 22px;
+                  margin-top: 10px;
+                  a {                    
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 4px 10px;
+                    border: 1px solid v.$border-color-04;
+                    @include m.border-radius(50px);
+                    color: v.$gray-800;
+                    font-size: 14px;
+                    font-weight: v.$font-weight-regular;
+                    &:hover {
+                      background: v.$primary-color;
+                      color: v.$white;
+
+                      svg{
+                        path {
+                          fill: white;
+                        }
+                      }
+                    }          
                     svg {
+                      font-size: 20px;  
+                      padding: 2px  5px;                    
                       path {
                         fill: v.$primary-color;
                       }
@@ -556,12 +573,21 @@
                   display: flex;
                   align-items: center;
                   gap: 20px;
+                  margin-top: 10px;
                   a {               
-                    background: v.$gray-100;
-                    @include m.border-radius(50%);
-                    line-height: 38px;
-                    text-align: center;
-                    font-size: 22px;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 4px 10px;
+                    border: 1px solid v.$border-color-04;
+                    @include m.border-radius(50px);
+                    color: v.$gray-800;
+                    font-size: 14px;
+                    font-weight: v.$font-weight-regular;
+                    &:hover {
+                      background: v.$primary-color;
+                      color: v.$white;
+                    }          
                     svg {
                       path {
                         fill: v.$primary-color;
@@ -815,6 +841,7 @@
                   display: flex;
                   align-items: center;
                   gap: 20px;
+                  margin-top: 10px;
                   a {               
                     display: inline-flex;
                     justify-content: center;
