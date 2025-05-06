@@ -13267,27 +13267,26 @@ video {
 
 /* Theme Default CSS */
 /*-======== sidebar style-one  =======-*/
+.basic-pagination ul {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .pagination {
+  .basic-pagination ul {
     margin-top: -30px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .pagination {
+  .basic-pagination ul {
     margin-top: -40px;
   }
 }
-.pagination.style-one .page-item {
-  margin-left: 20px;
-}
-.pagination.style-one .page-item:first-child {
-  margin-left: 0;
-}
-.pagination.style-one .page-item.active .page-link {
+.basic-pagination ul li.active .page-link {
   color: #ffffff;
   background: #573db8;
 }
-.pagination.style-one .page-item .page-link {
+.basic-pagination ul li a {
   border-color: rgb(236, 236, 236);
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -13306,22 +13305,22 @@ video {
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
-.pagination.style-one .page-item .page-link svg {
+.basic-pagination ul li a svg {
   width: 14px;
 }
-.pagination.style-one .page-item .page-link svg path {
+.basic-pagination ul li a svg path {
   color: #573db8;
 }
-.pagination.style-one .page-item .page-link:focus {
+.basic-pagination ul li a:focus {
   color: 0 !important;
   background-color: initial;
   box-shadow: none !important;
 }
-.pagination.style-one .page-item .page-link:hover {
+.basic-pagination ul li a:hover {
   color: #ffffff;
   background: #573db8;
 }
-.pagination.style-one .page-item .page-link:hover svg path {
+.basic-pagination ul li a:hover svg path {
   color: #ffffff;
 }
 

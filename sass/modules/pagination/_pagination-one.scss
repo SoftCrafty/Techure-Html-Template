@@ -1,60 +1,65 @@
 @use "../../variables" as v;
 @use "../../mixin" as m;
 /*-======== sidebar style-one  =======-*/
-.pagination {
-  @include m.md{
-    margin-top: -30px;
-  }
-  @include m.sm{
-    margin-top: -40px;
-  }
-  &.style-one {
-    .page-item {
-      margin-left: 20px;
-      &:first-child{
-        margin-left: 0;
-      }
-      &.active {
-        .page-link {
-          color: v.$white;
-          background: v.$primary-color;
-        }
-      }
 
-      .page-link {
-        border-color: v.$color-07;
-        @include m.border-radius(50%);
-        width: 50px;
-        height: 50px;
-        font-size: 24px;
-        font-weight: v.$font-weight-bold;
-        color: v.$gray-900;
-        padding: 0;
-        text-align: center;
-        line-height: 50px;
-        @include m.transition(0.5s);
+.basic-pagination{
 
-        svg {
-          width: 14px;
-          path {
-            color: v.$primary-color;
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    @include m.md{
+      margin-top: -30px;
+    }
+    @include m.sm{
+      margin-top: -40px;
+    }
+    
+      li {
+        
+        &.active {
+          .page-link {
+            color: v.$white;
+            background: v.$primary-color;
           }
         }
-        &:focus {
-          color: 0 !important;
-          background-color: initial;
-          box-shadow: none !important;
-        }
-        &:hover {
-          color: v.$white;
-          background: v.$primary-color;
+  
+        a {
+          border-color: v.$color-07;
+          @include m.border-radius(50%);
+          width: 50px;
+          height: 50px;
+          font-size: 24px;
+          font-weight: v.$font-weight-bold;
+          color: v.$gray-900;
+          padding: 0;
+          text-align: center;
+          line-height: 50px;
+          @include m.transition(0.5s);
+  
           svg {
+            width: 14px;
             path {
-              color: v.$white;
+              color: v.$primary-color;
+            }
+          }
+          &:focus {
+            color: 0 !important;
+            background-color: initial;
+            box-shadow: none !important;
+          }
+          &:hover {
+            color: v.$white;
+            background: v.$primary-color;
+            svg {
+              path {
+                color: v.$white;
+              }
             }
           }
         }
       }
-    }
+    
   }
 }
+
