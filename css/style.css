@@ -13287,7 +13287,7 @@ video {
   color: #ffffff;
   background: #573db8;
 }
-.basic-pagination ul li a {
+.basic-pagination ul li a, .basic-pagination ul li span {
   border-color: rgb(236, 236, 236);
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -13307,23 +13307,27 @@ video {
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
-.basic-pagination ul li a svg {
+.basic-pagination ul li a svg, .basic-pagination ul li span svg {
   width: 14px;
 }
-.basic-pagination ul li a svg path {
+.basic-pagination ul li a svg path, .basic-pagination ul li span svg path {
   color: #573db8;
 }
-.basic-pagination ul li a:focus {
+.basic-pagination ul li a:focus, .basic-pagination ul li span:focus {
   color: 0 !important;
   background-color: initial;
   box-shadow: none !important;
 }
-.basic-pagination ul li a:hover {
+.basic-pagination ul li a:hover, .basic-pagination ul li span:hover {
   color: #ffffff;
   background: #573db8;
 }
-.basic-pagination ul li a:hover svg path {
+.basic-pagination ul li a:hover svg path, .basic-pagination ul li span:hover svg path {
   color: #ffffff;
+}
+.basic-pagination ul li span.current {
+  color: #ffffff;
+  background: #573db8;
 }
 
 .google-map-area.style-one .mapouter {

@@ -25,7 +25,7 @@
           }
         }
   
-        a {
+        a, span {
           border-color: v.$color-07;
           @include m.border-radius(50%);
           width: 50px;
@@ -58,6 +58,13 @@
                 color: v.$white;
               }
             }
+          }
+        }
+
+        span{
+          &.current{
+            color: v.$white;
+            background: v.$primary-color;
           }
         }
       }
