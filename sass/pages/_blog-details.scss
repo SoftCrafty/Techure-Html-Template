@@ -943,12 +943,11 @@
       }
 
       .author-info{
-        background-color: #8FD45F;
+        background-color: v.$primary-color;
         border-radius: 20px;
         padding: 40px;
         position: relative;
         margin-top: 100px;
-
         .author-thumb{      
           flex-shrink: 0;
           width: 120px;
@@ -974,6 +973,16 @@
         }
         .author-text{
         margin-top: 30px;
+
+        .section-title{
+          color: white;
+        }
+        .section-meta{
+          color: white;
+        }
+        .section-desc{
+          color: white;
+        }
 
         .section-meta{
           margin-top: -8px;

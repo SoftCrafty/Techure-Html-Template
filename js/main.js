@@ -366,36 +366,29 @@
         button.addEventListener('click', () => {
           setTimeout(syncFaqIcons); 
         });
-      });
-  });
+      });    
 
-  jQuery(document).ready(function($) {
-    $('.clients-testimonial-area > div').slick({
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        arrows: false,
-       
-       
-        responsive: [
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 576,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    arrows: false
-                }
-            }
-        ]
-    });
+      // video modal 
+
+      const modal = document.getElementById('exampleModal');
+
+      if (modal) {
+        modal.addEventListener('hide.bs.modal', function () {
+          if (modal.contains(document.activeElement)) {
+            document.activeElement.blur();
+          }
+        });
+
+        modal.addEventListener('hidden.bs.modal', function () {
+          document.body.focus();
+          const video = document.getElementById('player');
+          if (video) {
+            video.pause();
+            video.currentTime = 0;
+          }
+        });
+      }
+
   });
 
   

@@ -6998,7 +6998,6 @@ p {
   color: #716f73;
   font-size: 18px;
   font-weight: 500;
-  margin-left: 8px;
   color: #716f73;
   font-size: 18px;
   font-weight: 500;
@@ -7999,7 +7998,7 @@ p {
   background: rgb(204, 204, 204);
 }
 .blog-area .blog-details-wrapper .author-info {
-  background-color: #8FD45F;
+  background-color: #573db8;
   border-radius: 20px;
   padding: 40px;
   position: relative;
@@ -8033,6 +8032,15 @@ p {
 }
 .blog-area .blog-details-wrapper .author-info .author-text {
   margin-top: 30px;
+}
+.blog-area .blog-details-wrapper .author-info .author-text .section-title {
+  color: white;
+}
+.blog-area .blog-details-wrapper .author-info .author-text .section-meta {
+  color: white;
+}
+.blog-area .blog-details-wrapper .author-info .author-text .section-desc {
+  color: white;
 }
 .blog-area .blog-details-wrapper .author-info .author-text .section-meta {
   margin-top: -8px;
@@ -10571,7 +10579,7 @@ p {
   width: 100%;
 }
 .blog-card-wrapper.style-four .single-post-item.format-audio .post-audio iframe {
-  background-image: url("images/blog-img-01.png");
+  background-image: url("../images/blog-img-01.png");
   width: 100%;
   height: 500px;
   border-top-right-radius: 20px;
