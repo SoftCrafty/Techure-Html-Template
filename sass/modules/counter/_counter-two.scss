@@ -34,7 +34,7 @@
         margin-bottom: 30px;
       }
       .coun-title {
-        font-size: 72px;
+        font-size: 68px;
         font-weight: v.$font-weight-bold;
         position: relative;
         @include m.device-768px {
@@ -47,32 +47,32 @@
         font-weight: v.$font-weight-medium;
         color: v.$gray-900;
       }
-      &::after {
-        content: "";
-        width: 80px;
-        height: 1px;
-        position: absolute;       
-        top: 41%;
-        right: -65px;
-        @include m.transform(translateY(-50%));
-        display: block;
-        background: v.$border-color-03;
-        @include m.lg {
-          right: -50px;
-          width: 40px;
-        }
-        @include m.device-768px {
-          right: -70px;
-          width: 40px;
-        }
-        @include m.sm {
-          right: -50px;
-          width: 40px;
-        }
-        @include m.xs {
-          display: none;
-        }
-      }
+      // &::after {
+      //   content: "";
+      //   width: 80px;
+      //   height: 1px;
+      //   position: absolute;       
+      //   top: 41%;
+      //   right: -65px;
+      //   @include m.transform(translateY(-50%));
+      //   display: block;
+      //   background: v.$border-color-03;
+      //   @include m.lg {
+      //     right: -50px;
+      //     width: 40px;
+      //   }
+      //   @include m.device-768px {
+      //     right: -70px;
+      //     width: 40px;
+      //   }
+      //   @include m.sm {
+      //     right: -50px;
+      //     width: 40px;
+      //   }
+      //   @include m.xs {
+      //     display: none;
+      //   }
+      // }
       @include m.md {
         &:nth-child(2) {
           &::after {

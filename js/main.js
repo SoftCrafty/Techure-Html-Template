@@ -1,14 +1,13 @@
 (function ($){
     "use strict";
-     //preloader
-    document.addEventListener("DOMContentLoaded", function () {
-      setTimeout(function () {
-        document.getElementById("preloader").style.display = "none";
-      }, 500); // optional delay
-    });
-
+    
     $(document).ready(function () {
-     
+      
+      //preloader
+      setTimeout(function () {
+      $('#preloader').hide(); // or .css('display', 'none')
+      }, 500); // optional delay
+
       /*==== SlideBar =====*/
       /*=========Btn==========*/
         var barBtn = $('.bar-btn');
@@ -34,15 +33,15 @@
       $('.off-canvas .main-menu').addClass('mobile-menu');
      
       /*=====  Navbar Fixed ======*/
-            var $window = $(window);
-            $window.on('scroll', function() {
-              //header fixed animation and control
-              if($window.scrollTop() > 0) {
-                  $(".header-area").addClass('header-fixed');
-              }else{
-                  $(".header-area").removeClass('header-fixed');
-              }
-          });
+        var $window = $(window);
+        $window.on('scroll', function() {
+          //header fixed animation and control
+          if($window.scrollTop() > 200) {
+              $(".header-area").addClass('header-fixed');
+          }else{
+              $(".header-area").removeClass('header-fixed');
+          }
+      });
       /*=========== Sub menu ============*/
           var dropdowmMenu = $('.mobile-menu ul .off-canvas-dropdown');
           dropdowmMenu.parent('li').children('.item').append(function() {
@@ -61,16 +60,16 @@
           });
 
           /*==== Video Play =====*/
-          var playBtn = $('.play-btn');
-          var modalClose = $('.btn-close, .modal');
-          playBtn.on('click', function(){
-          var mediaVideo = $("#player").get(0);
-              mediaVideo.play();
-          });
-          modalClose.on('click', function(){
-          var mediaVideo = $("#player").get(0);
-          mediaVideo.pause();
-          });
+          // var playBtn = $('.play-btn');
+          // var modalClose = $('.btn-close, .modal');
+          // playBtn.on('click', function(){
+          // var mediaVideo = $("#player").get(0);
+          //     mediaVideo.play();
+          // });
+          // modalClose.on('click', function(){
+          // var mediaVideo = $("#player").get(0);
+          // mediaVideo.pause();
+          // });
 
        // search field 
       $('#search').on('click', function () {
@@ -277,10 +276,49 @@
       });
 
       // wow js
-        new WOW().init();
+       new WOW().init();
 
         //nice select
       $('select').niceSelect();
+
+
+        // ✅ Magnific Popup Configuration
+        $('.playBtn').magnificPopup({
+            type: 'iframe',
+
+            mainClass: 'mfp-fade',
+            removalDelay: 160,
+            preloader: false,
+            fixedContentPos: false,
+            iframe: {
+                patterns: {
+                    youtube: {
+                        index: 'youtube.com/',
+                        id: function (url) {
+                            // Support both ?v=ID and /embed/ID
+                            const watchMatch = url.match(/[?&]v=([^&]+)/);
+                            if (watchMatch && watchMatch[1]) return watchMatch[1];
+
+                            const embedMatch = url.match(/embed\/([^\?&]+)/);
+                            if (embedMatch && embedMatch[1]) return embedMatch[1];
+
+                            return null;
+                        },
+                        src: 'https://www.youtube.com/embed/%id%?autoplay=1'
+                    }
+                }
+            },
+            callbacks: {
+                close: function () {
+                    document.activeElement && document.activeElement.blur();
+
+                    setTimeout(() => {
+                        $('#main-content, .slick-current .playBtn').first().focus();
+                    }, 100);
+                }
+            }
+        });
+
       
       //testimonial slick slider
       $('.tech-testimonial-container').slick({
@@ -389,8 +427,21 @@
         });
       }
 
+
+      // remove white space from p in blog page for wp
+
+      $('p').each(function () {
+        // Check if paragraph has no text and no non-empty elements (like <img>)
+        if ($(this).contents().filter(function () {
+          return this.nodeType === 3 ? $.trim(this.nodeValue).length : true;
+        }).length === 0) {
+          $(this).hide();
+        }
+      });
+
   });
 
   
 })(jQuery);
+
 

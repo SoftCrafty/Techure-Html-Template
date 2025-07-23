@@ -55,11 +55,14 @@
 
       .section-desc {
         flex-basis: 50%;
+        padding-left: 50px;
         @include m.md {
           flex-basis: 100%;
+          padding-left: 0;
         }
         @include m.sm {
           flex-basis: 100%;
+          padding-left: 0;
         }
       }
     }

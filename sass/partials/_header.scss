@@ -2,19 +2,43 @@
 @use "./mixin" as m;
 
 /*-======== header area =======-*/
+
+
+@keyframes sticy-menu {
+    0% {
+     top: -50px;   
+       
+    }
+    100% {
+     top: 0; 
+    }
+}
+
+
 .header-area {
+
   &.style-one {
-    background: v.$gray-100;
+    background: transparent;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1023;
-    padding: 20px 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
     &.header-fixed {
-      position: fixed;
+      position: fixed !important;
+      z-index: 9999;
+      right: 0;
+      left: 0;
+      top: 0;
+      animation: sticy-menu 1s;
+      animation-direction: inherited;
+
+
       &.style-one {
-        background: v.$gray-900;
+        background: v.$gray-100;
 
         .logo {
           .standard-logo {
@@ -28,7 +52,7 @@
           ul {
             li {
               a {
-                color: v.$white;
+                color: v.$gray-900;
               }
             }
           }
@@ -54,10 +78,10 @@
         .number-with-btn {
           .contact-number {
             a {
-              color: v.$white !important;
+              color: v.$gray-900 !important;
               svg {
                 path {
-                  fill: v.$gray-100;
+                  fill: v.$primary-color;
                 }
               }
             }
@@ -69,7 +93,7 @@
       display: flex;
       justify-content: start;
       align-items: center;
-      margin-top: 3px;
+     
       .standard-logo {
         display: block;
       }

@@ -4,15 +4,31 @@
 
 .count-box-wrapper {
   &.style-one {
+    margin-top: 170px;
+    
+    @include m.lg{
+      margin-top: 0;
+    }
     @include m.md {
       padding-right: 0;
       padding-top: 0;
+      margin-top: 0;
     }
     .counter-item {
       display: flex;
       align-items: center;
       padding: 30px 0;
       gap: 30px;
+
+      @include m.lg{
+        justify-content: center;
+      }
+      @include m.md{
+        justify-content: center;
+      }
+      @include m.sm{
+        justify-content: center;
+      }
 
       &:nth-child(1) {
         border-bottom: 1px solid v.$primary-color;
@@ -22,12 +38,19 @@
         margin-top: 0;
       }
       .coun-title {
-        font-size: 74px;
+        font-size: 64px;
         font-weight: v.$font-weight-bold;
-        min-width: 164px;
-        @include m.device-768px {
+        
+        @include m.xl{
           font-size: 60px;
-          line-height: 60px;
+        }
+
+        @include m.device-768px {
+          font-size: 52px;
+          line-height: 52px;
+        }
+        @include m.xxs{
+          line-height: 30px;
         }
       }
     }

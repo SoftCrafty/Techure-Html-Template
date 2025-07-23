@@ -5,6 +5,9 @@
   &.style-two {
     .card-item {
       @include m.border-radius(20px);
+
+      
+
       @include m.md {
         margin-top: 30px;
       }

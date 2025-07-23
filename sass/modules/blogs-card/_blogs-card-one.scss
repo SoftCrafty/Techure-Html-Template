@@ -24,11 +24,21 @@
     .image {
       position: relative;
       padding: 10px 10px 0px 10px;
+      overflow: hidden;
+      @include m.transition(0.4s);
+
       img {
         width: 100%;
-        position: relative;
         @include m.border-radius(20px);
+        @include m.transition(0.4s);
       }
+
+      &:hover{
+        img{
+          transform: scale(1.04);
+        }
+      }
+
       .post-meta {
         display: flex;
         position: absolute;
@@ -54,6 +64,33 @@
           padding: 5px 10px;
           color: v.$gray-900;
         }
+      }
+    }
+    .post-date {
+      display: inline-flex;
+      float: right;
+      right: 20px;
+      bottom: 20px;
+      color: v.$gray-900;
+      gap: 5px;
+
+      .icon {
+        font-size: 15px;
+        width: 30px;
+        height: 30px;
+        background: v.$secondary;
+        text-align: center;
+        line-height: 30px;
+        @include m.border-radius(50%);
+      }
+      p {
+        font-size: 12px;
+        font-weight: v.$font-weight-regular;
+        @include m.border-radius(50px);
+        background: v.$secondary;
+        line-height: 18px;
+        padding: 5px 10px;
+        color: v.$gray-900;
       }
     }
     .post-content {

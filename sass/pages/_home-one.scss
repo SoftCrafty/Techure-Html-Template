@@ -22,13 +22,21 @@
       @include m.transform(translateY(-50%));
 
       @include m.xl {
-        left: 70px;
+        left: 60px;
+       
       }
       @include m.laptop_l {
-        top: 40%;
+        top: 45%;
+      }
+      @include m.lg{
+        display: none;
       }
       @include m.md {
         left: 30px;
+        display: none;
+      }
+      @include m.sm {
+        display: none;
       }
       .media--icons {
         a {
@@ -56,7 +64,7 @@
       @include m.device-576px {
         top: 30%;
         left: 24px;
-        display: none;
+
       }
       @include m.device-525px {
         display: none;
@@ -74,8 +82,12 @@
           font-size: 74px;
           line-height: 74px;
         }
+        @include m.md {
+          font-size: 74px;
+          line-height: 74px;
+        }
         @include m.sm {
-          font-size: 72px;
+          font-size: 70px;
           line-height: 80px;
         }
 
@@ -101,32 +113,41 @@
     .hero-wrapper {
       position: relative;
       z-index: 1;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
 
       @include m.device-425px {
         margin-top: 0 !important;
       }
       @include m.laptop_m_four {
-        flex-wrap: wrap;
+        
         margin-top: 30px;
       }
-      @include m.sm {
-        flex-wrap: wrap;
-        justify-content: center;
+
+      .hero-img-order{
+        @include m.lg{
+          order: 2;
+          text-align: center;
+        }
+        @include m.md{
+          order: 2;
+          text-align: center;
+        }
+        @include m.sm{
+          order: 2;
+          text-align: center;
+        }
       }
+      
       .video-wrap {
-        flex-basis: 25%;
-        @include m.md {
-          flex-basis: inherit;
-        }
-        @include m.sm {
-          flex-basis: 100%;
-        }
+       
         @include m.laptop_m_four {
           width: 410px;
           margin: 0px auto 0px auto;
+        }
+        @include m.md{
+          width: auto;
+        }
+        @include m.sm{
+          width: auto;
         }
         .video-box {
           @include m.device-576px {
@@ -142,55 +163,15 @@
       }
       .hero-center-img {
         position: relative;
-        margin-left: 27px;
-        margin-right: 30px;
         @include m.rmaxwd(1280) {
           margin-top: 45px;
         }
-        // width: 636px;
-        // @include m.xl {
-        //   width: 600px;
-        // }
-        // @include m.lg {
-        //   width: 480px;
-        //   margin-top: 90px;
-        // }
-        // @include m.md {
-        //   margin-top: 70px !important;
-        //   width: 450px;
-        // }
-        // @include m.sm {
-        //   width: 530px;
-        // }
-        // @include m.xs {
-        //   margin-top: 0px !important;
-        //   width: 450px;
-        // }
-        // @include m.device-425px {
-        //   width: 350px;
-        // }
-        // @include m.device-375px {
-        //   width: 300px;
-        // }
-        // @include m.device-320px {
-        //   width: 250px;
-        // }
+        
         .hero-img {
           position: relative;
           width: 100%;
           height: 100%;
-          // @include m.xl {
-          //   height: 540px;
-          // }
-
-          // @include m.md {
-          //   height: 460px;
-          // }
-
-          // @include m.device-320px {
-          //   height: 320px;
-          //   object-fit: cover;
-          // }
+          
         }
         .theme-btn {
           &.style-one {
@@ -311,6 +292,10 @@
 
 /*-======== lates-service-area=======-*/
 .lates-service-area {
+
+  padding-top: 135px;
+  padding-bottom: 135px;
+
   background: v.$gray-100;
   @include m.nesthub {
     padding-top: 120px;
@@ -381,6 +366,8 @@
 /*-======== about-area=======-*/
 
 .about-area {
+  padding-top: 135px;
+
   @include m.nesthub {
     padding-top: 120px;
   }
@@ -425,6 +412,8 @@
 
 /*-======== our-team-area =======-*/
 .our-team-area {
+  padding-top: 135px;
+  padding-bottom: 135px;
   background: v.$gray-100;
   @include m.nesthub {
     padding-top: 120px;
@@ -440,9 +429,15 @@
   }
 }
 
+.story-area{
+  padding-top: 125px;
+}
+
 /*-======== tech-experiences-area =======-*/
 
 .tech-experiences-area {
+  padding-top: 135px;
+  padding-bottom: 135px;
   position: relative;
   overflow: hidden;
   @include m.device-375px {
@@ -485,6 +480,8 @@
 /*-======== work-process-area =======-*/
 
 .work-process-area {
+  padding-top: 128px;
+
   @include m.nesthub {
     padding-top: 120px;
   }
@@ -535,8 +532,16 @@
   }
 }
 
+.clients-testimonial-area{
+  padding-top: 135px;
+  padding-bottom: 110px;
+}
+
 /*-========faq-area =======-*/
 .faq-area {
+  padding-top: 135px;
+  padding-bottom: 135px;
+
   @include m.nesthub {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -546,6 +551,9 @@
 /*-======== new-blog-area =======-*/
 
 .new-blog-area {
+  padding-top: 135px;
+  padding-bottom: 135px;
+  
   @include m.nesthub {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -731,3 +739,66 @@
     background-color: #6c3dd8 !important;
   }
 }
+
+
+
+
+/*
+
+<div class="hero-wrapper">
+          <div class="video-wrap">
+            <div class="video-box style-one mt-130   res-mt-40">
+              <img src="./images/video-img.png" alt="techure video img" />
+              <a class="play-btn playBtn" href="https://www.youtube.com/embed/4wtS-0IVQY4?si=j_dfbv30b8BWvNq4">
+                <span class="play-icon">
+                  <i class="fa-solid fa-play"></i>
+                </span>
+              </a>
+            </div>
+            <!-- end video-box -->
+            <p class="sectiont-desc mt-30 wow animate__ animate__lightSpeedInLeft animated">
+              Information Technology is a rapidly evolving field that
+              encompasses the study and application
+            </p>
+            <div class="d-flex align-items-center mt-30">
+              <div class="user-client style-one">
+                <img src="./images/client-img.png" alt="techure client" class="client-img" />
+                <img src="./images/client-img-02.png" alt="techure client" class="client-img" />
+                <img src="./images/client-img-03.png" alt="techure client"
+                  class="client-img" />
+                <div class="client-box">
+                  <h5 class="count">3K+</h5>
+                </div>
+              </div>
+              <h5 class="happy-text pl-15">Happy Clients</hclass=>
+            </div>
+          </div>
+         
+          <div class="hero-wrap">
+            <div class="hero-center-img">
+              <img src="./images/hero-img.png" alt="techure hero img" class="hero-img wow custom-animate-two" data-wow-delay="0.6s" />
+              <button class="theme-btn style-one ">
+                <a href="contact.html">
+                  <i class="icon-right-arrow"></i>  
+                  <br /> Get<br> Started <br> Now 
+                </a>
+              </button>
+            </div>
+            <div class="count-box-wrapper pr-10 style-one mt-170 res-mt-40">
+              <div class="counter-item " >
+                <h2 class="coun-title "><span class="counter">140</span>+</h2>
+                <p class="coun-decs">Business People</p>
+              </div>
+              <div class="counter-item" >
+                <h2 class="coun-title "><span class="counter">99</span>%</h2>
+                <p class="coun-decs">Customer Satisfaction </p>
+              </div>
+            </div>
+            <!-- end user-item -->
+          </div>
+        </div>
+
+
+
+
+        */

@@ -13,15 +13,15 @@
       padding: 20px;
     }
     @include m.md {
-      margin-top: 40px;
+      margin-top: 80px;
       padding: 40px;
     }
     @include m.sm {
-      margin-top: 40px;
+      margin-top: 70px; 
       padding: 40px;
     }
     @include m.xs {
-      margin-top: 40px;
+      margin-top: 52px;
       padding: 20px;
     }
     .side-section-heading {

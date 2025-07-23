@@ -72,8 +72,8 @@
           }
 
           @include m.sm {
-            font-size: 62px;
-            line-height: 62px;
+            font-size: 54px;
+            line-height: 58px;
           }
           @include m.device-425px {
             font-size: 52px;
@@ -195,7 +195,6 @@
                 li {
                   display: inline-block;
                   color: v.$color-3;
-                  margin-right: 10px;
                   &:nth-child(5) {
                     color: v.$gray-200;
                   }
@@ -205,7 +204,6 @@
                 font-size: 14px;
                 font-weight: v.$font-weight-regular;
                 color: v.$white;
-                margin-top: 10px;
               }
             }
           }
@@ -230,9 +228,13 @@
 
 /*-======== lastar-area style-two =======-*/
 .lates-service-area {
+  
   &.style-two {
     position: relative;
     overflow: hidden;
+    padding-top: 120px;
+    padding-bottom: 125px;
+
     .count-box-wrapper {
       &.style-two {
         position: relative;
@@ -296,10 +298,25 @@
     }
   }
 }
+
+.our-team-area {
+
+  &.style-2{
+    padding-top: 135px;
+    padding-bottom: 115px;
+  }
+
+  &.style-three{
+    padding-bottom: 0;
+  }
+}
+
 /*-======== wrok-process-area =======-*/
 
 .work-process-area {
   &.style-two {
+    padding-top: 0;
+
     @include m.nesthub {
       padding-top: 0px;
     }
@@ -355,7 +372,8 @@
 
 .faq-area {
   &.style-two {
-   
+    //padding-bottom: 0;
+
     @include m.nesthub{
       padding-bottom: 120px;
     }
@@ -441,14 +459,14 @@
       z-index: 1;
     }
     .client-content-wrapper {
-      padding-top: 245px;
+      padding-top: 120px;
       position: relative;
       z-index: 1;
       @include m.laptop_m_four {
-        padding-top: 130px;
+        padding-top: 90px;
       }
       @include m.device-425px {
-        padding-top: 100px;
+        padding-top: 80px;
       }
       .client-content {
         .best-award-logo {
@@ -529,6 +547,7 @@
 .new-blog-area {
   &.style-two {
     background: v.$gray-100;
+    padding-bottom: 0;
     .section--header {
       @include m.device-425px {
         padding-bottom: 0px;

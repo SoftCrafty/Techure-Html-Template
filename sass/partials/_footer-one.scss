@@ -5,8 +5,15 @@
 .footer-area {
   &.style-one {
     background: v.$gray-900;
+    padding-bottom: 28px;
     a {
       color: v.$white !important;
+    }
+    .footer-top{
+      
+      .footer-wrap {
+        border-bottom: 1px solid v.$border-color-05;
+      }
     }
     .footer-wrapper {
       display: flex;
@@ -107,6 +114,12 @@
             height: 32px;
             line-height: 32px;
             text-align: center;
+            transition: all 0.4s;
+
+            &:hover{
+              background-color: v.$primary-color;
+              
+            }
           }
         }
       }
@@ -115,6 +128,9 @@
         float: right;
         &:nth-child(1) {
           ul {
+            padding-left: 0;
+            margin: 0;
+
             li {
               a {
                 @include m.transition(0.3s);
@@ -162,7 +178,7 @@
       }
     }
     .copyright-area {
-      border-top: 1px solid v.$border-color-05;
+     
       padding-top: 30px;
       @include m.md {
         text-align: center;
@@ -179,6 +195,7 @@
       }
       ul {
         float: right;
+        padding-left: 0;
         @include m.sm {
           text-align: center;
         }

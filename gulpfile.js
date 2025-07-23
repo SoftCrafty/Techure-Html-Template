@@ -14,7 +14,7 @@ function style() {
         .pipe(sass())
         .pipe(sourcemaps.write('.'))
         .pipe(dest('./css'))
-        .pipe(browserSync.stream()); // ✅ Inject CSS without full page reload
+         .pipe(browserSync.stream()); // ✅ Inject CSS without full page reload
 }
 
 // Watch SCSS + HTML

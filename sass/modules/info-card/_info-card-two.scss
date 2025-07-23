@@ -8,10 +8,10 @@
       background: v.$white;
       padding: 30px;
       border: 1px solid transparent;
-
       @include m.transition(0.3s);
       &:hover {
         border-color: v.$primary-color;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
       }
       @include m.border-radius(20px);
       @include m.md {
@@ -61,6 +61,7 @@
         }
       }
       &:hover {
+        
         .more-btn {
           p{
             color: v.$primary-color;

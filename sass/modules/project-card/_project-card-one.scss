@@ -1,6 +1,50 @@
 @use "../../variables" as v;
 @use "../../mixin" as m;
 /*-======== client-box =======-*/
+.lates-project-area{
+  padding-top: 130px;
+  padding-bottom: 135px;
+
+  &.style-page{
+    padding-bottom: 0;
+    .porject-card-wrapper {
+      &.style-one {
+        .card-item {
+          padding-top: 5px;
+          margin-bottom: 40px;
+
+          @include m.md{
+            margin-bottom: 30px;
+          }
+          @include m.sm{
+            margin-bottom: 30px;
+          }
+
+          &:last-child{
+            margin-bottom: 0;
+          }
+        }
+      }
+    } 
+
+    .col-lg-6{
+      &:first-child{
+        .porject-card-wrapper{
+           &.style-one {
+              .card-item {
+                &:last-child{
+                   @include m.sm{
+                      margin-bottom: 30px;
+                    }
+                }
+              }
+            }
+        } 
+      }
+    }
+  }
+}
+
 .porject-card-wrapper {
   &.style-one {
     .card-item {
@@ -17,6 +61,15 @@
       }
       .card-img {
         position: relative;
+        overflow: hidden;
+        @include m.transition(0.4s);
+        border-radius: 20px;
+
+        &:hover{
+          img{
+            transform: scale(1.05);
+          }
+        }
 
         img {
           position: relative;
@@ -70,3 +123,6 @@
     }
   }
 }
+
+
+

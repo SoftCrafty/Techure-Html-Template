@@ -3,6 +3,7 @@
 /*-======== sidebar style-one  =======-*/
 
 .basic-pagination{
+  margin-top: 60px;
 
   ul {
     display: flex;
@@ -14,6 +15,11 @@
     }
     @include m.sm{
       margin-top: -40px;
+      gap: 10px;
+    }
+    @include m.xs{
+      gap: 5px;
+      margin-top: -25px;
     }
     
       li {
@@ -26,8 +32,8 @@
         }
   
         a, span {
-          border-color: v.$color-07;
           @include m.border-radius(50%);
+          border: 1px solid v.$border-color;
           width: 50px;
           height: 50px;
           font-size: 24px;
@@ -36,8 +42,21 @@
           padding: 0;
           text-align: center;
           line-height: 50px;
-          display: block;
+          display: flex;
+          align-items: center;
+          justify-content: center;
           @include m.transition(0.5s);
+
+          @include m.sm{
+            height: 40px;
+            width: 40px;
+            font-size: 20px;
+          }
+          @include m.xs{
+            height: 35px;
+            width: 35px;
+            font-size: 18px;
+          }
   
           svg {
             width: 14px;

@@ -40,11 +40,19 @@
         display: flex;
         gap: 30px;
         justify-content: space-between;
-        @include m.device-425px {
-          flex-wrap: wrap;
+
+        @include m.lg{
+          flex-direction: column;
+        }
+        @include m.md{
+          flex-direction: column;
+        }
+
+        @include m.sm{
+          flex-direction: column;
         }
         div {
-          @include m.device-425px {
+          @include m.sm {
             width: 100%;
           }
         }

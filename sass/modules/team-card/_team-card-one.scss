@@ -115,6 +115,8 @@
               visibility: hidden;
               z-index: -2;
               ul {
+                margin: 0;
+                padding-left: 0;
                 li {
                   a {
                     @include m.transition(0.3s);

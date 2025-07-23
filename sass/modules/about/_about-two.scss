@@ -8,7 +8,8 @@
       align-items: center;
       height: 100%;
       padding-top: 120px;
-      padding-bottom: 130px;
+      padding-bottom: 125px;
+      
       .about-content {
         .section-heading {
           .section-title {
@@ -17,13 +18,10 @@
             line-height: 72px;
             letter-spacing: -2px;
             @include m.sm {
-              font-size: 52px;
-              line-height: 60px;
-            }
-            @include m.device-425px {
               font-size: 46px;
-              line-height: 60px;
+              line-height: 52px;
             }
+           
             @include m.device-425px {
               font-size: 42px;
               line-height: 60px;
@@ -52,6 +50,9 @@
             display: flex;
             flex-wrap: wrap;
             padding-top: 10px;
+            padding-left: 0;
+            margin-bottom: 0;
+            
             @include m.lg{
               flex-direction: column;
             }
